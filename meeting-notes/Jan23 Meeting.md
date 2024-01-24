@@ -12,4 +12,6 @@ Participants: Justin, Luca, Benjamin, Dhurvan, Nolan, Tyler, Amanda
 - Plan groups (developer vs client) for interviews
 
 ## Notes
-- 
+- Developers/Interviewers: Luca, Nolan, and Amanda
+- Clients/Interviewed: Justin, Dhurvan, Tyler, and Benjamin
+- Created google doc for interview question plan
