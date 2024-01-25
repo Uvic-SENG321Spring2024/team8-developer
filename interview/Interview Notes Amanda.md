@@ -121,3 +121,8 @@ Don't need company wide announcements
 
 Yes, exchanging teams for anytime \
 In lab can just walk over
+
+- Shift Scheduling follwup
+Scheduling must be flexible with different hours (4 or 6 hours shifts), different number of people on each shift (time of day, week and changes due to season)
+
+Want to see all scheduled shifts (in case of transfers, know who you're working with), and see your own in isolation
