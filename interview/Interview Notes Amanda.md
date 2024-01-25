@@ -126,3 +126,21 @@ In lab can just walk over
 Scheduling must be flexible with different hours (4 or 6 hours shifts), different number of people on each shift (time of day, week and changes due to season)
 
 Want to see all scheduled shifts (in case of transfers, know who you're working with), and see your own in isolation
+
+
+- Personal Info?
+Stored in basecamp \
+Empployees should be able to change/update it \
+Official paystub comes through Quickbooks
+
+- What features do managers like to use?
+Will look into it, but no specific details
+
+- Two locations?
+Employees can work at both locations \
+Homebase can see hours at different locations but they must be looked at separately (currently) \
+See branch name?
+
+- Group communication with branch location?
+Basecamp has that functionality, would like to keep \
+Employees at a specific branch have announcements
