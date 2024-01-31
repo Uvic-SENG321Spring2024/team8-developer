@@ -4,10 +4,15 @@
 
 | Name | Date | Reason for Changes | Version |
 | ----------- | ----------- | ------------- | ---------- | 
-|  |  | | |
-|  |  | | |
-|  |  | | |
-|  |  | | |
+| Amanda Anderson | January 29, 2024 | Create document from template and draft section 1 | 1.0 |
+| Dhuruvan Anavaratha Krishnan | January 29, 2024 | Created draft for sections 2.4 and 2.5 | 1.1 |
+| Yu Tang | January 29, 2024 | Created draft for sections 4.2 - 4.5 | 1.2 |
+| Benjamin Osalira | January 30, 2024 | Created draft for section 3: 3.1, 3.2 and 3.3 | 1.3 |
+| Justin Drastil | January 30, 2024 | Created draft for section 4.1 | 1.4 |
+| Luca Bolzonello | January 30, 2024 | Edit of section 3.3 | 1.5 |
+| Nolan Curtis | January 30, 2024 | Created draft for 2.1 | 1.6 |
+| Tim Xu | January 30, 2024 | Created draft for 2.2 and 2.3 | 1.7 |
+| Everyone | January 30, 2024 | Review and edit sections | 1.8 |
 
 1. **Overview**
 
