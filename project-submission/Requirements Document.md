@@ -93,7 +93,7 @@
       List any other documents or Web addresses to which this RD refers. These may include user interface style guides, contracts, standards, system requirements specifications or use case documents. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
 
-9. **System Features** (Due Iteration 2 and beyond)
+5. **System Features** (Due Iteration 2 and beyond)
 
     This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
@@ -123,10 +123,10 @@
 
    3. **System Feature 2 (and so on)**
 
-10. **Data Requirements**  (e.g., formatting)
+6. **Data Requirements**  (e.g., formatting)
 
 
-11. **External Interface Requirements**
+7. **External Interface Requirements**
    1. User Interfaces
 
       Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
@@ -143,11 +143,11 @@
 
       Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
 
-11. **Software Quality Attributes**
+8. **Software Quality Attributes**
 
     Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
 
-12. **Analysis Models**
+9. **Analysis Models**
 
 
-13. **Appendix**   
+10. **Appendix**   
