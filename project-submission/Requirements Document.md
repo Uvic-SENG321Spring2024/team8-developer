@@ -11,7 +11,27 @@
 
 1. **Overview**
 
-      Provide an overview of the sections and contents of the document
+      This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. These sections are outlined in the list below.
+
+1 Overview \
+2 Business Requirements \
+&nbsp;&nbsp;&nbsp;&nbsp;i. Background \
+&nbsp;&nbsp;&nbsp;&nbsp;ii. Business Opportunity \
+&nbsp;&nbsp;&nbsp;&nbsp;iii. Business Objectives \
+&nbsp;&nbsp;&nbsp;&nbsp;iv. Success Metrics \
+&nbsp;&nbsp;&nbsp;&nbsp;v. Product Vision Statement \
+3 Scope and Limitations \
+&nbsp;&nbsp;&nbsp;&nbsp;i. Major Features \
+&nbsp;&nbsp;&nbsp;&nbsp;ii. Project Scope \
+&nbsp;&nbsp;&nbsp;&nbsp;iii. Limitations and Exclusions \
+4 Context Description \
+&nbsp;&nbsp;&nbsp;&nbsp;i. User Classes and Characteristics \
+&nbsp;&nbsp;&nbsp;&nbsp;ii. Operating Environment \
+&nbsp;&nbsp;&nbsp;&nbsp;iii. Design and Implementation Constraints \
+&nbsp;&nbsp;&nbsp;&nbsp;iv. Assumptions and Dependencies \
+&nbsp;&nbsp;&nbsp;&nbsp;v. Glossary of Terms \
+&nbsp;&nbsp;&nbsp;&nbsp;vi. References 
+   
 2. Business Requirements
 
    1. **Background**
