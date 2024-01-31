@@ -57,7 +57,6 @@
             * Advanced scheduling functionalities (creation, editing, approval, etc)
             * Access to training modules and documents
             * New employee account creation
-            * Inventory management features
             * Announcement creation and management
             * Communication channels for group or individual messaging
          * **Importance:** Favored user class since there role is critical for staff management and communication
