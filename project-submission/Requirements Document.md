@@ -7,7 +7,7 @@
 |  |  | | |
 |  |  | | |
 |  |  | | |
-|  Justin Drastil | Jan 30, 2024 | Created draft for section 4.1 | 1.4 |
+|  |  | | |
 
 1. **Overview**
 
@@ -45,19 +45,21 @@
 
    1. **User Classes and Characteristics**
 
-        Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the favored user classes from those who are less important to satisfy.
+        When creating a centralized platform for Banter Ice Cream, understanding the diverse user classes is crutial to craft an efficient and user-centric platform that seamlessly integrates with Banter Ice Cream's opperational needs.
       
       * **Front of House / Kitchen Managers:**
          * **Characteristics:**
             * High frequency of use (daily or weekly)
-            * Responsible for scheduling, training, and managing staff
+            * Responsible for scheduling, training, announcements, and managing staff
             * Has a supervisory role
             * Moderate to high technical expertise
          * **Requirements:**
             * Advanced scheduling functionalities (creation, editing, approval, etc)
             * Access to training modules and documents
+            * New employee account creation
             * Inventory management features
             * Announcement creation and management
+            * Communication channels for group or individual messaging
          * **Importance:** Favored user class since there role is critical for staff management and communication
       * **Bookkeeper:**
          * **Characteristics:**
