@@ -15,7 +15,7 @@
 2. Business Requirements
 
    1. **Background**
-   Summarize the rationale and context for the new product or for changes to be made to an existing one. 
+   The client wants an improvement or replacement of the key software that they are using for scheduling, communication, and payroll management. The current scheduling system they use, HomeBase, lacks certain features such as allowing staff to view who is working making it difficult for staff to pick up and transfer shifts with other employees. In addition, the scheduling system does not interface with their financial service, Quickbooks, meaning manually recording and inputting data such as hours, holidays, overtime and sick days is required to manage finances. The other piece of software they are having issues with is BaseCamp. BaseCamp is used for staff wide announcements and for posting updates regarding open shifts and news regarding the company. Having multiple pieces of software to receive information tends to make some employees never check BaseCamp meaning important announcements are missed. The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish.
 
    2. **Business Opportunity**
    Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
