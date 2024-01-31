@@ -7,7 +7,7 @@
 |  |  | | |
 |  |  | | |
 |  |  | | |
-|  |  | | |
+|  Justin Drastil | Jan 30, 2024 | Created draft for section 4.1 | 1.4 |
 
 1. **Overview**
 
@@ -43,32 +43,94 @@
 
 4. **Context Description**
 
-
-
-
    1. **User Classes and Characteristics**
 
         Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the favored user classes from those who are less important to satisfy.
+      
+      * **Front of House / Kitchen Managers:**
+         * **Characteristics:**
+            * High frequency of use (daily or weekly)
+            * Responsible for scheduling, training, and managing staff
+            * Has a supervisory role
+            * Moderate to high technical expertise
+         * **Requirements:**
+            * Advanced scheduling functionalities (creation, editing, approval, etc)
+            * Access to training modules and documents
+            * Inventory management features
+            * Announcement creation and management
+         * **Importance:** Favored user class since there role is critical for staff management and communication
+      * **Bookkeeper:**
+         * **Characteristics:**
+            * Moderate frequency use (mostly during payroll periods)
+            * Focus on accounting, payroll, and tracking work hours
+            * High technical expertise in accounting software
+         * **Requirements:**
+            * Integration with Quickbooks for payroll
+            * Hours need to be summarized with overtime, holiday, etc
+            * Data export capabilities for accounting purposes (export hours worked, etc)
+         * **Importance:** Critical for financial management (favored class during specific periods)
+      * **Delivery Drivers:**
+         * **Characteristics:**
+            * Use during sporadic weekly shifts
+            * Main focus on clocking in/out and communication
+            * May have different levels of technical expertise
+         * **Requirements:**
+            * Simple and efficient clock-in/clock-out features
+            * Communication channel for shift-related updates
+            * Real-time schedule accessibility
+         * **Importance:** Frequent users which have direct impact on customer satisfaction (favored user class)
+      * **Front of House / Kitchen Staff:**
+         * **Characteristics:**
+            * Daily use during shifts
+            * Main focus on clocking in/out, receiving updates, and managing shifts
+            * May have different levels of technical expertise
+         * **Requirements:**
+            * Intuitive clock-in/clock-out features
+            * User-friendly interface for shift management
+            * Communication channels for shift coverage and updates
+         * **Importance:** Frequent users with direct impact on customer satisfaction (favored user class)
+      * **Customers (Indirect Users):**
+         * **Characteristics:**
+            * Infrequent interaction
+            * Interacts with the system indirectly through the accuracy of information provided by employees
+            * Little technical expertise
+         * **Requirements:**
+            * Able to see accurate and up-to-date information about products
+            * Limited access to internal system functionalities
+         * **Importance:** customer satisfaction is crucial (favored user in terms of customer impact)
+      * **New Employees (During Onboarding):**
+         * **Characteristics:**
+            * Limited initial interaction
+            * Low technical expertise during onboarding phase
+         * **Requirements:**
+            * Clear and concise onboarding information
+            * Notifications for new schedules or training sessions 
+         * **Importance:** Critical during onboarding phase (favored for ease of learning)
+      * **Favored User Classes:**
+         * **Priority Users:** Front of House / Kitchen Managers, Bookkeeper, Front of House / Kitchen Staff
+         * **Critical Impact Users:** Customers (Indirect Users)
+         * **Support Users:** New Employees (During Onboarding)
+         * **Transactional Users:** Delivery Drivers
 
-   2. **Operating Environment**
+   3. **Operating Environment**
 
         Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
 
 
-   3. **Design and Implmentation Constraints**
+   4. **Design and Implmentation Constraints**
 
         Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
 
 
-   4. **Assumptions and Dependencies**
+   5. **Assumptions and Dependencies**
 
         List any assumed factors (as opposed to known facts) that could affect the requirements stated in the RD. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project.
-   5. **Glossary of Terms**
+   6. **Glossary of Terms**
 
       Define all the terms necessary to properly interpret the RD, including acronyms and abbreviations.
 
 
-   6. **References**
+   7. **References**
 
       List any other documents or Web addresses to which this RD refers. These may include user interface style guides, contracts, standards, system requirements specifications or use case documents. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
