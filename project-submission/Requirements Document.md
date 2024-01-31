@@ -46,10 +46,23 @@
    4. **Success Metrics**
    Indicators that stakeholders will use to define and measure success on the project. What are the factors that will have the greatest impact on achieving success (i.e., could include aspects within and external to the organization).
 
+Below are some of the factors that will grant the highest impact on achieving success: 
+
+Communication Improvements: Combining HomeBase, and BaseCamp into one system (website/app). Manager, and staff can message each other easier. 
+
+Announcement Accesses: Staff are better notified of the announcements, available shifts, and notified of new shift schedules by 25%. 
+
+Uncovered Shifts: In succession of this system, the number uncovered shifts are reduced by 50%. 
+
+Customer Satisfaction with the System: It’s easy for customers to use the system, and look up anything, and give more positive reviews, or interact with the company through direct messaging. This increased the overall customer satisfaction by 25%. 
+
+Correct Access Rights: Managers, and other high authorized personnel have access to everything in the system (like banking, payroll, employee documents), employees have access to their personal information, employee announcements (for available shifts, and new schedules), their schedules, recipes, ingredients, etc…, and customers have access to public announcements, and company products in display to buy and/or review. 
+
    5. **Product Vision Statement**
    Write a concise vision statement that summarizes the long-term purpose and intent of the product.   Describe the context and origin of the product being specified in this RD. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the RD defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful but not required.
 
 
+The intended scheduling and communication system seeks to make trading shifts amongst staff easier and to improve communication between the managers, and employees in the ice cream business. This is done by combining the systems that are currently used, HomeBase and BaseCamp. The long-term goal of this product is to reduce miscommunications among the staff, increase employee engagement of the system, improve the creation of staff schedules, and employees improving customer satisfaction by providing accurate information.
 
 
 3. Scope and Limitations
