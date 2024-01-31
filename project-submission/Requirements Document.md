@@ -11,7 +11,27 @@
 
 1. **Overview**
 
-      Provide an overview of the sections and contents of the document
+      This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. These sections are outlined in the list below.
+
+1 Overview \
+2 Business Requirements \
+&nbsp;&nbsp;&nbsp;&nbsp;2.1 Background \
+&nbsp;&nbsp;&nbsp;&nbsp;2.2 Business Opportunity \
+&nbsp;&nbsp;&nbsp;&nbsp;2.3 Business Objectives \
+&nbsp;&nbsp;&nbsp;&nbsp;2.4 Success Metrics \
+&nbsp;&nbsp;&nbsp;&nbsp;2.5 Product Vision Statement \
+3 Scope and Limitations \
+&nbsp;&nbsp;&nbsp;&nbsp;3.1 Major Features \
+&nbsp;&nbsp;&nbsp;&nbsp;3.2 Project Scope \
+&nbsp;&nbsp;&nbsp;&nbsp;3.3 Limitations and Exclusions \
+4 Context Description \
+&nbsp;&nbsp;&nbsp;&nbsp;4.1. User Classes and Characteristics \
+&nbsp;&nbsp;&nbsp;&nbsp;4.2 Operating Environment \
+&nbsp;&nbsp;&nbsp;&nbsp;4.3 Design and Implementation Constraints \
+&nbsp;&nbsp;&nbsp;&nbsp;4.4 Assumptions and Dependencies \
+&nbsp;&nbsp;&nbsp;&nbsp;4.5 Glossary of Terms \
+&nbsp;&nbsp;&nbsp;&nbsp;4.6 References 
+   
 2. Business Requirements
 
    1. **Background**
@@ -73,7 +93,7 @@
       List any other documents or Web addresses to which this RD refers. These may include user interface style guides, contracts, standards, system requirements specifications or use case documents. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
 
-5. **System Features** (Due Iteration 2 and beyond)
+9. **System Features** (Due Iteration 2 and beyond)
 
     This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
@@ -103,10 +123,10 @@
 
    3. **System Feature 2 (and so on)**
 
-6. **Data Requirements**  (e.g., formatting)
+10. **Data Requirements**  (e.g., formatting)
 
 
-7. **External Interface Requirements**
+11. **External Interface Requirements**
    1. User Interfaces
 
       Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
@@ -123,11 +143,11 @@
 
       Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
 
-8. **Software Quality Attributes**
+11. **Software Quality Attributes**
 
     Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
 
-9. **Analysis Models**
+12. **Analysis Models**
 
 
-10. **Appendix**   
+13. **Appendix**   
