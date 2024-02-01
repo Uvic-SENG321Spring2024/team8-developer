@@ -162,7 +162,7 @@
 
    5. **Assumptions and Dependencies**
 
-        - We assume that all employees working at Banter have smartphones and that it has the network to run the newly developed system.
+        - We assume that all employees working at Banter have smartphones that are capable of connecting to the internet to update. 
         - The new system will interface with existing systems except Quickbooks and will need to connect all departments and customers to a centralized database. And we assume there is no encryption protocol, which is required so that data can be transmitted securely between departments.
 
    6. **Glossary of Terms**
