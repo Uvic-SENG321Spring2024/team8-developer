@@ -58,11 +58,44 @@
 
 
 3. Scope and Limitations
-   1. **Major Features**
-      Summarize the major features the product contains or the significant functions that it performs or lets the user perform. Details will be provided in Section 5, so only a high level summary is needed here. Organize the functions to make them understandable to any reader of the RD. Think about how users will use the features to ensure the list is complete. Also ensure that it does not include unnecessary features that sound interesting, but does not provide customer value.     
+  # **3.1 Major Features**
 
-   2. **Project Scope**
-   Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies.
+## **1. Centralized Communication and Scheduling System**
+
+- Combines features of Homebase and Basecamp into a single, streamlined platform.
+- Allows company-wide announcements, shift swapping, and personal messaging.
+- Provides visibility of monthly ice cream flavors, events, and other important updates.
+
+## **2. Automated Payroll and Hours Tracking**
+
+- Integrates with Quickbooks for seamless payroll management.
+- Automatically tracks employee hours, including regular, overtime, sick days, and holidays.
+- Reduces manual entry errors and streamlines the invoicing process.
+
+## **3. Enhanced Scheduling Flexibility**
+
+- Offers a calendar view for both managers and employees to view and manage shifts.
+- Enables easy shift swapping and visibility of staff schedules across different days.
+
+## **4. Optimized Onboarding and Training**
+
+- Offers an easy way for new employees to familiarize with the software platform.
+- Simplifies learning curve with a unified system replacing multiple apps.
+
+## **5. Role-based Access and Functionality**
+
+- Different access levels for managers, bookkeepers, delivery drivers, and staff.
+- Tailored interfaces and features depending on the user’s role within the company.
+
+## **6. Real-time Communication for Delivery and Logistics**
+
+- Special features for delivery drivers to communicate with management and clock in/out.
+- Ensures smooth coordination between different locations.
+
+# **3.2 Project Scope**
+
+The software being developed is a comprehensive employee management and communication system designed specifically for Banter Ice Cream. Its purpose is to consolidate various existing systems (Homebase, Basecamp, Quickbooks) into one centralized platform, improving internal communication, scheduling efficiency, and payroll management. The anticipated benefits include better-informed employees, streamlined shift management, reduced manual errors in payroll, and an overall increase in operational efficiency. This directly aligns with the company's objectives of enhancing customer satisfaction, improving employee engagement, and facilitating business growth through better internal management practices.
+
 
    3. **Limitations and Exclusions**
 
