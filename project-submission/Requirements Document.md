@@ -187,21 +187,30 @@ The software being developed is a comprehensive employee management and communic
 
    3. **Operating Environment**
 
-        Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
+        The ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. It would be helpful for managers to also have an application viewable on desktop, supporting both Google Chrome and Firefox browsers.
 
 
    4. **Design and Implmentation Constraints**
 
-        Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
+         The system must adhere to the following design and implementation constraints.
+        - Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use payroll information to pay employees.
+        - More than 70 people need to be able to access the software.
+
 
 
    5. **Assumptions and Dependencies**
 
-        List any assumed factors (as opposed to known facts) that could affect the requirements stated in the RD. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project.
+          
+         The following assumptions and dependencies affect the requirements in this document.
+        - We assume that all employees working at Banter have smartphones that are capable of connecting to the internet to update. 
+        - We assume that we are able to interface with existing systems (Quickbooks).
+
    6. **Glossary of Terms**
 
-      Define all the terms necessary to properly interpret the RD, including acronyms and abbreviations.
-
+     | **Word**  | **Definition** |
+     | ------------- | ------------- |
+     |  Banter |  An Ice Cream shop located in Abbotsford, BC and Chilliwack, BC. |
+   
 
    7. **References**
 
