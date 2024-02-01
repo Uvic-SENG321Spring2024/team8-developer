@@ -92,29 +92,29 @@ The product intends to improve communication between staff at Banter. This will 
 
 ## i. **Major Features** <a name="features"></a>
 
-**1. Centralized Communication and Scheduling System:**
+**Centralized Communication and Scheduling System:**
    - Combines features of Homebase and Basecamp into a single, streamlined platform.
    - Allows company-wide announcements, shift swapping, and personal messaging.
    - Provides visibility of monthly ice cream flavors, events, and other important updates.
 
-**2. Automated Payroll and Hours Tracking:**
+**Automated Payroll and Hours Tracking:**
    - Integrates with Quickbooks for seamless payroll management.
    - Automatically tracks employee hours, including regular, overtime, sick days, and holidays.
    - Reduces manual entry errors and streamlines the invoicing process.
  
-**3. Enhanced Scheduling Flexibility:**
+**Enhanced Scheduling Flexibility:**
    - Offers a calendar view for both managers and employees to view and manage shifts.
    - Enables easy shift swapping and visibility of staff schedules across different days.
       
-**4. Optimized Onboarding and Training:**
+**Optimized Onboarding and Training:**
    - Offers an easy way for new employees to familiarize with the software platform.
    - Simplifies learning curve with a unified system replacing multiple apps.
       
-**5. Role-based Access and Functionality:**
+**Role-based Access and Functionality:**
    - Different access levels for managers, bookkeepers, delivery drivers, and staff.
    - Tailored interfaces and features depending on the user’s role within the company.
       
-**6. Real-time Communication for Delivery and Logistics:**
+**Real-time Communication for Delivery and Logistics:**
    - Special features for delivery drivers to communicate with management and clock in/out.
    - Ensures smooth coordination between different locations.
 
@@ -126,13 +126,13 @@ The software being developed is a comprehensive employee management and communic
 
 ## iii. **Limitations and Exclusions** <a name="limitations"></a>
 
-**1. Inventory Management System**
+**Inventory Management System**
    - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
 
-**2. Recipe Management**
+**Recipe Management**
    - Recipe Management was a desired feature but will not be a priority to include in the system. This is because it may not integrate well with the other features, and there are alternate solutions outside of the system.
 
-**3. Automated Data Migration**
+**Automated Data Migration**
    - Automated Data Migration to the new system may be a difficult feature to implement. It will be implemented if possible but may be more practical to do manually since it’s a one-time action.
 
 # 4 Context Description <a name="context"></a>
