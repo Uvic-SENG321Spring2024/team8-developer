@@ -72,7 +72,7 @@ The product intends to improve communication between staff at Banter. This will 
 
 
 # 3 Scope and Limitations
-## i Major Features
+## i. Major Features
 
 **1. Centralized Communication and Scheduling System:**
    - Combines features of Homebase and Basecamp into a single, streamlined platform.
@@ -134,7 +134,7 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * New employee account creation
    * Announcement creation and management
    * Communication channels for group or individual messaging
-   * * **Importance:** Favored user class since there role is critical for staff management and communication
+* **Importance:** Favored user class since there role is critical for staff management and communication
 
 **Bookkeeper:**
 * **Characteristics:**
@@ -159,7 +159,7 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
 * **Importance:** Frequent users which have direct impact on customer satisfaction (favored user class)
 
 **Front of House / Kitchen Staff:**
-  * **Characteristics:**
+* **Characteristics:**
    * Daily use during shifts
    * Main focus on clocking in/out, receiving updates, and managing shifts
    * May have different levels of technical expertise
