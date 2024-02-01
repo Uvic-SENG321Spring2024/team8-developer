@@ -45,13 +45,15 @@
    2. **Business Opportunity**
    Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address.
 
-   3. **Business Objectives**
+<br>The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, automatic in many aspects, and includes improved functionalities compared to what the old system offers. The new product will add enhanced functionalities to the current scheduling system (ex. sick days, stat holiday), for example allow clients to track the number of hours that each employee has in said days, and offer easier shift swapping and visibility of staff schedules everyday. It should also include message and announcement capability that is similar to how homebase and basecamp works, allowing employees and managers to communicate directly within the system through messages or announcements, and also provide store customers with information regarding monthly ice-cream flavor, events, and other updates. Furthermore, it will have an automated payroll managing feature that can greatly reduce errors and time it take to bookkeeping compared to manual entry of payroll information. At last, onboarding and training of new employees will be easier with the new simpler system and staff of every role will have access level to the system that is unique to their roles. <br>
+
+   4. **Business Objectives**
    Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
 
-   4. **Success Metrics**
+   5. **Success Metrics**
    Indicators that stakeholders will use to define and measure success on the project. What are the factors that will have the greatest impact on achieving success (i.e., could include aspects within and external to the organization).
 
-   5. **Product Vision Statement**
+   6. **Product Vision Statement**
    Write a concise vision statement that summarizes the long-term purpose and intent of the product.   Describe the context and origin of the product being specified in this RD. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the RD defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful but not required.
 
 
