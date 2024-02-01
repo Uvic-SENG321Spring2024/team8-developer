@@ -118,16 +118,14 @@ Banter Ice Cream's new system will faciliate business growth through better inte
 The software being developed is a comprehensive employee management and communication system designed specifically for Banter Ice Cream. Its purpose is to consolidate various existing systems (Homebase, Basecamp, Quickbooks) into one centralized platform, improving internal communication, scheduling efficiency, and payroll management. The anticipated benefits include better-informed employees, streamlined shift management, reduced manual errors in payroll, and an overall increase in operational efficiency. This directly aligns with the company's objectives of enhancing customer satisfaction, improving employee engagement, and facilitating business growth through better internal management practices.
 
 ## 3.3 Limitations and Exclusions
+**Inventory Management System**
+- Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
 
+**Recipe Management**
+- Recipe Management was a desired feature but will not be a priority to include in the system. This is because it may not integrate well with the other features, and there are alternate solutions outside of the system.
 
-      **Inventory Management System**
-      - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
-      
-      **Recipe Management**
-      - Recipe Management was a desired feature but will not be a priority to include in the system. This is because it may not integrate well with the other features, and there are alternate solutions outside of the system.
-      
-      **Automated Data Migration**
-      - Automated Data Migration to the new system may be a difficult feature to implement. It will be implemented if possible but may be more practical to do manually since it’s a one-time action.
+**Automated Data Migration**
+- Automated Data Migration to the new system may be a difficult feature to implement. It will be implemented if possible but may be more practical to do manually since it’s a one-time action.
 
  
 5. **Context Description**
