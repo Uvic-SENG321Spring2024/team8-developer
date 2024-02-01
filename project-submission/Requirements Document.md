@@ -102,6 +102,7 @@ The software being developed is a comprehensive employee management and communic
 
 ## 3.3 Limitations and Exclusions
 
+
       **Inventory Management System**
       - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
       
@@ -112,7 +113,7 @@ The software being developed is a comprehensive employee management and communic
       - Automated Data Migration to the new system may be a difficult feature to implement. It will be implemented if possible but may be more practical to do manually since it’s a one-time action.
 
  
-3. **Context Description**
+5. **Context Description**
 
    1. **User Classes and Characteristics**
 
@@ -184,24 +185,24 @@ The software being developed is a comprehensive employee management and communic
          * **Support Users:** New Employees (During Onboarding)
          * **Transactional Users:** Delivery Drivers
 
-   2. **Operating Environment**
+   3. **Operating Environment**
 
         Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
 
 
-   3. **Design and Implmentation Constraints**
+   4. **Design and Implmentation Constraints**
 
         Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
 
 
-   4. **Assumptions and Dependencies**
+   5. **Assumptions and Dependencies**
 
         List any assumed factors (as opposed to known facts) that could affect the requirements stated in the RD. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project.
-   5. **Glossary of Terms**
+   6. **Glossary of Terms**
 
       Define all the terms necessary to properly interpret the RD, including acronyms and abbreviations.
 
 
-   6. **References**
+   7. **References**
 
       No references used in this document.
