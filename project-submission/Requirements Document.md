@@ -44,10 +44,23 @@ This document will explore an opportunity to centralize Banter Ice Cream’s int
 The client wants an improvement of the software that they are using for scheduling, communication, and payroll management. Banter's current scheduling system, Homebase, lacks certain features resulting in employees having difficulty switching shifts. One feature missing is the ability for staff to view the schedules of other employees working at their location. In addition, the scheduling system does not interface with their financial service, Quickbooks, resulting in manually recording and inputting data such as hours, holidays, overtime, and sick days is required to manage finances. Basecamp is used for staff wide announcements and news regarding the company. Having multiple pieces of software used to receive messages results in Basecamp being checked infrequently and employees missing important announcements. The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish.
 
 ## ii. **Business Opportunity**
-Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
+The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, automatic in many aspects, and includes improved functionalities compared to what the old system offers. 
+
+The new product will add enhanced functionalities to the current scheduling system. One new functionality is allowing clients to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer easier shift swapping and visibility of staff schedules everyday. 
+
+The new product will also include enhanced communication functionality. It should also include message and announcement capability that is similar to the current systems, Homebase and Basecamp. It will allow employees and managers to communicate directly within the system through messages or announcements. The updated announcements will allow employees to provide store customers with information regarding monthly ice-cream flavor, events, and other updates. 
+
+Furthermore, the new product will have an automated payroll managing feature that will greatly reduce manual errors and time it take to bookkeeping compared to manual entry of payroll information. 
+
+At last, onboarding and training of new employees will be easier with the new system and staff of every role will have access level to the system that is unique to their roles. 
 
 ## iii. **Business Objectives**
-Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
+
+Banter Ice Cream's new system will faciliate business growth through better internal management practices. The following objectives will all contribute to the increased business growth.
+* Improve employee engagement through a unified communication platform.
+* Improve customer satisfaction because the employees will be better informed of ice cream flavour changes and the new scheduling system will reduce the occurances of understaffing.
+* Reduce time and manual errors associated with paying employees, as the new system will automatically calculate hours associated with sick days, holidays, and overtime.
+* Reduce costs and time associated with onboarding new employees, as a single unified system will be easier to learn than multiple applications.
 
 ## iv. **Success Metrics**
       
@@ -70,6 +83,10 @@ Better integration with Quickbooks and automatic calculation of statutory holida
 ## v. **Product Vision Statement**
 The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
 
+
+
+   6. **Product Vision Statement**
+   The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
 
 # 3 Scope and Limitations
 ## i. Major Features
