@@ -59,7 +59,7 @@ Customer Satisfaction with the System: It’s easy for customers to use the syst
 Correct Access Rights: Managers, and other high authorized personnel have access to everything in the system (like banking, payroll, employee documents), employees have access to their personal information, employee announcements (for available shifts, and new schedules), their schedules, recipes, ingredients, etc…, and customers have access to public announcements, and company products in display to buy and/or review. 
 
    5. **Product Vision Statement**
-   The intended system seeks to improve communication between staff at Banter, reduce scheduling confusion, and minimize time spent manually calculating hours. This will be done by combining the systems that are currently used which are Homebase and Basecamp. The long-term goal of this product is to reduce miscommunications among the staff, increase employee engagement with the system, streamline the creation of staff schedules, and improve customer satisfaction through employees providing accurate and up to date information.
+   The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
 
 
 3. Scope and Limitations
