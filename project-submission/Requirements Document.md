@@ -104,15 +104,15 @@ The software being developed is a comprehensive employee management and communic
 
 1. **Inventory Management System**
 
-- Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
+      - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
 
 2. **Recipe Management**
 
-- Recipe Management was a desired feature but will not be a priority to include in the system. This is because it may not integrate well with the other features, and there are alternate solutions outside of the system.
+      - Recipe Management was a desired feature but will not be a priority to include in the system. This is because it may not integrate well with the other features, and there are alternate solutions outside of the system.
 
 3. **Automated Data Migration**
 
-- Automated Data Migration to the new system may be a difficult feature to implement. It will be implemented if possible but may be more practical to do manually since it’s a one-time action.
+      - Automated Data Migration to the new system may be a difficult feature to implement. It will be implemented if possible but may be more practical to do manually since it’s a one-time action.
 
 5. **Context Description**
 
