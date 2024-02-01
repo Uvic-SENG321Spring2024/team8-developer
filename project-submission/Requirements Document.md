@@ -155,7 +155,7 @@
 
    4. **Design and Implmentation Constraints**
 
-        - Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at some location). Only managers have access to other people's information.
+        - Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use payroll information to pay employees.
         - More than 70 people need to be able to access the software.
 
 
