@@ -54,7 +54,7 @@ The new product will also include enhanced communication functionality. It shoul
 
 Furthermore, the new product will have an automated payroll managing feature that will greatly reduce manual errors and time it take to bookkeeping compared to manual entry of payroll information. 
 
-At last, onboarding and training of new employees will be easier with the new system and staff of every role will have access level to the system that is unique to their roles. 
+At last, onboarding and training of new employees will be easier with the new system and staff of every role will have different access levels to the system that are unique to their roles. 
 
 
 ## iii. **Business Objectives** <a name="objective"></a>
