@@ -90,7 +90,7 @@ The product intends to improve communication between staff at Banter. This will 
 
 # 3. Scope and Limitations <a name="scope"></a>
 
-## i. Major Features <a name="features"></a>
+## i. **Major Features** <a name="features"></a>
 
 **1. Centralized Communication and Scheduling System:**
    - Combines features of Homebase and Basecamp into a single, streamlined platform.
