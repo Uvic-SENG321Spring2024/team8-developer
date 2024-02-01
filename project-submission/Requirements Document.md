@@ -150,7 +150,7 @@
 
    3. **Operating Environment**
 
-        The ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. In contrast, for the managers, a robust desktop application, supporting Windows 10 or 11, is most effective.
+        The ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. It would be helpful for managers to also have an application viewable on desktop, supporting both Google Chrome and Firefox browsers.
 
 
    4. **Design and Implmentation Constraints**
