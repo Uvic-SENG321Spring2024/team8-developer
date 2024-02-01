@@ -13,7 +13,7 @@
 | Nolan Curtis | January 30, 2024 | Created draft for 2.1 | 1.6 |
 | Tim Xu | January 30, 2024 | Created draft for 2.2 and 2.3 | 1.7 |
 | Everyone | January 30, 2024 | Review and edit sections | 1.8 |
-| Everyone | January 31, 2024 | Further review | 1.9 |
+| Everyone | January 31, 2024 | Further review and change formatting | 1.9 |
 
 # 1. **Overview**
 
@@ -43,6 +43,7 @@ This document will explore an opportunity to centralize Banter Ice Cream’s int
 ## i. **Background**
 The client wants an improvement of the software that they are using for scheduling, communication, and payroll management. Banter's current scheduling system, Homebase, lacks certain features resulting in employees having difficulty switching shifts. One feature missing is the ability for staff to view the schedules of other employees working at their location. In addition, the scheduling system does not interface with their financial service, Quickbooks, resulting in manually recording and inputting data such as hours, holidays, overtime, and sick days is required to manage finances. Basecamp is used for staff wide announcements and news regarding the company. Having multiple pieces of software used to receive messages results in Basecamp being checked infrequently and employees missing important announcements. The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish.
 
+
 ## ii. **Business Opportunity**
 The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, automatic in many aspects, and includes improved functionalities compared to what the old system offers. 
 
@@ -54,6 +55,7 @@ Furthermore, the new product will have an automated payroll managing feature tha
 
 At last, onboarding and training of new employees will be easier with the new system and staff of every role will have access level to the system that is unique to their roles. 
 
+
 ## iii. **Business Objectives**
 
 Banter Ice Cream's new system will faciliate business growth through better internal management practices. The following objectives will all contribute to the increased business growth.
@@ -61,6 +63,7 @@ Banter Ice Cream's new system will faciliate business growth through better inte
 * Improve customer satisfaction because the employees will be better informed of ice cream flavour changes and the new scheduling system will reduce the occurances of understaffing.
 * Reduce time and manual errors associated with paying employees, as the new system will automatically calculate hours associated with sick days, holidays, and overtime.
 * Reduce costs and time associated with onboarding new employees, as a single unified system will be easier to learn than multiple applications.
+
 
 ## iv. **Success Metrics**
       
@@ -80,15 +83,12 @@ This will ensure employees see the announcements about monthly ice cream flavors
       
 Better integration with Quickbooks and automatic calculation of statutory holiday and overtime pay should save the bookkeeper time. This will ideally save the bookkeeper over 5 hours per pay period.
 
+
 ## v. **Product Vision Statement**
 The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
 
+# 3. Scope and Limitations
 
-
-   6. **Product Vision Statement**
-   The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
-
-# 3 Scope and Limitations
 ## i. Major Features
 
 **1. Centralized Communication and Scheduling System:**
@@ -117,9 +117,11 @@ The product intends to improve communication between staff at Banter. This will 
    - Special features for delivery drivers to communicate with management and clock in/out.
    - Ensures smooth coordination between different locations.
 
+
 ## ii. **Project Scope**
 
 The software being developed is a comprehensive employee management and communication system designed specifically for Banter Ice Cream. Its purpose is to consolidate various existing systems (Homebase, Basecamp, Quickbooks) into one centralized platform, improving internal communication, scheduling efficiency, and payroll management. The anticipated benefits include better-informed employees, streamlined shift management, reduced manual errors in payroll, and an overall increase in operational efficiency. This directly aligns with the company's objectives of enhancing customer satisfaction, improving employee engagement, and facilitating business growth through better internal management practices.
+
 
 ## iii. **Limitations and Exclusions**
 
@@ -211,9 +213,11 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
 * **Support Users:** New Employees (During Onboarding)
 * **Transactional Users:** Delivery Drivers
 
+
 ## ii. **Operating Environment**
 
 The ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. It would be helpful for managers to also have an application viewable on desktop, supporting both Google Chrome and Firefox browsers.
+
 
 ## iii. **Design and Implmentation Constraints**
 
@@ -221,17 +225,20 @@ The system must adhere to the following design and implementation constraints.
 - Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use payroll information to pay employees.
 - More than 70 people need to be able to access the software.
 
+
 ## iv. **Assumptions and Dependencies**
 
 The following assumptions and dependencies affect the requirements in this document.
 - We assume that all employees working at Banter have smartphones that are capable of connecting to the internet to update. 
 - We assume that we are able to interface with existing systems (Quickbooks).
 
+
 ## v. **Glossary of Terms**
 
 | **Word**  | **Definition** |
 | ------------- | ------------- |
 |  Banter |  An ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. |
+
 
 ## vi. **References**
 
