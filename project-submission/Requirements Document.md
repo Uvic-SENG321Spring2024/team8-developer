@@ -19,7 +19,7 @@
 
 This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. These sections are outlined in the list below.
 
-## Table of Contents
+## **Table of Contents**
 1. [Overview](#overview)
 2. [Business Requirements](#requirements)
    1. [Background](#background)
