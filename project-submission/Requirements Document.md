@@ -150,21 +150,27 @@
 
    3. **Operating Environment**
 
-        Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
+        The ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. In contrast, for the managers, a robust desktop application, supporting Windows 10 or 11, is most effective.
 
 
    4. **Design and Implmentation Constraints**
 
-        Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
+        - Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at some location). Only managers have access to other people's information.
+        - More than 70 people need to be able to access the software.
+
 
 
    5. **Assumptions and Dependencies**
 
-        List any assumed factors (as opposed to known facts) that could affect the requirements stated in the RD. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project.
+        - We assume that all employees working at Banter have smartphones and that it has the network to run the newly developed system.
+        - The new system will interface with existing systems except Quickbooks and will need to connect all departments and customers to a centralized database. And we assume there is no encryption protocol, which is required so that data can be transmitted securely between departments.
+
    6. **Glossary of Terms**
 
-      Define all the terms necessary to properly interpret the RD, including acronyms and abbreviations.
-
+     | **Word**  | **Definition** |
+     | ------------- | ------------- |
+     |  Banter |  An Ice Cream shop located in Abbotsford, BC and Chilliwack, BC. |
+   
 
    7. **References**
 
