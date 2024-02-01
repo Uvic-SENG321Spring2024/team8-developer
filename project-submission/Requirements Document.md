@@ -67,7 +67,9 @@ Banter Ice Cream's new system will faciliate business growth through better inte
 
 
 ## iv. **Success Metrics** <a name="success"></a>
-      
+
+The following metrics will be used to measure the success of the system.
+
 **Announcement Accesses**
       
 Staff are better notified of the announcements.  Interactions with the announcements are increased by 50%. This will be measured by replies, reactions, and further questions to the managers.
@@ -91,6 +93,8 @@ The product intends to improve communication between staff at Banter. This will 
 # 3. Scope and Limitations <a name="scope"></a>
 
 ## i. **Major Features** <a name="features"></a>
+
+The following features shall be included in the system.
 
 **Centralized Communication and Scheduling System:**
    - Combines features of Homebase and Basecamp into a single, streamlined platform.
@@ -125,6 +129,8 @@ The software being developed is a comprehensive employee management and communic
 
 
 ## iii. **Limitations and Exclusions** <a name="limitations"></a>
+
+The following features will be excluded from the system.
 
 **Inventory Management System**
    - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
