@@ -168,4 +168,4 @@
 
    7. **References**
 
-      List any other documents or Web addresses to which this RD refers. These may include user interface style guides, contracts, standards, system requirements specifications or use case documents. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
+      No references used in this document.
