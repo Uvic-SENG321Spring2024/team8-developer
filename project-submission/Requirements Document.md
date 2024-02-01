@@ -49,12 +49,26 @@
    Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
 
    4. **Success Metrics**
-   Indicators that stakeholders will use to define and measure success on the project. What are the factors that will have the greatest impact on achieving success (i.e., could include aspects within and external to the organization).
+      
+      **Announcement Accesses**
+      
+      Staff are better notified of the announcements.  Interactions with the announcements are increased by 50%. This will be measured by replies, reactions, and further questions to the managers.
+      
+      **Uncovered Shifts**
+      
+      The number of understaffed shifts due to someone picking up a shift that overlaps with their current shift is reduced by 90%. 
+      
+      **Customer Satisfaction with the System**
+      
+      This will ensure employees see the announcements about monthly ice cream flavors and provide better service to the customers. There should also be less understaffed shifts. This will increase the average of new customer reviews by 0.1 stars.
+      
+      **Bookkeeping Efficiency**
+      
+      Better integration with Quickbooks and automatic calculation of statutory holiday and overtime pay should save the bookkeeper time. This will ideally save the bookkeeper over 5 hours per pay period.
 
-   5. **Product Vision Statement**
-   Write a concise vision statement that summarizes the long-term purpose and intent of the product.   Describe the context and origin of the product being specified in this RD. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the RD defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful but not required.
 
-
+   6. **Product Vision Statement**
+   The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
 
 
 3. Scope and Limitations
