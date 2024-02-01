@@ -46,7 +46,7 @@ The client wants an improvement of the software that they are using for scheduli
 
 
 ## ii. **Business Opportunity** <a name="opportunity"></a>
-The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, automatic in many aspects, and includes improved functionalities compared to what the old system offers. 
+The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, has automation for certain aspects, and includes improved functionalities compared to what the old system offers. 
 
 The new product will add enhanced functionalities to the current scheduling system. One new functionality is allowing clients to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer easier shift swapping and visibility of staff schedules everyday. 
 
