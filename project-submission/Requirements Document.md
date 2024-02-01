@@ -44,21 +44,25 @@
    Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
 
    4. **Success Metrics**
-   Indicators that stakeholders will use to define and measure success on the project. What are the factors that will have the greatest impact on achieving success (i.e., could include aspects within and external to the organization).
+      
+      **Announcement Accesses**
+      
+      Staff are better notified of the announcements.  Interactions with the announcements are increased by 50%. This will be measured by replies, reactions, and further questions to the managers.
+      
+      **Uncovered Shifts**
+      
+      The number of understaffed shifts due to someone picking up a shift that overlaps with their current shift is reduced by 90%. 
+      
+      **Customer Satisfaction with the System**
+      
+      This will ensure employees see the announcements about monthly ice cream flavors and provide better service to the customers. There should also be less understaffed shifts. This will increase the average of new customer reviews by 0.1 stars.
+      
+      **Bookkeeping Efficiency**
+      
+      Better integration with Quickbooks and automatic calculation of statutory holiday and overtime pay should save the bookkeeper time. This will ideally save the bookkeeper over 5 hours per pay period.
 
-Below are some of the factors that will grant the highest impact on achieving success: 
 
-Communication Improvements: Combining HomeBase, and BaseCamp into one system (website/app). Manager, and staff can message each other easier. 
-
-Announcement Accesses: Staff are better notified of the announcements, available shifts, and notified of new shift schedules by 25%. 
-
-Uncovered Shifts: In succession of this system, the number uncovered shifts are reduced by 50%. 
-
-Customer Satisfaction with the System: It’s easy for customers to use the system, and look up anything, and give more positive reviews, or interact with the company through direct messaging. This increased the overall customer satisfaction by 25%. 
-
-Correct Access Rights: Managers, and other high authorized personnel have access to everything in the system (like banking, payroll, employee documents), employees have access to their personal information, employee announcements (for available shifts, and new schedules), their schedules, recipes, ingredients, etc…, and customers have access to public announcements, and company products in display to buy and/or review. 
-
-   5. **Product Vision Statement**
+   6. **Product Vision Statement**
    The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
 
 
