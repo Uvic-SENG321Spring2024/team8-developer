@@ -15,36 +15,37 @@
 | Everyone | January 30, 2024 | Review and edit sections | 1.8 |
 | Everyone | January 31, 2024 | Further review and change formatting | 1.9 |
 
-# 1. **Overview**
+# 1. **Overview** <a name="overview"></a>
 
 This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. These sections are outlined in the list below.
 
-1. Overview
-2. Business Requirements
-   1. Background
-   2. Business Opportunity
-   3. Business Objectives
-   4. Success Metrics
-   5. Product Vision Statement
-3. Scope and Limitations
-   1. Major Features
-   2. Project Scope
-   3. Limitations and Exclusions
-4. Context Description
-   1. User Classes and Characteristics
-   2. Operating Environment
-   3. Design and Implementation Constraints
-   4. Assumptions and Dependencies
-   5. Glossary of Terms
-   6. . References 
-   
-# 2. Business Requirements
+## Table of Contents
+1. [Overview](#overview)
+2. [Business Requirements](#requirements)
+   1. [Background](#background)
+   2. [Buisiness Opportunity](#opportunity)
+   3. [Business Objectives](#objective)
+   4. [Success Metrics](#success)
+   5. [Product Vision Statement](#vision)
+3. [Scope and Limitations](#scope)
+   1. [Major Features](#features)
+   2. [Project Scope](#project-scope)
+   3. [Limitations and Exclusions](#limitations)
+4. [Context Description](#context)
+   1. [User Classes and Characteristics](#user-classes)
+   2. [Operating Environment](#operating-environment)
+   3. [Design and Implementation Constraints](#constraints)
+   4. [Assumptions and Dependencies](#assumptions)
+   5. [Glossary of Terms](#glossary)
+   6. [References](#references)
 
-## i. **Background**
+# 2. Business Requirements <a name="requirements"></a>
+
+## i. **Background** <a name="background"></a>
 The client wants an improvement of the software that they are using for scheduling, communication, and payroll management. Banter's current scheduling system, Homebase, lacks certain features resulting in employees having difficulty switching shifts. One feature missing is the ability for staff to view the schedules of other employees working at their location. In addition, the scheduling system does not interface with their financial service, Quickbooks, resulting in manually recording and inputting data such as hours, holidays, overtime, and sick days is required to manage finances. Basecamp is used for staff wide announcements and news regarding the company. Having multiple pieces of software used to receive messages results in Basecamp being checked infrequently and employees missing important announcements. The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish.
 
 
-## ii. **Business Opportunity**
+## ii. **Business Opportunity** <a name="opportunity"></a>
 The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, automatic in many aspects, and includes improved functionalities compared to what the old system offers. 
 
 The new product will add enhanced functionalities to the current scheduling system. One new functionality is allowing clients to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer easier shift swapping and visibility of staff schedules everyday. 
@@ -56,7 +57,7 @@ Furthermore, the new product will have an automated payroll managing feature tha
 At last, onboarding and training of new employees will be easier with the new system and staff of every role will have access level to the system that is unique to their roles. 
 
 
-## iii. **Business Objectives**
+## iii. **Business Objectives** <a name="objective"></a>
 
 Banter Ice Cream's new system will faciliate business growth through better internal management practices. The following objectives will all contribute to the increased business growth.
 * Improve employee engagement through a unified communication platform.
@@ -65,7 +66,7 @@ Banter Ice Cream's new system will faciliate business growth through better inte
 * Reduce costs and time associated with onboarding new employees, as a single unified system will be easier to learn than multiple applications.
 
 
-## iv. **Success Metrics**
+## iv. **Success Metrics** <a name="success"></a>
       
 **Announcement Accesses**
       
@@ -84,12 +85,12 @@ This will ensure employees see the announcements about monthly ice cream flavors
 Better integration with Quickbooks and automatic calculation of statutory holiday and overtime pay should save the bookkeeper time. This will ideally save the bookkeeper over 5 hours per pay period.
 
 
-## v. **Product Vision Statement**
+## v. **Product Vision Statement** <a name="vision"></a>
 The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
 
-# 3. Scope and Limitations
+# 3. Scope and Limitations <a name="scope"></a>
 
-## i. Major Features
+## i. Major Features <a name="features"></a>
 
 **1. Centralized Communication and Scheduling System:**
    - Combines features of Homebase and Basecamp into a single, streamlined platform.
@@ -118,12 +119,12 @@ The product intends to improve communication between staff at Banter. This will 
    - Ensures smooth coordination between different locations.
 
 
-## ii. **Project Scope**
+## ii. **Project Scope** <a name="project-scope"></a>
 
 The software being developed is a comprehensive employee management and communication system designed specifically for Banter Ice Cream. Its purpose is to consolidate various existing systems (Homebase, Basecamp, Quickbooks) into one centralized platform, improving internal communication, scheduling efficiency, and payroll management. The anticipated benefits include better-informed employees, streamlined shift management, reduced manual errors in payroll, and an overall increase in operational efficiency. This directly aligns with the company's objectives of enhancing customer satisfaction, improving employee engagement, and facilitating business growth through better internal management practices.
 
 
-## iii. **Limitations and Exclusions**
+## iii. **Limitations and Exclusions** <a name="limitations"></a>
 
 **1. Inventory Management System**
    - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
@@ -134,9 +135,9 @@ The software being developed is a comprehensive employee management and communic
 **3. Automated Data Migration**
    - Automated Data Migration to the new system may be a difficult feature to implement. It will be implemented if possible but may be more practical to do manually since it’s a one-time action.
 
-# 4 Context Description
+# 4 Context Description <a name="context"></a>
 
-## i. **User Classes and Characteristics**
+## i. **User Classes and Characteristics** <a name="user-classes"></a>
 
 When creating a centralized platform for Banter Ice Cream, understanding the diverse user classes is crutial to craft an efficient and user-centric platform that seamlessly integrates with Banter Ice Cream's opperational needs.
       
@@ -213,32 +214,32 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
 * **Transactional Users:** Delivery Drivers
 
 
-## ii. **Operating Environment**
+## ii. **Operating Environment** <a name="operating-environment"></a>
 
 The ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. It would be helpful for managers to also have an application viewable on desktop, supporting both Google Chrome and Firefox browsers.
 
 
-## iii. **Design and Implmentation Constraints**
+## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
 
 The system must adhere to the following design and implementation constraints.
 - Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use payroll information to pay employees.
 - More than 70 people need to be able to access the software.
 
 
-## iv. **Assumptions and Dependencies**
+## iv. **Assumptions and Dependencies** <a name="assumptions"></a>
 
 The following assumptions and dependencies affect the requirements in this document.
 - We assume that all employees working at Banter have smartphones that are capable of connecting to the internet to update. 
 - We assume that we are able to interface with existing systems (Quickbooks).
 
 
-## v. **Glossary of Terms**
+## v. **Glossary of Terms** <a name="glossary"></a>
 
 | **Word**  | **Definition** |
 | ------------- | ------------- |
 |  Banter |  An ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. |
 
 
-## vi. **References**
+## vi. **References** <a name="references"></a>
 
 No references used in this document.
