@@ -40,6 +40,7 @@
    Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies.
 
    3. **Limitations and Exclusions**
+   List any product capabilities or characteristics that a stakeholder might expect but that are not planned for inclusion in the product or in a specific release. List items that were cut from scope, so the scope decision is not forgotten.
 
 4. **Context Description**
 
