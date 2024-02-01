@@ -88,7 +88,7 @@ Better integration with Quickbooks and automatic calculation of statutory holida
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
-The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finances management, and improve customer satisfaction by providing accurate and up to date information.
+The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finance management, and improve customer satisfaction by providing accurate and up to date information.
 
 # 3. Scope and Limitations <a name="scope"></a>
 
