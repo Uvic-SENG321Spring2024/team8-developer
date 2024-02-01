@@ -54,51 +54,40 @@
    5. **Product Vision Statement**
    Write a concise vision statement that summarizes the long-term purpose and intent of the product.   Describe the context and origin of the product being specified in this RD. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the RD defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful but not required.
 
+# 3 Scope and Limitations
+## 3.1 Major Features
 
+1. **Centralized Communication and Scheduling System:**
+   - Combines features of Homebase and Basecamp into a single, streamlined platform.
+   - Allows company-wide announcements, shift swapping, and personal messaging.
+   - Provides visibility of monthly ice cream flavors, events, and other important updates.
 
+2. **Automated Payroll and Hours Tracking:**
+   - Integrates with Quickbooks for seamless payroll management.
+   - Automatically tracks employee hours, including regular, overtime, sick days, and holidays.
+   - Reduces manual entry errors and streamlines the invoicing process.
 
-3. Scope and Limitations
-  # **3.1 Major Features**
+3. **Enhanced Scheduling Flexibility:**
+   - Offers a calendar view for both managers and employees to view and manage shifts.
+   - Enables easy shift swapping and visibility of staff schedules across different days.
 
-## **1. Centralized Communication and Scheduling System**
+4. **Optimized Onboarding and Training:**
+   - Offers an easy way for new employees to familiarize with the software platform.
+   - Simplifies learning curve with a unified system replacing multiple apps.
 
-- Combines features of Homebase and Basecamp into a single, streamlined platform.
-- Allows company-wide announcements, shift swapping, and personal messaging.
-- Provides visibility of monthly ice cream flavors, events, and other important updates.
+5. **Role-based Access and Functionality:**
+   - Different access levels for managers, bookkeepers, delivery drivers, and staff.
+   - Tailored interfaces and features depending on the user’s role within the company.
 
-## **2. Automated Payroll and Hours Tracking**
+6. **Real-time Communication for Delivery and Logistics:**
+   - Special features for delivery drivers to communicate with management and clock in/out.
+   - Ensures smooth coordination between different locations.
 
-- Integrates with Quickbooks for seamless payroll management.
-- Automatically tracks employee hours, including regular, overtime, sick days, and holidays.
-- Reduces manual entry errors and streamlines the invoicing process.
-
-## **3. Enhanced Scheduling Flexibility**
-
-- Offers a calendar view for both managers and employees to view and manage shifts.
-- Enables easy shift swapping and visibility of staff schedules across different days.
-
-## **4. Optimized Onboarding and Training**
-
-- Offers an easy way for new employees to familiarize with the software platform.
-- Simplifies learning curve with a unified system replacing multiple apps.
-
-## **5. Role-based Access and Functionality**
-
-- Different access levels for managers, bookkeepers, delivery drivers, and staff.
-- Tailored interfaces and features depending on the user’s role within the company.
-
-## **6. Real-time Communication for Delivery and Logistics**
-
-- Special features for delivery drivers to communicate with management and clock in/out.
-- Ensures smooth coordination between different locations.
-
-# **3.2 Project Scope**
+## 3.2 Project Scope
 
 The software being developed is a comprehensive employee management and communication system designed specifically for Banter Ice Cream. Its purpose is to consolidate various existing systems (Homebase, Basecamp, Quickbooks) into one centralized platform, improving internal communication, scheduling efficiency, and payroll management. The anticipated benefits include better-informed employees, streamlined shift management, reduced manual errors in payroll, and an overall increase in operational efficiency. This directly aligns with the company's objectives of enhancing customer satisfaction, improving employee engagement, and facilitating business growth through better internal management practices.
 
-
-   3. **Limitations and Exclusions**
-
+## 3.3 Limitations and Exclusions
 
       **Inventory Management System**
             - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
