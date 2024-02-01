@@ -43,7 +43,7 @@
    Summarize the rationale and context for the new product or for changes to be made to an existing one. 
 
    2. **Business Opportunity**
-   Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
+   Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address.
 
    3. **Business Objectives**
    Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
