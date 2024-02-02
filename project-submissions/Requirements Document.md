@@ -100,6 +100,7 @@ The following features shall be included in the system.
    - Combines features of Homebase and Basecamp into a single, streamlined platform.
    - Allows company-wide announcements, shift swapping, and personal messaging.
    - Provides visibility of monthly ice cream flavors, events, and other important updates.
+   - Allows image, video, and pdf embeds in announcements and messaging.
 
 **Automated Payroll and Hours Tracking:**
    - Integrates with Quickbooks for seamless payroll management.
@@ -107,7 +108,8 @@ The following features shall be included in the system.
    - Reduces manual entry errors and streamlines the invoicing process.
  
 **Enhanced Scheduling Flexibility:**
-   - Offers a calendar view for both managers and employees to view and manage shifts.
+   - Offers a calendar view for managers to view and manage shifts.
+   - Offers a calendar view for employees to view shifts.
    - Enables easy shift swapping and visibility of staff schedules across different days.
       
 **Optimized Onboarding and Training:**
@@ -115,7 +117,7 @@ The following features shall be included in the system.
    - Simplifies learning curve with a unified system replacing multiple apps.
       
 **Role-based Access and Functionality:**
-   - Different access levels for managers, bookkeepers, delivery drivers, and staff.
+   - Different access levels for managers, bookkeepers, delivery drivers, and staff, as defined in User Classes and Characteristics section of this Requirements Document.
    - Tailored interfaces and features depending on the user’s role within the company.
       
 **Real-time Communication for Delivery and Logistics:**
@@ -125,7 +127,7 @@ The following features shall be included in the system.
 
 ## ii. **Project Scope** <a name="project-scope"></a>
 
-The software being developed is a comprehensive employee management and communication system designed specifically for Banter Ice Cream. Its purpose is to consolidate various existing systems (Homebase, Basecamp, Quickbooks) into one centralized platform, improving internal communication, scheduling efficiency, and payroll management. The anticipated benefits include better-informed employees, streamlined shift management, reduced manual errors in payroll, and an overall increase in operational efficiency. This directly aligns with the company's objectives of enhancing customer satisfaction, improving employee engagement, and facilitating business growth through better internal management practices.
+The software being developed is a comprehensive employee management and communication system designed specifically for Banter Ice Cream. Its purpose is to consolidate existing systems Homebase and Basecamp into one centralized platform that integrates with Quickbooks, improving internal communication, scheduling efficiency, and payroll management. The anticipated benefits include better-informed employees, streamlined shift management, reduced manual errors in payroll, and an overall increase in operational efficiency. This directly aligns with the client's objectives of enhancing customer satisfaction, improving employee engagement, and facilitating business growth through better internal management practices.
 
 
 ## iii. **Limitations and Exclusions** <a name="limitations"></a>
