@@ -42,19 +42,19 @@ This document will explore an opportunity to centralize Banter Ice Cream’s int
 # 2. Business Requirements <a name="requirements"></a>
 
 ## i. **Background** <a name="background"></a>
-The client wants an improvement of the software that they are using for scheduling, communication, and payroll management. Banter's current scheduling system, Homebase, lacks certain features resulting in employees having difficulty switching shifts. One feature missing is the ability for staff to view the schedules of other employees working at their location. In addition, the scheduling system does not interface with their financial service, Quickbooks, resulting in manually recording and inputting data such as hours, holidays, overtime, and sick days which is required to manage finances. Basecamp is used for staff wide announcements and news regarding the company. Having multiple pieces of software used to receive messages results in Basecamp being checked infrequently and employees missing important announcements. The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish.
+The client, Banter Ice Cream, wants an improvement of the software that they are using for scheduling, communication, and payroll management. Banter's current scheduling system, Homebase, lacks certain features resulting in employees having difficulty switching shifts. One feature missing is the ability for staff to view the schedules of other employees working at their location. In addition, the scheduling system does not interface with their financial service, Quickbooks, resulting in manually recording and inputting data such as hours, holidays, overtime, and sick days which is required to manage finances. Basecamp is used for staff wide announcements and news regarding the company. Having multiple pieces of software used to receive messages results in Basecamp being checked infrequently and employees missing important announcements. The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish.
 
 
 ## ii. **Business Opportunity** <a name="opportunity"></a>
 The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, has automation for certain aspects, and includes improved functionalities compared to what the old system offers. 
 
-The new product will add enhanced functionalities to the current scheduling system. One new functionality is allowing clients to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer easier shift swapping and visibility of staff schedules everyday. 
+The new product will add enhanced functionalities to the current scheduling system. One new functionality is allowing the client to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer shift swapping and visibility of staff schedules everyday. 
 
-The new product will also include enhanced communication functionality. It should also include message and announcement capability that is similar to the current systems, Homebase and Basecamp. It will allow employees and managers to communicate directly within the system through messages or announcements. The updated announcements will allow employees to provide store customers with information regarding monthly ice-cream flavor, events, and other updates. 
+The new product will also include enhanced communication functionality. It should also include message and announcement capability that is similar to the current systems, Homebase and Basecamp. It will allow employees and managers to communicate directly within the system through messages or announcements. The announcements will allow employees to provide customers with information regarding monthly ice-cream flavors, events, and other updates. 
 
-Furthermore, the new product will have an automated payroll managing feature that will greatly reduce manual errors and time it take to bookkeeping compared to manual entry of payroll information. 
+The new product will include an automated payroll management feature, which will reduce manual errors and time associated with bookkeeping compared to the manual entry of payroll information. 
 
-At last, onboarding and training of new employees will be easier with the new system and staff of every role will have different access levels to the system that are unique to their roles. 
+At last, onboarding and training of new employees will be easier with the new system. Staff shall have different access to the system according to their roles. 
 
 
 ## iii. **Business Objectives** <a name="objective"></a>
@@ -62,7 +62,7 @@ At last, onboarding and training of new employees will be easier with the new sy
 Banter Ice Cream's new system will faciliate business growth through better internal management practices. The following objectives will all contribute to the increased business growth.
 * Improve employee engagement through a unified communication platform.
 * Improve customer satisfaction because the employees will be better informed of ice cream flavour changes and the new scheduling system will reduce the occurances of understaffing.
-* Reduce time and manual errors associated with paying employees, as the new system will automatically calculate hours associated with sick days, holidays, and overtime.
+* Reduce time and manual errors associated with payroll, as the new system will automatically calculate hours associated with sick days, holidays, and overtime.
 * Reduce costs and time associated with onboarding new employees, as a single unified system will be easier to learn than multiple applications.
 
 
@@ -70,25 +70,25 @@ Banter Ice Cream's new system will faciliate business growth through better inte
 
 The following metrics will be used to measure the success of the system.
 
-**Announcement Accesses**
+**Announcement Visibility**
       
-Staff are better notified of the announcements.  Interactions with the announcements are increased by 50%. This will be measured by replies, reactions, and further questions to the managers.
+Staff are better notified of any announcement. Interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
       
 **Uncovered Shifts**
       
 The number of understaffed shifts due to someone picking up a shift that overlaps with their current shift is reduced by 90%. 
       
-**Customer Satisfaction with the System**
+**Customer Satisfaction**
       
-This will ensure employees see the announcements about monthly ice cream flavors and provide better service to the customers. There should also be less understaffed shifts. This will increase the average of new customer reviews by 0.1 stars.
+The system will ensure employees see the announcements about monthly ice cream flavors and provide more accurate information to the customers. There shall be less understaffed shifts. More accurate information and better staffing will increase the average score of new reviews by 0.5 stars.
       
 **Bookkeeping Efficiency**
       
-Better integration with Quickbooks and automatic calculation of statutory holiday and overtime pay should save the bookkeeper time. This will ideally save the bookkeeper over 5 hours per pay period.
+Better integration with Quickbooks and automatic calculation of statutory holidays, sick days, and overtime shall save the bookkeeper time. This shall save the bookkeeper at least 5 hours each pay period.
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
-The product intends to improve communication between staff at Banter. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used which are Homebase and Basecamp; with additional features to improve the companies integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finance management, and improve customer satisfaction by providing accurate and up to date information.
+The new system intends to improve communication between staff at Banter Ice Cream. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used, Homebase and Basecamp; with additional features to improve the client's integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finance management, and improve customer satisfaction by providing accurate and up to date information.
 
 # 3. Scope and Limitations <a name="scope"></a>
 
