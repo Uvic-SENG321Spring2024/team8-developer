@@ -110,6 +110,7 @@ The following features shall be included in the system.
 **Enhanced Scheduling Flexibility:**
    - Offers a calendar view for managers to view and manage shifts.
    - Offers a calendar view for employees to view shifts.
+   - Allows staff to clock in/out of shifts.
    - Enables easy shift swapping and visibility of staff schedules across different days.
       
 **Optimized Onboarding and Training:**
@@ -202,7 +203,7 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * Interacts with the system indirectly through the accuracy of information provided by employees
    * Little technical expertise
 * **Requirements:**
-   * Able to see accurate and up-to-date information about products
+   * Able to get accurate and up-to-date information about products
    * Limited access to internal system functionalities
 * **Importance:** customer satisfaction is crucial (favored user in terms of customer impact)
 
@@ -230,22 +231,23 @@ The ideal environment for software is a versatile mobile-based platform, compati
 ## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
 
 The system must adhere to the following design and implementation constraints.
-- Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use payroll information to pay employees.
-- More than 70 people need to be able to access the software.
+- Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use banking information to pay employees.
+- At least 70 people need to be able to access the software.
 
 
 ## iv. **Assumptions and Dependencies** <a name="assumptions"></a>
 
 The following assumptions and dependencies affect the requirements in this document.
-- We assume that all employees working at Banter have smartphones that are capable of connecting to the internet to update. 
-- We assume that we are able to interface with existing systems (Quickbooks).
+- We assume that all employees working at Banter Ice Cream have smartphones that are capable of connecting to the internet. 
+- We assume that we are able to interface with Quickbooks.
 
 
 ## v. **Glossary of Terms** <a name="glossary"></a>
 
 | **Word**  | **Definition** |
 | ------------- | ------------- |
-|  Banter |  An ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. |
+|  Banter | Banter Ice Cream, an ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. |
+|  Client | Banter Ice Cream |
 
 
 ## vi. **References** <a name="references"></a>
