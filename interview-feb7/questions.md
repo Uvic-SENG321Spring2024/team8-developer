@@ -47,7 +47,8 @@ Initial Draft
 - How many of those users do you anticipate using the system at one time?
 - Would that change at peak times (example: schedule updates)?
 
-##Things to change
+## Things to do
+
 - (1)Background: Last sentence "The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish." before the and add section about onboarding new employees. and add section about information being transferred to customers.
 
 ## Additional Questions
