@@ -15,10 +15,13 @@
 | Everyone | January 30, 2024 | Review and edit sections | 1.8 |
 | Everyone | January 31, 2024 | Further review and change formatting | 1.9 |
 | Everyone | February 2, 2024 | Final Review | 2.0 |
+| Amanda Anderson | February 8, 2024 | Add template for sections 5-10 | 3.0 |
 
 # 1. **Overview** <a name="overview"></a>
 
-This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. These sections are outlined in the following Table of Contents.
+This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. Fourth, will expand on each system feature to include description, priority, functional requirements, and use cases. Fifth, will define data requirements. Sixth, will describe external interface requirements including user interfaces, hardware interfaces, software interfaces, and communication interfaces. Seventh, will discuss software quality attributes that are prioritized in system. Eighth, will include further analysis models. Finally, there is an appendix for additional details.
+
+These sections are outlined in the following Table of Contents.
 
 ## **Table of Contents**
 1. [Overview](#overview)
@@ -39,7 +42,23 @@ This document will explore an opportunity to centralize Banter Ice Cream’s int
    4. [Assumptions and Dependencies](#assumptions)
    5. [Glossary of Terms](#glossary)
    6. [References](#references)
-
+5. [System Features](#system-features)
+   1. [System Feature 1](#feature-1)
+      -  Description and Priority
+      -  Functional Requirements
+      -  Use Cases
+   2. [System Feature 2](#feature-2)
+   3. Other Features...
+6. [Data Requirements](#data-requirements)
+7. [External Interface Requirements](#external-interfaces)
+   1. [User Interfaces](#user-interfaces)
+   2. [Hardware Interfaces](#hardware-interfaces)
+   3. [Software Interfaces](#software-interfaces)
+   4. [Communication Interfaces](#communication-interfaces)
+8. [Software Quality Attributes](#quality-attributes)
+9. [Analysis Models](#analysis-models)
+10. [Appendix](#appendix)
+  
 # 2. Business Requirements <a name="requirements"></a>
 
 ## i. **Background** <a name="background"></a>
@@ -254,3 +273,57 @@ The following assumptions and dependencies affect the requirements in this docum
 ## vi. **References** <a name="references"></a>
 
 No references used in this document.
+
+
+# 5 System Features <a name="system-features"></a>
+
+This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
+ 
+## i. System Feature 1 <a name="feature-1"></a>
+
+State the feature name in just a few words.
+
+### a. Description and Priority
+Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+
+### b. Functional Requirements
+Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+
+REQ-1:
+
+REQ-2:
+
+### c. Use cases associated with the feature or functional requirement
+
+This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+
+## ii. System Feature 2 (and so on) <a name="feature-2"></a>
+
+# 6 Data Requirements <a name="data-requirements"></a>
+(e.g., formatting)
+
+# 7 External Interface Requirements <a name="external-interfaces"></a>
+
+## i. User Interfaces <a name="user-interfaces"></a>
+
+Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
+
+## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
+
+Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+
+## iii. Software Interfaces <a name="software-interfaces"></a>
+
+Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
+
+## iv. Communication Interfaces <a name="communication-interfaces"></a>
+
+Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
+
+# 8 Software Quality Attributes <a name="quality-attributes"></a>
+
+Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
+
+# 9 Analysis Models <a name="analysis-models"></a>
+
+# 10 Appendix <a name="appendix"></a>
