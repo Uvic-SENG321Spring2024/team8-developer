@@ -18,7 +18,7 @@ Issue 18
 - Ensure that all goals are high-level and independent of solution
 - Remove "One new functionality is allowing the client to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer shift swapping and visibility of staff schedules everyday."
 
-### 2.3 Business Objectives
+### 2.3 Business Objectives - Amanda
 - Clarify understanding of this section if possible (ask TA)
 
 Issue 19 and 20
@@ -30,7 +30,7 @@ Issue 21
 - Remove ambiguous terms (listed in issue)
 - Focus on the quantifiable details
 
-### 3.1 Major Features
+### 3.1 Major Features - Benjamin
 Issue 22
 - Reword "Centralized Communication and Scheduling System" to something like "Communication" or "Messaging"
 - Remove "Combines features of Homebase and Basecamp into a single, streamlined platform."
@@ -59,7 +59,7 @@ Other Features we Discussed (do these all go in exclusions?)
 - Automatic Integration to Quickbooks (again, coordinate who has this task as it is being modified in Major Features)
 - Messaging a specific shift
 
-### 4.1 User Classes
+### 4.1 User Classes - Justin
 Issue 24
 - Separate "Front of House Employees" and "Kitchen Employees" as recipe access is different
 - Acceptable to leave "Front of House Managers" and "Kitchen Managers" as one user class
