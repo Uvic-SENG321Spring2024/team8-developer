@@ -1,6 +1,10 @@
 # Next Steps After Interview
 
-Will add other issue in a few hours
+## Actionable Steps for Each Section
+
+In Progress
+
+## Interview Summary
 
 Issue 19/20:
 - Rewrite Business Opportunity, Business Objectives, and Success Metrics so they have distinct purpose
