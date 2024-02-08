@@ -51,6 +51,7 @@ Initial Draft
 - We had talked about potentially including a notification feature? Unfortunately that was missed in the requirements document, but is that something you're still interested in?
    - What actions would you want notifications for (eg. schedule updates, onboarding documents, messages)?
 - Do all employees clock in and out? So far all staff/users are included, is that desired? Do both types of managers also clock in and out? Bookkeepers?
+- We are assuming delivery drivers do not have scheduled shifts in the system, is that correct?
 - Who initiates shift swaps?
    - Once two employees have agreed, are they able to initiate the process in the system? Or does the manager make those changes?
    - Is manager approval required?
