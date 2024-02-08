@@ -15,6 +15,7 @@
 | Everyone | January 30, 2024 | Review and edit sections | 1.8 |
 | Everyone | January 31, 2024 | Further review and change formatting | 1.9 |
 | Everyone | February 2, 2024 | Final Review | 2.0 |
+| Amanda Anderson | February 8, 2024 | Add template for sections 5-10 | 3.0 |
 
 # 1. **Overview** <a name="overview"></a>
 
