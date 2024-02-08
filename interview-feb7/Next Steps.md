@@ -15,6 +15,7 @@ Issue 17
 ### 2.2 Business Opportunity
 Issue 18
 - Expand on reasoning for why each goal is important to address
+   - Basically, why should Banter care about this system? Summarize their business needs.
 - Ensure that all goals are high-level and independent of solution
 - Remove "One new functionality is allowing the client to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer shift swapping and visibility of staff schedules everyday."
 
