@@ -48,7 +48,7 @@ Other Features we Discussed
 - Scheduling should include a section to list availability (ie. employees are able to enter when they are available to work)
 - Must be basic security for app (such as a login) 
 
-### 3.3 Limitations and Exclusions
+### 3.3 Limitations and Exclusions - Luca
 Issue 23
 - Move Recipe Management to Major Features (coordinate who has this task)
 
@@ -78,12 +78,12 @@ Other Points
    - Bookkeeper can access all employees banking information
    - All employees can access name, role, shift schedule
 
-### 4.2 Operating Environment
+### 4.2 Operating Environment - Tyler
 Issue 28
 - Specify that we are designing a mobile application
 - Out of scope is a desktop view for managers and bookkeepers, perhaps in future iterations
 
-### 4.3 Design and Implmentation Constraints
+### 4.3 Design and Implmentation Constraints- Tyler
 Issue 29
 - Separate first point into multiple constraints
 - Remove access to progress reports (not a feature of the system)
