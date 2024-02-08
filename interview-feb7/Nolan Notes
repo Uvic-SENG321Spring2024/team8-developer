@@ -1,0 +1,35 @@
+Issue 19 and 20: should add quantitative values to business objectives. 
+	Business objectives to add, onboarding statistics, some overlap of success metrics, objectives. business opportunity is improving scheduling system, business objective would be improve productivity, success metric would quantify issues. 
+
+Issue 22: feature is something you can do not a quality of it. Change the word centralized, to cover the fact it is just personal messaging, and announcements.
+
+Issue 23: Recipe management should be added as a feature, be very simple. Kitchen staff use it a lot. What should be prioritized, quickbooks features should be minimized, recipe management should be prioritied.
+	Who has access, having 3 levels of access. Managers and kitchen staff have full access, front of house has allergens, delivery drivers have none.
+	The recipe management has instructions ,ingredients
+	Management has access to changing ingredients/instructions
+	All recipes are stored, not in active service but still in system. Deleting it is not very important. 
+	Everyday recipes are looked at on system.
+	Search function not needed, can differentiate between active and backlog.
+Issue 24: difference between fornt of house manager and kitchen manager
+Main difference is in frequency of use of features, should have full access. Both schedule. Managers as one roll. Front of house and kitchen staff should be different
+Everyone should have access to onboarding material. 
+Issue 28
+Desktop application should be made out of scope and is unnecessary.
+Issue 29:
+Number of employees fluctuate between 50-70. Should be able to handle maximum 30 simultaneous people. Morning is peak time. Notifications would spur people to use app and have maximum usage
+Extra questions
+Do they want notification feature? would be nice to have, not necessary. Add to out of scope section.
+Do all employees clock in out? Managers are salaried, everyone else bookkeeper, driver, staff are hourly. 
+Bookkeepers work twice a week, around pay period normally have more work, no scheduled shift clock out occasionally. Delivery drivers are scheduled, also twice a week.
+Who initiates shift swaps? Employees initiate, managers have to confirm. Employee requests, other employees accepts. Manager approves. 3 step procedure.
+How does vacation time? Time off? Separate section for availability, includes holiday unavailability. 
+How would short notice sick calls work? Occasionally shift is vacant, if person cant swap shifts in time, cant automate as its too late. Short term shift cancellation is outside scope. Manager/ bookkeeper deals with it manually. There is an option to open a shift, if someone wants to take that shift they can. Anyone can swap with you. Shift opening is done by employee, manager still has to approve.
+
+Contacting all people on one specific shift? Low priority feature to message specific shift. 
+
+Preference on security? Login feature on all app, hide specific information, no preference, standard security, faceID passwork. Enhanced security for bookkeepers is out of scope. 
+
+What is stored information about employee? Banking info, name, scheduled shift, communication, role. Employee progress reports is unnecessary. Only banking info is hidden from all uneeded employees. 
+
+How long should shift schedules be stored?  Year minimum
+How far in advance are shifts scehdules? 2 weeks out.
