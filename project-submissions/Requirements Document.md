@@ -60,7 +60,7 @@ At last, onboarding and training of new employees will be easier with the new sy
 
 ## iii. **Business Objectives** <a name="objective"></a>
 
-Banter Ice Cream's new system will faciliate business growth through better internal management practices. The following objectives will all contribute to the increased business growth.
+Banter Ice Cream's new system will faciliate business growth through better internal management practices using the new system. The following objectives will all contribute to increased business growth. The methods for measuring these objectives are described in the Success Metrics section.
 * Improve employee engagement by 50%.
 * Improve customer satisfaction by 25%.
 * Reduce time associated with payroll by 25%.
