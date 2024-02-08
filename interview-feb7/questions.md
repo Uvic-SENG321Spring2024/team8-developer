@@ -47,6 +47,9 @@ Initial Draft
 - How many of those users do you anticipate using the system at one time?
 - Would that change at peak times (example: schedule updates)?
 
+##Things to change
+- (1)Background: Last sentence "The client wants a solution that will make managing finances, swapping shifts, and communicating with staff easier to accomplish." before the and add section about onboarding new employees. and add section about information being transferred to customers.
+
 ## Additional Questions
 - We had talked about potentially including a notification feature? Unfortunately that was missed in the requirements document, but is that something you're still interested in?
    - What actions would you want notifications for (eg. schedule updates, onboarding documents, messages)?
