@@ -252,8 +252,14 @@ It would be helpful for managers and bookkeepers to also have an application vie
 ## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
 
 The system must adhere to the following design and implementation constraints.
-- Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use banking information to pay employees.
+- Employees can only access their own information, such as banking.
+- Employees are able to see schedules for other employees (at same location).
+- Managers also have access to employee files.
+- Bookkeepers are able to use banking information to pay employees.
 - At least 70 people need to be able to access the software.
+    - Max of 30 simultaneous users (determined based on estimate for users during peak time such as the start of shift)
+    - There are between 50-70 employees at any time
+    - The lifetime of system must not limit number of employees
 
 
 ## iv. **Assumptions and Dependencies** <a name="assumptions"></a>
