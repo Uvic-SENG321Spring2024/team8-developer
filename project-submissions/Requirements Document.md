@@ -140,11 +140,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
 **Customizable Role-Based Access:**
    - Different access levels for managers, bookkeepers, delivery drivers, and staff, as defined in User Classes and Characteristics section of this Requirements Document.
    - Safeguard sensitive information through controlled access, ensuring privacy and security across the system.
-   - Tailored interfaces and features depending on the user’s role within the company.
-      
-**Delivery and Logistics Coordination:**
-   - Features specifically designed for delivery drivers, including shift logging and real-time communication tools to streamline delivery operations and improve coordination.
-   
+   - Tailored interfaces and features depending on the user’s role within the company.   
 
 
 ## ii. **Project Scope** <a name="project-scope"></a>
