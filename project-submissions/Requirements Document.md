@@ -128,7 +128,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
  
 **Recipe Management and Access Control:**
    - A detailed recipe management module that allows managers to create, edit, and archive recipes, including full details and allergen information.
-   - Front of House (FOH) staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
+   - Front of House staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
    - Kitchen staff will have access to full recipe details, including ingredient lists, preparation instructions, and allergen information, to ensure accurate preparation.
    - Historical recipe records, enabling tracking of changes over time and access to previous versions for reference or reintroduction.
   
