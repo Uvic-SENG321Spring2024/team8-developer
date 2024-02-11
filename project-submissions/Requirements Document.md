@@ -246,7 +246,8 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
 ## ii. **Operating Environment** <a name="operating-environment"></a>
 
 Since we are designing a mobile application, so the ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. 
-It would be helpful for managers and bookkeepers to also have an application viewable on desktop, supporting both Google Chrome and Firefox browsers.
+
+A desktop viewable application was determined to be out of scope for the first release of the system. A desktop viewable application could take the form of a desktop application or a web application. Desktop access to the system could be helpful for managers to design schedules and for bookkeepers to complete payroll. A desktop viewable application will be considered in future releases.
 
 
 ## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
