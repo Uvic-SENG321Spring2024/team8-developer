@@ -257,7 +257,6 @@ The system must adhere to the following design and implementation constraints.
 - Banking information for each employee is kept private from all other employees, except bookkeepers. 
 - Bookkeepers are able to use banking information to pay employees.
 - Employees are able to see schedules for other employees (at same location).
-- Managers also have access to employee files.
 - Bookkeepers are able to use banking information to pay employees.
 **Number of Employees**
 - The system must be able to handle 30 users accessing the system simultaneously.
