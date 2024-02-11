@@ -260,7 +260,6 @@ The system must adhere to the following design and implementation constraints.
 - The system must be able to handle 30 users accessing the system simultaneously.
 - Over the system lifetime the system must not limit the number of employees.
 - Throughout the year the client anticipates 50-70 employees needing to access the system. They will not need simultaneous access to the system, but the system must be able to store data about at least 70 employees.
-    - Max of 30 simultaneous users (determined based on estimate for users during peak time such as the start of shift)
     - There are between 50-70 employees at any time
     - The lifetime of system must not limit number of employees
 
