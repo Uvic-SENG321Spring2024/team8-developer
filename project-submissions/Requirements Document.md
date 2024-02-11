@@ -133,7 +133,6 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
    - Historical recipe records, enabling tracking of changes over time and access to previous versions for reference or reintroduction.
   
 **Unified Communication and Announcement System:**
-   - Real-time alerts for shift changes or updates.
    - Embedding capabilities for images, videos, and PDFs in announcements and messages to enrich communication.
    - Ability to send and receive company-wide announcements and communicate about shifts changes.   
       
