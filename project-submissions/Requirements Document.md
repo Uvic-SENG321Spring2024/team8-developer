@@ -261,7 +261,6 @@ The system must adhere to the following design and implementation constraints.
 - Over the system lifetime the system must not limit the number of employees.
 - Throughout the year the client anticipates 50-70 employees needing to access the system. They will not need simultaneous access to the system, but the system must be able to store data about at least 70 employees.
     - There are between 50-70 employees at any time
-    - The lifetime of system must not limit number of employees
 
 
 ## iv. **Assumptions and Dependencies** <a name="assumptions"></a>
