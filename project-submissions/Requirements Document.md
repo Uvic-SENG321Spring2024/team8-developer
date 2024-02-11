@@ -178,6 +178,7 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * Moderate to high technical expertise
 * **Requirements:**
    * Advanced scheduling functionalities (creation, editing, approval, etc)
+   * Ability to create, view and edit each recipe in the recipe management feature
    * Access to training modules and documents
    * New employee account creation
    * Announcement creation and management
@@ -191,7 +192,7 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * High technical expertise in accounting software
 * **Requirements:**
    * Clock-in/Clock-out features
-   * Hours need to be summarized with overtime, holiday, etc
+   * Hours for each employee need to be summarized with overtime, holiday, etc
    * Access to employees banking information
    * Access to training modules and documents
 * **Importance:** Critical for financial management (favored class during specific periods)
@@ -216,9 +217,9 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * May have different levels of technical expertise
 * **Requirements:**
    * Clock-in/Clock-out features
-   * Access to allergens from recipie in the management feature
+   * Access to allergens from each recipe in the recipe management feature
    * Access to training modules and documents
-   * Interface for shift management (Veiwing, Shift Change, etc.)
+   * Interface for shift management (Viewing, Shift Change, etc.)
    * Communication channels for shift coverage and updates
 * **Importance:** Frequent users with direct impact on customer satisfaction (favored user class)
 
@@ -229,9 +230,9 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * May have different levels of technical expertise
 * **Requirements:**
    * Clock-in/Clock-out features
-   * Full access to complete recipie in the recipie management feature
+   * Full viewing access to each recipe in the recipe management feature
    * Access to training modules and documents
-   * Interface for shift management (Veiwing, Shift Change, etc.)
+   * Interface for shift management (Viewing, Shift Change, etc.)
    * Communication channels for shift coverage and updates
 * **Importance:** Frequent users with direct impact on customer satisfaction (favored user class)
 
