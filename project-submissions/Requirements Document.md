@@ -252,7 +252,10 @@ It would be helpful for managers and bookkeepers to also have an application vie
 ## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
 
 The system must adhere to the following design and implementation constraints.
-- Employees can only access their own information, such as banking.
+**Banking Information**
+- Each employee can view and update their own banking information. 
+- Banking information for each employee is kept private from all other employees, except bookkeepers. 
+- Bookkeepers are able to use banking information to pay employees.
 - Employees are able to see schedules for other employees (at same location).
 - Managers also have access to employee files.
 - Bookkeepers are able to use banking information to pay employees.
