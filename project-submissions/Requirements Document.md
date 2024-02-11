@@ -86,6 +86,8 @@ Banter Ice Cream's new system will faciliate business growth through better inte
 * Reduce manual errors associated with payroll by 90%.
 * Reduce time associated with onboarding new employees by 25%.
 
+The listed objectives shall be achieved within three months of release.
+
 
 ## iv. **Success Metrics** <a name="success"></a>
 
