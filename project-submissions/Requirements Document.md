@@ -178,6 +178,7 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * Moderate to high technical expertise
 * **Requirements:**
    * Advanced scheduling functionalities (creation, editing, approval, etc)
+   * Ability to create, view and edit each recipe in the recipe management feature
    * Access to training modules and documents
    * New employee account creation
    * Announcement creation and management
@@ -190,9 +191,10 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * Focus on accounting, payroll, and tracking work hours
    * High technical expertise in accounting software
 * **Requirements:**
-   * Integration with Quickbooks for payroll
-   * Hours need to be summarized with overtime, holiday, etc
-   * Data export capabilities for accounting purposes (export hours worked, etc)
+   * Clock-in/Clock-out features
+   * Hours for each employee need to be summarized with overtime, holiday, etc
+   * Access to employees banking information
+   * Access to training modules and documents
 * **Importance:** Critical for financial management (favored class during specific periods)
 
 **Delivery Drivers:**
@@ -201,45 +203,41 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
    * Main focus on clocking in/out and communication
    * May have different levels of technical expertise
 * **Requirements:**
-   * Simple and efficient clock-in/clock-out features
+   * Clock-in/Clock-out features
+   * Need to be able to view shift schedule
    * Communication channel for shift-related updates
    * Real-time schedule accessibility
+   * Access to training modules and documents
 * **Importance:** Frequent users which have direct impact on customer satisfaction (favored user class)
-
-**Front of House / Kitchen Staff:**
+  
+**Front of House Staff:**
 * **Characteristics:**
    * Daily use during shifts
    * Main focus on clocking in/out, receiving updates, and managing shifts
    * May have different levels of technical expertise
 * **Requirements:**
-   * Intuitive clock-in/clock-out features
-   * User-friendly interface for shift management
+   * Clock-in/Clock-out features
+   * Access to allergens from each recipe in the recipe management feature
+   * Access to training modules and documents
+   * Interface for shift management (Viewing, Shift Change, etc.)
    * Communication channels for shift coverage and updates
 * **Importance:** Frequent users with direct impact on customer satisfaction (favored user class)
 
-**Customers (Indirect Users):**
+**Kitchen Staff:**
 * **Characteristics:**
-   * Infrequent interaction
-   * Interacts with the system indirectly through the accuracy of information provided by employees
-   * Little technical expertise
+   * Daily use during shifts
+   * Main focus on clocking in/out, receiving updates, and managing shifts
+   * May have different levels of technical expertise
 * **Requirements:**
-   * Able to get accurate and up-to-date information about products
-   * Limited access to internal system functionalities
-* **Importance:** customer satisfaction is crucial (favored user in terms of customer impact)
-
-**New Employees (During Onboarding):**
-* **Characteristics:**
-   * Limited initial interaction
-   * Low technical expertise during onboarding phase
-* **Requirements:**
-   * Clear and concise onboarding information
-   * Notifications for new schedules or training sessions 
-* **Importance:** Critical during onboarding phase (favored for ease of learning)
+   * Clock-in/Clock-out features
+   * Full viewing access to each recipe in the recipe management feature
+   * Access to training modules and documents
+   * Interface for shift management (Viewing, Shift Change, etc.)
+   * Communication channels for shift coverage and updates
+* **Importance:** Frequent users with direct impact on customer satisfaction (favored user class)
 
 **Favored User Classes:**
-* **Priority Users:** Front of House / Kitchen Managers, Bookkeeper, Front of House / Kitchen Staff
-* **Critical Impact Users:** Customers (Indirect Users)
-* **Support Users:** New Employees (During Onboarding)
+* **Priority Users:** Front of House / Kitchen Managers, Bookkeeper, Front of House Staff, Kitchen Staff
 * **Transactional Users:** Delivery Drivers
 
 
