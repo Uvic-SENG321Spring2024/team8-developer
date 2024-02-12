@@ -117,37 +117,37 @@ The new system intends to improve communication between staff at Banter Ice Crea
 
 ## i. **Major Features** <a name="features"></a>
 
-The following features shall be included in the system.
+To ensure Banter Ice Cream's system effectively meets the operational needs and improves internal management, the following features will be included.
 
-**Centralized Communication and Scheduling System:**
-   - Combines features of Homebase and Basecamp into a single, streamlined platform.
-   - Allows company-wide announcements, shift swapping, and personal messaging.
-   - Provides visibility of monthly ice cream flavors, events, and other important updates.
-   - Allows image, video, and pdf embeds in announcements and messaging.
-
-**Automated Payroll and Hours Tracking:**
-   - Integrates with Quickbooks for seamless payroll management.
+**Scheduling System:**
+   - Create, modify, and manage shifts through a scheduling interface.
+   - Employees can swap shifts, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
+   - Calendar views for employees and managers to provide a clear overview of work schedules.
+     
+**Clock-In and Clock-Out System:**
+   - Clock in at the start and clock out at the end of shifts, enabling precise tracking of work hours for all hourly employees.
    - Automatically tracks employee hours, including regular, overtime, sick days, and holidays.
-   - Reduces manual entry errors and streamlines the invoicing process.
+   - Automatically calculate earnings, including overtime.
  
-**Enhanced Scheduling Flexibility:**
-   - Offers a calendar view for managers to view and manage shifts.
-   - Offers a calendar view for employees to view shifts.
-   - Allows staff to clock in/out of shifts.
-   - Enables easy shift swapping and visibility of staff schedules across different days.
+**Recipe Management System:**
+   - A recipe management module that allows managers to create, edit, and archive recipes, including full details and allergen information.
+   - Front of house staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
+   - Kitchen staff will have access to full recipe details, including ingredient lists, preparation instructions, and allergen information, to ensure accurate preparation.
+   - Historical recipe records, enabling tracking of changes over time and access to previous versions for reference or reintroduction.
+  
+**Communication and Announcement System:**
+   - Embedding capabilities for images, videos, and PDFs in announcements and messages to enrich communication.
+   - Ability to send and receive company-wide announcements and communicate about shifts changes.   
       
-**Optimized Onboarding and Training:**
-   - Offers an easy way for new employees to familiarize with the software platform.
-   - Simplifies learning curve with a unified system replacing multiple apps.
-      
-**Role-based Access and Functionality:**
+**Role-Based Access:**
    - Different access levels for managers, bookkeepers, delivery drivers, and staff, as defined in User Classes and Characteristics section of this Requirements Document.
-   - Tailored interfaces and features depending on the user’s role within the company.
-      
-**Real-time Communication for Delivery and Logistics:**
-   - Special features for delivery drivers to communicate with management and clock in/out.
-   - Ensures smooth coordination between different locations.
+   - Safeguard sensitive information through controlled access, ensuring privacy and security across the system.
+   - Tailored interfaces and features depending on the user’s role within the company.   
 
+**Onboarding Material Access:**
+   - Grant employees access to a library of onboarding materials, such as instructional videos, directly within the system. 
+   - Ability to upload onboarding materials.
+  
 
 ## ii. **Project Scope** <a name="project-scope"></a>
 
