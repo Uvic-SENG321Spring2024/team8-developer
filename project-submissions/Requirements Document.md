@@ -153,24 +153,21 @@ The software being developed is a comprehensive employee management and communic
 
 ## iii. **Limitations and Exclusions** <a name="limitations"></a>
 
-**Features with limited implementation:**
 
-**Quickbooks Integration**
+
+**Quickbooks Integration - (Limitation)**
 - Direct integration with Quickbooks was determined to be lower priority. Therefore, we will limit this feature to implementing a summary of hours worked by each employee. The bookkeeper can manually process this summary.
----
 
-**Features excluded from the system:**
-
-**Desktop View**
+**Desktop View - (Exclusion)**
 - The clients have indicated that they only want a mobile application view for the system and that the desktop view is not desired.
 
-**Notifications**
+**Notifications - (Exclusion)**
 - It has been determined with clients that notifications are not a high priority for the system.
 
-**Inventory Management System**
+**Inventory Management System - (Exclusion)**
 - Inventory Management was mentioned as a desired feature, but it does not fit in with the rest of the system requested.
 
-**Automated Data Migration**
+**Automated Data Migration - (Exclusion)**
 - Automated Data Migration to the new system may be a difficult feature to implement. It is more practical to do manually since it’s a one-time action that only needs to happen once during onboarding to the new system.
 
 
