@@ -114,11 +114,11 @@ The new system intends to improve communication between staff at Banter Ice Crea
 
 ## i. **Major Features** <a name="features"></a>
 
-To ensure Banter Ice Cream's system effectively meets the operational needs and improves internal management, the following features will be included:
+To ensure Banter Ice Cream's system effectively meets the operational needs and improves internal management, the following features will be included.
 
 **Scheduling System:**
    - Create, modify, and manage shifts through a scheduling interface.
-   - Swap shifts, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
+   - Employees can swap shifts, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
    - Calendar views for employees and managers to provide a clear overview of work schedules.
      
 **Clock-In and Clock-Out System:**
@@ -127,8 +127,8 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
    - Automatically calculate earnings, including overtime.
  
 **Recipe Management System:**
-   - A detailed recipe management module that allows managers to create, edit, and archive recipes, including full details and allergen information.
-   - Front of House staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
+   - A recipe management module that allows managers to create, edit, and archive recipes, including full details and allergen information.
+   - Front of house staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
    - Kitchen staff will have access to full recipe details, including ingredient lists, preparation instructions, and allergen information, to ensure accurate preparation.
    - Historical recipe records, enabling tracking of changes over time and access to previous versions for reference or reintroduction.
   
