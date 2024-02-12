@@ -243,14 +243,24 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
 
 ## ii. **Operating Environment** <a name="operating-environment"></a>
 
-Since we are designing a mobile application, so the ideal environment for software is a versatile mobile-based platform, compatible with both Android and iOS systems. It would be helpful for managers and bookkeepers to also have an application viewable on desktop, supporting both Google Chrome and Firefox browsers.
+The operating environment for the system is a mobile application that is compatible with both Android and iOS systems. A mobile application was chosen to allow front of house staff, kitchen staff, and delivery drivers frequent access to the system to increase employee engagement. Each front of house staff, kitchen staff, and delivery driver will need to clock in and clock out during their shift. They will also need to access announcements, shift schedules, and messages.
 
+A desktop viewable application will not be considered for the first release of the system.
 
 ## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
 
 The system must adhere to the following design and implementation constraints.
-- Employees can only access their own information, such as banking, payroll, and employee files (progress reports). They are able to see schedules for other employees (at same location). Managers also have access to employee files. Bookkeepers are able to use banking information to pay employees.
-- At least 70 people need to be able to access the software.
+
+**Security of Banking Information**
+- Each employee can view and update their own banking information. 
+- Banking information for each employee is kept private from all other employees, except bookkeepers. 
+- Bookkeepers are able to use banking information to pay employees.
+- Abides by provincial and federal privacy laws.
+
+**Number of Employees**
+- The system must be able to handle 30 users accessing the system simultaneously.
+- Over the system lifetime the system must not limit the number of employees.
+- The system must be able to store user data about at least 70 employees.
 
 
 ## iv. **Assumptions and Dependencies** <a name="assumptions"></a>
