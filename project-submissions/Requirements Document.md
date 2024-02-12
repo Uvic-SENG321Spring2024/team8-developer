@@ -79,11 +79,14 @@ At last, onboarding and training of new employees will be easier with the new sy
 
 ## iii. **Business Objectives** <a name="objective"></a>
 
-Banter Ice Cream's new system will faciliate business growth through better internal management practices. The following objectives will all contribute to the increased business growth.
-* Improve employee engagement through a unified communication platform.
-* Improve customer satisfaction because the employees will be better informed of ice cream flavour changes and the new scheduling system will reduce the occurances of understaffing.
-* Reduce time and manual errors associated with payroll, as the new system will automatically calculate hours associated with sick days, holidays, and overtime.
-* Reduce costs and time associated with onboarding new employees, as a single unified system will be easier to learn than multiple applications.
+Banter Ice Cream's new system will faciliate business growth through better internal management practices using the new system. The following objectives will all contribute to increased business growth. The methods for measuring these objectives are described in the Success Metrics section.
+* Improve employee engagement by 50%.
+* Improve customer satisfaction by 25%.
+* Reduce time associated with payroll by 25%.
+* Reduce manual errors associated with payroll by 50%.
+* Reduce time associated with onboarding new employees by 25%.
+
+The listed objectives shall be achieved within three months of release.
 
 
 ## iv. **Success Metrics** <a name="success"></a>
