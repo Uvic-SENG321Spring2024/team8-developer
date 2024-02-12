@@ -66,15 +66,7 @@ The client, Banter Ice Cream, wants an improvement of the software that they are
 
 
 ## ii. **Business Opportunity** <a name="opportunity"></a>
-The process being improved is the current employee management system at Banter Ice Cream. The client desires a system that is easy to use, has automation for certain aspects, and includes improved functionalities compared to what the old system offers. 
-
-The new product will add enhanced functionalities to the current scheduling system. One new functionality is allowing the client to track the number of hours that each employee has on regular works days, sick days, statutory holidays, and overtime. It should also offer shift swapping and visibility of staff schedules everyday. 
-
-The new product will also include enhanced communication functionality. It should also include message and announcement capability that is similar to the current systems, Homebase and Basecamp. It will allow employees and managers to communicate directly within the system through messages or announcements. The announcements will allow employees to provide customers with information regarding monthly ice-cream flavors, events, and other updates. 
-
-The new product will include an automated payroll management feature, which will reduce manual errors and time associated with bookkeeping compared to the manual entry of payroll information. 
-
-At last, onboarding and training of new employees will be easier with the new system. Staff shall have different access to the system according to their roles. 
+The new system will be a single platform, that combines the functionality of Homebase and Basecamp. Using one platform will improve employee engagement because they will only need to check one application for updates. Using one platform will also reduce onboarding time as new employees only need to learn one system. The new system will improve on the scheduling functionality of Homebase, including features for shift management, swapping shifts, clocking in and out, and calculating hours worked. The scheduling system will reduce scheduling errors due to incorrectly swapped shifts and will reduce payroll errors by summarizing hours according to the client's requests. The new system will also include the communication functionality of Basecamp. The communication system will improve employee knowledge of company updates and increase instances where employees are prepared for planned ice cream deliveries. The new system will also store information about Banter Ice Cream, including onboarding materials and ice cream recipes, so they are available to each employee with access. Both onboarding materials and recipe management will improve employee knowledge of Banter Ice Cream and improve onboarding experience. Improved employee knowledge, improved communication, improved onboarding, and reduced scheduling errors will result a better customer experience and improved customer satisfaction. Overall, the new system shall result in more engaged employees, more satisfied customers, fewer payroll errors, and easier onboarding for new employees.
 
 
 ## iii. **Business Objectives** <a name="objective"></a>
