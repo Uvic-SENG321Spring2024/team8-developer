@@ -247,8 +247,7 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
 
 The operating environment for the system is a mobile application that is compatible with both Android and iOS systems. A mobile application was chosen to allow front of house staff, kitchen staff, and delivery drivers frequent access to the system to increase employee engagement. Each front of house staff, kitchen staff, and delivery driver will need to clock in and clock out during their shift. They will also need to access announcements, shift schedules, and messages.
 
-A desktop viewable application was determined to be out of scope for the first release of the system. A desktop viewable application could take the form of a desktop application or a web application. Desktop access to the system could be helpful for managers to design schedules and for bookkeepers to complete payroll. A desktop viewable application will be considered in future releases.
-
+A desktop viewable application will not be considered for the first release of the system.
 
 ## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
 
