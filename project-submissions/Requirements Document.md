@@ -1,4 +1,4 @@
-# Requirements Document - Banter Ice Cream (January 28, 2024)
+ # Requirements Document - Banter Ice Cream (January 28, 2024)
 
 # Revision History
 
@@ -103,11 +103,11 @@ The number of understaffed shifts due to someone picking up a shift that overlap
       
 **Customer Satisfaction**
       
-The system will ensure employees see the announcements about monthly ice cream flavors and provide more accurate information to the customers. There shall be less understaffed shifts. More accurate information and better staffing will increase the average score of new reviews by 0.5 stars.
+The system will ensure that employees see the monthly announcements of ice cream flavors and provide more accurate information to the customers. With more accurate information, the number of customers will increase, thereby increasing the average score of new reviews by 0.5 stars. 
       
 **Bookkeeping Efficiency**
       
-Better integration with Quickbooks and automatic calculation of statutory holidays, sick days, and overtime shall save the bookkeeper time. This shall save the bookkeeper at least 5 hours each pay period.
+Enchanced integration with Quickbooks by automating the calculations of statutory holidays, sick days, and overtime shall save the bookkeeper time. This shall save the bookkeeper at least 5 hours each pay period. 
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
