@@ -116,33 +116,34 @@ The new system intends to improve communication between staff at Banter Ice Crea
 
 To ensure Banter Ice Cream's system effectively meets the operational needs and improves internal management, the following features will be included:
 
-**Comprehensive Scheduling System:**
-   - Create, modify, and manage shifts through an advanced scheduling interface.
-   - Swap shifts effortlessly, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
+**Scheduling System:**
+   - Create, modify, and manage shifts through a scheduling interface.
+   - Swap shifts, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
    - Calendar views for employees and managers to provide a clear overview of work schedules.
      
 **Clock-In and Clock-Out System:**
    - Clock in at the start and clock out at the end of shifts, enabling precise tracking of work hours for all hourly employees.
    - Automatically tracks employee hours, including regular, overtime, sick days, and holidays.
-   - Automatically calculate earnings, including overtime, directly feeding into the payroll system for streamlined payroll processing.
+   - Automatically calculate earnings, including overtime.
  
-**Recipe Management and Access Control:**
+**Recipe Management System:**
    - A detailed recipe management module that allows managers to create, edit, and archive recipes, including full details and allergen information.
    - Front of House staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
    - Kitchen staff will have access to full recipe details, including ingredient lists, preparation instructions, and allergen information, to ensure accurate preparation.
    - Historical recipe records, enabling tracking of changes over time and access to previous versions for reference or reintroduction.
   
-**Unified Communication and Announcement System:**
+**Communication and Announcement System:**
    - Embedding capabilities for images, videos, and PDFs in announcements and messages to enrich communication.
    - Ability to send and receive company-wide announcements and communicate about shifts changes.   
       
-**Customizable Role-Based Access:**
+**Role-Based Access:**
    - Different access levels for managers, bookkeepers, delivery drivers, and staff, as defined in User Classes and Characteristics section of this Requirements Document.
    - Safeguard sensitive information through controlled access, ensuring privacy and security across the system.
    - Tailored interfaces and features depending on the user’s role within the company.   
 
 **Onboarding Material Access:**
-   - Grant new employees access to a comprehensive library of onboarding materials, such as instructional videos, directly within the system. This feature ensures that newcomers have all the resources they need to learn about their roles, responsibilities, and the company culture.
+   - Grant employees access to a library of onboarding materials, such as instructional videos, directly within the system. 
+   - Ability to upload onboarding materials.
   
 
 ## ii. **Project Scope** <a name="project-scope"></a>
