@@ -1,4 +1,4 @@
- # Requirements Document - Banter Ice Cream (January 28, 2024)
+# Requirements Document - Banter Ice Cream (January 28, 2024)
 
 # Revision History
 
