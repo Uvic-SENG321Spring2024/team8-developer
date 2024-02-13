@@ -95,19 +95,19 @@ The following metrics will be used to measure the success of the system.
 
 **Announcement Visibility**
       
-Staff are better notified of any announcement. Interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
-      
-**Uncovered Shifts**
-      
-The number of understaffed shifts due to someone picking up a shift that overlaps with their current shift is reduced by 90%. 
+Staff are better notified of any announcement. Within 3 months of release, staff's interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
       
 **Customer Satisfaction**
       
-The system will ensure that employees see the monthly announcements of ice cream flavors and provide more accurate information to the customers. With more accurate information, the number of customers will increase, thereby increasing the average score of new reviews by 0.5 stars. 
-      
+In 3 months of release, the system will ensure that employees see the monthly announcements of ice cream flavors and provide more accurate information to the customers. With more accurate information, the number of customers will increase by 25%, thereby increasing the Google reviews average score by 0.5 stars in its scale of 1 to 5. Within 6 months the average google ratings will increase by 1.0 star. 
+
 **Bookkeeping Efficiency**
       
-Enchanced integration with Quickbooks by automating the calculations of statutory holidays, sick days, and overtime shall save the bookkeeper time. This shall save the bookkeeper at least 5 hours each pay period. 
+Enchanced integration with Quickbooks by automating the calculations of statutory holidays, sick days, and overtime, shall save the bookkeeper time by 25% in the 3 months of the system's release. This would also reduce the manual errors associated with payroll by 50% after 6 months of release.
+
+**Onboarding New Employees**
+
+
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
