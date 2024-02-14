@@ -16,6 +16,7 @@
 | Everyone | January 31, 2024 | Further review and change formatting | 1.9 |
 | Everyone | February 2, 2024 | Final Review | 2.0 |
 | Amanda Anderson | February 8, 2024 | Add template for sections 5-10 | 3.0 |
+| Amanda Anderson | February 13, 2024 | Update template for sections 5, 6 | 4.0 |
 
 # 1. **Overview** <a name="overview"></a>
 
@@ -44,21 +45,9 @@ These sections are outlined in the following Table of Contents.
    6. [References](#references)
 5. [System Features](#system-features)
    1. [Scheduling and Time Tracking](#feature-1)
-      -  Description and Priority
-      -  Functional Requirements
-      -  Use Cases
    2. [Communication and Announcment](#feature-2)
-      -  Description and Priority
-      -  Functional Requirements
-      -  Use Cases
    3. [Recipe Management](#feature-3)
-      -  Description and Priority
-      -  Functional Requirements
-      -  Use Cases
    4. [Onboarding Materials](#feature-4)
-      -  Description and Priority
-      -  Functional Requirements
-      -  Use Cases
 6. [Data Requirements](#data-requirements)
 7. [External Interface Requirements](#external-interfaces)
    1. [User Interfaces](#user-interfaces)
