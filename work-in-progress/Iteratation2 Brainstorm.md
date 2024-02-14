@@ -5,7 +5,7 @@ Sections 5, 6, and 8
 Date: Started February 12, 2024 (in class) and continued throughout week
 
 ## Use Case Diagrams
-### Schedule System
+### Schedule and Time Tracking System
 | Use Case              | Actor(s)  | Includes     | Extends |
 |-----------------------|-----------|--------------|---------|
 | View Schedule         | All Staff |              |         |
@@ -17,7 +17,7 @@ Date: Started February 12, 2024 (in class) and continued throughout week
 | View Tracked Hours | Bookkeepers                 |          |         |
 |                    |                             |          |         |
 
-### Communication System
+### Communication and Announcement System
 | Use Case                      | Actor(s)  | Includes | Extends |
 |-------------------------------|-----------|----------|---------|
 | Send Message                  | All Staff |          |         |
