@@ -43,12 +43,22 @@ These sections are outlined in the following Table of Contents.
    5. [Glossary of Terms](#glossary)
    6. [References](#references)
 5. [System Features](#system-features)
-   1. [System Feature 1](#feature-1)
+   1. [Scheduling and Time Tracking](#feature-1)
       -  Description and Priority
       -  Functional Requirements
       -  Use Cases
-   2. [System Feature 2](#feature-2)
-   3. Other Features...
+   2. [Communication and Announcment](#feature-2)
+      -  Description and Priority
+      -  Functional Requirements
+      -  Use Cases
+   3. [Recipe Management](#feature-3)
+      -  Description and Priority
+      -  Functional Requirements
+      -  Use Cases
+   4. [Onboarding Materials](#feature-4)
+      -  Description and Priority
+      -  Functional Requirements
+      -  Use Cases
 6. [Data Requirements](#data-requirements)
 7. [External Interface Requirements](#external-interfaces)
    1. [User Interfaces](#user-interfaces)
@@ -290,7 +300,7 @@ No references used in this document.
 
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
  
-## i. System Feature 1 <a name="feature-1"></a>
+## i. Scheduling and Time Tracking <a name="feature-1"></a>
 
 State the feature name in just a few words.
 
@@ -308,7 +318,64 @@ REQ-2:
 
 This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
-## ii. System Feature 2 (and so on) <a name="feature-2"></a>
+
+## ii. Communication and Announcment <a name="feature-2"></a>
+
+State the feature name in just a few words.
+
+### a. Description and Priority
+
+Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+
+### b. Functional Requirements
+Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+
+REQ-1:
+
+REQ-2:
+
+### c. Use cases associated with the feature or functional requirement
+
+This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+
+
+## iii. Recipe Management <a name="feature-3"></a>
+
+State the feature name in just a few words.
+
+### a. Description and Priority
+Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+
+### b. Functional Requirements
+Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+
+REQ-1:
+
+REQ-2:
+
+### c. Use cases associated with the feature or functional requirement
+
+This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+
+
+## iv. Onboarding Materials <a name="feature-4"></a>
+
+State the feature name in just a few words.
+
+### a. Description and Priority
+Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+
+### b. Functional Requirements
+Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+
+REQ-1:
+
+REQ-2:
+
+### c. Use cases associated with the feature or functional requirement
+
+This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+
 
 # 6 Data Requirements <a name="data-requirements"></a>
 (e.g., formatting)
