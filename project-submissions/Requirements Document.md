@@ -103,8 +103,8 @@ In 3 months of release, the system will ensure that employees see the monthly an
 
 **Bookkeeping Efficiency**
    
-- Enchanced integration with Quickbooks by automating the calculations of statutory holidays, sick days, and overtime, shall save the bookkeeper time by 25% in the 3 months of the system's release.
-- This would also reduce the manual errors associated with payroll by 50% after 6 months of release.
+- In 3 months of system's release, bookkeepers will spend 25% less time during each payroll period.
+- After 6 months of release, manual errors associated with payroll would reduced by 50%.
 
 **Onboarding New Employees**
 
