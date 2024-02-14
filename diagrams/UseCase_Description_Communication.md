@@ -2,11 +2,25 @@
 
 <br>
 
-**Name:** Communication System
+**Name:** Send Message
 
 **Actors:** All Staff
 
 **Description:** 
+
+**Trigger:** 
+
+**Pre-Condition:** 
+
+**Post-Condition:** 
+
+**Primary Flow:** 
+
+**Alternate Flow:** 
+
+**Priority:** 
+
+**Frequency of use:** 
 
 
 <br>
