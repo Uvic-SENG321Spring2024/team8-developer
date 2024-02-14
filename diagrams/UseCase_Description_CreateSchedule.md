@@ -72,3 +72,8 @@
 - Integrity: Recipe ingredient proportions and directions can only be viewed by allowed users.
 - Integrity: Recipe ingredient allergens can only be viewed by allowed users.
 - Integrity: Employee banking information can only be viewed by its associated employee and bookkeeper.
+
+Note: could add the following to a glossary.
+- business working hours, approx 12-10pm each day (use exact hours from website)
+- new employee, has been less than 1 week since start day
+- banking information, enough information about bank account to transfer money into the account (double check what that is)
