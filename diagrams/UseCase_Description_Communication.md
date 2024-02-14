@@ -1,4 +1,6 @@
-****Use Case Description:****
+**Use Case Description:**
+
+<br>
 
 **Name:** Communication System
 
@@ -10,7 +12,7 @@
 <br>
 <br>
 
-****NFRs:****
+**NFRs:**
 
 - Performance: The system must be able to handle 30 users simultaneously accessing it without degradation in performance.
 - Security: Banking information for each employee is to be kept private from all other employees, except bookkeepers.
