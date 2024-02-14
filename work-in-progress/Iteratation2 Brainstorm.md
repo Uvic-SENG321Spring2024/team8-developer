@@ -1,6 +1,6 @@
-# Record of Ideas for Models
+# Iteration 2 Brainstorm
 
-Iteration 2 for section 5/6
+Sections 5, 6, and 8
 
 Date: Started February 12, 2024 (in class) and continued throughout week
 
