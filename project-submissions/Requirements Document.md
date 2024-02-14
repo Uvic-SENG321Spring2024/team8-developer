@@ -100,7 +100,7 @@ The following metrics will be used to measure the success of the system.
 **Customer Satisfaction**
       
 - In 3 months of release, the Google reviews average score would increase by 0.5 stars in its scale of 1 to 5.
-- By 6 months, the average Google reviews average score would increase by 1.0 star. 
+- By 6 months, the Google reviews average score would increase by 1.0 star. 
 
 **Bookkeeping Efficiency**
    
@@ -109,7 +109,7 @@ The following metrics will be used to measure the success of the system.
 
 **Onboarding New Employees**
 
-- Within 3 months of release, onboarding new staff should take 25% less time to familiarize themselves with the system.
+- Within 3 months of release, new staff should take 25% less time to familiarize themselves with the system during onboarding.
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
