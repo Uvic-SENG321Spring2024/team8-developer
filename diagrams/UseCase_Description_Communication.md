@@ -8,11 +8,11 @@
 
 **Description:** 
 
-**Trigger:** 
+**Trigger:** A staff members wants to send a message to another staff member. 
 
-**Pre-Condition:** 
+**Pre-Condition:** They are a staff member, and has access to the company's communication system. 
 
-**Post-Condition:** 
+**Post-Condition:** The staff member that they want to send the message to, is still working in the company, and has access to the company's communication system. 
 
 **Primary Flow:** 
 
