@@ -95,7 +95,7 @@ The following metrics will be used to measure the success of the system.
 
 **Announcement Visibility**
       
-Staff are better notified of any announcement. Within 3 months of release, staff's interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
+- Within 3 months of release, staff's interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
       
 **Customer Satisfaction**
       
@@ -103,11 +103,12 @@ In 3 months of release, the system will ensure that employees see the monthly an
 
 **Bookkeeping Efficiency**
    
-Enchanced integration with Quickbooks by automating the calculations of statutory holidays, sick days, and overtime, shall save the bookkeeper time by 25% in the 3 months of the system's release. This would also reduce the manual errors associated with payroll by 50% after 6 months of release.
+- Enchanced integration with Quickbooks by automating the calculations of statutory holidays, sick days, and overtime, shall save the bookkeeper time by 25% in the 3 months of the system's release.
+- This would also reduce the manual errors associated with payroll by 50% after 6 months of release.
 
 **Onboarding New Employees**
 
-New staffs will be able to familiarize themselves with their work and work related software 25% faster with the new system, and have access to all employee notifications during their training period. 
+- Within 3 months of release, onboarding new staff should take 25% less time to familiarize themselves with the system.
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
