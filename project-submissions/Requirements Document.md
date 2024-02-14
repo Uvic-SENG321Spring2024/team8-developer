@@ -107,8 +107,6 @@ Enchanced integration with Quickbooks by automating the calculations of statutor
 
 **Onboarding New Employees**
 
-Reduce time associated with onboarding new employees by 25%. 
-
 New staffs will be able to familiarize themselves with their work and work related software 25% faster with the new system, and have access to all employee notifications during their training period. 
 
 
