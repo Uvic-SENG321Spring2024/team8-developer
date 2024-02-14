@@ -12,12 +12,6 @@ Date: Started February 12, 2024 (in class) and continued throughout week
 | Manage Schedule       | Manager   |              |         |
 | Swap Shifts           | All Staff | Approve Swap |         |
 | Indicate Availability | All Staff |              |         |
-|                       |           |              |         |
-
-### Clock In/Clock Out (Time Tracking)
-
-| Use Case           | Actor(s)                    | Includes | Extends |
-|--------------------|-----------------------------|----------|---------|
 | Clock In           | All Staff (except Manager?) |          |         |
 | Clock Out          | All Staff (except Manager?) |          |         |
 | View Tracked Hours | Bookkeepers                 |          |         |
@@ -45,6 +39,11 @@ Date: Started February 12, 2024 (in class) and continued throughout week
 | Add Recipe  | Manager                                         |          |         |
 | Edit Recipe | Manager                                         |          |         |
 |             |                                                 |          |         |
+
+### Onboarding Materials System
+| Use Case    | Actor(s)                                        | Includes | Extends |
+|-------------|-------------------------------------------------|----------|---------|
+|  | All staff |          |         |
 
 ## Entity Relationship Diagram
 - Current Entities:
