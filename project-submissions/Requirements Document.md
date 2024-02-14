@@ -99,12 +99,13 @@ The following metrics will be used to measure the success of the system.
       
 **Customer Satisfaction**
       
-In 3 months of release, the system will ensure that employees see the monthly announcements of ice cream flavors and provide more accurate information to the customers. With more accurate information, the number of customers will increase by 25%, thereby increasing the Google reviews average score by 0.5 stars in its scale of 1 to 5. Within 6 months the average google ratings will increase by 1.0 star. 
+- In 3 months of release, the Google reviews average score would increase by 0.5 stars in its scale of 1 to 5.
+- By 6 months, the average Google reviews average score would increase by 1.0 star. 
 
 **Bookkeeping Efficiency**
    
 - In 3 months of system's release, bookkeepers will spend 25% less time during each payroll period.
-- After 6 months of release, manual errors associated with payroll would reduced by 50%.
+- After 6 months of release, manual errors associated with payroll would reduce by 50%.
 
 **Onboarding New Employees**
 
