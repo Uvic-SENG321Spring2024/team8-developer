@@ -287,85 +287,51 @@ The following assumptions and dependencies affect the requirements in this docum
 No references used in this document.
 
 
-# 5 System Features <a name="system-features"></a>
+# 5 System Features
 
-This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
- 
-## i. Scheduling and Time Tracking <a name="feature-1"></a>
+This section organizes the functional requirements for the Banter Ice Cream management system by system features. These features are essential for the operations of Banter Ice Cream, aimed at improving scheduling flexibility, communication, and overall management efficiency.
 
-State the feature name in just a few words.
+## i. Shift Scheduling and Management <a name="feature-1"></a>
 
-### a. Description and Priority
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+### Shift Swap System
 
-### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+#### Description and Priority
+This feature allows employees to request and managers to approve shift swaps. It is of high priority due to its significant impact on operational efficiency and employee satisfaction.
 
-REQ-1:
+#### Functional Requirements
+- **REQ-1:** The system must allow employees to submit shift swap requests.
+- **REQ-2:** The system must enable managers to review and approve shift swap requests.
 
-REQ-2:
+#### Use Cases
+- **Initiate Shift Swap:** An employee submits a request for a shift swap, which is then sent to other employees for acceptance.
+- **Approve Shift Swap:** A manager reviews and approves the shift swap, updating the schedule accordingly.
 
-### c. Use cases associated with the feature or functional requirement
+## ii. Communication Platform <a name="feature-2"></a>
 
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+### Internal Communication System
 
+#### Description and Priority
+Enables streamlined communication within Banter Ice Cream through announcements and direct messaging. High priority due to its role in enhancing information dissemination and employee engagement.
 
-## ii. Communication and Announcment <a name="feature-2"></a>
+#### Functional Requirements
+- **REQ-1:** System allows managers to create and send announcements to all employees.
+- **REQ-2:** System supports direct messaging between employees.
 
-State the feature name in just a few words.
+#### Use Cases
+- **Publish Announcement:** A manager posts a company-wide announcement, automatically distributed to employees.
+- **Direct Messaging:** Employees use the platform for direct communication with peers for collaboration and inquiries.
 
-### a. Description and Priority
+## User Stories for Additional Features
 
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+### Recipe Management
+- *As a Kitchen Manager,* I want to update and manage ice cream recipes to ensure all staff have access to the latest preparation guidelines.
 
-### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+### Onboarding Materials Access
+- *As an HR Manager,* I need to provide new employees with onboarding materials through the system to streamline the onboarding process.
 
-REQ-1:
+### Automated Payroll Integration
+- *As a Bookkeeper,* I need the system to automatically integrate worked hours into our payroll software to ensure accurate and timely employee compensation without manual data entry.
 
-REQ-2:
-
-### c. Use cases associated with the feature or functional requirement
-
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
-
-
-## iii. Recipe Management <a name="feature-3"></a>
-
-State the feature name in just a few words.
-
-### a. Description and Priority
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
-
-### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
-
-REQ-1:
-
-REQ-2:
-
-### c. Use cases associated with the feature or functional requirement
-
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
-
-
-## iv. Onboarding Materials <a name="feature-4"></a>
-
-State the feature name in just a few words.
-
-### a. Description and Priority
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
-
-### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
-
-REQ-1:
-
-REQ-2:
-
-### c. Use cases associated with the feature or functional requirement
-
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
 
 # 6 Data Requirements <a name="data-requirements"></a>
