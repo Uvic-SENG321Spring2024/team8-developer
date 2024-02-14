@@ -50,6 +50,10 @@ These sections are outlined in the following Table of Contents.
    3. [Recipe Management](#feature-3)
    4. [Onboarding Materials](#feature-4)
 6. [Data Requirements](#data-requirements)
+   1. [Logical Data Models](#data-model)
+   2. [Data Dictionary](#data-dictionary)
+   3. [Reports](#data-report)
+   4. [Data Integrity](#data-integrity)
 7. [External Interface Requirements](#external-interfaces)
    1. [User Interfaces](#user-interfaces)
    2. [Hardware Interfaces](#hardware-interfaces)
@@ -148,8 +152,6 @@ The software being developed is a comprehensive employee management and communic
 
 ## iii. **Limitations and Exclusions** <a name="limitations"></a>
 
-
-
 **Quickbooks Integration - (Limitation)**
 - Direct integration with Quickbooks was determined to be lower priority. Therefore, we will limit this feature to implementing a summary of hours worked by each employee. The bookkeeper can manually process this summary.
 
@@ -164,7 +166,6 @@ The software being developed is a comprehensive employee management and communic
 
 **Automated Data Migration - (Exclusion)**
 - Automated Data Migration to the new system may be a difficult feature to implement. It is more practical to do manually since it’s a one-time action that only needs to happen once during onboarding to the new system.
-
 
 
 # 4 Context Description <a name="context"></a>
@@ -368,7 +369,18 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 
 # 6 Data Requirements <a name="data-requirements"></a>
-(e.g., formatting)
+
+## i. Logical Data Models <a name="data-model"></a>
+E.g., entity-relationship diagrams and UML class diagrams. You may provide a data model for the business operations or the data that the system modifies. Not the same thing as a database design data model.
+
+## ii. Data Dictionary <a name="data-dictionary"></a>
+Composition of data strucutres, meaning, data type, length, format, and allowed values.
+
+## iii. Reports <a name="data-report"></a>
+If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.
+
+## iv. Data Integrity <a name="data-integrity"></a>
+Data acquisition, integrity, retention, and diposal If possible, describe how data is acquired, retained, and later on disposed. Describe the requirements for protecting the integrity of the data.
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
 
