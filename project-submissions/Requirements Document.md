@@ -314,7 +314,8 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 ## ii. Communication and Announcment <a name="feature-2"></a>
 
-**State the feature name in just a few words.**
+**State the feature name in just a few words.** 
+
 One of the main feature we focused on in the system is the ability to send and receive company-wide announcements. 
 
 ### a. Description and Priority
