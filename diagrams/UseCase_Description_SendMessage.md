@@ -6,19 +6,21 @@
 
 **Actors:** All Staff
 
-**Description:** A staff members wants to send a message to another staff member. 
+**Description:** A staff member wants to send a message to another staff member. 
 
-**Trigger:** A staff members sends a message to another staff member. 
+**Trigger:** A staff member sends a message to another staff member. 
 
 **Pre-Condition:** They are a staff member, and has access to the company's communication system. 
 
 **Post-Condition:** The staff member that they want to send the message to, is still working in the company, and has access to the company's communication system. 
 
 **Primary Flow:** 
+1. Actor opens the messaging system.
+2. Selects the person they want to message.
+3. Enters their message in the chat box.
+4. Then clicks send. 
 
-**Alternate Flow:** 
-
-**Priority:** Intermidiate
+**Priority:** Intermediate/High
 
 **Frequency of use:** Very Frequent
 
