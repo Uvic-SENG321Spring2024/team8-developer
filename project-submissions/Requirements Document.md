@@ -382,7 +382,28 @@ Composition of data strucutres, meaning, data type, length, format, and allowed 
 If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.
 
 ## iv. Data Integrity <a name="data-integrity"></a>
-Data acquisition, integrity, retention, and diposal If possible, describe how data is acquired, retained, and later on disposed. Describe the requirements for protecting the integrity of the data.
+
+**Employee Data and Account**
+- Adhere to Canadian laws regarding business tax documents. As a result the system shall retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
+- The system shall retain each employee's banking information until after employee last paycheck is recieved by employee.
+- A new employee can gain access to the system after a manager adds an account for the employee.
+- An employee loses access to the system at midnight on their last day of work. The last day of work is entered by the manager. 
+
+**Scheduling and Tracked Hours**
+- The system shall retain each shift in employee schedule for one year after the scheduled shift date.
+- The system shall retain employee availability for one week after the date of the identified availability.
+- The system shall retain clocked hours for each employee for 6 years, counted from the end of the year the clocked hours occurred in. This requirement is necessary due to Canadian laws regarding business tax documents.
+
+**Communication and Announcements**
+- The system shall retain messages for one year after the message is sent.
+- The system shall retain each announcement until the announcement is removed by manager.
+
+**Recipe Management**
+- The system shall retain each recipe for lifetime of system.
+
+**Onboarding Materials**
+- The system shall retain each onboarding material until removed by manager.
+
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
 
