@@ -91,19 +91,21 @@ The following metrics will be used to measure the success of the system.
 
 **Announcement Visibility**
       
-Staff are better notified of any announcement. Interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
-      
-**Uncovered Shifts**
-      
-The number of understaffed shifts due to someone picking up a shift that overlaps with their current shift is reduced by 90%. 
+- Within 3 months of release, staff's interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
       
 **Customer Satisfaction**
       
-The system will ensure employees see the announcements about monthly ice cream flavors and provide more accurate information to the customers. There shall be less understaffed shifts. More accurate information and better staffing will increase the average score of new reviews by 0.5 stars.
-      
+- In 3 months of release, the Google reviews average score would increase by 0.5 stars in its scale of 1 to 5.
+- By 6 months, the Google reviews average score would increase by 1.0 star. 
+
 **Bookkeeping Efficiency**
-      
-Better integration with Quickbooks and automatic calculation of statutory holidays, sick days, and overtime shall save the bookkeeper time. This shall save the bookkeeper at least 5 hours each pay period.
+   
+- In 3 months of system's release, bookkeepers will spend 25% less time during each payroll period.
+- After 6 months of release, manual errors associated with payroll would reduce by 50%.
+
+**Onboarding New Employees**
+
+- Within 3 months of release, new staff should take 25% less time to familiarize themselves with the system during onboarding.
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
