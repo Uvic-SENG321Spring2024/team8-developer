@@ -340,7 +340,7 @@ State the feature name in just a few words.
 Provide a short description of the feature and indicate whether it is high, medium, or low priority.
 
 ### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information (1) about Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
 
 REQ-1:
 
@@ -349,6 +349,23 @@ REQ-2:
 ### c. Use cases associated with the feature or functional requirement
 
 This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+
+| ID and Name | UC-2 View Recipe |
+| ----------- | ----------- |
+| Created By: | Nolan, Justin &emsp; Date Created: 2/14/24 |
+| Primary Actor: | Kitchen Staff, Managers, Front of House Staff |
+| Description | The Actor selects a recipe from the list of all possible recipes. The system displays a view of the recipe based on the actors level of access. |
+| Trigger: | Actor selects recipe to open. |
+| Preconditions: | <ul><li>PRE-1: User is logged in.</li><li>PRE-2: User is authenticated.</li></ul> |
+| Postconditions: | <ul><li>POST-1: Recipe is displayed.</li></ul> |
+| Normal Flow: | <ol>**2.0 View Full Recipe**<li>Kitchen Staff or Manager selects the recipe menu option.</li><li>Select active or unactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays Ingredents List, Preperation Instructions, and Allergens.</li></ol> |
+| Alternate Flows: | <ol>**2.1 View Allergens in Recipe**<li>Front of House Staff selects the recipe menu option.</li><li>Select active or unactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays Allergens.</li></ol> |
+| Exceptions: |  |
+| Priority: | High |
+| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by Managers, 20 times per day by Front of House Staff. |
+| Business Rules: | Must alert all customers of potential allergens. Only authorized ingredients may be in the ice cream. |
+| Other Information: |  |
+| Assumptions: | Recipe already exists in the system. |
 
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
