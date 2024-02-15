@@ -404,7 +404,38 @@ Describe the requirements associated with any communications functions required 
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
-Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
+Availability
+- QA-1: The system is available 99.99% each day during business working hours.
+- QA-2: The system is available 99.0% each day outside of business working hours.
+
+Reliability
+- QA-3: A backup of all system data is saved every night to minimize data loss. 
+
+Scalability 
+- QA-4: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
+- QA-5: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
+- QA-6: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+
+Useability
+- QA-7: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
+- QA-8: Shift swapping should be prominently displayed and accessible within 3 selections. 
+- QA-9: Viewing schedules should be prominently displayed and accessible within 2 selections. 
+- QA-10: Accessing announcements should be prominently displayed and accessible within 1 selection. 
+- QA-11: Viewing recipes should be prominently displayed and accessible within 2 selections. 
+- QA-12: Viewing messages should be prominently displayed and accessible within 3 selections. 
+- QA-13: Standard conventions for all user interface elements
+
+Performance 
+- QA-14: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
+- QA-15: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+
+Security
+- QA-16: Unauthorized employees are not be able to view another employee’s banking information
+- QA-17: Industry standard information security procedures must be used when handling user information. 
+- QA-18: The system shall ensure that no persons outside the organization can access any information stored in the system. 
+- QA-19: Recipe ingredients and instructions can only be viewed by authorized employees.
+- QA-20: Recipe ingredient allergens can only be viewed by authorized employees.
+
 
 # 9 Analysis Models <a name="analysis-models"></a>
 
