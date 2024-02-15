@@ -18,9 +18,9 @@
 
 **Alternate Flow:** 
 
-**Priority:** 
+**Priority:** Intermidiate
 
-**Frequency of use:** 
+**Frequency of use:** Very Frequent
 
 
 <br>
