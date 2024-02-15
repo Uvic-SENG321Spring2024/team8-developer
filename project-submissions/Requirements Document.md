@@ -316,6 +316,8 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 State the feature name in just a few words.
 
+Comms
+
 ### a. Description and Priority
 
 Provide a short description of the feature and indicate whether it is high, medium, or low priority.
