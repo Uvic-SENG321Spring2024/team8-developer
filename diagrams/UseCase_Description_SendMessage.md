@@ -6,9 +6,9 @@
 
 **Actors:** All Staff
 
-**Description:** 
+**Description:** A staff members wants to send a message to another staff member. 
 
-**Trigger:** A staff members wants to send a message to another staff member. 
+**Trigger:** A staff members sends a message to another staff member. 
 
 **Pre-Condition:** They are a staff member, and has access to the company's communication system. 
 
