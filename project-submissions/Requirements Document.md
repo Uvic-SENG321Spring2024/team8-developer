@@ -289,27 +289,79 @@ The following assumptions and dependencies affect the requirements in this docum
 No references used in this document.
 
 
-# 5 System Features <a name="system-features"></a>
+# 5.4 Onboarding Materials System (Low Priority) <a name="system-features"></a>
+## 5.4.1 Description and Priority <a name="feature-1"></a>
 
-This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
- 
-## i. Scheduling and Time Tracking <a name="feature-1"></a>
+The Onboarding Materials feature has a low priority in the application. An authenticated employee (except delivery drivers)must be able to view the onboarding materials but only the managers have the right to edit the materials such as add or remove materials. Expect a low frequency of use, new employees will need to become familiar with onboarding material and may access material multiple times a day for the first week of employment. However, we expect established employees will only access a material to reference it once each month.
 
-State the feature name in just a few words.
+### 5.4.2 Functional Requirements
+An authenticated employee (except delivery drivers)must be able to view the onboarding materials but only the managers have the right to edit the materials.
 
-### a. Description and Priority
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+REQ-1:  An authenticated employee (except delivery drivers)must be able to view the onboarding materials at any time. (Low Priority) 
 
-### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+REQ-2: The managers will be the only staff to edit the onboarding materials at any time. (Low Priority) 
 
-REQ-1:
+### 5.4.3 Use cases associated with the feature or functional requirement
 
-REQ-2:
 
-### c. Use cases associated with the feature or functional requirement
+Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor, designated as the "Staff," is subdivided into specific roles, namely the Bookkeeper, Front of House Staff, and Kitchen Staff, with their access limited solely to viewing onboarding materials
 
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+### User Story 1: View Onboarding Materials
+As an authenticated employee (excluding delivery drivers),
+I want to be able to view the onboarding materials at any time,
+So that I can access the necessary information for onboarding purposes.
+
+Acceptance Criteria:
+
+I can use the system.
+There is an option labeled 'View Onboarding Materials' available in the user interface.
+Upon selecting the option, I can choose the specific onboarding materials I wish to view.
+The selected onboarding materials are displayed to me.
+I can exit the viewing mode when I'm done.
+
+
+### User Story 2: Edit Onboarding Materials
+As an authenticated manager,
+I want to have exclusive rights to edit the onboarding materials,
+So that I can ensure the content is up-to-date and relevant for the employees.
+
+Acceptance Criteria:
+
+I can use the system.
+There is an option labeled 'Edit Onboarding Materials' available in the user interface.
+Upon selecting the option, I can choose the specific onboarding materials I want to edit.
+I have the ability to make changes to the selected onboarding materials.
+After editing, I can save the changes, and the system confirms that the changes have been successfully saved.
+I can exit the editing mode when I'm done.
+
+### User Story 3: Create Onboarding Material
+As an authenticated content manager,
+I want the capability to create new onboarding materials,
+So that I can provide updated and relevant content for employee onboarding.
+
+Acceptance Criteria:
+
+I can use the system.
+There is an option labeled 'Create Onboarding Material' available in the user interface.
+Upon selecting the option, I am prompted to input the necessary details for the new onboarding material, such as title, content, and any relevant metadata.
+After entering the information, I can save the new onboarding material, and the system confirms its successful creation.
+The newly created onboarding material is accessible in the system for other authorized users to view.
+I can exit the creation mode when I'm done.
+
+### User Story 4: Remove Onboarding Material
+As an authenticated manager,
+I want the exclusive authority to remove outdated or irrelevant onboarding materials,
+So that I can maintain the integrity and relevance of the onboarding content.
+
+Acceptance Criteria:
+
+I can use the system.
+There is an option labeled 'Remove Onboarding Material' available in the user interface.
+Upon selecting the option, I can choose the specific onboarding material I wish to remove.
+The system prompts for confirmation before proceeding with the removal to prevent accidental deletions.
+Upon confirmation, the selected onboarding material is removed from the system, and the system confirms the successful removal.
+The removed onboarding material is no longer accessible to users in the system.
+I can exit the removal mode when I'm done.
 
 
 ## ii. Communication and Announcment <a name="feature-2"></a>
