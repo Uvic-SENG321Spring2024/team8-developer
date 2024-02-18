@@ -337,12 +337,12 @@ This is the use case specification. For each Use Case, list the dialog elements 
 State the feature name in just a few words.
 
 ### a. Description and Priority
-The Recipe Management feature has a high priority in the application. An Authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Managers and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. Managers are the only ones who are able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily wwhen making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
+The Recipe Management feature has a high priority in the application. An Authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Managers and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. Managers are the only ones who are able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
 
 ### b. Functional Requirements
 Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information (1) about Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
 
-REQ-1: An authenticated user must be able to search for and view active and unactive recipes. 
+REQ-1: An authenticated user must be able to view active and inactive recipes. 
 
 REQ-2: Managers and Kitchen Staff must be able to view the full recipe including ingredents list, preparation instructions, and allergens.
 
@@ -360,9 +360,9 @@ REQ-7: The system must be able to display different recipe views based on the ac
 
 &emsp;&emsp;REQ-7.2: The system must have a limited recipe view which only contains the name, and allergens.
 
-REQ-8: The system must be able to archive recipes, removing it from the list of active recipes and adds it to the list of unactive recipes.
+REQ-8: The system must be able to archive recipes, removing it from the list of active recipes and adds it to the list of inactive recipes.
 
-REQ-9: The system must be able to unarchive recipes, removing it from the list of unactive recipes and adds it to the list of active recipes.
+REQ-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adds it to the list of active recipes.
 
 REQ-10: The system must enable users to search for recipes based on name, ingredents, or allergens.
 
@@ -374,7 +374,7 @@ REQ-11: The system must allow users to filter recipes based on different criteri
 
 This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
-![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Usecase-Diagram-V2.png)
+![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Usecase-Diagram-V3.png)
 
 | ID and Name | UC-2 View Recipe |
 | ----------- | ----------- |
@@ -384,8 +384,8 @@ This is the use case specification. For each Use Case, list the dialog elements 
 | Trigger: | Actor selects recipe to open. |
 | Preconditions: | <ul><li>PRE-1: User is logged in.</li><li>PRE-2: User is authenticated.</li></ul> |
 | Postconditions: | <ul><li>POST-1: Recipe is displayed.</li></ul> |
-| Normal Flow: | <ol>**2.0 View Full Recipe**<li>Kitchen Staff or Manager selects the recipe menu option.</li><li>Select active or unactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays Ingredents List, Preperation Instructions, and Allergens.</li></ol> |
-| Alternate Flows: | <ol>**2.1 View Allergens in Recipe**<li>Front of House Staff selects the recipe menu option.</li><li>Select active or unactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays Allergens.</li></ol> |
+| Normal Flow: | <ol>**2.0 View Detailed Recipe**<li>Kitchen Staff or Manager selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays Ingredents List, Preperation Instructions, and Allergens.</li></ol> |
+| Alternate Flows: | <ol>**2.1 View Limited Recipe**<li>Front of House Staff selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays Allergens.</li></ol> |
 | Exceptions: |  |
 | Priority: | High |
 | Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by Managers, 20 times per day by Front of House Staff. |
@@ -393,8 +393,37 @@ This is the use case specification. For each Use Case, list the dialog elements 
 | Other Information: | REQ-2, REQ-3, REQ-7 |
 | Assumptions: | Recipe already exists in the system. |
 
+**User Story 1: Edit Recipe**
 
+As an authenticated Manager, I want exclusive rights to edit existing recipes, so that I can change recipe details, add or remove ingredients, and update allergen information.
 
+**Acceptance Criteria:**
+
+There is an option labeled 'Edit' available on each recipe in the user interface. Upon selecting the option, I can choose the specific section of the recipe I want to edit. I can save the changes after editing and the system confirms the changes have been saved. The system should not save any changes if I exit the editing page, if I try to exit without saving the system should prompt me to save my changes. I can exit the viewing mode at any time.  
+
+**User Story 2: Create Recipe**
+
+As an authenticated Manager, I want exclusive rights to create new recipes, so that I can create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+
+**Acceptance Criteria:**
+
+There is an option labeled 'Create' in the user interface. After selceting that feature I should see an empty template for a recipe which contains a section for name, ingrediants, preparation instructions and allergen information. I should be able to enter text in each section. I should be able to save my work. The new recipe should be viewable if I search for it. I should be able to exit creation mode. 
+
+**User Story 3: Archive Recipe**
+
+As an authenticated Manager, I want exclusive rights to archive recipes, so that I can change the status of a recipe from active to inactive and change the status from inactive to active. 
+
+**Acceptance Criteria:**
+
+There is an option labeld 'Archive' if the status is active and an option labeled 'Unarchive' if the status is inactive on the recipe lists in the user interface. Upon selecting that option I should be able to select which recipes I want to archive or unarchive. The recipe should be added to the inactive recipe lists, if the status was active, and the recipe should be removed from the active recipe list. The recipe should be added to the active recipe lists, if the status was inactive, and the recipe should be removed from the inactive recipe list.  
+
+**User Story 4: Search for Recipe**
+
+An an employee (excluding Delivery Drivers, and Bookkeeper), I want to be able to search for a recipe and filter results, so I can quickly select a specific recipe.
+
+**Acceptance Criteria:**
+
+There is a search function in the user interface and there is an option to apply a filter to the search. I am able to enter text in the search bar. The search results should be displayed after text has been entered in the search bar.
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
