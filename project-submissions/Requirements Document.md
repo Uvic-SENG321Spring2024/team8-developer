@@ -324,6 +324,8 @@ SCH-19: The systems view schedule option must display correct information includ
 
 ### c. Use cases associated with the feature or functional requirement
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
+Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House staff, Kitchen staff, and Delivery drivers. The scheduling system should allow all employees to know when they are working, allow managers to create and edit schedules, and allow bookkeepers to pay employees. All use cases are written assuming the user is logged in.
+
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
 | Created By: | Nolan  Date Created: 2/15/24 |
