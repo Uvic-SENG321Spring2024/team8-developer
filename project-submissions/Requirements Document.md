@@ -374,9 +374,11 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 ## i. Logical Data Models <a name="data-model"></a>
 
-![Entity Relationship Diagram - Ben5](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/e507ba1c-f3bc-4c03-85cd-8a2811b803e3)
+![Entity Relationship Diagram - Ben6](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/55803d9e-2210-42c8-a900-ba137dd72789)
 
 ![UML Diagram - My Diagram (1)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/f0cb66f4-f0bb-48d3-8bf2-adab13170f3f)
+
+The Entity Relationship Diagram (ERD) and the UML Class Diagram serve as visual tools to represent the data structure and relationships within the Banter Ice Cream System. The purpose of these diagrams is to articulate how various data entities within the system interact and relate to each other, which is essential for understanding the flow of information and the underlying structure of the system’s data.
 
 ### Diagrams Explanation
 
