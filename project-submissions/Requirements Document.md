@@ -404,19 +404,19 @@ Describe the requirements associated with any communications functions required 
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
-Availability
+**Availability**
 - AVL-1: The system is available 99.99% each day during business working hours.
 - AVL-2: The system is available 99.0% each day outside of business working hours.
 
-Reliability
+**Reliability**
 - REL-3: A backup of all system data is saved every night to minimize data loss. 
 
-Scalability 
+**Scalability**
 - SCA-4: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
 - SCA-5: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
 - SCA-6: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
 
-Useability
+**Useability**
 - USE-7: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
 - USE-8: Shift swapping should be prominently displayed and accessible within 3 selections. 
 - USE-9: Viewing schedules should be prominently displayed and accessible within 2 selections. 
@@ -425,11 +425,11 @@ Useability
 - USE-12: Viewing messages should be prominently displayed and accessible within 3 selections. 
 - USE-13: Standard conventions for all user interface elements
 
-Performance 
+**Performance** 
 - PER-14: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
 - PER-15: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
 
-Security
+**Security**
 - SEC-16: Unauthorized employees are not be able to view another employee’s banking information
 - SEC-17: Industry standard information security procedures must be used when handling user information. 
 - SEC-18: The system shall ensure that no persons outside the organization can access any information stored in the system. 
