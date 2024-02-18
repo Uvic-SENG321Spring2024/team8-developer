@@ -376,21 +376,28 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 #####################################
 
-## V. Recipe Management <a name="feature-3"></a>
+## V. Account Management <a name="feature-5"></a>
 
 ### a. Description and Priority
-
+The Account Management feature has a high priority in the system.  It allows authenticated Managers to manage access to the system by creating and deleting accounts.  An authenticated employee must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
 
 ### b. Functional Requirements
 
-ACC-1: The system shall provide managers with the capability to delete employee accounts that are no longer active within the company.
-ACC-2: The system shall allow managers to create new employee accounts, granting them access to the system.
-ACC-3: The system shall enable managers to view an employees Role, Contact Information, and Username.
-ACC-4: The sytem shall allow managers to edit an employees Role, and Username
-ACC-5: The system shall allow Employees to edit their payment information, contact information, and password.
-ACC-6: The system shall allow Employees to log in to their accounts with their username and password.
-ACC-7: The system shall allow Employees to log out of their accounts.
-ACC-8: The system shall allow Employees to view their account information to ensure its accuracy and completeness.
+*ACC-1*: The system shall provide managers with the capability to delete employee accounts that are no longer active within the company.
+
+*ACC-2*: The system shall allow managers to create new employee accounts, granting them access to the system.
+
+*ACC-3*: The system shall enable managers to view an employees Role, Contact Information, and Username.
+
+*ACC-4*: The sytem shall allow managers to edit an employees Role, and Username
+
+*ACC-5*: The system shall allow Employees to edit their payment information, contact information, and password.
+
+*ACC-6*: The system shall allow Employees to log in to their accounts with their username and password.
+
+*ACC-7*: The system shall allow Employees to log out of their accounts.
+
+*ACC-8*: The system shall allow Employees to view their account information to ensure its accuracy and completeness.
 
 
 
@@ -398,15 +405,16 @@ ACC-8: The system shall allow Employees to view their account information to ens
 
 ![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/)
 
-| ID and Name | UC-2 View Account Information |
+| ID and Name | UC-5 View Account Information |
 | ----------- | ----------- |
-| Created By: | Luca &emsp; Date Created: 2/17/24 |
+| Created By: | Luca &emsp; 
+| Date Created:| 2/17/24 |
 | Primary Actor: | Kitchen Staff, Managers, Front of House Staff |
 | Description | The Actor selects an account and is able to view the information about the account that they are authorized to view  |
 | Trigger: | Actor clicks on an accounts profile icon. |
 | Preconditions: | <ul><li>PRE-1: User is logged in.</li><li>PRE-2: User is authenticated.</li></ul> |
 | Postconditions: | <ul><li>POST-1: Account Information is displayed.</li></ul> |
-| Normal Flow: | <ol>**2.0 Viewing own Information**<li>An employee clicks on their own profile icon.</li><li>|They are shown their Username, Role, Contact Information,and Payment Information.</ol>
+| Normal Flow: | <ol>**2.0 Viewing own Information**<li>An employee clicks on their own profile icon.</li><li>They are shown their Username, Role, Contact Information,and Payment Information.</ol> |
 | Alternate Flows: | <ol>**2.1 Manager Viewing Employees Informatio**<li>Manager clicks on an employees profile icon.</li><li>They are shown the employees Username, Role, and Contact Information</li></ol> |
 | Exceptions: |  |
 | Priority: | High |
@@ -420,13 +428,13 @@ ACC-8: The system shall allow Employees to view their account information to ens
 As a Manager I want to delete an account so that I can remove any employees that no longer work for my company from the system.
 
 **Acceptance Criteria:**
-
+There is an option for managers to "Delete" an account.  This feature must remove an employees access to the system, yet still retain information about their employment for legal and tax purposes.
 
 **User Story 2: Create Account(Manager)**
-As a Manager I want to create an account so that my new employees have access to the system.
+As a Manager I want to create an account so that my newly hired employees have access to the system.
 
 **Acceptance Criteria:**
-
+There is an option for a manager to "Create" an account. After selecting this the manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
 
 **User Story 3: View Account Information (Manager)**
 
@@ -434,30 +442,46 @@ As a manager I want to view an employees account information so that I can see t
 
 **Acceptance Criteria:**
 
+There is an option for a manager to "View Account Informaton" for any selected employee. It will show their Username, Role, and Contact Information.
 
-**User Story 4:View Account Information (Employee) **
+**User Story 4:Manage Account (Manager)**
+
+As a manager I want to change an employees role or username in order to ensure it stays up to date.
+
+**Acceptance Criteria:**
+
+There is an option for a manager to "Manage Account" for any employee. It will allow them to edit an employees username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+
+**User Story 5:View Account Information (Employee)**
 
 As an employee I want to view my account information so I can ensure it is all correct.
 
 **Acceptance Criteria:**
 
-**User Story 5:Edit Account Information (Employee) **
+There is an option for an employee to "View Account Informaton" for themselves. It will show their username, role, contact information, and payment information.
 
-As an employee I want to edit my account information so I can keep my payment information, contact information, and password up to date.
+**User Story 6:Edit Account Information (Employee)**
+
+As an employee I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
 
 **Acceptance Criteria:**
 
-**User Story 6:Log In (Employee) **
+An employee must have an option to "Edit Account Information" for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+
+**User Story 7:Log In (Employee)**
 
 - As an employee I want to log in to my account so I can use the system.
 
 **Acceptance Criteria:**
 
-**User Story 7:Log Out (Employee) **
+When an employee opens the app they will have an option to "Log In" to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
+
+**User Story 8:Log Out (Employee)**
 
 As an employee I want to log out of my account so I can ensure no one else can use my account.
 
 **Acceptance Criteria:**
+An employee must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" and employee once they are no longer using the application.
 
 
 # 6 Data Requirements <a name="data-requirements"></a>
