@@ -280,13 +280,15 @@ The following assumptions and dependencies affect the requirements in this docum
 
 | **Word**  | **Definition** |
 | ------------- | ------------- |
-|  Banter | Banter Ice Cream, an ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. |
+|  Banter | Banter Ice Cream, an ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. [1]|
 |  Client | Banter Ice Cream |
+|  Business Hours | The hours that Banter Ice Cream is open. Monday-Thursday 1-9pm, Friday 1-10pm, Saturday 12-10pm, and Sunday 12-9pm (inclusive). [1]|
+|  New Employee | An employee of Banter Ice Cream that has worked for Banter for less than two weeks |
 
 
 ## vi. **References** <a name="references"></a>
 
-No references used in this document.
+[1] “Find Us,” Banter Ice Cream, https://www.bantericecream.com/find-us (accessed Feb. 18, 2024). 
 
 
 # 5 System Features <a name="system-features"></a>
@@ -405,8 +407,8 @@ Describe the requirements associated with any communications functions required 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
 **Availability**
-- AVL-1: The system is available 99.99% each day during business working hours.
-- AVL-2: The system is available 99.0% each day outside of business working hours.
+- AVL-1: The system is available 99.99% each day during business hours.
+- AVL-2: The system is available 99.0% each day outside of business hours.
 
 **Reliability**
 - REL-3: A backup of all system data is saved every night to minimize data loss. 
