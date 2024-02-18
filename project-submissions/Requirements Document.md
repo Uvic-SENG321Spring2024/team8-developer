@@ -343,8 +343,6 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 #### User Stories #3: Edit message
 
-#### User Stories #4: Send message to all employees 
-
 #### User Stories #5: React announcements 
 
 #### User Stories #6: View announcements 
