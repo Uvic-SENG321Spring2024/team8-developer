@@ -374,7 +374,7 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 
 
-## V. Account Management <a name="feature-5"></a>
+## v. Account Management <a name="feature-5"></a>
 
 ### a. Description and Priority
 The Account Management feature has a high priority in the system.  It allows authenticated Managers to manage access to the system by creating and deleting accounts.  An authenticated employee must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
