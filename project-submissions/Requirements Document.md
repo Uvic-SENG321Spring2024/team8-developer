@@ -12,12 +12,13 @@
 | Luca Bolzonello | January 30, 2024 | Edit of section 3.3 | 1.5 |
 | Nolan Curtis | January 30, 2024 | Created draft for 2.1 | 1.6 |
 | Tim Xu | January 30, 2024 | Created draft for 2.2 and 2.3 | 1.7 |
-| Everyone | January 30, 2024 | Review and edit sections | 1.8 |
-| Everyone | January 31, 2024 | Further review and change formatting | 1.9 |
-| Everyone | February 2, 2024 | Final Review | 2.0 |
+| Team | January 30, 2024 | Review and edit sections | 1.8 |
+| Team | January 31, 2024 | Further review and change formatting | 1.9 |
+| Team | February 2, 2024 | Final Review | 2.0 |
 | Amanda Anderson | February 8, 2024 | Add template for sections 5-10 | 3.0 |
-| Everyone | February 10-13, 2024 | Update document according to feedback | 3.1 |
+| Team | February 10-13, 2024 | Update document according to feedback | 3.1 |
 | Amanda Anderson | February 13, 2024 | Update template for sections 5, 6 | 4.0 |
+| Team | February 18, 2024 | Add content to sections 5, 6, and 8 | 4.1 |
 
 # 1. **Overview** <a name="overview"></a>
 
@@ -379,7 +380,9 @@ E.g., entity-relationship diagrams and UML class diagrams. You may provide a dat
 Composition of data strucutres, meaning, data type, length, format, and allowed values.
 
 ## iii. Reports <a name="data-report"></a>
-If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.
+
+The system shall not generate any reports.
+
 
 ## iv. Data Integrity <a name="data-integrity"></a>
 Data acquisition, integrity, retention, and diposal If possible, describe how data is acquired, retained, and later on disposed. Describe the requirements for protecting the integrity of the data.
