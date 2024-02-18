@@ -374,7 +374,75 @@ This is the use case specification. For each Use Case, list the dialog elements 
 # 6 Data Requirements <a name="data-requirements"></a>
 
 ## i. Logical Data Models <a name="data-model"></a>
-E.g., entity-relationship diagrams and UML class diagrams. You may provide a data model for the business operations or the data that the system modifies. Not the same thing as a database design data model.
+
+![Entity Relationship Diagram - Ben6](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/55803d9e-2210-42c8-a900-ba137dd72789)
+
+![UML Diagram - My Diagram (1)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/f0cb66f4-f0bb-48d3-8bf2-adab13170f3f)
+
+The Entity Relationship Diagram (ERD) and the UML Class Diagram serve as visual tools to represent the data structure and relationships within the Banter Ice Cream System. The purpose of these diagrams is to articulate how various data entities within the system interact and relate to each other, which is essential for understanding the flow of information and the underlying structure of the system’s data.
+
+### Diagrams Explanation
+
+1. **Employee to User Account:**
+   - **Relationship Name:** "Operates"
+   - **Relationship Type:** One-to-One
+   - **Description:** Each Employee operates a single User Account to access the system. It can be read as "A User Account is operated by an Employee" or "An Employee operates a User Account."
+
+2. **Employee to Banking Information:**
+   - **Relationship Name:** "Has"
+   - **Relationship Type:** One-to-One
+   - **Description:** Each Employee has specific Banking Information for payroll purposes. It can be interpreted as "Banking Information is held by an Employee" or "An Employee has Banking Information."
+
+3. **Employee to Shift:**
+   - **Relationship Name:** "Assigned To"
+   - **Relationship Type:** One-to-Many
+   - **Description:** An employee can be assigned to many shifts, but each shift is assigned to one employee. It can be read as "A Shift is assigned to an Employee" or "An Employee is assigned to a Shift."
+
+4. **Employee to Schedule:**
+   - **Relationship Name:** "Follows"
+   - **Relationship Type:** One-to-One
+   - **Description:** Each employee follows one schedule, and each schedule is followed by one employee. It can be interpreted as "A Schedule is followed by an Employee" or "An Employee follows a Schedule."
+
+5. **Schedule to Shift:**
+   - **Relationship Name:** "Includes"
+   - **Relationship Type:** One-to-Many
+   - **Description:** A Schedule includes multiple Shifts. It can be interpreted as "A Schedule includes Shifts" or "Shifts are included in a Schedule."
+
+6. **Employee to Message:**
+   - **Relationship Name:** "Creates"
+   - **Relationship Type:** One-to-Many
+   - **Description:** An Employee creates multiple Messages. It can be read as "A Message is created by an Employee" or "An Employee creates Messages."
+
+7. **Employee to Announcements:**
+   - **Relationship Name:** "Authors"
+   - **Relationship Type:** One-to-Many
+   - **Description:** An employee authors multiple Announcements. It can be interpreted as "An Announcement is authored by an Employee" or "An Employee authors Announcements."
+
+8. **Employee to Recipe:**
+   - **Relationship Name:** "Develops"
+   - **Relationship Type:** One-to-Many
+   - **Description:** An employee develops multiple recipes. It can be read as "A Recipe is developed by an Employee" or "An Employee develops Recipes."
+
+9. **Recipe to Ingredients:**
+   - **Relationship Name:** "Consists of"
+   - **Relationship Type:** Many-to-Many
+   - **Description:** A recipe consists of multiple ingredients, and each Ingredient can be part of multiple Recipes. It can be read as "A Recipe consists of Ingredients" or "Ingredients are part of a Recipe."
+
+10. **Ingredients to Allergens:**
+    - **Relationship Name:** "Contains"
+    - **Relationship Type:** Many-to-Many
+    - **Description:** Ingredients may contain multiple allergens, and each allergen may be found in multiple ingredients. It can be interpreted as "An Ingredient contains Allergens" or "Allergens are contained in an Ingredient."
+
+11. **Announcement to Reaction:**
+    - **Relationship Name:** "Generates" or "Receives"
+    - **Relationship Type:** One-to-Many
+    - **Description:** This relationship indicates that an Announcement generates multiple Reactions or receives multiple Reactions from users. It can be read as "An Announcement generates Reactions" or "Reactions are received by an Announcement."
+
+12. **Announcement to View:**
+    - **Relationship Name:** "Attracts" or "Accumulates"
+    - **Relationship Type:** One-to-Many
+    - **Description:** This relationship shows that an Announcement attracts multiple Views or accumulates multiple Views over time. It can be interpreted as "An Announcement attracts Views" or "Views are accumulated by an Announcement."
+
 
 ## ii. Data Dictionary <a name="data-dictionary"></a>
 Composition of data strucutres, meaning, data type, length, format, and allowed values.
