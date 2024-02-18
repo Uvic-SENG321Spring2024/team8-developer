@@ -322,10 +322,6 @@ The Communication and Announcement and announcement feature is a high priority f
 
 ### b. Functional Requirements
 
-**Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.**
-
-b. Functional Requirements
-
 REQ-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enchance communication.
 
 REQ-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
