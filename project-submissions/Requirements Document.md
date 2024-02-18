@@ -340,6 +340,7 @@ This is the use case specification. For each Use Case, list the dialog elements 
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/0b3d45ce-a2b3-42fe-94ab-478f02e18ce6)
 
 
+* User Stories #1:
 
 
 
