@@ -337,18 +337,44 @@ This is the use case specification. For each Use Case, list the dialog elements 
 State the feature name in just a few words.
 
 ### a. Description and Priority
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+The Recipe Management feature has a high priority in the application. An Authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Managers and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. Managers are the only ones who are able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily wwhen making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
 
 ### b. Functional Requirements
 Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information (1) about Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
 
-REQ-1:
+REQ-1: An authenticated user must be able to search for and view active and unactive recipes. 
 
-REQ-2:
+REQ-2: Managers and Kitchen Staff must be able to view the full recipe including ingredents list, preparation instructions, and allergens.
+
+REQ-3: Front of House Staff must be only able to view the allergens of a recipe.
+
+REQ-4: Managers must be able to create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+
+REQ-5: Managers must be able to edit existing recipes, including changing details, adding or removing ingredients, and updating allergen information.
+
+REQ-6: Managers must be able to archieve a recipe, changing its status to unactive, and be able to unarchive a recipe, changing its status to active.
+
+REQ-7: The system must be able to display different recipe views based on the access of the user's role.
+
+&emsp;&emsp;REQ-7.1: The system must have a detailed recipe view which contains name, list of ingredients, preparation instructions, and allergens.
+
+&emsp;&emsp;REQ-7.2: The system must have a limited recipe view which only contains the name, and allergens.
+
+REQ-8: The system must be able to archive recipes, removing it from the list of active recipes and adds it to the list of unactive recipes.
+
+REQ-9: The system must be able to unarchive recipes, removing it from the list of unactive recipes and adds it to the list of active recipes.
+
+REQ-10: The system must enable users to search for recipes based on name, ingredents, or allergens.
+
+REQ-11: The system must allow users to filter recipes based on different criteria, such as type, status, or allergen content.
+
+
 
 ### c. Use cases associated with the feature or functional requirement
 
 This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+
+![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Usecase-Diagram-V2.png)
 
 | ID and Name | UC-2 View Recipe |
 | ----------- | ----------- |
@@ -364,8 +390,10 @@ This is the use case specification. For each Use Case, list the dialog elements 
 | Priority: | High |
 | Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by Managers, 20 times per day by Front of House Staff. |
 | Business Rules: | Must alert all customers of potential allergens. Only authorized ingredients may be in the ice cream. |
-| Other Information: |  |
+| Other Information: | REQ-2, REQ-3, REQ-7 |
 | Assumptions: | Recipe already exists in the system. |
+
+
 
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
