@@ -341,19 +341,51 @@ REQ-5: The system must provide tailored interfaces and features depending on the
 
 #### User Stories #1: Send message
 
+
+**Acceptance Criteria:** 
+
+
 #### User Stories #2: View message 
+
+
+**Acceptance Criteria:** 
+
 
 #### User Stories #3: Edit message
 
+
+**Acceptance Criteria:** 
+
+
 #### User Stories #5: React announcements 
+
+
+**Acceptance Criteria:** 
+
 
 #### User Stories #6: View announcements 
 
+
+**Acceptance Criteria:** 
+
+
 #### User Stories #7: View announcement information 
+
+
+**Acceptance Criteria:** 
+
 
 #### User Stories #8: Send announcements 
 
+
+**Acceptance Criteria:** 
+
+
 #### User Stories #9: Edit announcements 
+
+
+**Acceptance Criteria:** 
+
 
 
 ## iii. Recipe Management <a name="feature-3"></a>
