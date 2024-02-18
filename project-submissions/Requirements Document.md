@@ -335,11 +335,7 @@ REQ-2:
 
 This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
-
-
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/0b3d45ce-a2b3-42fe-94ab-478f02e18ce6)
-
-
 * User Stories #1:
 
 
