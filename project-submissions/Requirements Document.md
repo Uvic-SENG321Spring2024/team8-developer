@@ -298,40 +298,40 @@ This template illustrates organizing the functional requirements for the product
 Scheduling and Time Tracking
 
 ### a. Description and Priority
-The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to view posted schedule, request shift swaps, and indicate availability. Managers shall be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for all employees. 
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for all employees. 
 
 ### b. Functional Requirements
-SCH-1: The scheduler shall allow managers to create shifts for employees.  
-SCH-2:The scheduler shall allow shifts to be made 2-4 weeks in advance.  
-SCH-3: The scheduler shall allow only managers to delete shifts from the schedule.   
-SCH-4: The scheduler shall allow only managers to edit the schedule.  
-SCH-5: When a schedule is edited all employees with affected schedules shall be updated.  
-SCH-6: The scheduler shall not allow the modification of any details of a shift after the shift is over.  
-SCH-7: Each shift shall have a unique identifier to identify specific shifts.  
-SCH-8: Schedule information shall be stored for 6 years due to Canadian laws regarding business tax documents.  
-SCH-9: When a shift swap request is approved the schedule shall update for each employee.  
-SCH-10: The schedule shall not allow employees to be scheduled during the time with indicated availability off.  
-SCH-11: The schedulers option to view tracked hours by managers and bookkeepers shall be shown correct information.  
-SCH-12: System shall automatically summarize employees tracked hours.  
-SCH-13: The system shall have a clocking in option to allow employees to have their hours automatically recorded using their account details.  
-SCH-14: The system shall have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
-SCH-15: The system shall allow Employees to request shift swaps with other employees.  
-SCH-16: The system shall allow managers to approve requested shift swaps from employees.  
-SCH-17: The system shall allow managers to deny requested shift swaps from employees.  
-SCH-18: The system shall not allow shift swaps which cause an employee to be double booked.  
-SCH-19: The systems view schedule option shall display correct information including all shift swaps, deleted shifts, edited shifts and holidays  
+SCH-1: The scheduler must allow managers to create shifts for employees.  
+SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.  
+SCH-3: The scheduler must allow only managers to delete shifts from the schedule.   
+SCH-4: The scheduler must allow only managers to edit the schedule.  
+SCH-5: When a schedule is edited all employees with affected schedules must be updated.  
+SCH-6: The scheduler must not allow the modification of any details of a shift after the shift is over.  
+SCH-7: Each shift must have a unique identifier to identify specific shifts.  
+SCH-8: Schedule information must be stored for 6 years due to Canadian laws regarding business tax documents.  
+SCH-9: When a shift swap request is approved the schedule must update for each employee.  
+SCH-10: The schedule must not allow employees to be scheduled during the time with indicated availability off.  
+SCH-11: The schedulers option to view tracked hours by managers and bookkeepers must be shown correct information.  
+SCH-12: System must automatically summarize employees tracked hours.  
+SCH-13: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.  
+SCH-14: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
+SCH-15: The system must allow Employees to request shift swaps with other employees.  
+SCH-16: The system must allow managers to approve requested shift swaps from employees.  
+SCH-17: The system must allow managers to deny requested shift swaps from employees.  
+SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
+SCH-19: The systems view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays  
 
 
 ### c. Use cases associated with the feature or functional requirement
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/80367104/83bb8a6c-6082-411c-b618-ec47af992ce9)
-| ID and Name | Create Schedule |
+| ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
 | Created By: | Nolan  Date Created: 2/15/24 |
 | Primary Actor: | Front of House and Kitchen Manager |
 | Description | The actor assigns each shift to employees for the next two weeks. |
 | Trigger: | Actor opens create schedule functionality of software. |
-| Preconditions: |Pre1: Actor is logged in to system. Pre2: There is at least one employee in the system who is available to take shifts.|
-| Postconditions: |Each assigned shift is associated with an employee.|
+| Preconditions: |<ul><li>PRE-1: Actor is logged in to system.</li></ul> <ul><li>PRE-2: There is at least one employee in the system who is available to take shifts.</li></ul>|
+| Postconditions: |<ul><li>POST-1: Each assigned shift is associated with an employee.</li></ul>|
 | Normal Flow: |1.) Actor selects an employee. 2.) Actor assigns one or more shifts to the selected employee within employee's listed availability. 3.) Actor repeats continues, selecting one employee at a time until all shifts are assigned. 4.) Actor completes schedule creation.|
 | Alternate Flows: |2A-1.) If employee does not have listed availability, no shifts are assigned to them.2A-2.) Actor moves on to step 3 of primary flow.  2B-1.) If employee is working a maximum number of hours, no additional shifts are assigned to them.  2B-2.) Actor moves on to step 3 of primary flow.  2C-1.) Actor does not assign any shifts to the selected employee.  2C-2.) Actor moves on to step 3 of primary flow.  3A-1.) Actor selects an employee that was previously selected.  3A-2.) Actor assigns an additional one or more shifts to the selected employee.|
 | Exceptions: |2A-1.) Actor cancels schedule creation. Plan is not saved.  2A-2.) Actor exits schedule creation functionality of app.  2B-1. Actor saves schedule creation plan. 2B-2.) Actor exits schedule creation functionality of app.  3A-1.) Actor cancels schedule creation. Plan is not saved. 3A-2.) Actor exits schedule creation functionality of app.  3B-1.) Actor saves schedule creation plan. 3B-2.) Actor exits schedule creation functionality of app.  3C-1.) Actor does not assign all shifts. 3C-2.) Actor moves on to step 4 of primary flow.|
@@ -346,7 +346,7 @@ As a manager I want to approve shift swap requests so that upon employee request
 
 **Acceptance Criteria:**
 
-Given a manager has approved a shift swap request then the shift being swapped for each employee shall be switched
+Given a manager has approved a shift swap request then the shift being swapped for each employee must be switched
 
 **User Story 2: Make Schedule**
 
@@ -422,15 +422,15 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 **User Story 11: View weekly**
 
-As a staff member, when viewing the schedule I shall be able to view the posted schedule limited to specific weeks
+As a staff member, when viewing the schedule I must be able to view the posted schedule limited to specific weeks
 
 **Acceptance Criteria:**
 
-Given that the employee has selected to view the schedule by week, only the specified week shall be shown
+Given that the employee has selected to view the schedule by week, only the specified week must be shown
 
 **User Story 12: View monthly**
 
-As a staff member, when viewing the schedule I shall be able to view the posted schedule limited to specific months
+As a staff member, when viewing the schedule I must be able to view the posted schedule limited to specific months
 
 **Acceptance Criteria:**
 
