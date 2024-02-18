@@ -367,7 +367,7 @@ ONB-3: The managers must be the only staff to create the onboarding materials at
 ONB-4: The managers must be the only staff to remove the onboarding materials at any time.
 
 ### c. Use cases associated with the feature or functional requirement
-![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/9b7b5d51-de6b-49b7-9826-64d42cd1553d)
+![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8cccab7f-7c44-4d1a-94cb-da9e5a177b9d)
 
 Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor, designated as the "Staff," is subdivided into specific roles, namely the Bookkeeper, Front of House Staff, and Kitchen Staff, with their access limited solely to viewing onboarding materials.
 
