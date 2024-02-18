@@ -360,11 +360,12 @@ The Onboarding Materials feature has a low priority in the application. An authe
 ### b. Functional Requirements
 ONB-1:  An authenticated employee (except delivery drivers) must be able to view the onboarding materials at any time.
 
-REQ-2: The managers will be the only staff to edit the onboarding materials at any time.
+ONB-2: The managers will be the only staff to edit the onboarding materials at any time.
 
-REQ-3: The managers will be the only staff to create the onboarding materials at any time.
+ONB-3: The managers will be the only staff to create the onboarding materials at any time.
 
-REQ-4: The managers will be the only staff to remove the onboarding materials at any time.
+ONB-4: The managers will be the only staff to remove the onboarding materials at any time.
+
 ### c. Use cases associated with the feature or functional requirement
 ![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/9b7b5d51-de6b-49b7-9826-64d42cd1553d)
 
