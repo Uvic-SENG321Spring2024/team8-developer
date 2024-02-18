@@ -370,6 +370,96 @@ REQ-2:
 This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
 
+
+
+
+
+#####################################
+
+## V. Recipe Management <a name="feature-3"></a>
+
+### a. Description and Priority
+
+
+### b. Functional Requirements
+
+ACC-1: The system shall provide managers with the capability to delete employee accounts that are no longer active within the company.
+ACC-2: The system shall allow managers to create new employee accounts, granting them access to the system.
+ACC-3: The system shall enable managers to view an employees Role, Contact Information, and Username.
+ACC-4: The sytem shall allow managers to edit an employees Role, and Username
+ACC-5: The system shall allow Employees to edit their payment information, contact information, and password.
+ACC-6: The system shall allow Employees to log in to their accounts with their username and password.
+ACC-7: The system shall allow Employees to log out of their accounts.
+ACC-8: The system shall allow Employees to view their account information to ensure its accuracy and completeness.
+
+
+
+### c. Use cases associated with the feature or functional requirement
+
+![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/)
+
+| ID and Name | UC-2 View Account Information |
+| ----------- | ----------- |
+| Created By: | Luca &emsp; Date Created: 2/17/24 |
+| Primary Actor: | Kitchen Staff, Managers, Front of House Staff |
+| Description | The Actor selects an account and is able to view the information about the account that they are authorized to view  |
+| Trigger: | Actor clicks on an accounts profile icon. |
+| Preconditions: | <ul><li>PRE-1: User is logged in.</li><li>PRE-2: User is authenticated.</li></ul> |
+| Postconditions: | <ul><li>POST-1: Account Information is displayed.</li></ul> |
+| Normal Flow: | <ol>**2.0 Viewing own Information**<li>An employee clicks on their own profile icon.</li><li>|They are shown their Username, Role, Contact Information,and Payment Information.</ol>
+| Alternate Flows: | <ol>**2.1 Manager Viewing Employees Informatio**<li>Manager clicks on an employees profile icon.</li><li>They are shown the employees Username, Role, and Contact Information</li></ol> |
+| Exceptions: |  |
+| Priority: | High |
+| Frequency of Use: | 1 time per month by the Kitchen and Front of House staff, 2 times per day by Managers. |
+| Business Rules: | Must ensure that Password is not visible to anyone. |
+| Other Information: | |
+| Assumptions: | Account has all of the information already filled out. |
+
+**User Story 1: Delete Account(Manager)**
+
+As a Manager I want to delete an account so that I can remove any employees that no longer work for my company from the system.
+
+**Acceptance Criteria:**
+
+
+**User Story 2: Create Account(Manager)**
+As a Manager I want to create an account so that my new employees have access to the system.
+
+**Acceptance Criteria:**
+
+
+**User Story 3: View Account Information (Manager)**
+
+As a manager I want to view an employees account information so that I can see their role and contact information.
+
+**Acceptance Criteria:**
+
+
+**User Story 4:View Account Information (Employee) **
+
+As an employee I want to view my account information so I can ensure it is all correct.
+
+**Acceptance Criteria:**
+
+**User Story 5:Edit Account Information (Employee) **
+
+As an employee I want to edit my account information so I can keep my payment information, contact information, and password up to date.
+
+**Acceptance Criteria:**
+
+**User Story 6:Log In (Employee) **
+
+- As an employee I want to log in to my account so I can use the system.
+
+**Acceptance Criteria:**
+
+**User Story 7:Log Out (Employee) **
+
+As an employee I want to log out of my account so I can ensure no one else can use my account.
+
+**Acceptance Criteria:**
+
+
 # 6 Data Requirements <a name="data-requirements"></a>
 
 ## i. Logical Data Models <a name="data-model"></a>
