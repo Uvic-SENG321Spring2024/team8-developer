@@ -312,7 +312,7 @@ REQ-2:
 This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
 
-## ii. Communication and Announcment <a name="feature-2"></a>
+## ii. Communication and Announcement <a name="feature-2"></a>
 
 **State the feature name in just a few words.** 
 
