@@ -49,6 +49,7 @@ These sections are outlined in the following Table of Contents.
    2. [Communication and Announcment](#feature-2)
    3. [Recipe Management](#feature-3)
    4. [Onboarding Materials](#feature-4)
+   5. [Account Management](#feature-5)
 6. [Data Requirements](#data-requirements)
    1. [Logical Data Models](#data-model)
    2. [Data Dictionary](#data-dictionary)
