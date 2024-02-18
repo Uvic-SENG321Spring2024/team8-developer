@@ -301,27 +301,25 @@ Scheduling and Time Tracking
 The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to view posted schedule, request shift swaps, and indicate availability. Managers shall be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for all employees. 
 
 ### b. Functional Requirements
-SCH-1: The scheduler shall allow managers to create shifts for employees
-
-SCH-2:The scheduler shall allow shifts to be made 2-4 weeks in advance
-
-SCH-3: The scheduler shall allow only managers to delete shifts from the schedule 
-SCH-4: The scheduler shall allow only managers to edit the schedule 
-SCH-5: When a schedule is edited all employees with affected schedules shall be updated
-SCH-6: The scheduler shall not allow the modification of any details of a shift after the shift is over.
-SCH-7: Each shift shall have a unique identifier to identify specific shifts.
-SCH-8: Schedule information shall be stored for 6 years due to law
-SCH-9: When a shift swap request is approved the schedule shall update for each employee
-SCH-10: The schedule shall not allow employees to be scheduled during the time with indicated availability off
-SCH-11: The schedulers option to view tracked hours by managers and bookkeepers shall be shown correct information
-SCH-12: System shall automatically summarize employees tracked hours 
-SCH-13: The system shall have a clocking in option to allow employees to have their hours automatically recorded using their account details
-SCH-14: The system shall have a clocking out option to allow employees to stop their hours from being recorded using their account details
-SCH-15: The system shall allow Employees to request shift swaps with other employees
-SCH-16: The system shall allow managers to approve requested shift swaps from employees
-SCH-17: The system shall allow managers to deny requested shift swaps from employees
-SCH-18: The system shall not allow shift swaps which cause an employee to be double booked.
-SCH-19: The systems view schedule option shall display correct information including all shift swaps, deleted shifts, edited shifts and holidays
+SCH-1: The scheduler shall allow managers to create shifts for employees.  
+SCH-2:The scheduler shall allow shifts to be made 2-4 weeks in advance.  
+SCH-3: The scheduler shall allow only managers to delete shifts from the schedule.   
+SCH-4: The scheduler shall allow only managers to edit the schedule.  
+SCH-5: When a schedule is edited all employees with affected schedules shall be updated.  
+SCH-6: The scheduler shall not allow the modification of any details of a shift after the shift is over.  
+SCH-7: Each shift shall have a unique identifier to identify specific shifts.  
+SCH-8: Schedule information shall be stored for 6 years due to Canadian laws regarding business tax documents.  
+SCH-9: When a shift swap request is approved the schedule shall update for each employee.  
+SCH-10: The schedule shall not allow employees to be scheduled during the time with indicated availability off.  
+SCH-11: The schedulers option to view tracked hours by managers and bookkeepers shall be shown correct information.  
+SCH-12: System shall automatically summarize employees tracked hours.  
+SCH-13: The system shall have a clocking in option to allow employees to have their hours automatically recorded using their account details.  
+SCH-14: The system shall have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
+SCH-15: The system shall allow Employees to request shift swaps with other employees.  
+SCH-16: The system shall allow managers to approve requested shift swaps from employees.  
+SCH-17: The system shall allow managers to deny requested shift swaps from employees.  
+SCH-18: The system shall not allow shift swaps which cause an employee to be double booked.  
+SCH-19: The systems view schedule option shall display correct information including all shift swaps, deleted shifts, edited shifts and holidays  
 
 
 ### c. Use cases associated with the feature or functional requirement
