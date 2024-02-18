@@ -337,8 +337,23 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 ![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/c17d4e15-f2d0-4734-bc51-3d27d704b968)
 
-#### User Stories #1: 
+#### User Stories #1: Send message
 
+#### User Stories #2: View message 
+
+#### User Stories #3: Edit message
+
+#### User Stories #4: Send message to all employees 
+
+#### User Stories #5: React announcements 
+
+#### User Stories #6: View announcements 
+
+#### User Stories #7: View announcement information 
+
+#### User Stories #8: Send announcements 
+
+#### User Stories #9: Edit announcements 
 
 
 ## iii. Recipe Management <a name="feature-3"></a>
