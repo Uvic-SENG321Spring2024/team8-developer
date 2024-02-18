@@ -337,7 +337,7 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 ![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/c17d4e15-f2d0-4734-bc51-3d27d704b968)
 
-<u> User Stories #1: 
+#### User Stories #1: 
 
 
 
