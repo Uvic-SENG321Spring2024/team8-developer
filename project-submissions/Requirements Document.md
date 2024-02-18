@@ -355,7 +355,7 @@ This is the use case specification. For each Use Case, list the dialog elements 
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority
-The Onboarding Materials feature has a low priority in the application. An authenticated employee (except delivery drivers)must be able to view the onboarding materials but only the managers have the right to edit the materials such as add or remove materials. Expect a low frequency of use, new employees will need to become familiar with onboarding material and may access material multiple times a day for the first week of employment. However, we expect established employees will only access a material to reference it once each month.
+The Onboarding Materials feature has a low priority in the application. An authenticated employee (except delivery drivers) must be able to view the onboarding materials but only the managers have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements
 REQ-1:  An authenticated employee (except delivery drivers)must be able to view the onboarding materials at any time.
