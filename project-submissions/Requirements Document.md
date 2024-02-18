@@ -360,11 +360,15 @@ The Onboarding Materials feature has a low priority in the application. An authe
 ### b. Functional Requirements
 An authenticated employee (except delivery drivers)must be able to view the onboarding materials but only the managers have the right to edit the materials.
 
-REQ-1:  An authenticated employee (except delivery drivers)must be able to view the onboarding materials at any time. (Low Priority) 
+REQ-1:  An authenticated employee (except delivery drivers)must be able to view the onboarding materials at any time.
 
-REQ-2: The managers will be the only staff to edit the onboarding materials at any time. (Low Priority) 
+REQ-2: The managers will be the only staff to edit the onboarding materials at any time.
+
+REQ-3: The managers will be the only staff to create the onboarding materials at any time.
+
+REQ-4: The managers will be the only staff to remove the onboarding materials at any time.
 ### c. Use cases associated with the feature or functional requirement
-![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/714412b2-5643-4595-b293-322d0c6f723c)
+![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/9b7b5d51-de6b-49b7-9826-64d42cd1553d)
 
 Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor, designated as the "Staff," is subdivided into specific roles, namely the Bookkeeper, Front of House Staff, and Kitchen Staff, with their access limited solely to viewing onboarding materials
 
@@ -375,8 +379,7 @@ So that I can access the necessary information for onboarding purposes.
 
 Acceptance Criteria:
 
-I can use the system.
-There is an option labeled 'View Onboarding Materials' available in the user interface.
+There is an option 'View Onboarding Materials' available in the user interface.
 Upon selecting the option, I can choose the specific onboarding materials I wish to view.
 The selected onboarding materials are displayed to me.
 I can exit the viewing mode when I'm done.
@@ -389,8 +392,8 @@ So that I can ensure the content is up-to-date and relevant for the employees.
 
 Acceptance Criteria:
 
-I can use the system.
-There is an option labeled 'Edit Onboarding Materials' available in the user interface.
+
+There is an option 'Edit Onboarding Materials' available in the user interface.
 Upon selecting the option, I can choose the specific onboarding materials I want to edit.
 I have the ability to make changes to the selected onboarding materials.
 After editing, I can save the changes, and the system confirms that the changes have been successfully saved.
@@ -403,8 +406,7 @@ So that I can provide updated and relevant content for employee onboarding.
 
 Acceptance Criteria:
 
-I can use the system.
-There is an option labeled 'Create Onboarding Material' available in the user interface.
+There is an option 'Create Onboarding Material' available in the user interface.
 Upon selecting the option, I am prompted to input the necessary details for the new onboarding material, such as title, content, and any relevant metadata.
 After entering the information, I can save the new onboarding material, and the system confirms its successful creation.
 The newly created onboarding material is accessible in the system for other authorized users to view.
@@ -417,8 +419,7 @@ So that I can maintain the integrity and relevance of the onboarding content.
 
 Acceptance Criteria:
 
-I can use the system.
-There is an option labeled 'Remove Onboarding Material' available in the user interface.
+There is an option 'Remove Onboarding Material' available in the user interface.
 Upon selecting the option, I can choose the specific onboarding material I wish to remove.
 The system prompts for confirmation before proceeding with the removal to prevent accidental deletions.
 Upon confirmation, the selected onboarding material is removed from the system, and the system confirms the successful removal.
