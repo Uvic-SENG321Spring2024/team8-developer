@@ -295,21 +295,148 @@ This template illustrates organizing the functional requirements for the product
  
 ## i. Scheduling and Time Tracking <a name="feature-1"></a>
 
-State the feature name in just a few words.
+Scheduling and Time Tracking
 
 ### a. Description and Priority
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to view posted schedule, request shift swaps, and indicate availability. Managers shall be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for all employees. 
 
 ### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+SCH-1: The scheduler shall allow managers to create shifts for employees
 
-REQ-1:
+SCH-2:The scheduler shall allow shifts to be made 2-4 weeks in advance
 
-REQ-2:
+SCH-3: The scheduler shall allow only managers to delete shifts from the schedule 
+SCH-4: The scheduler shall allow only managers to edit the schedule 
+SCH-5: When a schedule is edited all employees with affected schedules shall be updated
+SCH-6: The scheduler shall not allow the modification of any details of a shift after the shift is over.
+SCH-7: Each shift shall have a unique identifier to identify specific shifts.
+SCH-8: Schedule information shall be stored for 6 years due to law
+SCH-9: When a shift swap request is approved the schedule shall update for each employee
+SCH-10: The schedule shall not allow employees to be scheduled during the time with indicated availability off
+SCH-11: The schedulers option to view tracked hours by managers and bookkeepers shall be shown correct information
+SCH-12: System shall automatically summarize employees tracked hours 
+SCH-13: The system shall have a clocking in option to allow employees to have their hours automatically recorded using their account details
+SCH-14: The system shall have a clocking out option to allow employees to stop their hours from being recorded using their account details
+SCH-15: The system shall allow Employees to request shift swaps with other employees
+SCH-16: The system shall allow managers to approve requested shift swaps from employees
+SCH-17: The system shall allow managers to deny requested shift swaps from employees
+SCH-18: The system shall not allow shift swaps which cause an employee to be double booked.
+SCH-19: The systems view schedule option shall display correct information including all shift swaps, deleted shifts, edited shifts and holidays
+
 
 ### c. Use cases associated with the feature or functional requirement
+![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/80367104/83bb8a6c-6082-411c-b618-ec47af992ce9)
+| ID and Name | Create Schedule |
+| ----------- | ----------- |
+| Created By: | Nolan  Date Created: 2/15/24 |
+| Primary Actor: | Front of House and Kitchen Manager |
+| Description | The actor assigns each shift to employees for the next two weeks. |
+| Trigger: | Actor opens create schedule functionality of software. |
+| Preconditions: |Actor is logged in to system. There is at least one employee in the system who is available to take shifts.|
+| Postconditions: |Each assigned shift is associated with an employee.|
+| Normal Flow: |1.) Actor selects an employee. 2.) Actor assigns one or more shifts to the selected employee within employee's listed availability. 3.) Actor repeats continues, selecting one employee at a time until all shifts are assigned. 4.) Actor completes schedule creation.|
+| Alternate Flows: |2A-1.) If employee does not have listed availability, no shifts are assigned to them.2A-2.) Actor moves on to step 3 of primary flow.  2B-1.) If employee is working a maximum number of hours, no additional shifts are assigned to them.  2B-2.) Actor moves on to step 3 of primary flow.  2C-1.) Actor does not assign any shifts to the selected employee.  2C-2.) Actor moves on to step 3 of primary flow.  3A-1.) Actor selects an employee that was previously selected.  3A-2.) Actor assigns an additional one or more shifts to the selected employee.|
+| Exceptions: |2A-1.) Actor cancels schedule creation. Plan is not saved.  2A-2.) Actor exits schedule creation functionality of app.  2B-1. Actor saves schedule creation plan. 2B-2.) Actor exits schedule creation functionality of app.  3A-1.) Actor cancels schedule creation. Plan is not saved. 3A-2.) Actor exits schedule creation functionality of app.  3B-1.) Actor saves schedule creation plan. 3B-2.) Actor exits schedule creation functionality of app.  3C-1.) Actor does not assign all shifts. 3C-2.) Actor moves on to step 4 of primary flow.|
+| Priority: | High |
+| Frequency of Use: | Every two weeks |
+| Business Rules: | There are a maximum number of hours that each person is allowed to work, both per day and per week. |
+| Other Information: |  |
 
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+**User Story 1: Approve Swap**
+
+As a manager I want to approve shift swap requests so that upon employee request shifts are swapped between the two employees
+
+**Acceptance Criteria:**
+
+Given a manager has approved a shift swap request then the shift being swapped for each employee shall be switched
+
+**User Story 2: Make Schedule**
+
+As a manager I want to create a schedule for a 2 week period at one store location so that each employee knows when they are working
+
+**Acceptance Criteria:**
+
+Given the schedule is made, when the schedule is viewed by employees, then the schedule shall be shown to the employee with correct information such as employees working, shifts, hours, and location.
+
+**User Story 3: Edit Schedule**
+
+As a Manager I want to edit an already made schedule to update, remove or add shifts so that the schedule is correct with any new information
+
+**Acceptance Criteria:**
+
+Given the schedule is updated, when employees view the schedule, then the updated schedule should be shown with all alterations
+
+**User Story 4: Indicate Availability**
+
+As a staff member when I Indicate availability, I want to notify the managers that I cannot work during that period so that I am only working during that time.
+
+**Acceptance Criteria:**
+
+Given availability is indicated, when the schedule is posted the availability which was indicated should be the only time with scheduled shifts.
+
+**User Story 5: View tracked hours**
+
+As a Bookkeeper or Manager, I want to view the worked hours for each employee so that I can accurately pay them for their worked hours.
+
+**Acceptance Criteria:**
+
+When tracked hours for an employee are viewed then a summary of all worked hours including overtime and statutory holidays and vacations should be displayed.
+
+**User Story 6: Clock in**
+
+As a staff member I want to clock in at work so that the hours I work are accurately recorded in the system.
+
+**Acceptance Criteria:**
+
+Given I have clocked in, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
+
+**User Story 7: Clock out**
+
+As an Staff member I want to clock out so that the hours I work are accurately recorded in the system.
+
+**Acceptance Criteria:**
+
+Given I have clocked out, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
+
+**User Story 8: Swap shift request**
+
+As a staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved
+
+**Acceptance Criteria:**
+
+Given an employee has requested a shift swap with another employee, when another employee has accepted, then a shift swap request should be posted awaiting approval
+
+**User Story 9: View schedule**
+
+As a Staff member I want to view the posted schedule for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift I am working 
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule they should be shown the up to date schedule with correct information for the current shift period as well as the next. 
+
+**User Story 10: View all schedules**
+
+As a Staff member I want to view the posted schedule for all employees for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift everyone is working to allow for shift swap requests
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule they should be shown the up to date schedule with correct information of all employees for the current shift period as well as the next.
+
+**User Story 11: View weekly**
+
+As a staff member, when viewing the schedule I shall be able to view the posted schedule limited to specific weeks
+
+**Acceptance Criteria:**
+
+Given that the employee has selected to view the schedule by week, only the specified week shall be shown
+
+**User Story 12: View monthly**
+
+As a staff member, when viewing the schedule I shall be able to view the posted schedule limited to specific months
+
+**Acceptance Criteria:**
+
+Given that the employee has selected to view the schedule by month, only the specified month shall be shown
 
 
 ## ii. Communication and Announcment <a name="feature-2"></a>
