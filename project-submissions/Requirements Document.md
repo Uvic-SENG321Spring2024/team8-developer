@@ -358,8 +358,6 @@ This feature describes the different levels of access different employees have t
 The Onboarding Materials feature has a low priority in the application. An authenticated employee (except delivery drivers)must be able to view the onboarding materials but only the managers have the right to edit the materials such as add or remove materials. Expect a low frequency of use, new employees will need to become familiar with onboarding material and may access material multiple times a day for the first week of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements
-An authenticated employee (except delivery drivers)must be able to view the onboarding materials but only the managers have the right to edit the materials.
-
 REQ-1:  An authenticated employee (except delivery drivers)must be able to view the onboarding materials at any time.
 
 REQ-2: The managers will be the only staff to edit the onboarding materials at any time.
