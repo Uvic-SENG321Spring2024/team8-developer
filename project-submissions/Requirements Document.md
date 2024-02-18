@@ -371,12 +371,11 @@ ONB-4: The managers must be the only staff to remove the onboarding materials at
 
 Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor, designated as the "Staff," is subdivided into specific roles, namely the Bookkeeper, Front of House Staff, and Kitchen Staff, with their access limited solely to viewing onboarding materials.
 
-### User Story 1: View Onboarding Materials
-As an authenticated employee (excluding delivery drivers),
-I want to be able to view the onboarding materials at any time,
-So that I can access the necessary information for onboarding purposes.
+ **User Story 1: View Onboarding Materials**
+ 
+As an authenticated employee (excluding delivery drivers), I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
 
-Acceptance Criteria:
+**Acceptance Criteria:**
 
 There is an option 'View Onboarding Materials' available in the user interface.
 Upon selecting the option, I can choose the specific onboarding materials I wish to view.
@@ -384,13 +383,11 @@ The selected onboarding materials are displayed to me.
 I can exit the viewing mode when I'm done.
 
 
-### User Story 2: Edit Onboarding Materials
-As an authenticated manager,
-I want to have exclusive rights to edit the onboarding materials,
-So that I can ensure the content is up-to-date and relevant for the employees.
+**User Story 2: Edit Onboarding Materials**
 
-Acceptance Criteria:
+As an authenticated manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
 
+**Acceptance Criteria:**
 
 There is an option 'Edit Onboarding Materials' available in the user interface.
 Upon selecting the option, I can choose the specific onboarding materials I want to edit.
@@ -398,12 +395,11 @@ I have the ability to make changes to the selected onboarding materials.
 After editing, I can save the changes, and the system confirms that the changes have been successfully saved.
 I can exit the editing mode when I'm done.
 
-### User Story 3: Create Onboarding Material
-As an authenticated content manager,
-I want the capability to create new onboarding materials,
-So that I can provide updated and relevant content for employee onboarding.
+**User Story 3: Create Onboarding Material**
 
-Acceptance Criteria:
+As an authenticated content manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
+
+**Acceptance Criteria:**
 
 There is an option 'Create Onboarding Material' available in the user interface.
 Upon selecting the option, I am prompted to input the necessary details for the new onboarding material, such as title, content, and any relevant metadata.
@@ -411,12 +407,11 @@ After entering the information, I can save the new onboarding material, and the 
 The newly created onboarding material is accessible in the system for other authorized users to view.
 I can exit the creation mode when I'm done.
 
-### User Story 4: Remove Onboarding Material
-As an authenticated manager,
-I want the exclusive authority to remove outdated or irrelevant onboarding materials,
-So that I can maintain the integrity and relevance of the onboarding content.
+**User Story 4: Remove Onboarding Material**
 
-Acceptance Criteria:
+As an authenticated manager, I want the exclusive authority to remove outdated or irrelevant onboarding materials, so that I can maintain the integrity and relevance of the onboarding content.
+
+**Acceptance Criteria:**
 
 There is an option 'Remove Onboarding Material' available in the user interface.
 Upon selecting the option, I can choose the specific onboarding material I wish to remove.
