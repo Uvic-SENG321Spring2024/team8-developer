@@ -335,7 +335,8 @@ COM-5: The system must provide tailored interfaces and features depending on the
 
 ### c. Use cases associated with the feature or functional requirement
 
-![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/c17d4e15-f2d0-4734-bc51-3d27d704b968)
+![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
+
 
 **User Story 1: Send message**
 
