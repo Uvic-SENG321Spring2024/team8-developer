@@ -335,9 +335,9 @@ Within the scheduling system there are 3 primary actors. Staff is the actor repr
 | Trigger: | Actor opens create schedule functionality of software. |
 | Preconditions: |<ul><li>PRE-1: Actor is logged in to system.</li></ul> <ul><li>PRE-2: There is at least one employee in the system who is available to take shifts.</li></ul>|
 | Postconditions: |<ul><li>POST-1: Each assigned shift is associated with an employee.</li></ul>|
-| Normal Flow: |<ol>**1.0 Create Schedule**<li>Actor selects an employee.</li><li>Actor assigns one or more shifts to the selected employee within employee's listed availability.</li><li>Actor repeats continues, selecting one employee at a time until all shifts are assigned.</li><li>Actor saves schedule.</li><li> Actor exits schedule creation functionality of app.</li></ol> |
+| Normal Flow: |<ol>**1.0 Create Schedule**<li>Actor selects an employee(see Exception 1.4)</li><li>Actor assigns one or more shifts to the selected employee within employee's listed availability(see Exception 1.1, 1.2, 1.3).</li><li>Actor continues, selecting one employee at a time until all shifts are assigned.</li><li>Actor saves schedule.</li><li> Actor exits schedule creation functionality of app.</li></ol> |
 | Alternate Flows: |  |
-| Exceptions: |<ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.5 Cancel Schedule Creation**<li>Actor selects to cancels schedule creation. </li><li>Actor selects exit confirmation</li><li> Actor exits schedule creation functionality of app without saving </li></ol><ol>**1.6 Create Schedule Does Not Assign All Shifts, Saves**<li>Actor does not assign all shifts.</li><li> Actor saves schedule creation plan.</li><li> Actor exits schedule creation functionality of app.</li></ol>|
+| Exceptions: |<ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol>|
 | Assumptions: | User is logged in |
 | Priority: | High |
 | Frequency of Use: | Every two weeks |
@@ -346,15 +346,15 @@ Within the scheduling system there are 3 primary actors. Staff is the actor repr
 
 **User Story 1: Approve Swap**
 
-As a Manager I want to approve shift swap requests so that upon employee request shifts are swapped between the two employees
+As a Manager I want to approve shift swap requests so that upon employee request shifts are swapped between the two employees.
 
 **Acceptance Criteria:**
 
-Given a Manager has approved a shift swap request then the shift being swapped for each employee must be switched
+Given a Manager has approved a shift swap request then the shift being swapped for each employee must be switched.
 
-**User Story 2: Make Schedule**
+**User Story 2: Create Schedule**
 
-As a Manager I want to create a schedule for a 2 week period at one store location so that each employee knows when they are working
+As a Manager I want to create a schedule for a 2 week period at one store location so that each employee knows when they are working.
 
 **Acceptance Criteria:**
 
@@ -362,11 +362,11 @@ Given the schedule is made, when the schedule is viewed by employees, then the s
 
 **User Story 3: Edit Schedule**
 
-As a Manager I want to edit an already made schedule to update, remove or add shifts so that the schedule is correct with any new information
+As a Manager I want to edit an already made schedule to update, remove or add shifts so that the schedule is correct with any new information.
 
 **Acceptance Criteria:**
 
-Given the schedule is updated, when employees view the schedule, then the updated schedule should be shown with all alterations
+Given the schedule is updated, when employees view the schedule, then the updated schedule should be shown with all alterations.
 
 **User Story 4: Indicate Availability**
 
@@ -402,15 +402,15 @@ Given I have clocked out, when my tracked hours are viewed then the hours I have
 
 **User Story 8: Swap shift request**
 
-As a Staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved
+As a Staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
 
 **Acceptance Criteria:**
 
-Given an employee has requested a shift swap with another employee, when another employee has accepted, then a shift swap request should be posted awaiting approval
+Given an employee has requested a shift swap with another employee, when another employee has accepted, then a shift swap request should be posted awaiting approval.
 
 **User Story 9: View schedule**
 
-As a Staff member I want to view the posted schedule for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift I am working 
+As a Staff member I want to view the posted schedule for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift I am working.
 
 **Acceptance Criteria:**
 
@@ -418,27 +418,12 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 **User Story 10: View all schedules**
 
-As a Staff member I want to view the posted schedule for all employees for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift everyone is working to allow for shift swap requests
+As a Staff member I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
 
 **Acceptance Criteria:**
 
-Given an employee selects to view the schedule they should be shown the up to date schedule with correct information of all employees for the current shift period as well as the next.
+Given an employee selects to view the schedule they should be shown the up to date schedule in their chosen format with correct information of all employees for the shift period.
 
-**User Story 11: View weekly**
-
-As a staff member, when viewing the schedule I must be able to view the posted schedule limited to specific weeks
-
-**Acceptance Criteria:**
-
-Given that the employee has selected to view the schedule by week, only the specified week must be shown
-
-**User Story 12: View monthly**
-
-As a Staff member, when viewing the schedule I must be able to view the posted schedule limited to specific months
-
-**Acceptance Criteria:**
-
-Given that the employee has selected to view the schedule by month, only the specified month shall be shown
 
 
 ## ii. Communication and Announcment <a name="feature-2"></a>
