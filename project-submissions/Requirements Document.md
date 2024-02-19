@@ -50,6 +50,7 @@ These sections are outlined in the following Table of Contents.
    2. [Communication and Announcment](#feature-2)
    3. [Recipe Management](#feature-3)
    4. [Onboarding Materials](#feature-4)
+   5. [Account Management](#feature-5)
 6. [Data Requirements](#data-requirements)
    1. [Logical Data Models](#data-model)
    2. [Data Dictionary](#data-dictionary)
@@ -121,7 +122,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
 **Scheduling System:**
    - Create, modify, and manage shifts through a scheduling interface.
    - Employees can swap shifts, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
-   - Calendar views for employees and managers to provide a clear overview of work schedules.
+   - Calendar views for employees and Managers to provide a clear overview of work schedules.
      
 **Clock-In and Clock-Out System:**
    - Clock in at the start and clock out at the end of shifts, enabling precise tracking of work hours for all hourly employees.
@@ -129,7 +130,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
    - Automatically calculate earnings, including overtime.
  
 **Recipe Management System:**
-   - A recipe management module that allows managers to create, edit, and archive recipes, including full details and allergen information.
+   - A recipe management module that allows Managers to create, edit, and archive recipes, including full details and allergen information.
    - Front of house staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
    - Kitchen staff will have access to full recipe details, including ingredient lists, preparation instructions, and allergen information, to ensure accurate preparation.
    - Historical recipe records, enabling tracking of changes over time and access to previous versions for reference or reintroduction.
@@ -619,6 +620,106 @@ The system prompts for confirmation before proceeding with the removal to preven
 Upon confirmation, the selected onboarding material is removed from the system, and the system confirms the successful removal.
 The removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
+
+
+
+
+
+## v. Account Management <a name="feature-5"></a>
+
+### a. Description and Priority
+The Account Management feature has a high priority in the system.  It allows authenticated Managers to manage access to the system by creating and deleting accounts.  An authenticated user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
+
+### b. Functional Requirements
+
+ACC-1: The system must provide Managers with the capability to delete user accounts that are no longer active within the company.
+
+ACC-2: The system must allow Managers to create new user accounts by entering their username and role, granting them access to the system.
+
+ACC-3: The system must allow Managers to view a users role, contact information, and username.
+
+ACC-4: The sytem must allow Managers to edit a users role, and username
+
+ACC-5: The system must allow users to edit their payment information, contact information, and password.
+
+ACC-6: The system must allow users to log in to their accounts with their username and password.
+
+ACC-7: The system must allow users to log out of their accounts.
+
+ACC-8: The system must allow users to view their account information to ensure its accuracy and completeness.
+
+ACC-9: The system must automatically log out users once they close the application.
+
+
+
+### c. Use cases associated with the feature or functional requirement
+
+![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/rd-5.V-account/diagrams/accounts.png)
+
+
+**User Story 1: Delete Account**
+
+As a Manager I want to delete an account so that I can remove any users that no longer work for my company from the system.
+
+**Acceptance Criteria:**
+
+There is an option for Managers to "Delete" an account.  This feature must remove a users access to the system, yet still retain information about their employment for legal and tax purposes.
+
+**User Story 2: Create Account**
+
+As a Manager I want to create an account so that my newly hired employees have access to the system.
+
+**Acceptance Criteria:**
+
+There is an option for a Manager to "Create" an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
+
+**User Story 3: View Account Information**
+
+As a Manager I want to view a users account information so that I can see their role and contact information.
+
+**Acceptance Criteria:**
+
+There is an option for a Manager to "View Account Informaton" for any selected employee. It will show their username, role, and contact information.
+
+**User Story 4: Manage Account**
+
+As a Manager I want to change a users role or username in order to ensure it stays up to date.
+
+**Acceptance Criteria:**
+
+There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a users username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+
+**User Story 5: View Account Information**
+
+As a user I want to view my account information so I can ensure it is all correct.
+
+**Acceptance Criteria:**
+
+There is an option for a user to "View Account Informaton" for themselves. It will show their username, role, contact information, and payment information.
+
+**User Story 6: Edit Account Information**
+
+As a user I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+
+**Acceptance Criteria:**
+
+A user must have an option to "Edit Account Information" for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+
+**User Story 7: Log In**
+
+As a user I want to log in to my account so I can use the system.
+
+**Acceptance Criteria:**
+
+When a user opens the app they will have an option to "Log In" to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
+
+**User Story 8: Log Out**
+
+As a user I want to log out of my account so I can ensure no one else can use my account.
+
+**Acceptance Criteria:**
+
+A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
 
 
 # 6 Data Requirements <a name="data-requirements"></a>
