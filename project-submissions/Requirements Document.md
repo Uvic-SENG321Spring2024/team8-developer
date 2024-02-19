@@ -448,22 +448,105 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 ## iii. Recipe Management <a name="feature-3"></a>
 
-State the feature name in just a few words.
-
 ### a. Description and Priority
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+The Recipe Management feature has a high priority in the application. An Authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Managers and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. Managers are the only ones who are able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
 
 ### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
 
-REQ-1:
+RMS-1: Kitchen Staff, Front of House Staff and Managers must be able to view active and inactive recipes. 
 
-REQ-2:
+RMS-2: Managers and Kitchen Staff must be able to view the full recipe including ingredents list, preparation instructions, and allergens.
+
+RMS-3: Front of House Staff must be only able to view the allergens of a recipe.
+
+RMS-4: Managers must be able to create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+
+RMS-5: Managers must be able to edit existing recipes, including changing details, adding or removing ingredients, and updating allergen information.
+
+RMS-6: Managers must be able to archive a recipe, changing its status to inactive, and be able to unarchive a recipe, changing its status to active.
+
+RMS-7: The system must be able to display different recipe views based on the access of the user's role.
+
+&emsp;&emsp;RMS-7.1: The system must have a detailed recipe view which contains name, list of ingredients, preparation instructions, and allergens.
+
+&emsp;&emsp;RMS-7.2: The system must have a limited recipe view which only contains the name, and allergens.
+
+RMS-8: The system must be able to archive recipes, removing it from the list of active recipes and adds it to the list of inactive recipes.
+
+RMS-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adds it to the list of active recipes.
+
+RMS-10: The system must display a prompt the user to save when they exit editing mode if they didn't already save.
+
+RMS-11: The system must display a prompt to the user to save when they exit creation mode if they didn't already save.
+
+RMS-12: The system must provide an edit option for each recipe.
+
+RMS-13: The system must implement a save option to confirm changes. 
+
+RMS-14: The system must allow managers to exit editing mode.
+
+RMS-15: The system must display an empty template with sections for name, ingredients, preparation instructions, and allergen information when creating a recipe.
+
+RMS-16: The system must allow managers to enter text in each section.
+
+RMS-17: The system must provide a save option for new recipes.
+
+RMS-18: The system must ensure newly created recipes are visible in the list of recipes.
+
+RMS-19: The system must allow managers to exit creation mode.
+
+RMS-20: The system must allow managers to select specific recipes for archiving or unarchiving.
+
+RMS-21: The system must have different access levels for Managers, Kitchen Staff, and Front of House Staff.
+
+RMS-22: The system must display meaningful error messages to users in case of unsuccessful operations or system errors.
+
 
 ### c. Use cases associated with the feature or functional requirement
 
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Usecase-Diagram-V4.png)
 
+| ID and Name | UC-2 View Recipe |
+| ----------- | ----------- |
+| Created By: | Nolan, Justin |
+| Date Created: | 02/14/24 |
+| Primary Actor: | Kitchen Staff, Managers, Front of House Staff |
+| Description | The Actor selects a recipe from the list of all possible recipes. The system displays a view of the recipe based on the actors level of access. |
+| Trigger: | Actor selects recipe to open. |
+| Preconditions: | <ul><li>PRE-1: User is logged in.</li><li>PRE-2: User is authenticated.</li></ul> |
+| Postconditions: | <ul><li>POST-1: Recipe is displayed.</li></ul> |
+| Normal Flow: | <ol>**2.0 View Detailed Recipe**<li>Kitchen Staff or Manager selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays the detailed recipe view.</li></ol> |
+| Alternate Flows: | <ol>**2.1 View Limited Recipe**<li>Front of House Staff selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays the limited recipe view.</li></ol> |
+| Exceptions: |  |
+| Priority: | High |
+| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by Managers, 20 times per day by Front of House Staff. |
+| Business Rules: | Must alert all customers of potential allergens. Only authorized ingredients may be in the ice cream. |
+| Other Information: | RSM-2, RSM-3, RSM-7 |
+| Assumptions: | Recipe already exists in the system. |
+
+**User Story 1: Edit Recipe**
+
+As an authenticated Manager, I want exclusive rights to edit existing recipes, so that I can change recipe details, add or remove ingredients, and update allergen information.
+
+**Acceptance Criteria:**
+
+There is an option to edit available on each recipe in the user interface. Upon selecting the option, I can choose the specific section of the recipe I want to edit. I can save the changes after editing and the system confirms the changes have been saved. The system should not save any changes if I exit the editing page, if I try to exit without saving the system should prompt me to save my changes. I can exit the viewing mode at any time.  
+
+**User Story 2: Create Recipe**
+
+As an authenticated Manager, I want exclusive rights to create new recipes, so that I can create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+
+**Acceptance Criteria:**
+
+There is an option to create a new recipe in the user interface. After selceting that feature I should see an empty template for a recipe which contains a section for name, ingrediants, preparation instructions and allergen information. I should be able to enter text in each section. I should be able to save my work. The new recipe should be viewable on the list of recipes. I should be able to exit creation mode. 
+
+**User Story 3: Archive Recipe**
+
+As an authenticated Manager, I want exclusive rights to archive recipes, so that I can change the status of a recipe from active to inactive and change the status from inactive to active. 
+
+**Acceptance Criteria:**
+
+There is an option to archive recipes if the status is active and an option to unarchive recipes if the status is inactive in the user interface. Upon selecting that option I should be able to select which recipes I want to archive or unarchive. The recipe should be added to the inactive recipe list, if the status was active, and the recipe should be removed from the active recipe list. The recipe should be added to the active recipe lists, if the status was inactive, and the recipe should be removed from the inactive recipe list.  
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
