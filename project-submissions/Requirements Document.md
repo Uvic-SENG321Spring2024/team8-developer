@@ -281,13 +281,17 @@ The following assumptions and dependencies affect the requirements in this docum
 
 | **Word**  | **Definition** |
 | ------------- | ------------- |
-|  Banter | Banter Ice Cream, an ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. |
+|  Banter | Banter Ice Cream, an ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. [1]|
 |  Client | Banter Ice Cream |
-
+|  Business Hours | The hours that Banter Ice Cream is open. Monday-Thursday 1-9pm, Friday 1-10pm, Saturday 12-10pm, and Sunday 12-9pm (inclusive). [1]|
+|  New Employee | An employee of Banter Ice Cream that has worked at Banter for less than two weeks. |
+|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section, unless otherwise specified. |
+|  Staff | Unless otherwise specified, refers to an employee. |
+|  Manager | Front of House / Kitchen Managers as defined in User Classes and Characteristics. |
 
 ## vi. **References** <a name="references"></a>
 
-No references used in this document.
+[1] “Find Us,” Banter Ice Cream, https://www.bantericecream.com/find-us (accessed Feb. 18, 2024). 
 
 # 5 System Features <a name="system-features"></a>
 
@@ -775,7 +779,38 @@ Describe the requirements associated with any communications functions required 
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
-Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
+**Availability**
+- AVL-1: The system is available 99.99% each day during business hours.
+- AVL-2: The system is available 99.0% each day outside of business hours.
+
+**Reliability**
+- REL-3: A backup of all system data is saved every night to minimize data loss. 
+
+**Scalability**
+- SCA-4: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
+- SCA-5: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
+- SCA-6: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+
+**Useability**
+- USE-7: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
+- USE-8: Shift swapping should be accessible within 3 selections. 
+- USE-9: Viewing schedules should be accessible within 2 selections. 
+- USE-10: Accessing announcements should be accessible within 1 selection. 
+- USE-11: Viewing recipes should be accessible within 2 selections. 
+- USE-12: Viewing messages should be accessible within 3 selections. 
+- USE-13: Standard conventions for all user interface elements
+
+**Performance** 
+- PER-14: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
+- PER-15: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+
+**Security**
+- SEC-16: Unauthorized employees are not be able to view another employee’s banking information
+- SEC-17: Industry standard information security procedures must be used when handling user information. 
+- SEC-18: The system shall ensure that no persons outside the organization can access any information stored in the system. 
+- SEC-19: Recipe ingredients and instructions can only be viewed by authorized employees.
+- SEC-20: Recipe ingredient allergens can only be viewed by authorized employees.
+
 
 # 9 Analysis Models <a name="analysis-models"></a>
 
