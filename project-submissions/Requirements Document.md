@@ -298,7 +298,7 @@ This template illustrates organizing the functional requirements for the product
 Scheduling and Time Tracking
 
 ### a. Description and Priority
-The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for all employees. 
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for each employee. 
 
 ### b. Functional Requirements
 SCH-1: The scheduler must allow managers to create shifts for employees.  
@@ -312,10 +312,10 @@ SCH-8: Schedule information must be stored for 6 years due to Canadian laws rega
 SCH-9: When a shift swap request is approved the schedule must update for each employee.  
 SCH-10: The schedule must not allow employees to be scheduled during the time with indicated availability off.  
 SCH-11: The schedulers option to view tracked hours by managers and bookkeepers must be shown correct information.  
-SCH-12: System must automatically summarize employees tracked hours.  
+SCH-12: The system must automatically summarize employees tracked hours.  
 SCH-13: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.  
 SCH-14: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
-SCH-15: The system must allow Employees to request shift swaps with other employees.  
+SCH-15: The system must allow employees to request shift swaps with other employees.  
 SCH-16: The system must allow managers to approve requested shift swaps from employees.  
 SCH-17: The system must allow managers to deny requested shift swaps from employees.  
 SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
@@ -324,19 +324,21 @@ SCH-19: The systems view schedule option must display correct information includ
 
 ### c. Use cases associated with the feature or functional requirement
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
-Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House staff, Kitchen staff, and Delivery drivers. The scheduling system should allow all employees to know when they are working, allow managers to create and edit schedules, and allow bookkeepers to pay employees. All use cases are written assuming the user is logged in.
+Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow Managers to create and edit schedules, and allow Bookkeepers to pay employees. All use cases are written assuming the user is logged in.
 
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
-| Created By: | Nolan  Date Created: 2/15/24 |
+| Created By: | Nolan |
+| Date Created: | 02/15/24 |
 | Primary Actor: | Front of House and Kitchen Manager |
 | Description | The actor assigns each shift to employees for the next two weeks. |
 | Trigger: | Actor opens create schedule functionality of software. |
 | Preconditions: |<ul><li>PRE-1: Actor is logged in to system.</li></ul> <ul><li>PRE-2: There is at least one employee in the system who is available to take shifts.</li></ul>|
 | Postconditions: |<ul><li>POST-1: Each assigned shift is associated with an employee.</li></ul>|
 | Normal Flow: |<ol>**1.0 Create Schedule**<li>Actor selects an employee.</li><li>Actor assigns one or more shifts to the selected employee within employee's listed availability.</li><li>Actor repeats continues, selecting one employee at a time until all shifts are assigned.</li><li>Actor saves schedule.</li><li> Actor exits schedule creation functionality of app.</li></ol> |
-| Alternate Flows: | <ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol>|
-| Exceptions: |<ol>**1.5 Cancel Schedule Creation**<li>Actor cancels schedule creation. Plan is not saved.</li><li> Actor exits schedule creation functionality of app. </li></ol><ol>**1.6 Create Schedule Does Not Assign All Shifts, Saves**<li>Actor does not assign all shifts.</li><li> Actor saves schedule creation plan.</li><li> Actor exits schedule creation functionality of app.</li></ol>|
+| Alternate Flows: |  |
+| Exceptions: |<ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.5 Cancel Schedule Creation**<li>Actor selects to cancels schedule creation. </li><li>Actor selects exit confirmation</li><li> Actor exits schedule creation functionality of app without saving </li></ol><ol>**1.6 Create Schedule Does Not Assign All Shifts, Saves**<li>Actor does not assign all shifts.</li><li> Actor saves schedule creation plan.</li><li> Actor exits schedule creation functionality of app.</li></ol>|
+| Assumptions: | User is logged in |
 | Priority: | High |
 | Frequency of Use: | Every two weeks |
 | Business Rules: | There are a maximum number of hours that each person is allowed to work, both per day and per week. |
@@ -344,15 +346,15 @@ Within the scheduling system there are 3 primary actors. Staff is the actor repr
 
 **User Story 1: Approve Swap**
 
-As a manager I want to approve shift swap requests so that upon employee request shifts are swapped between the two employees
+As a Manager I want to approve shift swap requests so that upon employee request shifts are swapped between the two employees
 
 **Acceptance Criteria:**
 
-Given a manager has approved a shift swap request then the shift being swapped for each employee must be switched
+Given a Manager has approved a shift swap request then the shift being swapped for each employee must be switched
 
 **User Story 2: Make Schedule**
 
-As a manager I want to create a schedule for a 2 week period at one store location so that each employee knows when they are working
+As a Manager I want to create a schedule for a 2 week period at one store location so that each employee knows when they are working
 
 **Acceptance Criteria:**
 
@@ -368,7 +370,7 @@ Given the schedule is updated, when employees view the schedule, then the update
 
 **User Story 4: Indicate Availability**
 
-As a staff member when I Indicate availability, I want to notify the managers that I cannot work during that period so that I am only working during that time.
+As a Staff member when I Indicate availability, I want to notify the managers that I cannot work during that period so that I am only working during that time.
 
 **Acceptance Criteria:**
 
@@ -400,7 +402,7 @@ Given I have clocked out, when my tracked hours are viewed then the hours I have
 
 **User Story 8: Swap shift request**
 
-As a staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved
+As a Staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved
 
 **Acceptance Criteria:**
 
@@ -432,7 +434,7 @@ Given that the employee has selected to view the schedule by week, only the spec
 
 **User Story 12: View monthly**
 
-As a staff member, when viewing the schedule I must be able to view the posted schedule limited to specific months
+As a Staff member, when viewing the schedule I must be able to view the posted schedule limited to specific months
 
 **Acceptance Criteria:**
 
