@@ -422,11 +422,11 @@ Describe the requirements associated with any communications functions required 
 
 **Useability**
 - USE-7: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
-- USE-8: Shift swapping should be prominently displayed and accessible within 3 selections. 
-- USE-9: Viewing schedules should be prominently displayed and accessible within 2 selections. 
-- USE-10: Accessing announcements should be prominently displayed and accessible within 1 selection. 
-- USE-11: Viewing recipes should be prominently displayed and accessible within 2 selections. 
-- USE-12: Viewing messages should be prominently displayed and accessible within 3 selections. 
+- USE-8: Shift swapping should be accessible within 3 selections. 
+- USE-9: Viewing schedules should be accessible within 2 selections. 
+- USE-10: Accessing announcements should be accessible within 1 selection. 
+- USE-11: Viewing recipes should be accessible within 2 selections. 
+- USE-12: Viewing messages should be accessible within 3 selections. 
 - USE-13: Standard conventions for all user interface elements
 
 **Performance** 
