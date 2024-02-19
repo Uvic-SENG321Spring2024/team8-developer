@@ -401,7 +401,7 @@ The Account Management feature has a high priority in the system.  It allows aut
 
 ### c. Use cases associated with the feature or functional requirement
 
-![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/rd-5.V-account/diagrams/finalAccountsDiagram.png)
+![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/rd-5.V-account/diagrams/accounts.png)
 
 
 **User Story 1: Delete Account**
