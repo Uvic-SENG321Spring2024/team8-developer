@@ -409,12 +409,15 @@ The Account Management feature has a high priority in the system.  It allows aut
 As a Manager I want to delete an account so that I can remove any users that no longer work for my company from the system.
 
 **Acceptance Criteria:**
+
 There is an option for Managers to "Delete" an account.  This feature must remove a users access to the system, yet still retain information about their employment for legal and tax purposes.
 
 **User Story 2: Create Account**
+
 As a Manager I want to create an account so that my newly hired employees have access to the system.
 
 **Acceptance Criteria:**
+
 There is an option for a Manager to "Create" an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
 
 **User Story 3: View Account Information**
@@ -451,7 +454,7 @@ A user must have an option to "Edit Account Information" for themselves.  This w
 
 **User Story 7: Log In**
 
-- As a user I want to log in to my account so I can use the system.
+As a user I want to log in to my account so I can use the system.
 
 **Acceptance Criteria:**
 
@@ -462,6 +465,7 @@ When a user opens the app they will have an option to "Log In" to their account.
 As a user I want to log out of my account so I can ensure no one else can use my account.
 
 **Acceptance Criteria:**
+
 A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
 
 
