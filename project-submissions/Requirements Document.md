@@ -290,8 +290,6 @@ No references used in this document.
 
 
 # 5 System Features <a name="system-features"></a>
-
-This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
  
 ## i. Scheduling and Time Tracking <a name="feature-1"></a>
 
