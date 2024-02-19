@@ -283,8 +283,10 @@ The following assumptions and dependencies affect the requirements in this docum
 |  Banter | Banter Ice Cream, an ice cream shop with two locations; in Abbotsford, BC and Chilliwack, BC. [1]|
 |  Client | Banter Ice Cream |
 |  Business Hours | The hours that Banter Ice Cream is open. Monday-Thursday 1-9pm, Friday 1-10pm, Saturday 12-10pm, and Sunday 12-9pm (inclusive). [1]|
-|  New Employee | An employee of Banter Ice Cream that has worked at Banter for less than two weeks |
-
+|  New Employee | An employee of Banter Ice Cream that has worked at Banter for less than two weeks. |
+|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section, unless otherwise specified. |
+|  Staff | Unless otherwise specified, refers to an employee. |
+|  Manager | Front of House / Kitchen Managers as defined in User Classes and Characteristics. |
 
 ## vi. **References** <a name="references"></a>
 
