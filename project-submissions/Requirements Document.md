@@ -448,24 +448,96 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 
 
-## ii. Communication and Announcment <a name="feature-2"></a>
+## ii. Communication and Announcement <a name="feature-2"></a>
 
-State the feature name in just a few words.
+Communication and Announcement feature allows sending and receiving messages and company-wide announcements.
 
 ### a. Description and Priority
 
-Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+The Communication and Announcement and announcement feature is a high priority feature in the system. This is because all staffs must receive notifications of new announcements, and be able to view the announcements to be aware of any major changes in the company. It is also important that all staff can send and receive messages to any staff member or staff messaging group. 
 
 ### b. Functional Requirements
-Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available. Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature. Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
 
-REQ-1:
+COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enchance communication.
 
-REQ-2:
+COM-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
+
+COM-3: The system must have role-based access control, providing different access levels for different user roles. Managers must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
+
+COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
+
+COM-5: The system must provide tailored interfaces and features depending on the staff’s role within the company, ensuring that managers have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
+
 
 ### c. Use cases associated with the feature or functional requirement
 
-This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
+
+Within the Communication and Announcement feature there are two primary actors, "Managers", and "All Staff". Managers have the ability to create, edit, and send company-wide announcements, while all staff can view these announcements and react to them. All Staff including the manager, can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
+
+**User Story 1: Send message**
+
+As an employee, I want to be able to send a message to another staff member or a group of coworkers, so that I can communicate information effectively. 
+
+**Acceptance Criteria:** 
+
+The system must allow all staff to be able to send messages to one or more people from the list of staff members. 
+
+**User Story 2: View message**
+
+As an employee, I want to be able to view the messages that are sent to me or the message group that I am part of, so that I can stay informed about communication within the company.  
+
+**Acceptance Criteria:** 
+
+The system must allow each staff member to see recieved messages.
+
+**User Story 3: Edit message**
+
+As an employee, I want to be able to edit a message that I have previously sent, so that I can make clarifications or update the message as required. 
+
+**Acceptance Criteria:** 
+
+The system must allow each staff member to be able to edit messages that the staff member had sent before. 
+
+**User Story 5: React announcements** 
+
+As an employee, I want to be able to react to company-wide announcements, so that I can share my opinion or acknowledge the content. 
+
+**Acceptance Criteria:** 
+
+The system must allow all staff to be able to react to announcements with emojis. 
+
+**User Story 6: View announcements** 
+
+As an employee, I want to be able to view all company-wide announcements, so that I can stay updated on the important changes and news within the company. 
+
+**Acceptance Criteria:** 
+
+The system must allow all staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
+
+**User Story 7: View announcement information**
+
+As a manager, I want to be able to view detailed information of any and every announcement, so that I can see information such as the information about how many people have viewed the announcements and who have viewed the announcements. 
+
+**Acceptance Criteria:** 
+
+The system must allow the manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
+
+**User Story 8: Send announcements**
+
+As a manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
+
+**Acceptance Criteria:** 
+
+The system must allow the manager, to create and send company-wide announcements using text, images, videos, or PDF. 
+
+**User Story 9: Edit announcements** 
+
+As a manager, I want to be able to edit or update announcements that I have already sent, so that I can update information where necessary. 
+
+**Acceptance Criteria:** 
+
+The system must allow the manager to be able to access and edit announcements that have been sent. 
 
 
 ## iii. Recipe Management <a name="feature-3"></a>
