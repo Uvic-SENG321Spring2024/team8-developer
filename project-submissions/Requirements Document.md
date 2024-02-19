@@ -380,7 +380,7 @@ As a manager, I want to be able to view detailed information of any and every an
 The system must allow the manager, to be able to view all announcement related information such as the information about who have viewed the announcements, the creation date, etc... 
 
 #### User Stories #8: Send announcements 
-As a manager, I want to be able to send company-wide announcements to all staff members, so that I can important information effectively. 
+As a manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
 
 **Acceptance Criteria:** 
 
