@@ -383,11 +383,9 @@ RMS-19: The system must allow managers to exit creation mode.
 
 RMS-20: The system must allow managers to select specific recipes for archiving or unarchiving.
 
-RMS-21: The system must be able to update the status of the recipe in the respective lists.
+RMS-21: The system must have different access levels for Managers, Kitchen Staff, and Front of House Staff.
 
-RMS-22: The system must have different access levels for Managers, Kitchen Staff, and Front of House Staff.
-
-RMS-23: The system must display meaningful error messages to users in case of unsuccessful operations or system errors.
+RMS-22: The system must display meaningful error messages to users in case of unsuccessful operations or system errors.
 
 
 ### c. Use cases associated with the feature or functional requirement
@@ -396,7 +394,8 @@ RMS-23: The system must display meaningful error messages to users in case of un
 
 | ID and Name | UC-2 View Recipe |
 | ----------- | ----------- |
-| Created By: | Nolan, Justin &emsp;&emsp; Date Created: 2/14/24 |
+| Created By: | Nolan, Justin |
+| Date Created: | 02/14/24 |
 | Primary Actor: | Kitchen Staff, Managers, Front of House Staff |
 | Description | The Actor selects a recipe from the list of all possible recipes. The system displays a view of the recipe based on the actors level of access. |
 | Trigger: | Actor selects recipe to open. |
