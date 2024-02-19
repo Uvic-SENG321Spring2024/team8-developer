@@ -314,7 +314,7 @@ This is the use case specification. For each Use Case, list the dialog elements 
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
 
-Communication and Announcement system feature allows sending and receiving company-wide messages and announcements based on employees' authorization levels.
+Communication and Announcement feature allows sending and receiving messages and company-wide announcements.
 
 ### a. Description and Priority
 
