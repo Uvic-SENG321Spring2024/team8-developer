@@ -383,7 +383,7 @@ The Account Management feature has a high priority in the system.  It allows aut
 
 ACC-1: The system shall provide Managers with the capability to delete user accounts that are no longer active within the company.
 
-ACC-2: The system shall allow Managers to create new user accounts, granting them access to the system.
+ACC-2: The system shall allow Managers to create new user accounts by entering their username and role, granting them access to the system.
 
 ACC-3: The system shall allow Managers to view a users role, contact information, and username.
 
