@@ -356,7 +356,7 @@ As a staff member, I want to be able to edit a message that I have previously se
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to edit messages that I sent before. 
+The system must allow each staff member to be able to edit messages that the staff member had sent before. 
 
 #### User Stories #5: React announcements 
 As a staff member, I want to be able to react to company-wide announcements, so that I ca share my opinion or acknowledge the content. 
