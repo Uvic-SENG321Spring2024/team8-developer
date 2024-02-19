@@ -349,7 +349,7 @@ As a staff member, I want to be able to view the messages that are sent to me or
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to see a list of messages received in chronological order, with the recent message at the top. 
+The system must allow each staff member to see recieved messages.
 
 #### User Stories #3: Edit message
 As a staff member, I want to be able to edit a message that I have previously sent, so that I can make clarifications or update the message as required. 
