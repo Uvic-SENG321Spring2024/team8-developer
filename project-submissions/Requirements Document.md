@@ -322,15 +322,15 @@ The Communication and Announcement and announcement feature is a high priority f
 
 ### b. Functional Requirements
 
-REQ-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enchance communication.
+COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enchance communication.
 
-REQ-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
+COM-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
 
-REQ-3: The system must have role-based access control, providing different access levels for managers, delivery drivers, etc... Managers must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
+COM-3: The system must have role-based access control, providing different access levels for managers, delivery drivers, etc... Managers must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
 
-REQ-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
+COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
 
-REQ-5: The system must provide tailored interfaces and features depending on the staff’s role within the company, ensuring that managers have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
+COM-5: The system must provide tailored interfaces and features depending on the staff’s role within the company, ensuring that managers have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
 
 
 ### c. Use cases associated with the feature or functional requirement
