@@ -319,7 +319,7 @@ SCH-15: The system must allow employees to request shift swaps with other employ
 SCH-16: The system must allow managers to approve requested shift swaps from employees.  
 SCH-17: The system must allow managers to deny requested shift swaps from employees.  
 SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
-SCH-19: The systems view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays  
+SCH-19: The systems view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.  
 
 
 ### c. Use cases associated with the feature or functional requirement
