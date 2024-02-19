@@ -381,21 +381,21 @@ The Account Management feature has a high priority in the system.  It allows aut
 
 ### b. Functional Requirements
 
-*ACC-1*: The system shall provide Managers with the capability to delete user accounts that are no longer active within the company.
+ACC-1: The system shall provide Managers with the capability to delete user accounts that are no longer active within the company.
 
-*ACC-2*: The system shall allow Managers to create new user accounts, granting them access to the system.
+ACC-2: The system shall allow Managers to create new user accounts, granting them access to the system.
 
-*ACC-3*: The system shall allow Managers to view a users role, contact information, and username.
+ACC-3: The system shall allow Managers to view a users role, contact information, and username.
 
-*ACC-4*: The sytem shall allow Managers to edit a users role, and username
+ACC-4: The sytem shall allow Managers to edit a users role, and username
 
-*ACC-5*: The system shall allow users to edit their payment information, contact information, and password.
+ACC-5: The system shall allow users to edit their payment information, contact information, and password.
 
-*ACC-6*: The system shall allow users to log in to their accounts with their username and password.
+ACC-6: The system shall allow users to log in to their accounts with their username and password.
 
-*ACC-7*: The system shall allow users to log out of their accounts.
+ACC-7: The system shall allow users to log out of their accounts.
 
-*ACC-8*: The system shall allow users to view their account information to ensure its accuracy and completeness.
+ACC-8: The system shall allow users to view their account information to ensure its accuracy and completeness.
 
 
 
