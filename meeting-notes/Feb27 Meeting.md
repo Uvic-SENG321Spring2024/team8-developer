@@ -2,18 +2,19 @@
 
 Date: February 27, 2024 (during lab)
 
-- [ ] Listen to Professor/TAs
-- [ ] Assign Scrum Leader? (consider switching every 1 or 2 weeks)
+- [x] Listen to Professor/TAs
+- [x] Assign Scrum Leader? (consider switching every 1 or 2 weeks) - Amanda for this week
    - Will plan meeting agenda
    - Will lead team through agenda during meeting
    - Will keep team on topic
    - Will decide when topics are taking too long, and instruct note taker to rember for later
-- [ ] Assign Meeting Note Taker? (consider switching every 1 or 2 weeks)
+- [x] Assign Meeting Note Taker? (consider switching every 1 or 2 weeks) - Nolan for this week
    - Will record notes during meeting
    - Will keep track of topics for later
    - Will ensure tasks are assigned (on Teams or Trello or GitHub...)
-- [ ] Setup task management system (Trello?)
-- [ ] Other suggestions for improvement? (eg. Google Drive folder or Discord, etc.)
+- [x] Setup task management system (Trello?)
+- [x] Other suggestions for improvement? (eg. Google Drive folder or Discord, etc.)
+   - Designated reviewers (decided when deciding tasks)
 - [ ] Discuss what tasks need to be accomplished this iteration
    - x2 sequence diagrams for use case descriptions (Create Schedule and View Recipe)
    - storyboard for every user story/use case (around 37?)
