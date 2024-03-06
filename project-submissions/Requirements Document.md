@@ -1083,59 +1083,35 @@ Describe the logical and physical characteristics of each interface between the 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
 
-The Banter Ice Cream management mobile application interfaces with several software components to ensure seamless operation, data integrity, and user experience. Below are the key software interfaces and their purposes:
+The Banter Ice Cream mobile application interfaces with external softwares. Below is the description of the connection between the system and those softwares:
 
-### Database System
-- **Database:** MySQL 8.0 or PostgreSQL 13
-- **Purpose:** Stores and manages all application data including user accounts, schedules, recipes, announcements, and employee information.
-- **Data Exchange:** CRUD (Create, Read, Update, Delete) operations on employee details, schedules, recipes, and announcements.
-
+### Accounting Software Interface
+- **Name:** Quickbooks Online Version 2024
+- **Data Exchange:** The accounting interface will receive staff hours report for payroll processing 
+- **Services Needed:** It is crucial for conducting payroll processing and providing financial reporting functionalities.
+- **Communication Protocols:** This interface will utilize the Quickbooks API over HTTPS for communication, ensuring secure transfer of financial data.
+  
 ### Operating System
-- **Operating Systems:** Android 11+ and iOS 14+
+- **Operating Systems:** Android and iOS
 - **Purpose:** The mobile application is designed to run on these operating systems, utilizing their native features and capabilities for notifications, data storage, and security.
 - **Services Used:** Push notifications, GPS (for clocking in and out with location verification), local data encryption, and background task execution.
 
-### Third-Party Libraries and Tools
-- **Libraries/Tools:** Retrofit (for Android), Alamofire (for iOS), and Flutter (for cross-platform development)
-- **Purpose:** These libraries and tools are used for network communication, parsing JSON data, and simplifying the development of the mobile application across different platforms.
-- **Data Exchange:** Send and receive HTTP requests to/from the server, handle JSON serialization and deserialization.
-
-### Integrated Commercial Components
-- **QuickBooks Online API**
-- **Purpose:** Integrate payroll and financial management functions directly into the application, allowing for automated payroll processing based on the clocked hours and shifts data from the app.
-- **Data Shared:** Employee hours, pay rates, and payroll reports.
-
-### Authentication Service
-- **Service:** OAuth 2.0 compliant service (e.g., Auth0)
-- **Purpose:** Securely authenticate users without storing passwords in the application, allowing for single sign-on (SSO) capabilities and access control based on user roles.
-- **Data Exchange:** Token-based authentication and authorization data.
-
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
-### Email Communication
-- **Protocol:** SMTP (with SSL/TLS encryption)
-- **Purpose:** Send out notifications for shift changes, payroll information, password resets, and other communications that are not suitable for in-app notifications.
-- **Data Items:** Email messages, including subject, recipient list, and body content.
+### Messaging Services:
+The system will support embedding of images, videos, and PDFs in messages and announcements. It should ensure role-based access control, with distinct privileges for managers and staff to view, create, and edit communications as appropriate to their roles.
 
-### Web Browser Access for Administrative Functions
-- **Requirements:** Although the primary interaction with the system is through the mobile app, certain administrative functions are accessible via a web browser. This includes tasks such as detailed reporting, bulk schedule uploads, and system configuration.
-- **Communication Protocol:** HTTPS for secure access.
-- **Data Items:** Administrative commands, configuration settings, reports, and bulk data uploads/downloads.
+### Company-wide Announcements:
+Functionality to send and receive announcements must be incorporated, enabling managers to efficiently distribute important information and staff to respond or acknowledge these communications.
 
-### Push Notifications
-- **Service:** FCM (Firebase Cloud Messaging) for Android and APNs (Apple Push Notification service) for iOS.
-- **Purpose:** Send real-time alerts and notifications directly to the user's mobile device.
-- **Data Items:** Notification content including title, message body, and potentially data payloads for in-app navigation.
+### Security and Privacy:
+Communication channels must be secure, with safeguards for sensitive information like chat logs and management of announcements. This entails encryption, controlled access, and compliance with privacy regulations.
 
-### Network Server Communication Protocols
-- **Protocol:** HTTPS for all communications between the mobile application and server backend.
-- **Purpose:** Ensure the secure transmission of sensitive data between the mobile app and the backend services.
-- **Data Items:** API requests and responses, including authentication tokens, user input data, server responses, and error messages.
+### Role-Tailored Interfaces:
+Interfaces must be tailored according to staff roles to ensure that managers have the necessary tools for announcement creation and management, and staff have access to necessary communication channels.
 
-### Electronic Forms
-- **Purpose:** Collect input from users within the app, such as availability, time-off requests, and onboarding information.
-- **Data Handling:** Secure submission to the backend server with validation both on the client-side and server-side.
-- **Data Items:** Form fields and values, validation rules, and submission confirmations.
+### Performance and Accessibility:
+The system should ensure that the most recent announcements can be accessed within 2 seconds, and detailed metrics on announcement engagement are available to managers for informed oversight.
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
