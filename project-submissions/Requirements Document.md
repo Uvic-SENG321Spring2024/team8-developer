@@ -485,10 +485,9 @@ Given an employee selects to view the schedule they should be shown the up to da
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
+![State Diagram Shift Swap 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bc908563-37d7-4d0f-a815-abb005007082)
 
-![State Diagram Shift Swap](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f816a0cf-3305-4d0e-9e2f-23d825d47059)
-
-Description here
+An employee refers users who are authorized to request shift swaps, which are the user classes Front of House Staff, Kitchen Staff, and Delivery Driver. An employee starts a shift swap request, and the request will remain in "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters "Cancelled" state. If the employee submits the request, the request enters "Intiated" state. In the "Intiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters "Cancelled" state. If the second employee accepts, the shift swap request enters "Submitted" state. In the "Submitted" state, a manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a manager denies the request, the request enters "Cancelled" state. If a manager approves the request, the shift swap request enters "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
 
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
