@@ -1038,11 +1038,35 @@ Describe the logical and physical characteristics of each interface between the 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
 
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
+The Banter Ice Cream system interfaces with external softwares. Below is the description of the connection between the system and those softwares:
+
+### Accounting Software Interface
+- **Name:** Quickbooks Online Version 2024
+- **Data Exchange:** The accounting interface will receive staff hours report for payroll processing 
+- **Services Needed:** It is crucial for conducting payroll processing and providing financial reporting functionalities.
+- **Communication Protocols:** This interface will utilize the Quickbooks API over HTTPS for communication, ensuring secure transfer of financial data.
+  
+### Operating System
+- **Operating Systems:** Android and iOS
+- **Purpose:** The mobile application is designed to run on these operating systems, utilizing their native features and capabilities for notifications, data storage, and security.
+- **Services Used:** Push notifications, GPS (for clocking in and out with location verification), local data encryption, and background task execution.
 
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
-Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
+### Messaging Services:
+The system will support embedding of images, videos, and PDFs in messages and announcements. It should ensure role-based access control, with distinct privileges for managers and staff to view, create, and edit communications as appropriate to their roles.
+
+### Company-wide Announcements:
+Functionality to send and receive announcements must be incorporated, enabling managers to efficiently distribute important information and staff to respond or acknowledge these communications.
+
+### Security and Privacy:
+Communication channels must be secure, with safeguards for sensitive information like chat logs and management of announcements. This entails encryption, controlled access, and compliance with privacy regulations.
+
+### Role-Tailored Interfaces:
+Interfaces must be tailored according to staff roles to ensure that managers have the necessary tools for announcement creation and management, and staff have access to necessary communication channels.
+
+### Performance and Accessibility:
+The system should ensure that the most recent announcements can be accessed within 2 seconds, and detailed metrics on announcement engagement are available to managers for informed oversight.
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
