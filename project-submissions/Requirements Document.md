@@ -360,11 +360,60 @@ Describe the logical and physical characteristics of each interface between the 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
 
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
+The Banter Ice Cream management mobile application interfaces with several software components to ensure seamless operation, data integrity, and user experience. Below are the key software interfaces and their purposes:
+
+### Database System
+- **Database:** MySQL 8.0 or PostgreSQL 13
+- **Purpose:** Stores and manages all application data including user accounts, schedules, recipes, announcements, and employee information.
+- **Data Exchange:** CRUD (Create, Read, Update, Delete) operations on employee details, schedules, recipes, and announcements.
+
+### Operating System
+- **Operating Systems:** Android 11+ and iOS 14+
+- **Purpose:** The mobile application is designed to run on these operating systems, utilizing their native features and capabilities for notifications, data storage, and security.
+- **Services Used:** Push notifications, GPS (for clocking in and out with location verification), local data encryption, and background task execution.
+
+### Third-Party Libraries and Tools
+- **Libraries/Tools:** Retrofit (for Android), Alamofire (for iOS), and Flutter (for cross-platform development)
+- **Purpose:** These libraries and tools are used for network communication, parsing JSON data, and simplifying the development of the mobile application across different platforms.
+- **Data Exchange:** Send and receive HTTP requests to/from the server, handle JSON serialization and deserialization.
+
+### Integrated Commercial Components
+- **QuickBooks Online API**
+  - **Purpose:** Integrate payroll and financial management functions directly into the application, allowing for automated payroll processing based on the clocked hours and shifts data from the app.
+  - **Data Shared:** Employee hours, pay rates, and payroll reports.
+
+### Authentication Service
+- **Service:** OAuth 2.0 compliant service (e.g., Auth0)
+- **Purpose:** Securely authenticate users without storing passwords in the application, allowing for single sign-on (SSO) capabilities and access control based on user roles.
+- **Data Exchange:** Token-based authentication and authorization data.
+
 
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
-Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
+### Email Communication
+- **Protocol:** SMTP (with SSL/TLS encryption)
+- **Purpose:** Send out notifications for shift changes, payroll information, password resets, and other communications that are not suitable for in-app notifications.
+- **Data Items:** Email messages, including subject, recipient list, and body content.
+
+### Web Browser Access for Administrative Functions
+- **Requirements:** Although the primary interaction with the system is through the mobile app, certain administrative functions are accessible via a web browser. This includes tasks such as detailed reporting, bulk schedule uploads, and system configuration.
+- **Communication Protocol:** HTTPS for secure access.
+- **Data Items:** Administrative commands, configuration settings, reports, and bulk data uploads/downloads.
+
+### Push Notifications
+- **Service:** FCM (Firebase Cloud Messaging) for Android and APNs (Apple Push Notification service) for iOS.
+- **Purpose:** Send real-time alerts and notifications directly to the user's mobile device.
+- **Data Items:** Notification content including title, message body, and potentially data payloads for in-app navigation.
+
+### Network Server Communication Protocols
+- **Protocol:** HTTPS for all communications between the mobile application and server backend.
+- **Purpose:** Ensure the secure transmission of sensitive data between the mobile app and the backend services.
+- **Data Items:** API requests and responses, including authentication tokens, user input data, server responses, and error messages.
+
+### Electronic Forms
+- **Purpose:** Collect input from users within the app, such as availability, time-off requests, and onboarding information.
+- **Data Handling:** Secure submission to the backend server with validation both on the client-side and server-side.
+- **Data Items:** Form fields and values, validation rules, and submission confirmations.
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
