@@ -1034,7 +1034,16 @@ Describe the logical characteristics of each interface between the software prod
 
 ## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
 
-Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+### Processing
+- **Memory Space:** A minimum of 40 MB of free space will be required to install application.
+
+### Resolution
+- **Adapatable:** Screens must be able to adapt to different phone screen resolutions. 
+
+### Hardware Access
+- **Camera:** The camera will be used to attach photos to messages, announcements, and recipes.
+- **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding material.
+- **Internet Connection:** The application will connect to the internet to backup application data and receive updates to data stored in the application. 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
 
