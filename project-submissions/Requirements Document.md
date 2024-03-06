@@ -19,6 +19,8 @@
 | Team | February 10-13, 2024 | Update document according to feedback | 3.1 |
 | Amanda Anderson | February 13, 2024 | Update template for sections 5, 6 | 4.0 |
 | Team | February 18, 2024 | Add content to sections 5, 6, and 8 | 4.1 |
+| Amanda Anderson | March 5, 2024 | Format sections 5, 9 | 5.0 |
+| Team | March 10, 2024 | Add content to sections 5, 7, 9 | 5.1 |
 
 # 1. **Overview** <a name="overview"></a>
 
@@ -47,10 +49,37 @@ These sections are outlined in the following Table of Contents.
    6. [References](#references)
 5. [System Features](#system-features)
    1. [Scheduling and Time Tracking](#feature-1)
-   2. [Communication and Announcment](#feature-2)
-   3. [Recipe Management](#feature-3)
-   4. [Onboarding Materials](#feature-4)
-   5. [Account Management](#feature-5)
+      - [Description and Priority](#f1-description)
+      - [Functional Requirements](#f1-functional)
+      - [Use Cases](#f1-usecases)
+      - [Storyboards](#f1-storyboards)
+      - [Sequence Diagram for Create Schedule](#f1-sequence)
+      - [Swimlane for Create Schedule](#f1-swimlane)
+      - [State Diagram for Shift Swap](#f1-state)
+   3. [Communication and Announcment](#feature-2)
+      - [Description and Priority](#f2-description)
+      - [Functional Requirements](#f2-functional)
+      - [Use Cases](#f2-usecases)
+      - [Storyboards](#f2-storyboards)
+      - [Dialog Map for Send Message](#f2-dialogmap)
+   5. [Recipe Management](#feature-3)
+      - [Description and Priority](#f3-description)
+      - [Functional Requirements](#f3-functional)
+      - [Use Cases](#f3-usecases)
+      - [Storyboards](#f3-storyboards)
+      - [Sequence Diagram for View Recipe](#f3-sequence)
+      - [Swimlane for View Recipe](#f3-swimlane)
+   7. [Onboarding Materials](#feature-4)
+      - [Description and Priority](#f4-description)
+      - [Functional Requirements](#f4-functional)
+      - [Use Cases](#f4-usecases)
+      - [Storyboards](#f4-storyboards)
+   9. [Account Management](#feature-5)
+      - [Description and Priority](#f5-description)
+      - [Functional Requirements](#f5-functional)
+      - [Use Cases](#f5-usecases)
+      - [Storyboards](#f5-storyboards)
+      - [Dialog Map for Edit Account](#f5-dialogmap)
 6. [Data Requirements](#data-requirements)
    1. [Logical Data Models](#data-model)
    2. [Data Dictionary](#data-dictionary)
@@ -63,6 +92,9 @@ These sections are outlined in the following Table of Contents.
    4. [Communication Interfaces](#communication-interfaces)
 8. [Software Quality Attributes](#quality-attributes)
 9. [Analysis Models](#analysis-models)
+   1. [Data Flow Diagram Level 0](#data-flow0)
+   2. [Data Flow Diagram Level 1](#data-flow1)
+   3. [Data Flow Diagrams Level 2](#data-flow2)
 10. [Appendix](#appendix)
   
 # 2. Business Requirements <a name="requirements"></a>
@@ -300,10 +332,10 @@ The following assumptions and dependencies affect the requirements in this docum
 
 Scheduling and Time Tracking
 
-### a. Description and Priority
+### a. Description and Priority <a name="f1-description"></a>
 The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for each employee. 
 
-### b. Functional Requirements
+### b. Functional Requirements <a name="f1-functional"></a>
 
 SCH-1: The scheduler must allow managers to create shifts for employees.  
 
@@ -344,7 +376,7 @@ SCH-18: The system must not allow shift swaps which cause an employee to be doub
 SCH-19: The systems view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.  
 
 
-### c. Use cases associated with the feature or functional requirement
+### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
 Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow Managers to create and edit schedules, and allow Bookkeepers to pay employees. All use cases are written assuming the user is logged in.
 
@@ -446,17 +478,24 @@ As a Staff member I want to be able to view my personal schedule and the schedul
 
 Given an employee selects to view the schedule they should be shown the up to date schedule in their chosen format with correct information of all employees for the shift period.
 
+### d. Storyboards <a name="f1-storyboards"></a>
+
+### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
+
+### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
+
+### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
 
 Communication and Announcement feature allows sending and receiving messages and company-wide announcements.
 
-### a. Description and Priority
+### a. Description and Priority <a name="f2-description"></a>
 
 The Communication and Announcement and announcement feature is a high priority feature in the system. This is because all staffs must receive notifications of new announcements, and be able to view the announcements to be aware of any major changes in the company. It is also important that all staff can send and receive messages to any staff member or staff messaging group. 
 
-### b. Functional Requirements
+### b. Functional Requirements <a name="f2-functional"></a>
 
 COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enchance communication.
 
@@ -469,7 +508,7 @@ COM-4: The system must safeguard sensitive information such as chat logs and ann
 COM-5: The system must provide tailored interfaces and features depending on the staff’s role within the company, ensuring that managers have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
 
 
-### c. Use cases associated with the feature or functional requirement
+### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
 ![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
 
@@ -539,13 +578,17 @@ As a manager, I want to be able to edit or update announcements that I have alre
 
 The system must allow the manager to be able to access and edit announcements that have been sent. 
 
+### d. Storyboards <a name="f2-storyboards"></a>
+
+### e. Dialog Map for Send Message <a name="f2-dialogmap"></a>
+
 
 ## iii. Recipe Management <a name="feature-3"></a>
 
-### a. Description and Priority
+### a. Description and Priority <a name="f3-description"></a>
 The Recipe Management feature has a high priority in the application. An Authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Managers and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. Managers are the only ones who are able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
 
-### b. Functional Requirements
+### b. Functional Requirements <a name="f3-functional"></a>
 
 RMS-1: Kitchen Staff, Front of House Staff and Managers must be able to view active and inactive recipes. 
 
@@ -596,7 +639,7 @@ RMS-21: The system must have different access levels for Managers, Kitchen Staff
 RMS-22: The system must display meaningful error messages to users in case of unsuccessful operations or system errors.
 
 
-### c. Use cases associated with the feature or functional requirement
+### c. Use cases associated with the feature or functional requirement <a name="f3-usecases"></a>
 
 ![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Usecase-Diagram-V4.png)
 
@@ -644,14 +687,21 @@ As an authenticated Manager, I want exclusive rights to archive recipes, so that
 
 There is an option to archive recipes if the status is active and an option to unarchive recipes if the status is inactive in the user interface. Upon selecting that option I should be able to select which recipes I want to archive or unarchive. The recipe should be added to the inactive recipe list, if the status was active, and the recipe should be removed from the active recipe list. The recipe should be added to the active recipe lists, if the status was inactive, and the recipe should be removed from the inactive recipe list.  
 
+### d. Storyboards <a name="f3-storyboards"></a>
+
+### e. Sequence Diagram for View Recipe <a name="f3-sequence"></a>
+
+### f. Swimlane Diagram for View Recipe <a name="f3-swimlane"></a>
+
+
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
-### a. Description and Priority
+### a. Description and Priority <a name="f4-description"></a>
 The Onboarding Materials feature has a low priority in the application. An authenticated employee (except delivery drivers) must be able to view the onboarding materials but only the managers have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
-### b. Functional Requirements
+### b. Functional Requirements <a name="f4-functional"></a>
 ONB-1:  An authenticated employee (except delivery drivers) must be able to view the onboarding materials at any time.
 
 ONB-2: The managers must be the only staff to edit the onboarding materials at any time.
@@ -660,7 +710,7 @@ ONB-3: The managers must be the only staff to create the onboarding materials at
 
 ONB-4: The managers must be the only staff to remove the onboarding materials at any time.
 
-### c. Use cases associated with the feature or functional requirement
+### c. Use cases associated with the feature or functional requirement <a name="f4-usecases"></a>
 ![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8cccab7f-7c44-4d1a-94cb-da9e5a177b9d)
 
 Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor, designated as the "Staff," is subdivided into specific roles, namely the Bookkeeper, Front of House Staff, and Kitchen Staff, with their access limited solely to viewing onboarding materials.
@@ -714,16 +764,16 @@ Upon confirmation, the selected onboarding material is removed from the system, 
 The removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
 
-
+### d. Storyboards <a name="f4-storyboards"></a>
 
 
 
 ## v. Account Management <a name="feature-5"></a>
 
-### a. Description and Priority
+### a. Description and Priority <a name="f5-description"></a>
 The Account Management feature has a high priority in the system.  It allows authenticated Managers to manage access to the system by creating and deleting accounts.  An authenticated user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
 
-### b. Functional Requirements
+### b. Functional Requirements <a name="f5-functional"></a>
 
 ACC-1: The system must provide Managers with the capability to delete user accounts that are no longer active within the company.
 
@@ -745,7 +795,7 @@ ACC-9: The system must automatically log out users once they close the applicati
 
 
 
-### c. Use cases associated with the feature or functional requirement
+### c. Use cases associated with the feature or functional requirement <a name="f5-usecases"></a>
 
 ![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/rd-5.V-account/diagrams/accounts.png)
 
@@ -813,6 +863,10 @@ As a user I want to log out of my account so I can ensure no one else can use my
 **Acceptance Criteria:**
 
 A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
+
+### d. Storyboards <a name="f5-storyboards"></a>
+
+### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 
 
 # 6 Data Requirements <a name="data-requirements"></a>
@@ -1027,4 +1081,13 @@ Describe the requirements associated with any communications functions required 
 
 # 9 Analysis Models <a name="analysis-models"></a>
 
+## i. Data Flow Diagram Level 0 <a name="data-flow0"></a>
+
+## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
+
+## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
+
+
 # 10 Appendix <a name="appendix"></a>
+
+No appendices for this document.
