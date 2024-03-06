@@ -581,10 +581,9 @@ The system must allow the manager to be able to access and edit announcements th
 ### d. Storyboards <a name="f2-storyboards"></a>
 
 ### e. Dialog Map for Send Message <a name="f2-dialogmap"></a>
-![Dialog Map Send Message](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bd33300a-f894-4b62-878f-057ae107e623)
+![Dialog Map Send Message 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/81dab17f-4538-4e16-980f-193146bd4dc4)
 
-Add Description
-
+When an authorized user is interested in sending a message, they begin to View Communication Section of System. This results in a View Announcements and Messages screen being displayed. This view is checking for new messsages, and will add any announcements or messages to the page when it recieves a message or announcement. If the user wants to exit this section of the app at this point, they can Exit Communication Section. From the view of announcements and messages, the user can Select Recipient(s) to choose which users will recieve a message. This results in a View Specific Message History screen, for a history of messages between the user and the selected recipient(s). The user can get back to the general View Announcements and Message screen by exiting this view. From the View Specific Message History screen, the user can begin to write a new message. From the View Specific Messages screen, the user can edit a message they previously sent. If the user clears their changes, they will return to the View Specific Message History screen. When the user is writing or editing a message, it is shown as a draft message. The user can add files to a draft message through an Add File Option. Once file(s) are selected they are attached to the message. Once the user sends a draft message, there is a confirmation that the message is sent. If the user choosing they can edit the message they just sent, returning it to the draft message screen. Otherwise, once the message is sent the user can exit the application.
 
 ## iii. Recipe Management <a name="feature-3"></a>
 
