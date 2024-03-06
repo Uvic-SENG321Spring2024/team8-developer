@@ -689,10 +689,19 @@ There is an option to archive recipes if the status is active and an option to u
 
 ### d. Storyboards <a name="f3-storyboards"></a>
 
+![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-NF-StoryBoard.png)
+
+![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-AltF-StoryBoard.png)
+
+![Create and Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-StoryBoard.png)
+
 ### e. Sequence Diagram for View Recipe <a name="f3-sequence"></a>
+
+![Sequence Diagram SB3](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-SequenceDiagram.png)
 
 ### f. Swimlane Diagram for View Recipe <a name="f3-swimlane"></a>
 
+![Swimlane UC-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-Swimlane.png)
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
