@@ -486,6 +486,10 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 
+![State Diagram Shift Swap](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f816a0cf-3305-4d0e-9e2f-23d825d47059)
+
+Description here
+
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
 
