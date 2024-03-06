@@ -1090,16 +1090,23 @@ Describe the requirements associated with any communications functions required 
 ### Manage Schedule Process
 ![DataFlow_Level2_Schedule](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/764e5733-9dca-4619-a15f-4add7e2c086e)
 
+Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) can Clock In and Clock Out. A Delivery Driver can Clock In and Clock Out. The Clock In Data and Clock Out Data resulting from the Clock In and Clock Out use cases is stored in Employee Hours Report data store. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can Indicate Availability. The Availablity is used by the Create Schedule and Edit Schedule use cases. A Manager can Create Schedule and Edit Schedule with Schedule Updates. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in Employee Hours Report data store. 
+
+
 ### Swap Shifts Process
 ![DataFlow_Level2_SwapShifts](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/27a9ed4d-7086-4879-a4d9-f875cf7061c8)
+
+Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to Request Shift Swap. A Manager can Send Swap Response based on that Shift Swap Request. Resulting in the Staff user who submitted the request being able to view the response.
 
 ### Process Payroll Process
 ![DataFlow_Level2_ProcessPayroll](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f5e70f04-f653-4f44-bbc9-723dda421717)
 
+A Bookkeeper can view Staff Hours Report, with View Tracked Hours use case. The information needed for the Staff Hours Report is saved in a Employee Hours Report data store.
+
 ### Communicate Process
 ![DataFlow_Level2_Communicate](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/deea420f-853d-4ed7-ad73-c7063a5abaf4)
 
-
+The Manager user class (referred to in diagram as Manager) can send an Announcement with Send Announcement use case, where Announcement includes all information defined in Data Dictionary.. A Manager can Edit Announcement to modify a sent announcement. A Manager can View Announcement Information to get information about Reactions to a sent announcement. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system of View Announcement. Each user of the system can complete React Announcements to send a Reaction to an announcement. Each user of the system can Send Message, where Message includes all information defined in Data Dictionary. Each user of system can Edit Message their sent messages. Each user of the system can View Message when the recipients of the message include them. 
 
 ### Manage Recipe Process
 ![DataFlow_Level2_Recipe](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/7e3e7e73-bfa0-4cdb-943f-97603fa8b994)
@@ -1114,7 +1121,7 @@ The Manager user class (referred to in diagram as Manager) provides Onboarding U
 ### Manage User Account Process
 ![DataFlow_Level2_UserAccount](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/eb1618df-bb1d-435d-976d-20dbe886426b)
 
-The Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. A Manager can view the Account Info of any user in the system using the View Account Information use case. The Account Info does not include Bank Info, but otherwise includes all account information defined in the Employee data entity. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete Edit Account use case for their own account, to add Account Updates. Each user of the system are able to complete Edit Account use case for their own account to add Bank Info. Each user of the system can view Account Info about their own account with the View Account Information use case.
+The Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. A Manager can view the Account Info of any user in the system using the View Account Information use case. The Account Info does not include Bank Info, but otherwise includes all account information defined in the Employee data entity in the Data Dictionary. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete Edit Account use case for their own account, to add Account Updates. Each user of the system are able to complete Edit Account use case for their own account to add Bank Info. Each user of the system can view Account Info about their own account with the View Account Information use case.
 
 
 # 10 Appendix <a name="appendix"></a>
