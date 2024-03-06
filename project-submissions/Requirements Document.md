@@ -1087,6 +1087,24 @@ Describe the requirements associated with any communications functions required 
 
 ## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
 
+### Manage Schedule Process
+![DataFlow_Level2_Schedule](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/764e5733-9dca-4619-a15f-4add7e2c086e)
+
+### Swap Shifts Process
+![DataFlow_Level2_SwapShifts](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/27a9ed4d-7086-4879-a4d9-f875cf7061c8)
+
+### Process Payroll Process
+![DataFlow_Level2_ProcessPayroll](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f5e70f04-f653-4f44-bbc9-723dda421717)
+
+### Communicate Process
+![DataFlow_Level2_Communicate](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/deea420f-853d-4ed7-ad73-c7063a5abaf4)
+
+### Manage Recipe Process
+![DataFlow_Level2_Recipe](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/7e3e7e73-bfa0-4cdb-943f-97603fa8b994)
+
+### Manage User Account Process
+![DataFlow_Level2_UserAccount](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/eb1618df-bb1d-435d-976d-20dbe886426b)
+
 
 # 10 Appendix <a name="appendix"></a>
 
