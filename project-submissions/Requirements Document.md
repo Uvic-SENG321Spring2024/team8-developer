@@ -581,6 +581,9 @@ The system must allow the manager to be able to access and edit announcements th
 ### d. Storyboards <a name="f2-storyboards"></a>
 
 ### e. Dialog Map for Send Message <a name="f2-dialogmap"></a>
+![Dialog Map Send Message](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bd33300a-f894-4b62-878f-057ae107e623)
+
+Add Description
 
 
 ## iii. Recipe Management <a name="feature-3"></a>
