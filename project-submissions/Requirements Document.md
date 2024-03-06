@@ -1099,15 +1099,22 @@ Describe the requirements associated with any communications functions required 
 ### Communicate Process
 ![DataFlow_Level2_Communicate](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/deea420f-853d-4ed7-ad73-c7063a5abaf4)
 
+
+
 ### Manage Recipe Process
 ![DataFlow_Level2_Recipe](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/7e3e7e73-bfa0-4cdb-943f-97603fa8b994)
 
-The Manager user class (referred to in diagram as Manager) provides recipe updates through Create Recipe and Edit Recipe use cases. A Manager can complete the Archive Recipe use case which updates the recpie status to archived. Once the recipe is updated the Recipe Info can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
+The Manager user class (referred to in diagram as Manager) provides Recipe Updates through Create Recipe and Edit Recipe use cases. A Manager can complete the Archive Recipe use case which updates the recpie status to archived. Once the recipe is updated the Recipe Info can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
+
+### Manage Onboarding Process
+![DataFlow_Level2_Onboarding](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5cadfd94-d340-4c2e-be6b-61111c9f4460)
+
+The Manager user class (referred to in diagram as Manager) provides Onboarding Updates through the Create Oboarding Materials, Edit Onboarding Materials, and Remove Onboarding Materials use cases. Once the onboarding material is updated the Onboarding Materials can be viewed using the View Onboarding Materials use case. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to View Onboarding Materials.
 
 ### Manage User Account Process
 ![DataFlow_Level2_UserAccount](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/eb1618df-bb1d-435d-976d-20dbe886426b)
 
-The Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. A Manager can view the Account Info of any user in the system using the View Account Information use case. The Account Info does not include Bank Info, but otherwise includes all account information defined in the Employee data entity. All Users could be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete Edit Account use case for their own account, to add Account Updates. Each user of the system are able to complete Edit Account use case for their own account to add Bank Info. Each user of the system can view Account Info about their own account with the View Account Information use case.
+The Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. A Manager can view the Account Info of any user in the system using the View Account Information use case. The Account Info does not include Bank Info, but otherwise includes all account information defined in the Employee data entity. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete Edit Account use case for their own account, to add Account Updates. Each user of the system are able to complete Edit Account use case for their own account to add Bank Info. Each user of the system can view Account Info about their own account with the View Account Information use case.
 
 
 # 10 Appendix <a name="appendix"></a>
