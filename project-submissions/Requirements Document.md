@@ -580,6 +580,12 @@ The system must allow the manager to be able to access and edit announcements th
 
 ### d. Storyboards <a name="f2-storyboards"></a>
 
+![Story Board #1 Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/bcf6f409-a787-4fda-adc3-8945cfce0b32)
+
+![Story Board #2 Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/bedeff03-a619-45de-af46-2a26dad0d189)
+
+![Story Board #3 Announcements](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/843471d3-237c-4faa-a372-2081aa441011)
+
 
 
 ### e. Dialog Map for Send Message <a name="f2-dialogmap"></a>
