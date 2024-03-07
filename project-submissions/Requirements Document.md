@@ -1037,12 +1037,7 @@ Describe the logical characteristics of each interface between the software prod
 Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
-
-### Accounting Software Interface
-- **Name:** Quickbooks Online Version 2024
-- **Data Exchange:** The accounting interface will receive staff hours report for payroll processing 
-- **Services Needed:** It is crucial for conducting payroll processing and providing financial reporting functionalities.
-- **Communication Protocols:** This interface will utilize the Quickbooks API over HTTPS for communication, ensuring secure transfer of financial data.
+The Banter Ice Cream system interfaces with external softwares. Below is the description of the connection between the system and those softwares:
   
 ### Operating System
 - **Operating Systems:** Android and iOS
@@ -1054,19 +1049,24 @@ Describe the logical and physical characteristics of each interface between the 
 - **Purpose:** Stores and manages all application data including user accounts, schedules, recipes, announcements, and employee information.
 - **Data Exchange:** CRUD (Create, Read, Update, Delete) operations on employee details, schedules, recipes, and announcements.
 
+### Authentication Service
+- **Service:** OAuth 2.0 compliant service (e.g., Auth0)
+- **Purpose:** Securely authenticate users without storing passwords in the application, allowing for single sign-on (SSO) capabilities and access control based on user roles.
+- **Data Exchange:** Token-based authentication and authorization data.
+
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
 ### Messaging Services:
-The system will support embedding of images, videos, and PDFs in messages and announcements. It should ensure role-based access control, with privileges for managers to create and send announcement.
+The system will support embedding of images, videos, and PDFs in messages and announcements. 
 
 ### Company-wide Announcements:
-Functionality to send and receive announcements must be incorporated, enabling managers to efficiently distribute important information and staff to respond or acknowledge these communications.
+Functionality to send and receive announcements must be incorporated, enabling managers to distribute important information and staff to respond or acknowledge these communications.
 
 ### Security and Privacy:
 Communication channels must be secure, with safeguards for sensitive information like chat logs and management of announcements. This entails encryption, controlled access, and compliance with privacy regulations.
 
 ### Role-Tailored Interfaces:
-Interfaces must be tailored according to staff roles to ensure that managers have the necessary tools for announcement creation and management, and staff have access to necessary communication channels.
+Interfaces must be tailored according to staff roles to ensure that managers have the tools for announcement creation and management, and staff have access to communication channels.
 
 ### Performance and Accessibility:
 The system should ensure that the most recent announcements can be accessed within 2 seconds, and detailed metrics on announcement engagement are available to managers for informed oversight.
