@@ -1083,15 +1083,16 @@ Describe the requirements associated with any communications functions required 
 
 ## i. Data Flow Diagram Level 0 <a name="data-flow0"></a>
 
-![tlevel0DFDBen drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/755b7ee2-b1e6-461b-9f49-5d9d8a0d01c8)
+![BenDFDLevel0 drawio](https://github.com/Uvic-SENG321Spring2024/course/assets/76890860/4a58de6d-47a8-4a2b-9fd0-65b94f5645e7)
 
-The above Level 0 DFD depicts the Banter Ice Cream System as a centralized system interacting with four external entities: Staff, Manager, Bookkeeper, and Delivery Driver. The system handles a variety of data flows including account updates, shift swap requests, onboarding materials, and clock-in/out data. It represents a high-level view of the system's interactions with its environment, showing how data is exchanged but not the internal workings of the system itself. The arrows indicate the direction of the data flow, meaning the data originates from the entity at the tail of the arrow and moves towards the entity at the head of the arrow.
+The above Level 0 Data Flow Diagram depicts the Banter Ice Cream System as a centralized system interacting with four external entities: Staff, Manager, Bookkeeper, and Delivery Driver. 
+The "All Users" entity in this Data Flow Diagram represents a collective group that includes every type of user in the system, providing a centralized point for data flows that are common across all user types to reduce redundancy and simplify the diagram's clarity. The system handles a variety of data flows including account updates, shift swap requests, onboarding materials, and clock-in/out data. It represents a high-level view of the system's interactions with its environment, showing how data is exchanged but not the internal workings of the system itself. The arrows indicate the direction of the data flow, meaning the data originates from the entity at the tail of the arrow and moves towards the entity at the head of the arrow. 
 
 ## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
 
-![tlevel1DFDBen drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/5334c4d5-d52d-4b55-8c42-7407ecd23cfa)
+![BenDFDLevel1 drawio](https://github.com/Uvic-SENG321Spring2024/course/assets/76890860/90f630d2-59e2-45bd-968b-a82ae5fb2da0)
 
-The above Level 1 DFD expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, Process Payroll and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule management, and recipe updating. The diagram includes a data store for staff hours report indicating where data is stored within the system. This DFD provides a more detailed understanding of the system's internal processes and their data interactions.
+The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, Track Staff Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule management, and recipe updating. The diagram includes a data store for staff hours summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
 
 ## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
 
