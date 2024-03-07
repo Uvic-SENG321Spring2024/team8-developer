@@ -1038,8 +1038,6 @@ Describe the logical and physical characteristics of each interface between the 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
 
-The Banter Ice Cream system interfaces with external softwares. Below is the description of the connection between the system and those softwares:
-
 ### Accounting Software Interface
 - **Name:** Quickbooks Online Version 2024
 - **Data Exchange:** The accounting interface will receive staff hours report for payroll processing 
@@ -1049,12 +1047,17 @@ The Banter Ice Cream system interfaces with external softwares. Below is the des
 ### Operating System
 - **Operating Systems:** Android and iOS
 - **Purpose:** The mobile application is designed to run on these operating systems, utilizing their native features and capabilities for notifications, data storage, and security.
-- **Services Used:** Push notifications, GPS (for clocking in and out with location verification), local data encryption, and background task execution.
+- **Services Used:** local data encryption, and background task execution.
+
+### Database System
+- **Database:** MySQL 8.0 or PostgreSQL 13
+- **Purpose:** Stores and manages all application data including user accounts, schedules, recipes, announcements, and employee information.
+- **Data Exchange:** CRUD (Create, Read, Update, Delete) operations on employee details, schedules, recipes, and announcements.
 
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
 ### Messaging Services:
-The system will support embedding of images, videos, and PDFs in messages and announcements. It should ensure role-based access control, with distinct privileges for managers and staff to view, create, and edit communications as appropriate to their roles.
+The system will support embedding of images, videos, and PDFs in messages and announcements. It should ensure role-based access control, with privileges for managers to create and send announcement.
 
 ### Company-wide Announcements:
 Functionality to send and receive announcements must be incorporated, enabling managers to efficiently distribute important information and staff to respond or acknowledge these communications.
@@ -1067,6 +1070,16 @@ Interfaces must be tailored according to staff roles to ensure that managers hav
 
 ### Performance and Accessibility:
 The system should ensure that the most recent announcements can be accessed within 2 seconds, and detailed metrics on announcement engagement are available to managers for informed oversight.
+
+### Network Server Communication Protocols
+- **Protocol:** HTTPS for all communications between the mobile application and server backend.
+- **Purpose:** Ensure the secure transmission of sensitive data between the mobile app and the backend services.
+- **Data Items:** API requests and responses, including authentication tokens, user input data, server responses, and error messages.
+
+### Electronic Forms
+- **Purpose:** Collect input from users within the app, such as availability, time-off requests, and onboarding information.
+- **Data Handling:** Secure submission to the backend server with validation both on the client-side and server-side.
+- **Data Items:** Form fields and values, validation rules, and submission confirmations.
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
