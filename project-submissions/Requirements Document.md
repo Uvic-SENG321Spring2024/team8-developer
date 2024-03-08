@@ -1083,14 +1083,14 @@ Describe the requirements associated with any communications functions required 
 
 ## i. Data Flow Diagram Level 0 <a name="data-flow0"></a>
 
-![BenDFDLevel0 drawio](https://github.com/Uvic-SENG321Spring2024/course/assets/76890860/4a58de6d-47a8-4a2b-9fd0-65b94f5645e7)
+![BenLevel0DFD](https://github.com/Uvic-SENG321Spring2024/course/assets/76890860/93aec919-d246-4783-8039-e2fff94d68f4)
 
 The above Level 0 Data Flow Diagram depicts the Banter Ice Cream System as a centralized system interacting with four external entities: Staff, Manager, Bookkeeper, and Delivery Driver. 
 The "All Users" entity in this Data Flow Diagram represents a collective group that includes every type of user in the system, providing a centralized point for data flows that are common across all user types to reduce redundancy and simplify the diagram's clarity. The system handles a variety of data flows including account updates, shift swap requests, onboarding materials, and clock-in/out data. It represents a high-level view of the system's interactions with its environment, showing how data is exchanged but not the internal workings of the system itself. The arrows indicate the direction of the data flow, meaning the data originates from the entity at the tail of the arrow and moves towards the entity at the head of the arrow. 
 
 ## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
 
-![BenDFDLevel1 drawio](https://github.com/Uvic-SENG321Spring2024/course/assets/76890860/90f630d2-59e2-45bd-968b-a82ae5fb2da0)
+![BenLevel1DFD](https://github.com/Uvic-SENG321Spring2024/course/assets/76890860/57eafa86-80a8-4354-bcc0-d89039cd6b18)
 
 The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, Track Staff Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule management, and recipe updating. The diagram includes a data store for staff hours summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
 
