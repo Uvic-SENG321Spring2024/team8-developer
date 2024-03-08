@@ -1037,7 +1037,7 @@ Describe the logical characteristics of each interface between the software prod
 Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
-The Banter Ice Cream system interfaces with external softwares. Below is the description of the connection between the system and those softwares:
+The Banter Ice Cream system interfaces with several software components to ensure seamless operation, data integrity, and user experience. Below are the key software interfaces and their purposes:
   
 ### Operating System
 - **Operating Systems:** Android and iOS
@@ -1056,20 +1056,11 @@ The Banter Ice Cream system interfaces with external softwares. Below is the des
 
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
-### Messaging Services:
+### Messaging Services
 The system will support embedding of images, videos, and PDFs in messages and announcements. 
 
-### Company-wide Announcements:
-Functionality to send and receive announcements must be incorporated, enabling managers to distribute important information and staff to respond or acknowledge these communications.
-
-### Security and Privacy:
+### Security and Privacy
 Communication channels must be secure, with safeguards for sensitive information like chat logs and management of announcements. This entails encryption, controlled access, and compliance with privacy regulations.
-
-### Role-Tailored Interfaces:
-Interfaces must be tailored according to staff roles to ensure that managers have the tools for announcement creation and management, and staff have access to communication channels.
-
-### Performance and Accessibility:
-The system should ensure that the most recent announcements can be accessed within 2 seconds, and detailed metrics on announcement engagement are available to managers for informed oversight.
 
 ### Network Server Communication Protocols
 - **Protocol:** HTTPS for all communications between the mobile application and server backend.
