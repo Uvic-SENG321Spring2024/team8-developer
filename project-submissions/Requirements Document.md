@@ -867,7 +867,7 @@ A user must have the option to "Log Out" of their account.  This will remove the
 ### d. Storyboards <a name="f5-storyboards"></a>
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
-
+![Account Edition](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/65065456-6dc7-4fcb-af9b-2fbc46af34cc)
 
 # 6 Data Requirements <a name="data-requirements"></a>
 
