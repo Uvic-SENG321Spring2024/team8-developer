@@ -67,7 +67,7 @@ These sections are outlined in the following Table of Contents.
       - [Functional Requirements](#f3-functional)
       - [Use Cases](#f3-usecases)
       - [Storyboards](#f3-storyboards)
-      - [Sequence Diagram for View Recipe](#f3-sequence)
+      - [Sequence Diagram for Storyboard 3](#f3-sequence)
       - [Swimlane for View Recipe](#f3-swimlane)
    7. [Onboarding Materials](#feature-4)
       - [Description and Priority](#f4-description)
@@ -689,13 +689,21 @@ There is an option to archive recipes if the status is active and an option to u
 
 ### d. Storyboards <a name="f3-storyboards"></a>
 
+#### Storyboard 1: UC-2 Normal Flow
+
 ![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-NF-StoryBoard.png)
+
+
+
+#### Storyboard 2: UC-2 Alternate Flow
 
 ![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-AltF-StoryBoard.png)
 
+#### Storyboard 3: Edit, Create, and Archive Recipe
+
 ![Create and Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-StoryBoard.png)
 
-### e. Sequence Diagram for View Recipe <a name="f3-sequence"></a>
+### e. Sequence Diagram for Storyboard 3 <a name="f3-sequence"></a>
 
 ![Sequence Diagram SB3](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-SequenceDiagram.png)
 
