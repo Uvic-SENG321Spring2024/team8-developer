@@ -1068,7 +1068,7 @@ Communication channels must be secure, with safeguards for sensitive information
 - **Data Items:** API requests and responses, including authentication tokens, user input data, server responses, and error messages.
 
 ### Electronic Forms
-- **Purpose:** Collect input from users within the app, such as availability, time-off requests, and onboarding Materials.
+- **Purpose:** Collect input from users within the app, such as availability, time-off requests, and onboarding materials.
 - **Data Handling:** Secure submission to the backend server with validation both on the client-side and server-side.
 - **Data Items:** Form fields and values, validation rules, and submission confirmations.
 
