@@ -1075,7 +1075,15 @@ The user is prompted with an error message (example in Image 3) to reduce mistak
 
 ## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
 
-Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+### Processing
+- **Memory Space:** A minimum of 40 MB of free space will be required to install application.
+
+### Resolution
+- **Adapatable:** The application must be able to adapt to different phone screen resolutions and orientations.
+
+### Hardware Access
+- **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding materials. The internal storage includes any local storage, cloud storage linked to the device, and the device's camera roll. The allowed file types include images, videos, and PDFs. 
+- **Internet Connection:** The application will connect to the internet to backup application data and receive updates to data stored in the application. 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
 The Banter Ice Cream system interfaces with several software components to ensure seamless operation, data integrity, and user experience. Below are the key software interfaces and their purposes:
