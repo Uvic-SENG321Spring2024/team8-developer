@@ -32,7 +32,7 @@ These sections are outlined in the following Table of Contents.
 1. [Overview](#overview)
 2. [Business Requirements](#requirements)
    1. [Background](#background)
-   2. [Buisiness Opportunity](#opportunity)
+   2. [Business Opportunity](#opportunity)
    3. [Business Objectives](#objective)
    4. [Success Metrics](#success)
    5. [Product Vision Statement](#vision)
