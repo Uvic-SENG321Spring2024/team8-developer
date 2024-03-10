@@ -1047,7 +1047,7 @@ The homepage for the non-management version of the homepage includes 2 buttons o
    <figcaption>Image 2: Non-Management Home Screen.</figcaption>
 </figure>
 
-The user is prompted with an error message when a user doesn't enter both a username and password when logging in and when a user doesn't save any edits or new recipes (See Image 3).
+The user is prompted with an error message (example in Image 3) to reduce mistakes using the application. A couple of cases that result in an error message include a user trying to login without entering both a username and password, and trying to exit without saving when creating or editing a recipe. 
 
 <figure>
    <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Error%20Message.png" width="390" height="844">
