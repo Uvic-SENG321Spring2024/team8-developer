@@ -691,17 +691,17 @@ There is an option to archive recipes if the status is active and an option to u
 
 #### Storyboard 1: UC-2 Normal Flow
 
-![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-NF-StoryBoard.png)
+![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard2.png)
 
 
 
 #### Storyboard 2: UC-2 Alternate Flow
 
-![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-AltF-StoryBoard.png)
+![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard1.png)
 
 #### Storyboard 3: Edit, Create, and Archive Recipe
 
-![Create and Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-StoryBoard.png)
+![Create and Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard3.png)
 
 ### e. Sequence Diagram for Storyboard 3 <a name="f3-sequence"></a>
 
@@ -709,7 +709,7 @@ There is an option to archive recipes if the status is active and an option to u
 
 ### f. Swimlane Diagram for View Recipe <a name="f3-swimlane"></a>
 
-![Swimlane UC-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/UC-2-Swimlane.png)
+![Swimlane UC-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Swimlane.png)
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
