@@ -1030,55 +1030,28 @@ The system shall not generate any reports.
 
 ## i. User Interfaces <a name="user-interfaces"></a>
 
-This is the link to the prototype: https://www.figma.com/file/Uc9R5x3QO1j0RJcTtubefa/Prototype?type=design&node-id=0-1&mode=design&t=8ogwlELfk2Qu3Zly-0
+This the medium fidelity prototype can be found here: https://www.figma.com/file/Uc9R5x3QO1j0RJcTtubefa/Prototype?type=design&node-id=0-1&mode=design&t=8ogwlELfk2Qu3Zly-0
 
-The prototype is designed to fit the screen of an Iphone 14, so the screen layout has the following dimensions 390 x 844. Upon opening the app the user is prompted to enter a username and password (See Image 1). 
-
-<figure>
-   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Login_Screen.png" width="390" height="844">
-   <figcaption>Image 1: Login Screen.</figcaption>
-</figure>
-
-The prototype has been designed for a user with a management role. The GUI standards to be followed were based on the Banter Ice Cream website, this includes the green and orange color scheme, font and the header banner. The homepage has a header at the top of the screen and an icon bar at the bottom. The homepage also includes 3 buttons on the main screen "Announcement 1", "Onboarding Materials", and "Account Management". The icon bar contains the following icons from left to right calendar, communication, home, recipe menu, and personal account info. This icon bar is displayed on every screen which allows for quick access to each feature at anytime (See Image 2). Each page after the main page of each feature contains a back arrow in the top left where a user can go back to a previous page.
+The prototype is designed to fit the screen of an iPhone 14, so the screen layout has the following dimensions 390 x 844. Upon opening the app the user is prompted to enter a username and password. 
+The prototype has been designed for a user with a management role. The GUI standards to be followed were based on the Banter Ice Cream website, this includes the green and orange color scheme, font and the header banner. There are 2 versions of the homepage a management version and a non-management verion. Both versions of the homepage have a header at the top of the screen and an icon bar at the bottom. The management version of the homepage includes 3 buttons on the main screen "Announcements", "Onboarding Materials", and "Account Management" (See Image 1). 
 
 <figure>
    <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Home_Screen.png" width="390" height="844">
-   <figcaption>Image 2: Home Screen.</figcaption>
+   <figcaption>Image 1: Management Home Screen.</figcaption>
 </figure>
 
-When the user clicks on the calendar icon the user is brought to the scheduling feature. The user can view their personal calendar with a weekly view and a monthly view when viewing the staff calendar. This screen has the following buttons "Select Week", "Select Month", "Tracked Hours", "Edit Schedule", "Create Schedule", and "Availability" (See Image 3).
+The homepage for the non-management version of the homepage includes 2 buttons on the main screen "Announcements", and "Onboarding Materials" (See Image 2). The icon bar contains the following icons from left to right calendar, communication, home, recipe menu, and personal account info. This icon bar is displayed on every screen which allows for quick access to each feature at anytime. Each page after the main page of each feature contains a back arrow in the top left where a user can go back to a previous page.
 
 <figure>
-   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Scheduling_Screen.png" width="390" height="844">
-   <figcaption>Image 3: Calendar Screen.</figcaption>
+   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Home_Screen2.png" width="390" height="844">
+   <figcaption>Image 2: Non-Management Home Screen.</figcaption>
 </figure>
 
-When the user clicks on the communication icon the user can access the main page of the communication feature (See Image 4). This page contains a search bar where the user can look up a co-worker to chat with. The main page contains all of the users recent private and group chats. 
-
-<figure>
-   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Message_Screen.png" width="390" height="844">
-   <figcaption>Image 4: Communication Screen.</figcaption>
-</figure>
-
-The home icon allows to user to go back to the home page where the majority of the main features are accessible. The recipe menu icon allows the user to access the recipe management feature. The main page of the recipe management feature is the recipe menu and initialy displays the active list of recipes. This is where users can create a new recipe and view active or incactive recipes by selecting the active or inactive buttons (See Image 5). 
-
-<figure>
-   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Recipe_Menu.png" width="390" height="844">
-   <figcaption>Image 5: Recipe Menu Screen.</figcaption>
-</figure>
-
-The personal account info icon allows the user to view their personal account information (See Image 6).
-
-<figure>
-   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Personal_Account_Info.png" width="390" height="844">
-   <figcaption>Image 6: Personal Account Info Screen.</figcaption>
-</figure>
-
-The user is prompted with an error message when a user doesn't enter both a username and password when logging in and when a user doesn't save any edits or new recipes (See Image 7).
+The user is prompted with an error message when a user doesn't enter both a username and password when logging in and when a user doesn't save any edits or new recipes (See Image 3).
 
 <figure>
    <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Error%20Message.png" width="390" height="844">
-   <figcaption>Image 7: Error Message.</figcaption>
+   <figcaption>Image 3: Error Message.</figcaption>
 </figure>
 
 ## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
