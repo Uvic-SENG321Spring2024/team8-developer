@@ -1088,7 +1088,7 @@ Describe the requirements associated with any communications functions required 
 ## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
 
 ### Manage Schedule Process
-![DataFlow_Level2_Schedule 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/250e9296-faaa-4c4c-ac82-09f99b383642)
+![DataFlow_Level2_Schedule 3](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/49f54093-6e3b-4c03-9d9d-fa39f12f57b3)
 
 Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) can Clock In and Clock Out. A Delivery Driver can Clock In and Clock Out. The Clock In Data and Clock Out Data resulting from the Clock In and Clock Out use cases is stored in Employee Hours Summary data store. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can Indicate Availability. The Availablity is used by the Create Schedule and Edit Schedule use cases. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Create Schedule and Edit Schedule with Schedule Updates. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in Employee Hours Summary data store. 
 
@@ -1103,22 +1103,22 @@ Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff
 A Bookkeeper can view Staff Hours Summary accessed with View Tracked Hours use case. A Front of House / Kitchen Manager (referred to in diagram as Manager) can view Staff Hours Summary accessed with View Tracked Hours use case. The information needed for the Staff Hours Summary is saved in a Employee Hours Summary data store.
 
 ### Communicate Process
-![DataFlow_Level2_Communicate 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/10133c84-5a70-492b-a63a-df225a688902)
+![DataFlow_Level2_Communicate 3](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f0441b33-209a-4e41-a284-e81abcd307e8)
 
 The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can send an Announcement with Send Announcement use case, where Announcement includes all information defined in Data Dictionary.. A Manager can Edit Announcement to modify a sent announcement. A Manager can View Announcement Information to get information about Reactions to a sent announcement. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system of View Announcement. Each user of the system can complete React Announcements to send a Reaction to an announcement. Each user of the system can Send Message, where Message includes all information defined in Data Dictionary. Each user of system can Edit Message their sent messages. Each user of the system can View Message when the recipients of the message include them. 
 
 ### Manage Recipe Process
-![DataFlow_Level2_Recipe 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/1b7c021e-a9a7-4376-9921-a3202b3821c3)
+![DataFlow_Level2_Recipe 3](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/095ac623-0603-4eb1-8d60-3be188109e3a)
 
 The Front of House / Kitchen Manager user class (referred to in diagram as Manager) provides Recipe Updates through Create Recipe and Edit Recipe use cases. A Manager can complete the Archive Recipe use case which updates the recpie status to archived. Once the recipe is updated the Recipe Info can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
 
 ### Manage Onboarding Process
-![DataFlow_Level2_Onboarding 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/75d72dc1-12e6-4b53-84bf-88501985ee3c)
+![DataFlow_Level2_Onboarding 3](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/d27f2370-5de4-41c3-8f99-3c65de974b32)
 
 The Front of House / Kitchen Manager user class (referred to in diagram as Manager) provides Onboarding Updates through the Create Oboarding Materials, Edit Onboarding Materials, and Remove Onboarding Materials use cases. Once the onboarding material is updated the Onboarding Materials can be viewed using the View Onboarding Materials use case. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to View Onboarding Materials.
 
 ### Manage User Account Process
-![DataFlow_Level2_UserAccount 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/28e32f5a-b088-4ba9-bc87-e44e75d41cae)
+![DataFlow_Level2_UserAccount 3](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/2f044f60-ca7b-47d9-b6e6-58800e342473)
 
 The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. A Manager can view the Account Info of any user in the system using the View Account Information use case. The Account Info does not include Bank Info, but otherwise includes all account information defined in the Employee data entity in the Data Dictionary. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete Edit Account use case for their own account, to add Account Updates. Each user of the system are able to complete Edit Account use case for their own account to add Bank Info. Each user of the system can view Account Info about their own account with the View Account Information use case.
 
