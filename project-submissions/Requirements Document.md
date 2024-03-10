@@ -1090,7 +1090,7 @@ The "All Users" entity in this Data Flow Diagram represents a collective group t
 
 ## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
 
-![L1DFD](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/a66af0b7-e9e3-4dea-ab01-ec79a1ee391f)
+![DFDL1B drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/702c90b2-718b-4702-89a2-59a750469ab6)
 
 The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, View Tracked Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule Management, and recipe updating. The diagram includes a data store for Staff Hours Summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
 
