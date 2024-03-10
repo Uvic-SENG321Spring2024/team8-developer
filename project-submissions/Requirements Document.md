@@ -765,7 +765,7 @@ The removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
 
 ### d. Storyboards <a name="f4-storyboards"></a>
-
+![StoryBoard Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/43cd3ec3-67b5-44d3-9e87-ea491c29304a)
 
 
 ## v. Account Management <a name="feature-5"></a>
@@ -869,7 +869,7 @@ A user must have the option to "Log Out" of their account.  This will remove the
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 ![Account Edition](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/96bc595f-6eda-4719-955f-81f53ecc16d3)
 
-In this schematic representation, user interaction is delineated, wherein individuals are empowered to autonomously navigate and modify their account settings. This includes actions such as password configuration, updating contact information, and specifying payment details. Following these user-initiated modifications, the system seamlessly integrates the updated information into the current database. Subsequently, users are afforded the option to exit the account system.
+In this figure, the process of users modifying account information is depicted. In the first step, the user logs into the system and selects his/her account. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once all operations are complete, all changes will be saved. Finally the user can log out via Exit.
 
 
 
