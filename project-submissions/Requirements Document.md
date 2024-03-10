@@ -505,7 +505,7 @@ COM-3: The system must have role-based access control, providing different acces
 
 COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
 
-COM-5: The system must provide tailored interfaces and features depending on the Staff’s role within the company, ensuring that the Manager have access to announcement creation and management features, while all other Staff have access to communication channels for group or individual messaging.
+COM-5: The system must provide tailored interfaces and features depending on the staff member’s role within the company, ensuring that the Manager have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
