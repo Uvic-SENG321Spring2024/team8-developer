@@ -1041,8 +1041,7 @@ Describe the logical characteristics of each interface between the software prod
 - **Adapatable:** Screens must be able to adapt to different phone screen resolutions. 
 
 ### Hardware Access
-- **Camera:** The camera will be used to attach photos to messages, announcements, and recipes.
-- **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding material.
+- **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding material. The internal storage includes any local storage, cloud storage linked to the device, and the device's camera roll. The allowed file types include images, videos, and PDFs. 
 - **Internet Connection:** The application will connect to the internet to backup application data and receive updates to data stored in the application. 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
