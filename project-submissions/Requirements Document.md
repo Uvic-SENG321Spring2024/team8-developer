@@ -479,8 +479,36 @@ As a Staff member I want to be able to view my personal schedule and the schedul
 Given an employee selects to view the schedule they should be shown the up to date schedule in their chosen format with correct information of all employees for the shift period.
 
 ### d. Storyboards <a name="f1-storyboards"></a>
+**Home Screen:**  
+Staff 
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreen1staff.png" width="1000">
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreen2staff.png" width="600">
+Bookkeeper  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreenbookkeeper.png" width="400">  
+Manager  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreenmanager.png" width="400">  
+**Create Schedule:**  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/createschedule1.png" width="600">    
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/createschedule2.png" width="600">  
+**Edit Schedule:**  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/editschedule1.png" width="600">    
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/editschedule2.png" width="600">  
+**Shift Swap:**  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/shiftswap1.png" width="600">    
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/shiftswap2.png" width="600">  
+**Availability:** 
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/availability1.png" width="600">  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/availability2.png" width="400">  
+**Clock in/out:**  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreenclockin.png" width="800">  
+**Track Hours:**  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreentrackedhours.png" width="600">  
+
+
+
 
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/schedulingsequencediagram.png" width="1000"> 
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
