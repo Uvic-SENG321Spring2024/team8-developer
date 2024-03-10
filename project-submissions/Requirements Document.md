@@ -536,7 +536,7 @@ As an employee, I want to be able to edit a message that I have previously sent,
 
 **Acceptance Criteria:** 
 
-The system must allow each Staff member to be able to edit messages that the Staff member had sent before. 
+The system must allow each staff member to be able to edit messages that the staff member had sent before. 
 
 **User Story 5: React announcements** 
 
