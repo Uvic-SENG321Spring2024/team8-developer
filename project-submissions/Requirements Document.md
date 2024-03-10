@@ -786,7 +786,14 @@ The removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
 
 ### d. Storyboards <a name="f4-storyboards"></a>
+View Onboarding Material
+![View Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/0ebf2c74-fb27-45ad-8778-b7a07afd7868)
 
+Create New Onboarding Material
+![Onboarding Materials Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/b0b382e8-2ca5-4787-b162-b13f77016867)
+
+Delete Onboarding Material
+![Delete Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/5d1002d7-8bd8-4381-b746-709e915f2129)
 
 
 ## v. Account Management <a name="feature-5"></a>
@@ -888,6 +895,10 @@ A user must have the option to "Log Out" of their account.  This will remove the
 ### d. Storyboards <a name="f5-storyboards"></a>
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
+![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
+
+In this figure, the process of a user modifying their own account information is depicted. In the first step, the user logs into the system and navigates to the account profile page. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once user has completed their changes, changes will be saved. Finally the user can exit the account profile section of application or log out via Exit.
+
 
 
 # 6 Data Requirements <a name="data-requirements"></a>
