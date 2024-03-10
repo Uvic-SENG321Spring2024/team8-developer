@@ -448,7 +448,7 @@ Given I have clocked in, when my tracked hours are viewed then the hours I have 
 
 **User Story 7: Clock out**
 
-As a Staff member I want to clock out so that the hours I work are accurately recorded in the system.
+As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
