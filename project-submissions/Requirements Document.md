@@ -528,7 +528,7 @@ As an employee, I want to be able to view the messages that are sent to me or th
 
 **Acceptance Criteria:** 
 
-The system must allow each Staff member to see received messages.
+The system must allow each staff member to see received messages.
 
 **User Story 3: Edit message**
 
