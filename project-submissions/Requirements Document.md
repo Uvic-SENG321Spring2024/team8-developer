@@ -876,7 +876,7 @@ A user must have the option to "Log Out" of their account.  This will remove the
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 ![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
 
-In this figure, the process of users modifying account information is depicted. In the first step, the user logs into the system and selects his/her account. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once all operations are complete, all changes will be saved. Finally the user can log out via Exit.
+In this figure, the process of a user modifying their own account information is depicted. In the first step, the user logs into the system and navigates to the account profile page. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once user has completed their changes, changes will be saved. Finally the user can exit the account profile section of application or log out via Exit.
 
 
 
