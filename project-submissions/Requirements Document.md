@@ -481,8 +481,8 @@ Given an employee selects to view the schedule they should be shown the up to da
 ### d. Storyboards <a name="f1-storyboards"></a>
 **Home Screen:**  
 Staff 
-<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreen1staff.png" width="1000">
-<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreen2staff.png" width="600">
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreen1staff.png" width="1000">  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreen2staff.png" width="600">  
 Bookkeeper  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/homescreenbookkeeper.png" width="400">  
 Manager  
@@ -496,7 +496,7 @@ Manager
 **Shift Swap:**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/shiftswap1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/shiftswap2.png" width="600">  
-**Availability:** 
+**Availability:**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/availability1.png" width="600">  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/availability2.png" width="400">  
 **Clock in/out:**  
