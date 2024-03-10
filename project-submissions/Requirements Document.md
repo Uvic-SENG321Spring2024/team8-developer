@@ -873,7 +873,7 @@ A user must have the option to "Log Out" of their account.  This will remove the
 
 ![Account Deletion](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountDeletion.png)
 
-![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Information.png)
+![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ViewInformation.png)
 
 ![Edit Cell Phone](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditCell.png)
 
