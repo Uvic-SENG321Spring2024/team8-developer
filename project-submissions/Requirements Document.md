@@ -1038,7 +1038,7 @@ Describe the logical characteristics of each interface between the software prod
 - **Memory Space:** A minimum of 40 MB of free space will be required to install application.
 
 ### Resolution
-- **Adapatable:** Screens must be able to adapt to different phone screen resolutions. 
+- **Adapatable:** The application must be able to adapt to different phone screen resolutions and orientations.
 
 ### Hardware Access
 - **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding materials. The internal storage includes any local storage, cloud storage linked to the device, and the device's camera roll. The allowed file types include images, videos, and PDFs. 
