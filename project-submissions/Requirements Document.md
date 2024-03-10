@@ -893,6 +893,23 @@ As a user I want to log out of my account so I can ensure no one else can use my
 A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
 
 ### d. Storyboards <a name="f5-storyboards"></a>
+![Account Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountCreation.png)
+
+![Account Deletion](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountDeletion.png)
+
+![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ViewInformation.png)
+
+![Edit Cell Phone](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditCell.png)
+
+![Edit Email](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditEmail.png)
+
+![Edit Role](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditRole.png)
+
+![Edit Username](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditUsername.png)
+
+![Login](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Login.png)
+
+![Logout](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Logout.png)
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 ![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
