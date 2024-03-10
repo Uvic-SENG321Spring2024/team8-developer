@@ -580,11 +580,20 @@ The system must allow the manager to be able to access and edit announcements th
 
 ### d. Storyboards <a name="f2-storyboards"></a>
 
-![Story Board #1 Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/bcf6f409-a787-4fda-adc3-8945cfce0b32)
+Story Board - Group Chat: 
+![Story Board - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/ac0bfac0-e3f4-4fcf-ba75-4cf842c61366)
 
-![Story Board #2 Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/bedeff03-a619-45de-af46-2a26dad0d189)
 
-![Story Board #3 Announcements](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/843471d3-237c-4faa-a372-2081aa441011)
+Story Board - Private Chat: 
+![Story Board - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/8e638547-f82d-4922-9f2b-27c66389d0f4)
+
+
+Story Board - New Announcement: 
+![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/50cb6279-8324-4ebb-83c9-c1b0546a8afa)
+
+
+Story Board - Announcement Edit: 
+![Story Board - Announcement Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/87ea6f38-d698-45f5-b2ae-a958277a06db)
 
 
 
