@@ -516,7 +516,7 @@ Within the Communication and Announcement feature there are two primary actors, 
 
 **User Story 1: Send message**
 
-As an employee, I want to be able to send a message to another Staff member or a group of coworkers, so that I can communicate information effectively. 
+As an employee, I want to be able to send a message to another staff member or a group of coworkers, so that I can communicate information effectively. 
 
 **Acceptance Criteria:** 
 
