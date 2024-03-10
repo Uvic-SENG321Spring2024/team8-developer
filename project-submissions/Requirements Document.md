@@ -32,7 +32,7 @@ These sections are outlined in the following Table of Contents.
 1. [Overview](#overview)
 2. [Business Requirements](#requirements)
    1. [Background](#background)
-   2. [Buisiness Opportunity](#opportunity)
+   2. [Business Opportunity](#opportunity)
    3. [Business Objectives](#objective)
    4. [Success Metrics](#success)
    5. [Product Vision Statement](#vision)
@@ -56,7 +56,7 @@ These sections are outlined in the following Table of Contents.
       - [Sequence Diagram for Create Schedule](#f1-sequence)
       - [Swimlane for Create Schedule](#f1-swimlane)
       - [State Diagram for Shift Swap](#f1-state)
-   3. [Communication and Announcment](#feature-2)
+   3. [Communication and Announcement](#feature-2)
       - [Description and Priority](#f2-description)
       - [Functional Requirements](#f2-functional)
       - [Use Cases](#f2-usecases)
@@ -100,7 +100,7 @@ These sections are outlined in the following Table of Contents.
 # 2. Business Requirements <a name="requirements"></a>
 
 ## i. **Background** <a name="background"></a>
-The client, Banter Ice Cream, wants an improvement of the software that they are using for scheduling, communication, and payroll management. Banter's current scheduling system, Homebase, is used at least once per week to check shift schedules, swap shifts, and record time worked. The problem with this current software is it lacks certain features resulting in employees having difficulty switching shifts. A feature missing is the ability for staff to view the available schedules of other employees to find open shifts. Another feature missing results in difficulties in payroll integration with Homebase. Currently the application does not summarize hours which requires bookkeepers to manually calculate regular, holiday, overtime, sick days, and vacation days for each employee. Basecamp is a separate system utilized by Banter Ice Cream to send staff wide announcements and news regarding the company. Having a separate piece of software to receive announcements results in Basecamp being checked infrequently, leading employees to miss messages about new ice cream flavours and ice cream deliveries between locations. Employees missing ice cream flavour announcements lowers customer satisfaction as the provided information about current ice flavours is not accurate. Employees missing messages about scheduled deliveries lowers efficiency as the employees are not prepared to unload the deliveries. The client wants a solution that will make managing finances, swapping shifts, communicating with staff, and onboarding staff easier to accomplish by having one combined app. This conglomeration of their systems will help onboard new staff as less platforms are required to be learned by employees, in addition to all onboarding material being more easily found by all employees.
+The client, Banter Ice Cream, wants an improvement of the software that they are using for scheduling, communication, and payroll management. Banter's current scheduling system, Homebase, is used at least once per week to check shift schedules, swap shifts, and record time worked. The problem with this current software is it lacks certain features resulting in employees having difficulty switching shifts. A feature missing is the ability for staff to view the available schedules of other employees to find open shifts. Another feature missing results in difficulties in payroll integration with Homebase. Currently the application does not summarize hours which requires the Bookkeeper to manually calculate regular, holiday, overtime, sick days, and vacation days for each employee. Basecamp is a separate system utilized by Banter Ice Cream to send staff wide announcements and news regarding the company. Having a separate piece of software to receive announcements results in Basecamp being checked infrequently, leading employees to miss messages about new ice cream flavours and ice cream deliveries between locations. Employees missing ice cream flavour announcements lowers customer satisfaction as the provided information about current ice flavours is not accurate. Employees missing messages about scheduled deliveries lowers efficiency as the employees are not prepared to unload the deliveries. The client wants a solution that will make managing finances, swapping shifts, communicating with staff, and onboarding staff easier to accomplish by having one combined app. This conglomeration of their systems will help onboard new staff as less platforms are required to be learned by employees, in addition to all onboarding material being more easily found by all employees.
 
 
 ## ii. **Business Opportunity** <a name="opportunity"></a>
@@ -109,7 +109,7 @@ The new system will be a single platform, that combines the functionality of Hom
 
 ## iii. **Business Objectives** <a name="objective"></a>
 
-Banter Ice Cream's new system will faciliate business growth through better internal management practices using the new system. The following objectives will all contribute to increased business growth. The methods for measuring these objectives are described in the Success Metrics section.
+Banter Ice Cream's new system will facilitate business growth through better internal management practices using the new system. The following objectives will all contribute to increased business growth. The methods for measuring these objectives are described in the Success Metrics section.
 * Improve employee engagement by 50%.
 * Improve customer satisfaction by 25%.
 * Reduce time associated with payroll by 25%.
@@ -125,7 +125,7 @@ The following metrics will be used to measure the success of the system.
 
 **Announcement Visibility**
       
-- Within 3 months of release, staff's interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the managers.
+- Within 3 months of release, staff's interactions with the announcements are increased by 50%. This will be measured by the number of replies, reactions, and further questions to the Manager.
       
 **Customer Satisfaction**
       
@@ -134,7 +134,7 @@ The following metrics will be used to measure the success of the system.
 
 **Bookkeeping Efficiency**
    
-- In 3 months of system's release, bookkeepers will spend 25% less time during each payroll period.
+- In 3 months of system's release, Bookkeepers will spend 25% less time during each payroll period.
 - After 6 months of release, manual errors associated with payroll would reduce by 50%.
 
 **Onboarding New Employees**
@@ -163,8 +163,8 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
  
 **Recipe Management System:**
    - A recipe management module that allows Managers to create, edit, and archive recipes, including full details and allergen information.
-   - Front of house staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
-   - Kitchen staff will have access to full recipe details, including ingredient lists, preparation instructions, and allergen information, to ensure accurate preparation.
+   - Front of House Staff will have access to view recipes and allergen information but not the detailed ingredients, ensuring they are informed for customer queries without access to proprietary recipe details.
+   - Kitchen Staff will have access to full recipe details, including ingredient lists, preparation instructions, and allergen information, to ensure accurate preparation.
    - Historical recipe records, enabling tracking of changes over time and access to previous versions for reference or reintroduction.
   
 **Communication and Announcement System:**
@@ -172,7 +172,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
    - Ability to send and receive company-wide announcements and communicate about shifts changes.   
       
 **Role-Based Access:**
-   - Different access levels for managers, bookkeepers, delivery drivers, and staff, as defined in User Classes and Characteristics section of this Requirements Document.
+   - Different access levels for Managers, Bookkeepers, Delivery Drivers, and Staff, as defined in User Classes and Characteristics section of this Requirements Document.
    - Safeguard sensitive information through controlled access, ensuring privacy and security across the system.
    - Tailored interfaces and features depending on the user’s role within the company.   
 
@@ -189,7 +189,7 @@ The software being developed is a comprehensive employee management and communic
 ## iii. **Limitations and Exclusions** <a name="limitations"></a>
 
 **Quickbooks Integration - (Limitation)**
-- Direct integration with Quickbooks was determined to be lower priority. Therefore, we will limit this feature to implementing a summary of hours worked by each employee. The bookkeeper can manually process this summary.
+- Direct integration with Quickbooks was determined to be lower priority. Therefore, we will limit this feature to implementing a summary of hours worked by each employee. The Bookkeeper can manually process this summary.
 
 **Desktop View - (Exclusion)**
 - The clients have indicated that they only want a mobile application view for the system and that the desktop view is not desired.
@@ -208,7 +208,7 @@ The software being developed is a comprehensive employee management and communic
 
 ## i. **User Classes and Characteristics** <a name="user-classes"></a>
 
-When creating a centralized platform for Banter Ice Cream, understanding the diverse user classes is crutial to craft an efficient and user-centric platform that seamlessly integrates with Banter Ice Cream's opperational needs.
+When creating a centralized platform for Banter Ice Cream, understanding the diverse user classes is crucial to craft an efficient and user-centric platform that seamlessly integrates with Banter Ice Cream's operational needs.
       
 **Front of House / Kitchen Managers:**
 * **Characteristics:**
@@ -283,17 +283,17 @@ When creating a centralized platform for Banter Ice Cream, understanding the div
 
 ## ii. **Operating Environment** <a name="operating-environment"></a>
 
-The operating environment for the system is a mobile application that is compatible with both Android and iOS systems. A mobile application was chosen to allow front of house staff, kitchen staff, and delivery drivers frequent access to the system to increase employee engagement. Each front of house staff, kitchen staff, and delivery driver will need to clock in and clock out during their shift. They will also need to access announcements, shift schedules, and messages.
+The operating environment for the system is a mobile application that is compatible with both Android and iOS systems. A mobile application was chosen to allow Front of House Staff, Kitchen Staff, and Delivery Driver frequent access to the system to increase employee engagement. Each Front of House Staff, Kitchen Staff, and Delivery Driver will need to clock in and clock out during their shift. They will also need to access announcements, shift schedules, and messages.
 
 A desktop viewable application will not be considered for the first release of the system.
 
-## iii. **Design and Implmentation Constraints** <a name="constraints"></a>
+## iii. **Design and Implementation Constraints** <a name="constraints"></a>
 
 The system must adhere to the following design and implementation constraints.
 
 **Security of Banking Information**
 - Each employee can view and update their own banking information. 
-- Banking information for each employee is kept private from all other employees, except bookkeepers. 
+- Banking information for each employee is kept private from all other employees, except Bookkeepers. 
 - Bookkeepers are able to use banking information to pay employees.
 - Abides by provincial and federal privacy laws.
 
@@ -333,17 +333,17 @@ The following assumptions and dependencies affect the requirements in this docum
 Scheduling and Time Tracking
 
 ### a. Description and Priority <a name="f1-description"></a>
-The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all staff to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and bookkeepers should be able to see a summarized list of worked hours for each employee. 
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all Staff to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
-SCH-1: The scheduler must allow managers to create shifts for employees.  
+SCH-1: The scheduler must allow Manager to create shifts for employees.  
 
 SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.  
 
-SCH-3: The scheduler must allow only managers to delete shifts from the schedule.  
+SCH-3: The scheduler must allow only Manager to delete shifts from the schedule.  
 
-SCH-4: The scheduler must allow only managers to edit the schedule.  
+SCH-4: The scheduler must allow only Manager to edit the schedule.  
 
 SCH-5: When a schedule is edited all employees with affected schedules must be updated. 
 
@@ -357,7 +357,7 @@ SCH-9: When a shift swap request is approved the schedule must update for each e
 
 SCH-10: The schedule must not allow employees to be scheduled during the time with indicated availability off. 
 
-SCH-11: The schedulers option to view tracked hours by managers and bookkeepers must be shown correct information.  
+SCH-11: The schedulers option to view tracked hours by Manager and Bookkeeper must be shown correct information.  
 
 SCH-12: The system must automatically summarize employees tracked hours.  
 
@@ -367,9 +367,9 @@ SCH-14: The system must have a clocking out option to allow employees to stop th
 
 SCH-15: The system must allow employees to request shift swaps with other employees.  
 
-SCH-16: The system must allow managers to approve requested shift swaps from employees.  
+SCH-16: The system must allow Manager to approve requested shift swaps from employees.  
 
-SCH-17: The system must allow managers to deny requested shift swaps from employees.  
+SCH-17: The system must allow Manager to deny requested shift swaps from employees.  
 
 SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
 
@@ -378,7 +378,7 @@ SCH-19: The systems view schedule option must display correct information includ
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
-Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow Managers to create and edit schedules, and allow Bookkeepers to pay employees. All use cases are written assuming the user is logged in.
+Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow Manager to create and edit schedules, and allow Bookkeepers to pay employees. All use cases are written assuming the user is logged in.
 
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
@@ -424,7 +424,7 @@ Given the schedule is updated, when employees view the schedule, then the update
 
 **User Story 4: Indicate Availability**
 
-As a Staff member when I Indicate availability, I want to notify the managers that I cannot work during that period so that I am only working during that time.
+As a Staff member when I Indicate availability, I want to notify the Manager that I cannot work during that period so that I am only working during that time.
 
 **Acceptance Criteria:**
 
@@ -440,7 +440,7 @@ When tracked hours for an employee are viewed then a summary of all worked hours
 
 **User Story 6: Clock in**
 
-As a staff member I want to clock in at work so that the hours I work are accurately recorded in the system.
+As a Staff member I want to clock in at work so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
@@ -448,7 +448,7 @@ Given I have clocked in, when my tracked hours are viewed then the hours I have 
 
 **User Story 7: Clock out**
 
-As an Staff member I want to clock out so that the hours I work are accurately recorded in the system.
+As a Staff member I want to clock out so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
@@ -493,34 +493,34 @@ Communication and Announcement feature allows sending and receiving messages and
 
 ### a. Description and Priority <a name="f2-description"></a>
 
-The Communication and Announcement and announcement feature is a high priority feature in the system. This is because all staffs must receive notifications of new announcements, and be able to view the announcements to be aware of any major changes in the company. It is also important that all staff can send and receive messages to any staff member or staff messaging group. 
+The Communication and Announcement and announcement feature is a high priority feature in the system. This is because all Staffs must receive notifications of new announcements, and be able to view the announcements to be aware of any major changes in the company. It is also important that all Staff can send and receive messages to any Staff member or Staff messaging group. 
 
 ### b. Functional Requirements <a name="f2-functional"></a>
 
-COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enchance communication.
+COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication.
 
 COM-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
 
-COM-3: The system must have role-based access control, providing different access levels for different user roles. Managers must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
+COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to create, edit, and remove announcements, while all other Staff must have access to view announcements.
 
 COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
 
-COM-5: The system must provide tailored interfaces and features depending on the staff’s role within the company, ensuring that managers have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
+COM-5: The system must provide tailored interfaces and features depending on the Staff’s role within the company, ensuring that the Manager have access to announcement creation and management features, while all other Staff have access to communication channels for group or individual messaging.
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
 ![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
 
-Within the Communication and Announcement feature there are two primary actors, "Managers", and "All Staff". Managers have the ability to create, edit, and send company-wide announcements, while all staff can view these announcements and react to them. All Staff including the manager, can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
+Within the Communication and Announcement feature there are two primary actors, "Manager", and "All Staff". Manager has the ability to create, edit, and send company-wide announcements, while all Staff can view these announcements and react to them. All Staff including the Manager, can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
 
 **User Story 1: Send message**
 
-As an employee, I want to be able to send a message to another staff member or a group of coworkers, so that I can communicate information effectively. 
+As an employee, I want to be able to send a message to another Staff member or a group of coworkers, so that I can communicate information effectively. 
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to send messages to one or more people from the list of staff members. 
+The system must allow all Staff to be able to send messages to one or more people from the list of Staff members. 
 
 **User Story 2: View message**
 
@@ -528,7 +528,7 @@ As an employee, I want to be able to view the messages that are sent to me or th
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to see recieved messages.
+The system must allow each Staff member to see received messages.
 
 **User Story 3: Edit message**
 
@@ -536,7 +536,7 @@ As an employee, I want to be able to edit a message that I have previously sent,
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to be able to edit messages that the staff member had sent before. 
+The system must allow each Staff member to be able to edit messages that the Staff member had sent before. 
 
 **User Story 5: React announcements** 
 
@@ -544,7 +544,7 @@ As an employee, I want to be able to react to company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to react to announcements with emojis. 
+The system must allow all Staff to be able to react to announcements with emojis. 
 
 **User Story 6: View announcements** 
 
@@ -552,31 +552,31 @@ As an employee, I want to be able to view all company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
+The system must allow all Staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
 
 **User Story 7: View announcement information**
 
-As a manager, I want to be able to view detailed information of any and every announcement, so that I can see information such as the information about how many people have viewed the announcements and who have viewed the announcements. 
+As a Manager, I want to be able to view detailed information of any and every announcement, so that I can see information such as the information about how many people have viewed the announcements and who have viewed the announcements. 
 
 **Acceptance Criteria:** 
 
-The system must allow the manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
+The system must allow the Manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
 
 **User Story 8: Send announcements**
 
-As a manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
+As a Manager, I want to be able to send company-wide announcements to all Staff members, so that I can share important information effectively. 
 
 **Acceptance Criteria:** 
 
-The system must allow the manager, to create and send company-wide announcements using text, images, videos, or PDF. 
+The system must allow the Manager, to create and send company-wide announcements using text, images, videos, or PDF. 
 
 **User Story 9: Edit announcements** 
 
-As a manager, I want to be able to edit or update announcements that I have already sent, so that I can update information where necessary. 
+As a Manager, I want to be able to edit or update announcements that I have already sent, so that I can update information where necessary. 
 
 **Acceptance Criteria:** 
 
-The system must allow the manager to be able to access and edit announcements that have been sent. 
+The system must allow the Manager to be able to access and edit announcements that have been sent. 
 
 ### d. Storyboards <a name="f2-storyboards"></a>
 
@@ -586,21 +586,21 @@ The system must allow the manager to be able to access and edit announcements th
 ## iii. Recipe Management <a name="feature-3"></a>
 
 ### a. Description and Priority <a name="f3-description"></a>
-The Recipe Management feature has a high priority in the application. An Authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Managers and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. Managers are the only ones who are able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
+The Recipe Management feature has a high priority in the application. An authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Manager and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. The Manager is the only one who is able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
 
 ### b. Functional Requirements <a name="f3-functional"></a>
 
-RMS-1: Kitchen Staff, Front of House Staff and Managers must be able to view active and inactive recipes. 
+RMS-1: Kitchen Staff, Front of House Staff and Manager must be able to view active and inactive recipes. 
 
-RMS-2: Managers and Kitchen Staff must be able to view the full recipe including ingredents list, preparation instructions, and allergens.
+RMS-2: Manager and Kitchen Staff must be able to view the full recipe including ingredients list, preparation instructions, and allergens.
 
 RMS-3: Front of House Staff must be only able to view the allergens of a recipe.
 
-RMS-4: Managers must be able to create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+RMS-4: Manager must be able to create new recipes with details such as name, ingredients, preparation instructions and allergen information.
 
-RMS-5: Managers must be able to edit existing recipes, including changing details, adding or removing ingredients, and updating allergen information.
+RMS-5: Manager must be able to edit existing recipes, including changing details, adding or removing ingredients, and updating allergen information.
 
-RMS-6: Managers must be able to archive a recipe, changing its status to inactive, and be able to unarchive a recipe, changing its status to active.
+RMS-6: Manager must be able to archive a recipe, changing its status to inactive, and be able to unarchive a recipe, changing its status to active.
 
 RMS-7: The system must be able to display different recipe views based on the access of the user's role.
 
@@ -620,21 +620,21 @@ RMS-12: The system must provide an edit option for each recipe.
 
 RMS-13: The system must implement a save option to confirm changes. 
 
-RMS-14: The system must allow managers to exit editing mode.
+RMS-14: The system must allow the Manager to exit editing mode.
 
 RMS-15: The system must display an empty template with sections for name, ingredients, preparation instructions, and allergen information when creating a recipe.
 
-RMS-16: The system must allow managers to enter text in each section.
+RMS-16: The system must allow the Manager to enter text in each section.
 
 RMS-17: The system must provide a save option for new recipes.
 
 RMS-18: The system must ensure newly created recipes are visible in the list of recipes.
 
-RMS-19: The system must allow managers to exit creation mode.
+RMS-19: The system must allow a Manager to exit creation mode.
 
-RMS-20: The system must allow managers to select specific recipes for archiving or unarchiving.
+RMS-20: The system must allow a Manager to select specific recipes for archiving or unarchiving.
 
-RMS-21: The system must have different access levels for Managers, Kitchen Staff, and Front of House Staff.
+RMS-21: The system must have different access levels for Manager, Kitchen Staff, and Front of House Staff.
 
 RMS-22: The system must display meaningful error messages to users in case of unsuccessful operations or system errors.
 
@@ -643,7 +643,7 @@ RMS-22: The system must display meaningful error messages to users in case of un
 
 ![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Usecase-Diagram-V4.png)
 
-Within the recipe management system there are 3 primary actors, "Managers", "Kitchen Staff", and "Front of House Staff". The recipe management system allows Managers to "Edit Recipe", "Create Recipe", "Archive Recipe", and "View Recipe". The extends from "Archive Recipe" to "Unarchive Recipe" represent an alternate flow. If the recipe has an active status it will be able to be archived, but if the recipe has an inactive status it will be able to be unarchived. The "Front of House Staff" can only "View Limited Recipe" which includes a display of the allergen information. The extends from "View Recipe" to "View Limited Recipe" represents this as an alternate flow of the "View Recipe" usecase (see UC-2 Alternate Flow 2.1). The "Managers" and "Kitchen Staff" are the only users that can "View Detailed Recipe" which includes a display of the ingredents list, preparation instructions, and Allergens. The extends from "View Recipe" to "View Detailed Recipe" represents this as th normal flow of the "View Recipe" usecase (see UC-2 Normal Flow 2.0).
+Within the recipe management system there are 3 primary actors, "Managers", "Kitchen Staff", and "Front of House Staff". The recipe management system allows Managers to "Edit Recipe", "Create Recipe", "Archive Recipe", and "View Recipe". The extends from "Archive Recipe" to "Unarchive Recipe" represent an alternate flow. If the recipe has an active status it will be able to be archived, but if the recipe has an inactive status it will be able to be unarchived. The "Front of House Staff" can only "View Limited Recipe" which includes a display of the allergen information. The extends from "View Recipe" to "View Limited Recipe" represents this as an alternate flow of the "View Recipe" use case (see UC-2 Alternate Flow 2.1). The "Managers" and "Kitchen Staff" are the only users that can "View Detailed Recipe" which includes a display of the ingredients list, preparation instructions, and Allergens. The extends from "View Recipe" to "View Detailed Recipe" represents this as the normal flow of the "View Recipe" use case (see UC-2 Normal Flow 2.0).
 
 | ID and Name | UC-2 View Recipe |
 | ----------- | ----------- |
@@ -658,7 +658,7 @@ Within the recipe management system there are 3 primary actors, "Managers", "Kit
 | Alternate Flows: | <ol>**2.1 View Limited Recipe**<li>Front of House Staff selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays the limited recipe view.</li></ol> |
 | Exceptions: |  |
 | Priority: | High |
-| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by Managers, 20 times per day by Front of House Staff. |
+| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by the Manager, 20 times per day by Front of House Staff. |
 | Business Rules: | Must alert all customers of potential allergens. Only authorized ingredients may be in the ice cream. |
 | Other Information: | RSM-2, RSM-3, RSM-7 |
 | Assumptions: | Recipe already exists in the system. |
@@ -699,16 +699,16 @@ There is an option to archive recipes if the status is active and an option to u
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority <a name="f4-description"></a>
-The Onboarding Materials feature has a low priority in the application. An authenticated employee (except delivery drivers) must be able to view the onboarding materials but only the managers have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
+The Onboarding Materials feature has a low priority in the application. An authenticated employee (except Delivery Driver) must be able to view the onboarding materials but only the Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
-ONB-1:  An authenticated employee (except delivery drivers) must be able to view the onboarding materials at any time.
+ONB-1:  An authenticated employee (except Delivery Driver) must be able to view the onboarding materials at any time.
 
-ONB-2: The managers must be the only staff to edit the onboarding materials at any time.
+ONB-2: The Manager must be the only staff to edit the onboarding materials at any time.
 
-ONB-3: The managers must be the only staff to create the onboarding materials at any time.
+ONB-3: The Manager must be the only staff to create the onboarding materials at any time.
 
-ONB-4: The managers must be the only staff to remove the onboarding materials at any time.
+ONB-4: The Manager must be the only staff to remove the onboarding materials at any time.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f4-usecases"></a>
 ![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8cccab7f-7c44-4d1a-94cb-da9e5a177b9d)
@@ -717,7 +717,7 @@ Within the framework of the onboarding material use case diagram, there exist tw
 
  **User Story 1: View Onboarding Materials**
  
-As an authenticated employee (excluding delivery drivers), I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
+As an authenticated employee (excluding Delivery Driver), I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
 
 **Acceptance Criteria:**
 
@@ -729,7 +729,7 @@ I can exit the viewing mode when I'm done.
 
 **User Story 2: Edit Onboarding Materials**
 
-As an authenticated manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
+As an authenticated Manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
 
 **Acceptance Criteria:**
 
@@ -741,7 +741,7 @@ I can exit the editing mode when I'm done.
 
 **User Story 3: Create Onboarding Material**
 
-As an authenticated content manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
+As an authenticated content Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
 
 **Acceptance Criteria:**
 
@@ -753,7 +753,7 @@ I can exit the creation mode when I'm done.
 
 **User Story 4: Remove Onboarding Material**
 
-As an authenticated manager, I want the exclusive authority to remove outdated or irrelevant onboarding materials, so that I can maintain the integrity and relevance of the onboarding content.
+As an authenticated Manager, I want the exclusive authority to remove outdated or irrelevant onboarding materials, so that I can maintain the integrity and relevance of the onboarding content.
 
 **Acceptance Criteria:**
 
@@ -771,17 +771,17 @@ I can exit the removal mode when I'm done.
 ## v. Account Management <a name="feature-5"></a>
 
 ### a. Description and Priority <a name="f5-description"></a>
-The Account Management feature has a high priority in the system.  It allows authenticated Managers to manage access to the system by creating and deleting accounts.  An authenticated user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
+The Account Management feature has a high priority in the system.  It allows authenticated Manager to manage access to the system by creating and deleting accounts.  An authenticated user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
 
 ### b. Functional Requirements <a name="f5-functional"></a>
 
-ACC-1: The system must provide Managers with the capability to delete user accounts that are no longer active within the company.
+ACC-1: The system must provide the Manager with the capability to delete user accounts that are no longer active within the company.
 
-ACC-2: The system must allow Managers to create new user accounts by entering their username and role, granting them access to the system.
+ACC-2: The system must allow the Manager to create new user accounts by entering their username and role, granting them access to the system.
 
-ACC-3: The system must allow Managers to view a users role, contact information, and username.
+ACC-3: The system must allow the Managers to view a user’s role, contact information, and username.
 
-ACC-4: The sytem must allow Managers to edit a users role, and username
+ACC-4: The system must allow the Manager to edit a user’s role, and username
 
 ACC-5: The system must allow users to edit their payment information, contact information, and password.
 
@@ -806,7 +806,7 @@ As a Manager I want to delete an account so that I can remove any users that no 
 
 **Acceptance Criteria:**
 
-There is an option for Managers to "Delete" an account.  This feature must remove a users access to the system, yet still retain information about their employment for legal and tax purposes.
+There is an option for the Manager to "Delete" an account.  This feature must remove a user’s access to the system, yet still retain information about their employment for legal and tax purposes.
 
 **User Story 2: Create Account**
 
@@ -953,7 +953,7 @@ The Entity Relationship Diagram (ERD) and the UML Class Diagram serve as visual 
 | Announcement       | A message sent out to all employees of Banter Ice Cream                                              | Announcement ID <br>+ Author <br>+ Content <br>+ 0:5{File} <br>+ 0:n{Reaction} <br>+ 0:n{View} <br>+ Date Posted                | N/A     | N/A                                                                                          |
 | Announcement ID    | Unique identifier for an announcement                                                                | Integer                                                                                                 | 12      | System-generated sequential integer, beginning with 1                                        |
 | Author             | Key to employee who is responsible for creating the object (Announcement, Message, Recipe, Schedule) | Employee ID                                                                                             | N/A     | N/A                                                                                          |
-| Banking Info       | Information about an employee’s bank account, such that the bookkeeper can pay the employee.         | Bank Info ID <br>+ Employee ID <br>+ Transit Number <br>+ Institution Number <br>+ Account Number                       | N/A     | N/A                                                                                          |
+| Banking Info       | Information about an employee’s bank account, such that the Bookkeeper can pay the employee.         | Bank Info ID <br>+ Employee ID <br>+ Transit Number <br>+ Institution Number <br>+ Account Number                       | N/A     | N/A                                                                                          |
 | Bank Info ID       | Unique identifier for stored bank account information                                                | Integer                                                                                                 | 10      | System-generated sequential integer, beginning with 1                                        |
 | Contact            | Information used to contact an employee.                                                             | Email <br>+ Phone Number                                                                                    | 320     | Form of local@domain                                                                         |
 | Content            | The text contents of a message or announcement object                                                | String                                                                                                  | 10000   | Any ASCII characters                                                                         |
@@ -1006,8 +1006,8 @@ The system shall not generate any reports.
 
 **Employee Data and Account**
 - Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
-- The system must retain each employee's banking information until after employee last paycheck is recieved by employee.
-- A new employee can gain access to the system after a manager adds an account for the employee.
+- The system must retain each employee's banking information until after employee last paycheck is received by employee.
+- A new employee can gain access to the system after a Manager adds an account for the employee.
 - An employee loses access to the system when their account is deleted. 
 
 **Scheduling and Tracked Hours**
@@ -1017,13 +1017,13 @@ The system shall not generate any reports.
 
 **Communication and Announcements**
 - The system must retain messages for one year after the message is sent.
-- The system must retain each announcement until the announcement is removed by manager.
+- The system must retain each announcement until the announcement is removed by Manager.
 
 **Recipe Management**
 - The system must retain each recipe for lifetime of system.
 
 **Onboarding Materials**
-- The system must retain each onboarding material until removed by manager.
+- The system must retain each onboarding material until removed by the Manager.
 
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
