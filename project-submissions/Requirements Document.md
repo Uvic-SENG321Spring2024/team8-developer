@@ -699,7 +699,7 @@ There is an option to archive recipes if the status is active and an option to u
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority <a name="f4-description"></a>
-The Onboarding Materials feature has a low priority in the application. An authenticated employee (except Delivery Driver) must be able to view the onboarding materials but only the Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
+The Onboarding Materials feature has a low priority in the application. An authenticated employee (except a Delivery Driver) must be able to view the onboarding materials but only the Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
 ONB-1:  An authenticated employee (except Delivery Driver) must be able to view the onboarding materials at any time.
