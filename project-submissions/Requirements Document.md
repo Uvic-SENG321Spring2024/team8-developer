@@ -520,7 +520,7 @@ As an employee, I want to be able to send a message to another staff member or a
 
 **Acceptance Criteria:** 
 
-The system must allow all Staff to be able to send messages to one or more people from the list of Staff members. 
+The system must allow all staff to be able to send messages to one or more people from the list of staff members. 
 
 **User Story 2: View message**
 
