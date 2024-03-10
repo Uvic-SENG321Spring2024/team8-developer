@@ -544,7 +544,7 @@ As an employee, I want to be able to react to company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all Staff to be able to react to announcements with emojis. 
+The system must allow all staff to be able to react to announcements with emojis. 
 
 **User Story 6: View announcements** 
 
