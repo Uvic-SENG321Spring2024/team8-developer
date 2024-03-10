@@ -1030,7 +1030,7 @@ The system shall not generate any reports.
 
 ## i. User Interfaces <a name="user-interfaces"></a>
 
-Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
+This is the link to the prototype: https://www.figma.com/file/Uc9R5x3QO1j0RJcTtubefa/Prototype?type=design&node-id=0-1&mode=design&t=8ogwlELfk2Qu3Zly-0
 
 The prototype is designed to fit the screen of an Iphone 14, so the screen layout has the following dimensions 390 x 844. Upon opening the app the user is prompted to enter a username and password (See Image 1). 
 
