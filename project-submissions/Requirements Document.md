@@ -172,7 +172,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
    - Ability to send and receive company-wide announcements and communicate about shifts changes.   
       
 **Role-Based Access:**
-   - Different access levels for Managers, Bookkeepers, Delivery Drivers, and Staff, as defined in User Classes and Characteristics section of this Requirements Document.
+   - Different access levels for Managers, Bookkeepers, Delivery Drivers, Front of House Staff, and Kitchen Staff, as defined in User Classes and Characteristics section of this Requirements Document.
    - Safeguard sensitive information through controlled access, ensuring privacy and security across the system.
    - Tailored interfaces and features depending on the user’s role within the company.   
 
