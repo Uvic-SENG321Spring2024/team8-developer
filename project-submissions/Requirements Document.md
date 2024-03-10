@@ -552,7 +552,7 @@ As an employee, I want to be able to view all company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all Staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
+The system must allow all staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
 
 **User Story 7: View announcement information**
 
