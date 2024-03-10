@@ -1056,12 +1056,40 @@ Describe the logical characteristics of each interface between the software prod
 Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
+The Banter Ice Cream system interfaces with several software components to ensure seamless operation, data integrity, and user experience. Below are the key software interfaces and their purposes:
+  
+### Operating System
+- **Operating Systems:** Android and iOS
+- **Purpose:** The mobile application is designed to run on these operating systems, utilizing their native features and capabilities for notifications, data storage, and security.
+- **Services Used:** local data encryption, and background task execution.
 
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
+### Database System
+- **Database:** MySQL 8.0 or PostgreSQL 13
+- **Purpose:** Stores and manages all application data including user accounts, schedules, recipes, announcements, and employee information.
+- **Data Exchange:** CRUD (Create, Read, Update, Delete) operations on employee details, schedules, recipes, and announcements.
+
+### Authentication Service
+- **Service:** OAuth 2.0 compliant service (e.g., Auth0)
+- **Purpose:** Securely authenticate users without storing passwords in the application, allowing for single sign-on (SSO) capabilities and access control based on user roles.
+- **Data Exchange:** Token-based authentication and authorization data.
 
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
-Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
+### Messaging Services
+The system will support embedding of images, videos, and PDFs in messages and announcements. 
+
+### Security and Privacy
+Communication channels must be secure, with safeguards for sensitive information like chat logs and management of announcements. This entails encryption, controlled access, and compliance with privacy regulations.
+
+### Network Server Communication Protocols
+- **Protocol:** HTTPS for all communications between the mobile application and server backend.
+- **Purpose:** Ensure the secure transmission of sensitive data between the mobile app and the backend services.
+- **Data Items:** API requests and responses, including authentication tokens, user input data, server responses, and error messages.
+
+### Electronic Forms
+- **Purpose:** Collect input from users within the app, such as availability, time-off requests, and onboarding materials.
+- **Data Handling:** Secure submission to the backend server with validation both on the client-side and server-side.
+- **Data Items:** Form fields and values, validation rules, and submission confirmations.
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
