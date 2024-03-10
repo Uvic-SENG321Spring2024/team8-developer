@@ -29,77 +29,73 @@ This document will explore an opportunity to centralize Banter Ice Cream’s int
 These sections are outlined in the following Table of Contents.
 
 ## **Table of Contents**
-- [Requirements Document - Banter Ice Cream (January 28, 2024)](#requirements-document---banter-ice-cream-january-28-2024)
-- [Revision History](#revision-history)
-- [1. **Overview** ](#1-overview-)
-  - [**Table of Contents**](#table-of-contents)
-- [2. Business Requirements ](#2-business-requirements-)
-  - [i. **Background** ](#i-background-)
-  - [ii. **Business Opportunity** ](#ii-business-opportunity-)
-  - [iii. **Business Objectives** ](#iii-business-objectives-)
-  - [iv. **Success Metrics** ](#iv-success-metrics-)
-  - [v. **Product Vision Statement** ](#v-product-vision-statement-)
-- [3. Scope and Limitations ](#3-scope-and-limitations-)
-  - [i. **Major Features** ](#i-major-features-)
-  - [ii. **Project Scope** ](#ii-project-scope-)
-  - [iii. **Limitations and Exclusions** ](#iii-limitations-and-exclusions-)
-- [4 Context Description ](#4-context-description-)
-  - [i. **User Classes and Characteristics** ](#i-user-classes-and-characteristics-)
-  - [ii. **Operating Environment** ](#ii-operating-environment-)
-  - [iii. **Design and Implmentation Constraints** ](#iii-design-and-implmentation-constraints-)
-  - [iv. **Assumptions and Dependencies** ](#iv-assumptions-and-dependencies-)
-  - [v. **Glossary of Terms** ](#v-glossary-of-terms-)
-  - [vi. **References** ](#vi-references-)
-- [5 System Features ](#5-system-features-)
-  - [i. Scheduling and Time Tracking ](#i-scheduling-and-time-tracking-)
-    - [a. Description and Priority ](#a-description-and-priority-)
-    - [b. Functional Requirements ](#b-functional-requirements-)
-    - [c. Use cases associated with the feature or functional requirement ](#c-use-cases-associated-with-the-feature-or-functional-requirement-)
-    - [d. Storyboards ](#d-storyboards-)
-    - [e. Sequence Diagram for Create Schedule ](#e-sequence-diagram-for-create-schedule-)
-    - [f. Swimlane Diagram for Create Schedule ](#f-swimlane-diagram-for-create-schedule-)
-    - [g. State Diagram for Swap Shifts ](#g-state-diagram-for-swap-shifts-)
-  - [ii. Communication and Announcement ](#ii-communication-and-announcement-)
-    - [a. Description and Priority ](#a-description-and-priority--1)
-    - [b. Functional Requirements ](#b-functional-requirements--1)
-    - [c. Use cases associated with the feature or functional requirement ](#c-use-cases-associated-with-the-feature-or-functional-requirement--1)
-    - [d. Storyboards ](#d-storyboards--1)
-    - [e. Dialog Map for Send Message ](#e-dialog-map-for-send-message-)
-  - [iii. Recipe Management ](#iii-recipe-management-)
-    - [a. Description and Priority ](#a-description-and-priority--2)
-    - [b. Functional Requirements ](#b-functional-requirements--2)
-    - [c. Use cases associated with the feature or functional requirement ](#c-use-cases-associated-with-the-feature-or-functional-requirement--2)
-    - [d. Storyboards ](#d-storyboards--2)
-    - [e. Sequence Diagram for View Recipe ](#e-sequence-diagram-for-view-recipe-)
-    - [f. Swimlane Diagram for View Recipe ](#f-swimlane-diagram-for-view-recipe-)
-  - [iv. Onboarding Materials ](#iv-onboarding-materials-)
-    - [a. Description and Priority ](#a-description-and-priority--3)
-    - [b. Functional Requirements ](#b-functional-requirements--3)
-    - [c. Use cases associated with the feature or functional requirement ](#c-use-cases-associated-with-the-feature-or-functional-requirement--3)
-    - [d. Storyboards ](#d-storyboards--3)
-  - [v. Account Management ](#v-account-management-)
-    - [a. Description and Priority ](#a-description-and-priority--4)
-    - [b. Functional Requirements ](#b-functional-requirements--4)
-    - [c. Use cases associated with the feature or functional requirement ](#c-use-cases-associated-with-the-feature-or-functional-requirement--4)
-    - [d. Storyboards ](#d-storyboards--4)
-    - [e. Dialog Map for Edit Account ](#e-dialog-map-for-edit-account-)
-- [6 Data Requirements ](#6-data-requirements-)
-  - [i. Logical Data Models ](#i-logical-data-models-)
-    - [Diagrams Explanation](#diagrams-explanation)
-  - [ii. Data Dictionary ](#ii-data-dictionary-)
-  - [iii. Reports ](#iii-reports-)
-  - [iv. Data Integrity ](#iv-data-integrity-)
-- [7 External Interface Requirements ](#7-external-interface-requirements-)
-  - [i. User Interfaces ](#i-user-interfaces-)
-  - [ii. Hardware Interfaces ](#ii-hardware-interfaces-)
-  - [iii. Software Interfaces ](#iii-software-interfaces-)
-  - [iv. Communication Interfaces ](#iv-communication-interfaces-)
-- [8 Software Quality Attributes ](#8-software-quality-attributes-)
-- [9 Analysis Models ](#9-analysis-models-)
-  - [i. Data Flow Diagram Level 0 ](#i-data-flow-diagram-level-0-)
-  - [ii. Data Flow Diagram Level 1 ](#ii-data-flow-diagram-level-1-)
-  - [iii. Data Flow Diagrams Level 2 ](#iii-data-flow-diagrams-level-2-)
-- [10 Appendix ](#10-appendix-)
+1. [Overview](#overview)
+2. [Business Requirements](#requirements)
+   1. [Background](#background)
+   2. [Business Opportunity](#opportunity)
+   3. [Business Objectives](#objective)
+   4. [Success Metrics](#success)
+   5. [Product Vision Statement](#vision)
+3. [Scope and Limitations](#scope)
+   1. [Major Features](#features)
+   2. [Project Scope](#project-scope)
+   3. [Limitations and Exclusions](#limitations)
+4. [Context Description](#context)
+   1. [User Classes and Characteristics](#user-classes)
+   2. [Operating Environment](#operating-environment)
+   3. [Design and Implementation Constraints](#constraints)
+   4. [Assumptions and Dependencies](#assumptions)
+   5. [Glossary of Terms](#glossary)
+   6. [References](#references)
+5. [System Features](#system-features)
+   1. [Scheduling and Time Tracking](#feature-1)
+      - [Description and Priority](#f1-description)
+      - [Functional Requirements](#f1-functional)
+      - [Use Cases](#f1-usecases)
+      - [Storyboards](#f1-storyboards)
+      - [Sequence Diagram for Create Schedule](#f1-sequence)
+      - [Swimlane for Create Schedule](#f1-swimlane)
+      - [State Diagram for Shift Swap](#f1-state)
+   3. [Communication and Announcment](#feature-2)
+      - [Description and Priority](#f2-description)
+      - [Functional Requirements](#f2-functional)
+      - [Use Cases](#f2-usecases)
+      - [Storyboards](#f2-storyboards)
+      - [Dialog Map for Send Message](#f2-dialogmap)
+   5. [Recipe Management](#feature-3)
+      - [Description and Priority](#f3-description)
+      - [Functional Requirements](#f3-functional)
+      - [Use Cases](#f3-usecases)
+      - [Storyboards](#f3-storyboards)
+      - [Sequence Diagram for Storyboard 3](#f3-sequence)
+      - [Swimlane for View Recipe](#f3-swimlane)
+   7. [Onboarding Materials](#feature-4)
+      - [Description and Priority](#f4-description)
+      - [Functional Requirements](#f4-functional)
+      - [Use Cases](#f4-usecases)
+      - [Storyboards](#f4-storyboards)
+   9. [Account Management](#feature-5)
+      - [Description and Priority](#f5-description)
+      - [Functional Requirements](#f5-functional)
+      - [Use Cases](#f5-usecases)
+      - [Storyboards](#f5-storyboards)
+      - [Dialog Map for Edit Account](#f5-dialogmap)
+6. [Data Requirements](#data-requirements)
+   1. [Logical Data Models](#data-model)
+   2. [Data Dictionary](#data-dictionary)
+   3. [Reports](#data-report)
+   4. [Data Integrity](#data-integrity)
+7. [External Interface Requirements](#external-interfaces)
+   1. [User Interfaces](#user-interfaces)
+   2. [Hardware Interfaces](#hardware-interfaces)
+   3. [Software Interfaces](#software-interfaces)
+   4. [Communication Interfaces](#communication-interfaces)
+8. [Software Quality Attributes](#quality-attributes)
+9. [Analysis Models](#analysis-models)
+   1. [Data Flow Diagram Level 0](#data-flow0)
+   2. [Data Flow Diagram Level 1](#data-flow1)
+   3. [Data Flow Diagrams Level 2](#data-flow2)
+10. [Appendix](#appendix)
   
 # 2. Business Requirements <a name="requirements"></a>
 
@@ -585,7 +581,9 @@ The system must allow the manager to be able to access and edit announcements th
 ### d. Storyboards <a name="f2-storyboards"></a>
 
 ### e. Dialog Map for Send Message <a name="f2-dialogmap"></a>
+![Dialog Map Send Message 6](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/8b15c081-aed9-4b4e-b9b7-7d07de680ef8)
 
+When an authorized user is interested in sending a message, they begin by navigating to the messages section of the system. This results in a "View Messages Page" that shows a list of past individual or group recipients. The view is continually updating with any new messages. If the user wants to exit this section of the app at this point, they can "Exit Messages Section". From the "Messages Page", the user can select a past recipient (either individual or group) to see the message history with the selected recipient(s). The user is able to exit this page by navigating back to the previous page. From the "Message History", the user can begin typing a new message or editing a message they previously sent, which allows them to see a "Draft Message".  Alternatively, from the "Messages Page", the user can select the plus icon to create a new message which will show an "Empty Message History". The user can select the recipient(s) for the new message. If the system receives a message with an identical list of selected recipient(s) as the empty message, the user is shown that message in the history. The user can write a "New Message" once the recipient(s) are selected for the empty message history resulting in a Draft Message. The "Draft Message" view can be exited by clearing changes, and the system will return to the "Message History" view that was displayed before beginning to write or edit a message. The user can add files to a "Draft Message" through an "Add File Option". Once file(s) are selected they are attached to the message. Once the user sends a "Draft Message", the user views the message in a "Message History" with the recipient(s).
 
 ## iii. Recipe Management <a name="feature-3"></a>
 
@@ -693,10 +691,29 @@ There is an option to archive recipes if the status is active and an option to u
 
 ### d. Storyboards <a name="f3-storyboards"></a>
 
-### e. Sequence Diagram for View Recipe <a name="f3-sequence"></a>
+#### Storyboard 1: UC-2 Normal Flow
+
+![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard2.png)
+
+#### Storyboard 2: UC-2 Alternate Flow
+
+![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard1.png)
+
+#### Storyboard 3: Edit, Create, and Archive Recipe
+
+![Create and Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard3.png)
+
+### e. Sequence Diagram for Storyboard 3 <a name="f3-sequence"></a>
+
+![Sequence Diagram SB3](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-SequenceDiagram.png)
+
+This sequence diagram shows the process of a Manager interatcing with the system to create, edit and manage recipes. The Manager starts by selecting the recipe menu icon, leading to the list of active recipes. The Manager then selects the create new recipe icon (plus symbol), leading to the display of a blank recipe template. The Manager proceeds to fill in various details such as the name, upload an image, provide a description, set the active status, input ingredients, and provide preparation instructions. After filling in those details, the Manager selects the back arrow, triggering a save verification window. Upon confirmation, the system check the recipe status and adds the newly created recipe to the top of the active recipe list. The Manager then interacts with the system to view the updated active recipe list and selects the new recipe for detailed information. The sequence concludes with the Manager entering edit mode, adding allergens to the recipe in the allergens section, and saving the changes, resulting in an updated active recipe list.  
 
 ### f. Swimlane Diagram for View Recipe <a name="f3-swimlane"></a>
 
+![Swimlane UC-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Swimlane.png)
+
+This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Staff interacts with the system when viewing a recipe. This diagram relates to UC-2 and covers the normal and alternate flows. All three lanes start the same way by selecting the recipe menu option. The Manager and Kitchen Staff lanes interact with the system in the same way and represts the normal flow of UC-2. After the Manager/Kitchen Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the incative recipe list. The Manager/Kitchen Staff then selects the desired recipe to view, resulting in the system displaying the detailed recipe. The Front of House Staff lane interacts with the system lane to represent the alternate flow of UC-2. After the Front of House Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the incative recipe list. The Front of House Staff then selects the desired recipe to view, resulting in the system displaying the limited recipe. 
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
@@ -769,7 +786,14 @@ The removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
 
 ### d. Storyboards <a name="f4-storyboards"></a>
+View Onboarding Material
+![View Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/0ebf2c74-fb27-45ad-8778-b7a07afd7868)
 
+Create New Onboarding Material
+![Onboarding Materials Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/b0b382e8-2ca5-4787-b162-b13f77016867)
+
+Delete Onboarding Material
+![Delete Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/5d1002d7-8bd8-4381-b746-709e915f2129)
 
 
 ## v. Account Management <a name="feature-5"></a>
@@ -888,6 +912,10 @@ A user must have the option to "Log Out" of their account.  This will remove the
 ![Logout](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Logout.png)
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
+![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
+
+In this figure, the process of a user modifying their own account information is depicted. In the first step, the user logs into the system and navigates to the account profile page. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once user has completed their changes, changes will be saved. Finally the user can exit the account profile section of application or log out via Exit.
+
 
 
 # 6 Data Requirements <a name="data-requirements"></a>
@@ -1051,19 +1079,77 @@ The system shall not generate any reports.
 
 ## i. User Interfaces <a name="user-interfaces"></a>
 
-Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
+A medium fidelity prototype of the system can be found here: https://www.figma.com/file/Uc9R5x3QO1j0RJcTtubefa/Prototype?type=design&node-id=0-1&mode=design&t=8ogwlELfk2Qu3Zly-0
+
+The prototype is designed to fit the screen of an iPhone 14, so the screen layout has the dimensions 390 x 844. Upon opening the app the user is prompted to enter a username and password. <br/>
+The prototype has been designed for a user with a management role. The GUI standards to be followed were based on the Banter Ice Cream website, this includes the green and orange color scheme, font and the header banner. There are 2 versions of the homepage a management version and a non-management verion. Both versions of the homepage have a header at the top of the screen and an icon bar at the bottom. The management version of the homepage includes 3 buttons on the main screen "Announcements", "Onboarding Materials", and "Account Management" (See Image 1). 
+
+<figure>
+   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/NewMHS.png" width="390" height="844">
+   <figcaption>Image 1: Management Home Screen.</figcaption>
+</figure>
+
+The homepage for the non-management version of the homepage includes 2 buttons on the main screen "Announcements", and "Onboarding Materials" (See Image 2). The icon bar contains the following icons from left to right calendar, communication, home, recipe menu, and personal account info. This icon bar is displayed on every screen which allows for quick access to each feature at anytime. Each page after the main page of each feature contains a back arrow in the top left where a user can go back to a previous page.
+
+<figure>
+   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/NewGHS.png" width="390" height="844">
+   <figcaption>Image 2: Non-Management Home Screen.</figcaption>
+</figure>
+
+The user is prompted with an error message (example in Image 3) to reduce mistakes using the application. A couple of cases that result in an error message include a user trying to login without entering both a username and password, and trying to exit without saving when creating or editing a recipe. 
+
+<figure>
+   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Error%20Message.png" width="390" height="844">
+   <figcaption>Image 3: Error Message.</figcaption>
+</figure>
 
 ## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
 
-Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+### Processing
+- **Memory Space:** A minimum of 40 MB of free space will be required to install application.
+
+### Resolution
+- **Adapatable:** The application must be able to adapt to different phone screen resolutions and orientations.
+
+### Hardware Access
+- **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding materials. The internal storage includes any local storage, cloud storage linked to the device, and the device's camera roll. The allowed file types include images, videos, and PDFs. 
+- **Internet Connection:** The application will connect to the internet to backup application data and receive updates to data stored in the application. 
 
 ## iii. Software Interfaces <a name="software-interfaces"></a>
+The Banter Ice Cream system interfaces with several software components to ensure seamless operation, data integrity, and user experience. Below are the key software interfaces and their purposes:
+  
+### Operating System
+- **Operating Systems:** Android and iOS
+- **Purpose:** The mobile application is designed to run on these operating systems, utilizing their native features and capabilities for notifications, data storage, and security.
+- **Services Used:** local data encryption, and background task execution.
 
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
+### Database System
+- **Database:** MySQL 8.0 or PostgreSQL 13
+- **Purpose:** Stores and manages all application data including user accounts, schedules, recipes, announcements, and employee information.
+- **Data Exchange:** CRUD (Create, Read, Update, Delete) operations on employee details, schedules, recipes, and announcements.
+
+### Authentication Service
+- **Service:** OAuth 2.0 compliant service (e.g., Auth0)
+- **Purpose:** Securely authenticate users without storing passwords in the application, allowing for single sign-on (SSO) capabilities and access control based on user roles.
+- **Data Exchange:** Token-based authentication and authorization data.
 
 ## iv. Communication Interfaces <a name="communication-interfaces"></a>
 
-Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
+### Messaging Services
+The system will support embedding of images, videos, and PDFs in messages and announcements. 
+
+### Security and Privacy
+Communication channels must be secure, with safeguards for sensitive information like chat logs and management of announcements. This entails encryption, controlled access, and compliance with privacy regulations.
+
+### Network Server Communication Protocols
+- **Protocol:** HTTPS for all communications between the mobile application and server backend.
+- **Purpose:** Ensure the secure transmission of sensitive data between the mobile app and the backend services.
+- **Data Items:** API requests and responses, including authentication tokens, user input data, server responses, and error messages.
+
+### Electronic Forms
+- **Purpose:** Collect input from users within the app, such as availability, time-off requests, and onboarding materials.
+- **Data Handling:** Secure submission to the backend server with validation both on the client-side and server-side.
+- **Data Items:** Form fields and values, validation rules, and submission confirmations.
 
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
@@ -1104,7 +1190,16 @@ Describe the requirements associated with any communications functions required 
 
 ## i. Data Flow Diagram Level 0 <a name="data-flow0"></a>
 
+![L0DFDBen drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/5bf48c9e-21e6-4b2a-a399-70acf556f2ee)
+
+The above Level 0 Data Flow Diagram depicts the Banter Ice Cream System as a centralized system interacting with four external entities: Staff, Manager, Bookkeeper, and Delivery Driver. 
+The "All Users" entity in this Data Flow Diagram represents a collective group that includes every type of user in the system, providing a centralized point for data flows that are common across all user types to reduce redundancy and simplify the diagram's clarity. The system handles a variety of data flows including account updates, shift swap requests, onboarding materials, and clock-in/out data. It represents a high-level view of the system's interactions with its environment, showing how data is exchanged but not the internal workings of the system itself. The arrows indicate the direction of the data flow, meaning the data originates from the entity at the tail of the arrow and moves towards the entity at the head of the arrow. 
+
 ## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
+
+![DFDL1B drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/702c90b2-718b-4702-89a2-59a750469ab6)
+
+The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, View Tracked Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule Management, and recipe updating. The diagram includes a data store for Staff Hours Summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
 
 ## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
 
