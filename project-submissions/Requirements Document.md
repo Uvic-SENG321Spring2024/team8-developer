@@ -564,7 +564,7 @@ The system must allow the Manager, to be able to view all of the announcement's 
 
 **User Story 8: Send announcements**
 
-As a Manager, I want to be able to send company-wide announcements to all Staff members, so that I can share important information effectively. 
+As a Manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
 
 **Acceptance Criteria:** 
 
