@@ -440,7 +440,7 @@ When tracked hours for an employee are viewed then a summary of all worked hours
 
 **User Story 6: Clock in**
 
-As a Staff member I want to clock in at work so that the hours I work are accurately recorded in the system.
+As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
