@@ -1074,7 +1074,12 @@ The personal account info icon allows the user to view their personal account in
    <figcaption>Image 6: Personal Account Info Screen.</figcaption>
 </figure>
 
+The user is prompted with an error message when a user doesn't enter both a username and password when logging in and when a user doesn't save any edits or new recipes (See Image 7).
 
+<figure>
+   <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Error%20Message.png" width="390" height="844">
+   <figcaption>Image 7: Error Message.</figcaption>
+</figure>
 
 ## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
 
