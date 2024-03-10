@@ -484,6 +484,13 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
+Swimlane - Create Schedule: 
+
+![Swimlane - Create Schedule](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/3c148963-e306-40af-af11-3582a5b247da)
+
+
+
+
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 
 
@@ -581,18 +588,25 @@ The system must allow the manager to be able to access and edit announcements th
 ### d. Storyboards <a name="f2-storyboards"></a>
 
 Story Board - Group Chat: 
+
 ![Story Board - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/ac0bfac0-e3f4-4fcf-ba75-4cf842c61366)
 
 
+
 Story Board - Private Chat: 
+
 ![Story Board - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/8e638547-f82d-4922-9f2b-27c66389d0f4)
 
 
+
 Story Board - New Announcement: 
+
 ![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/50cb6279-8324-4ebb-83c9-c1b0546a8afa)
 
 
+
 Story Board - Announcement Edit: 
+
 ![Story Board - Announcement Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/87ea6f38-d698-45f5-b2ae-a958277a06db)
 
 
