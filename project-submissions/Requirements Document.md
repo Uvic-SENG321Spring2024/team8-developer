@@ -484,6 +484,31 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
+Swimlane - Create Schedule: 
+
+![Swimlane - Create Schedule](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/3c148963-e306-40af-af11-3582a5b247da)
+
+
+The swimlane diagram represents the workflow for a scheduling system, detailing the interactions between a manager and the system when creating and publishing schedules.
+
+Manager Selects Employee: The manager initiates the process by selecting an employee to schedule.
+
+More employees need to be scheduled: Checks whether if any employees have not been scheduled. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
+
+Display Shift Availability: The system displays the available shifts for the selected employee.
+
+Select New Shift: The manager selects a new shift for the employee to schedule them in.
+
+Check for Shift Conflict: The system checks if there are any conflicts with the selected shift for the employee, such as overlapping shifts or exceeding maximum hours. If a conflict exists, the manager is directed back to select a different shift. If no conflict exists, the manager proceeds to the next step.
+
+Save Schedule: The manager saves the schedule, with the option to save and leave or save and publish.
+
+Publish Schedule: The manager publishes the schedule, making it available to employees.
+
+This workflow ensures that the manager can efficiently create and publish schedules while ensuring that conflicts are identified and resolved before finalizing the schedule. 
+
+
+
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 ![State Diagram Shift Swap 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bc908563-37d7-4d0f-a815-abb005007082)
 
@@ -582,6 +607,30 @@ As a Manager, I want to be able to edit or update announcements that I have alre
 The system must allow the Manager to be able to access and edit announcements that have been sent. 
 
 ### d. Storyboards <a name="f2-storyboards"></a>
+
+Story Board - Group Chat: 
+
+![Story Board - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/ac0bfac0-e3f4-4fcf-ba75-4cf842c61366)
+
+
+
+Story Board - Private Chat: 
+
+![Story Board - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/8e638547-f82d-4922-9f2b-27c66389d0f4)
+
+
+
+Story Board - New Announcement: 
+
+![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/50cb6279-8324-4ebb-83c9-c1b0546a8afa)
+
+
+
+Story Board - Announcement Edit: 
+
+![Story Board - Announcement Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/87ea6f38-d698-45f5-b2ae-a958277a06db)
+
+
 
 ### e. Dialog Map for Send Message <a name="f2-dialogmap"></a>
 ![Dialog Map Send Message 6](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/8b15c081-aed9-4b4e-b9b7-7d07de680ef8)
