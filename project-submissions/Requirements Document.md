@@ -622,7 +622,7 @@ Story Board - Private Chat:
 
 Story Board - New Announcement: 
 
-![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/50cb6279-8324-4ebb-83c9-c1b0546a8afa)
+![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/9b0124f4-88c4-45b0-8c5c-87b770eb1840)
 
 
 
