@@ -489,6 +489,24 @@ Swimlane - Create Schedule:
 ![Swimlane - Create Schedule](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/3c148963-e306-40af-af11-3582a5b247da)
 
 
+The swimlane diagram represents the workflow for a scheduling system, detailing the interactions between a manager and the system when creating and publishing schedules.
+
+Manager Selects Employee: The manager initiates the process by selecting an employee to schedule.
+
+More employees need to be scheduled: Checks whether if any employees have not been scheduled. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
+
+Display Shift Availability: The system displays the available shifts for the selected employee.
+
+Select New Shift: The manager selects a new shift for the employee to schedule them in.
+
+Check for Shift Conflict: The system checks if there are any conflicts with the selected shift for the employee, such as overlapping shifts or exceeding maximum hours. If a conflict exists, the manager is directed back to select a different shift. If no conflict exists, the manager proceeds to the next step.
+
+Save Schedule: The manager saves the schedule, with the option to save and leave or save and publish.
+
+Publish Schedule: The manager publishes the schedule, making it available to employees.
+
+This workflow ensures that the manager can efficiently create and publish schedules while ensuring that conflicts are identified and resolved before finalizing the schedule. 
+
 
 
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
