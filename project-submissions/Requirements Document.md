@@ -479,8 +479,38 @@ As a Staff member I want to be able to view my personal schedule and the schedul
 Given an employee selects to view the schedule they should be shown the up to date schedule in their chosen format with correct information of all employees for the shift period.
 
 ### d. Storyboards <a name="f1-storyboards"></a>
+  
+Story Board - Staff Home Screen  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen1staff.png" width="1000">  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen2staff.png" width="600">  
+Story Board - Bookkeeper Home Screen  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenbookkeeper.png" width="400">  
+Story Board - Manager Home Screen  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenmanager.png" width="400">  
+Story Board - Create Schedule:  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule1.png" width="600">    
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule2.png" width="600">  
+Story Board - Edit Schedule:  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule1.png" width="600">    
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule2.png" width="600">  
+Story Board - Shift Swap:  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap1.png" width="600">    
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap2.png" width="600">  
+Story Board - Availability:  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability1.png" width="600">  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability2.png" width="400">  
+Story Board - Clock in/out:  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenclockin.png" width="800">  
+**Track Hours:**  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreentrackedhours.png" width="600">  
+
+
+
 
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/schedulingsequencediagram.png" width="1000">  
+This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so all staff members can view the schedule.
+
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
