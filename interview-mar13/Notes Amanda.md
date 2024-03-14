@@ -48,3 +48,9 @@ End of demo
 Additional Thoughts
 - Comment on announcement?
 - Reactions to announcement are not in prototype, but included
+
+
+## Questions
+- Payment info security -> talked about and not a huge concern, specify what payment information is 
+   - Only bookkeeper can view payment 
+- 
