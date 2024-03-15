@@ -42,6 +42,10 @@ Issue 71
 - User Story 5 respond as determined in demo/interview (explain type of payment info)
 - Add user story/requirement for bookkeeper to access payment information
 
+Issue 73
+- Remove "only" from functional requirements
+- Reword acceptance criteria to focus on what user is able to do, not options on user interface 
+
 Issue 76
 - Explain that "n" means an unlimited number in description (according to textbook)
 
@@ -61,6 +65,3 @@ Issue 78
 - Will add soon
 - Consider adding clock in/clock out to Bookkeeper/Manager as determined in interview/demo TODO Discuss
 - DFD2 View Tracked Hours and DFD1, are they consistent?
-
-## Prototype Demo/Walkthroughs
-- Add here
