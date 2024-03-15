@@ -62,6 +62,13 @@ Issue 78
    - Explain Delivery Drivers do have scheduled shifts, just accessed through "All Users"
  
 ## Prototype Feedback
-- Will add soon
-- Consider adding clock in/clock out to Bookkeeper/Manager as determined in interview/demo TODO Discuss
 - DFD2 View Tracked Hours and DFD1, are they consistent?
+- Schedule
+   - Add clock in/clock out to Bookkeeper as determined in interview/demo (add to related RD diagrams/descriptions also)
+   - Add more detail to download of tracked hours in functional requirement/use cases?
+   - Focus on individual days (in addition to weekly/monthly)
+   - Resume draft in create workflow?
+- Announcement
+   - Most recent at top, posssible add all unread at top also
+   - Show reactions
+- Onboarding Materials -> create/edit flows can assign to certain positions, then only those positions can view
