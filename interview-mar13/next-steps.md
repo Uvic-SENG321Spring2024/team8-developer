@@ -22,7 +22,7 @@ Issue 68
 - Split user story 10
    - Seeing monthly and weekly are different user stories
    - Seeing personal and all employees schedules are different user stories
-- Storyboard not as screenshot of prototype? TODO Discuss 
+- Storyboard not as screenshot of prototype? (Reword descrpition of each screen to explain what/why a user wants to do something, not how)
 
 Issue 69
 - COM-2 specify company-wide meaning (ie. send to all employees of Banter Ice Cream)
@@ -33,13 +33,14 @@ Issue 69
 Issue 70
 - Spelling mistakes in Recipe Management (5.iii) (consider spell checking entire document?)
 - UC-1 Why is this manager authenticated but others are not?
-- Add preconditions to first storyboard panel? TODO Discuss
+- Add preconditions to first storyboard panel? (Reword descrpition of each screen to explain what/why a user wants to do something, not how)
 
 Issue 71
 - When specifying an action check capitalizing words including, but not limited to such as "Delete", "Create"
 - Specify "user"
-- Respond to ACC-9 as determined in demo/interview TODO Discuss
-- User Story 5 respond as determined in demo/interview TODO Discuss
+- Respond to ACC-9 as determined in demo/interview (Change requirement to logout automatically after 1 hour of application being closed)
+- User Story 5 respond as determined in demo/interview (explain type of payment info)
+- Add user story/requirement for bookkeeper to access payment information
 
 Issue 76
 - Explain that "n" means an unlimited number in description (according to textbook)
@@ -47,13 +48,17 @@ Issue 76
 Issue 77
 - UML class diagram: where appropriate replace "1..\*" with "0..\*"? 
    - Note that the 1 or 0 represents the number of associated entities. eg. Announcement can have 0 to many Reactions, but Reaction is only to 1 Announcement
-- Is it possible to identify specific users that can take action in UML Class and ER Diagrams? TOOD Discuss
-   - It may be possible, see this: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/how-to-model-constraints-in-uml/ 
+- Identify specific users that can take action/be related to certain entities in UML Class and ER Diagrams? 
+   - Try this: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/how-to-model-constraints-in-uml/ 
 
 Issue 78
-- DFD0/1: "If I look at an entity, I should see all data flow from the entity without having to refer to another entity?" as determined in demo/interview TODO Discuss
+- DFD0/1: "If I look at an entity, I should see all data flow from the entity without having to refer to another entity?" as determined in demo/interview
+   - Relates to "All Users" being confusing, so consider if any alternatives are possible
 - Explain "All Users" (Note this is already in the description of the diagram)
    - Explain Delivery Drivers do have scheduled shifts, just accessed through "All Users"
+ 
+## Prototype Feedback
+- Will add soon
 - Consider adding clock in/clock out to Bookkeeper/Manager as determined in interview/demo TODO Discuss
 - DFD2 View Tracked Hours and DFD1, are they consistent?
 
