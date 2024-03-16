@@ -480,28 +480,36 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 ### d. Storyboards <a name="f1-storyboards"></a>
   
-**Staff Home Screen**  
+#### Staff Home Screen  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen1staff.png" width="1000">  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen2staff.png" width="600">  
-**Bookkeeper Home Screen**  
+
+#### Bookkeeper Home Screen  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenbookkeeper.png" width="400">  
-**Manager Home Screen**
+
+#### Manager Home Screen
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenmanager.png" width="400">  
-**Create Schedule** 
+
+#### Create Schedule 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule2.png" width="600">  
-**Edit Schedule**  
+
+#### Edit Schedule 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule2.png" width="600">  
-**Shift Swap**  
+
+#### Shift Swap  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap2.png" width="600">  
-**Availability**  
+
+#### Availability  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability1.png" width="600">  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability2.png" width="400">  
-**Clock In/Out** 
+
+#### Clock In/Out 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenclockin.png" width="800">  
-**Track Hours**  
+
+#### Track Hours  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreentrackedhours.png" width="600">  
 
 
@@ -638,25 +646,16 @@ The system must allow a Manager to be able to access and edit announcements that
 
 ### d. Storyboards <a name="f2-storyboards"></a>
 
-**Group Chat** 
-
+#### Group Chat 
 ![Story Board - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/ac0bfac0-e3f4-4fcf-ba75-4cf842c61366)
 
-
-**Private Chat**
-
+#### Private Chat
 ![Story Board - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/8e638547-f82d-4922-9f2b-27c66389d0f4)
 
-
-
-**New Announcement** 
-
+#### New Announcement
 ![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/625f3b50-993c-4a34-bb9c-74951af48b20)
 
-
-
-**Announcement Edit**
-
+#### Edit Announcement
 ![Story Board - Announcement Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/87ea6f38-d698-45f5-b2ae-a958277a06db)
 
 
@@ -772,11 +771,11 @@ There is an option to archive recipes if the status is active and an option to u
 
 ### d. Storyboards <a name="f3-storyboards"></a>
 
-#### Storyboard 1: UC-2 Normal Flow
+#### Storyboard 1: UC-2 View Recipe Normal Flow
 
 ![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard2.png)
 
-#### Storyboard 2: UC-2 Alternate Flow
+#### Storyboard 2: UC-2 View Recipe Alternate Flow
 
 ![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard1.png)
 
@@ -867,13 +866,13 @@ The removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
 
 ### d. Storyboards <a name="f4-storyboards"></a>
-View Onboarding Material
+#### View Onboarding Material
 ![View Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/0ebf2c74-fb27-45ad-8778-b7a07afd7868)
 
-Create New Onboarding Material
+#### Create New Onboarding Material
 ![Onboarding Materials Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/b0b382e8-2ca5-4787-b162-b13f77016867)
 
-Delete Onboarding Material
+#### Delete Onboarding Material
 ![Delete Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/5d1002d7-8bd8-4381-b746-709e915f2129)
 
 
@@ -974,22 +973,31 @@ As a user I want to log out of my account so I can ensure no one else can use my
 A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
 
 ### d. Storyboards <a name="f5-storyboards"></a>
+#### Create Account
 ![Account Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountCreation.png)
 
+#### Delete Account
 ![Account Deletion](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountDeletion.png)
 
+#### View Account Information
 ![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ViewInformation.png)
 
+#### Edit Cell Phone
 ![Edit Cell Phone](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditCell.png)
 
+#### Edit Email
 ![Edit Email](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditEmail.png)
 
+#### Edit Role
 ![Edit Role](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditRole.png)
 
+#### Edit Username
 ![Edit Username](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditUsername.png)
 
+#### Login
 ![Login](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Login.png)
 
+#### Logout
 ![Logout](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Logout.png)
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
