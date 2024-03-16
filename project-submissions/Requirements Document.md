@@ -1136,7 +1136,7 @@ The system shall not generate any reports.
 
 **Employee Data and Account**
 - Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
-- The system must retain each employee's banking information until after employee last paycheck is received by employee.
+- The system must retain each employee's banking information until after the employee's last paycheck is received by the employee.
 - A new employee can gain access to the system after a Manager adds an account for the employee.
 - An employee loses access to the system when their account is deleted. 
 
@@ -1147,13 +1147,13 @@ The system shall not generate any reports.
 
 **Communication and Announcements**
 - The system must retain messages for one year after the message is sent.
-- The system must retain each announcement until the announcement is removed by Manager.
+- The system must retain each announcement until the announcement is removed by a Manager.
 
 **Recipe Management**
-- The system must retain each recipe for lifetime of system.
+- The system must retain each recipe for the lifetime of the system.
 
 **Onboarding Materials**
-- The system must retain each onboarding material until removed by the Manager.
+- The system must retain each onboarding material until removed by a Manager.
 
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
@@ -1163,14 +1163,14 @@ The system shall not generate any reports.
 A medium fidelity prototype of the system can be found here: https://www.figma.com/file/Uc9R5x3QO1j0RJcTtubefa/Prototype?type=design&node-id=0-1&mode=design&t=8ogwlELfk2Qu3Zly-0
 
 The prototype is designed to fit the screen of an iPhone 14, so the screen layout has the dimensions 390 x 844. Upon opening the app the user is prompted to enter a username and password. <br/>
-The prototype has been designed for a user with a management role. The GUI standards to be followed were based on the Banter Ice Cream website, this includes the green and orange color scheme, font and the header banner. There are 2 versions of the homepage a management version and a non-management verion. Both versions of the homepage have a header at the top of the screen and an icon bar at the bottom. The management version of the homepage includes 3 buttons on the main screen "Announcements", "Onboarding Materials", and "Account Management" (See Image 1). 
+The prototype has been designed for a user with a management role. The GUI standards to be followed were based on the Banter Ice Cream website, this includes the green and orange color scheme, font and the header banner. There are 2 versions of the homepage: a management version and a non-management version. Both versions of the homepage have a header at the top of the screen and an icon bar at the bottom. The management version of the homepage includes 3 buttons on the main screen "Announcements", "Onboarding Materials", and "Account Management" (See Image 1). 
 
 <figure>
    <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/NewMHS.png" width="390" height="844">
    <figcaption>Image 1: Management Home Screen.</figcaption>
 </figure>
 
-The homepage for the non-management version of the homepage includes 2 buttons on the main screen "Announcements", and "Onboarding Materials" (See Image 2). The icon bar contains the following icons from left to right calendar, communication, home, recipe menu, and personal account info. This icon bar is displayed on every screen which allows for quick access to each feature at anytime. Each page after the main page of each feature contains a back arrow in the top left where a user can go back to a previous page.
+The homepage for the non-management version of the homepage includes 2 buttons on the main screen "Announcements", and "Onboarding Materials" (See Image 2). The icon bar contains the following icons from left to right calendar, communication, home, recipe menu, and personal account info. This icon bar is displayed on every screen which allows for quick access to each feature at any time. Each page after the main page of each feature contains a back arrow in the top left where a user can go back to a previous page.
 
 <figure>
    <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/NewGHS.png" width="390" height="844">
@@ -1187,10 +1187,10 @@ The user is prompted with an error message (example in Image 3) to reduce mistak
 ## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
 
 ### Processing
-- **Memory Space:** A minimum of 40 MB of free space will be required to install application.
+- **Memory Space:** A minimum of 40 MB of free space will be required to install the application.
 
 ### Resolution
-- **Adapatable:** The application must be able to adapt to different phone screen resolutions and orientations.
+- **Adaptable:** The application must be able to adapt to different phone screen resolutions and orientations.
 
 ### Hardware Access
 - **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding materials. The internal storage includes any local storage, cloud storage linked to the device, and the device's camera roll. The allowed file types include images, videos, and PDFs. 
