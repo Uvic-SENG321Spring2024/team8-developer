@@ -333,17 +333,17 @@ The following assumptions and dependencies affect the requirements in this docum
 Scheduling and Time Tracking
 
 ### a. Description and Priority <a name="f1-description"></a>
-The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all Staff to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all Staff to view the posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
-SCH-1: The scheduler must allow Manager to create shifts for employees.  
+SCH-1: The scheduler must allow a Manager to create shifts for employees.  
 
 SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.  
 
-SCH-3: The scheduler must allow only Manager to delete shifts from the schedule.  
+SCH-3: The scheduler must allow a Manager to delete shifts from the schedule.  
 
-SCH-4: The scheduler must allow only Manager to edit the schedule.  
+SCH-4: The scheduler must allow a Manager to edit the schedule.  
 
 SCH-5: When a schedule is edited all employees with affected schedules must be updated. 
 
@@ -355,7 +355,7 @@ SCH-8: Schedule information must be stored for 6 years due to Canadian laws rega
 
 SCH-9: When a shift swap request is approved the schedule must update for each employee.  
 
-SCH-10: The schedule must not allow employees to be scheduled during the time with indicated availability off. 
+SCH-10: The schedule must not allow an employee to be scheduled during the time with indicated availability off. 
 
 SCH-11: The schedulers option to view tracked hours by Manager and Bookkeeper must be shown correct information.  
 
@@ -365,20 +365,20 @@ SCH-13: The system must have a clocking in option to allow employees to have the
 
 SCH-14: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
 
-SCH-15: The system must allow employees to request shift swaps with other employees.  
+SCH-15: The system must allow an employee to request shift swaps with other employees.  
 
-SCH-16: The system must allow Manager to approve requested shift swaps from employees.  
+SCH-16: The system must allow a Manager to approve requested shift swaps from employees.  
 
-SCH-17: The system must allow Manager to deny requested shift swaps from employees.  
+SCH-17: The system must allow a Manager to deny requested shift swaps from employees.  
 
 SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
 
-SCH-19: The systems view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.  
+SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.  
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 ![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
-Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow Manager to create and edit schedules, and allow Bookkeepers to pay employees. All use cases are written assuming the user is logged in.
+Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to pay employees. All use cases are written assuming the user is logged in.
 
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
@@ -389,9 +389,9 @@ Within the scheduling system there are 3 primary actors. Staff is the actor repr
 | Trigger: | Actor opens create schedule functionality of software. |
 | Preconditions: |<ul><li>PRE-1: Actor is logged in to system.</li></ul> <ul><li>PRE-2: There is at least one employee in the system who is available to take shifts.</li></ul>|
 | Postconditions: |<ul><li>POST-1: Each assigned shift is associated with an employee.</li></ul>|
-| Normal Flow: |<ol>**1.0 Create Schedule**<li>Actor selects an employee(see Exception 1.4)</li><li>Actor assigns one or more shifts to the selected employee within employee's listed availability(see Exception 1.1, 1.2, 1.3).</li><li>Actor continues, selecting one employee at a time until all shifts are assigned.</li><li>Actor saves schedule.</li><li> Actor exits schedule creation functionality of app.</li></ol> |
+| Normal Flow: |<ol>**1.0 Create Schedule**<li>Actor selects an employee(see Exception 1.4)</li><li>Actor assigns one or more shifts to the selected employee within the employee's listed availability(see Exception 1.1, 1.2, 1.3).</li><li>Actor continues, selecting one employee at a time until all shifts are assigned.</li><li>Actor saves the schedule.</li><li> Actor exits schedule creation functionality of app.</li></ol> |
 | Alternate Flows: |  |
-| Exceptions: |<ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol>|
+| Exceptions: |<ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If the employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If the employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol>|
 | Assumptions: | User is logged in |
 | Priority: | High |
 | Frequency of Use: | Every two weeks |
@@ -444,7 +444,7 @@ As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in 
 
 **Acceptance Criteria:**
 
-Given I have clocked in, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
+Given I have clocked in, when my tracked hours are viewed then the hours I have worked should be accurately recorded for that day.
 
 **User Story 7: Clock out**
 
@@ -480,28 +480,28 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 ### d. Storyboards <a name="f1-storyboards"></a>
   
-Story Board - Staff Home Screen  
+**Staff Home Screen**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen1staff.png" width="1000">  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen2staff.png" width="600">  
-Story Board - Bookkeeper Home Screen  
+**Bookkeeper Home Screen**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenbookkeeper.png" width="400">  
-Story Board - Manager Home Screen  
+**Manager Home Screen**
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenmanager.png" width="400">  
-Story Board - Create Schedule:  
+**Create Schedule** 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule2.png" width="600">  
-Story Board - Edit Schedule:  
+**Edit Schedule**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule2.png" width="600">  
-Story Board - Shift Swap:  
+**Shift Swap**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap2.png" width="600">  
-Story Board - Availability:  
+**Availability**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability1.png" width="600">  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability2.png" width="400">  
-Story Board - Clock in/out:  
+**Clock In/Out** 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenclockin.png" width="800">  
-**Track Hours:**  
+**Track Hours**  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreentrackedhours.png" width="600">  
 
 
@@ -509,7 +509,7 @@ Story Board - Clock in/out:
 
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/schedulingsequencediagram.png" width="1000">  
-This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so all staff members can view the schedule.
+This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so all staff members can view the schedule.
 
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
@@ -523,7 +523,7 @@ The swimlane diagram represents the workflow for a scheduling system, detailing 
 
 Manager Selects Employee: The manager initiates the process by selecting an employee to schedule.
 
-More employees need to be scheduled: Checks whether if any employees have not been scheduled. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
+More employees need to be scheduled: Checks whether any employees are not scheduled for a shift. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
 
 Display Shift Availability: The system displays the available shifts for the selected employee.
 
@@ -542,7 +542,7 @@ This workflow ensures that the manager can efficiently create and publish schedu
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 ![State Diagram Shift Swap 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bc908563-37d7-4d0f-a815-abb005007082)
 
-An employee refers to users who are authorized to request shift swaps, which are the user classes Front of House Staff, Kitchen Staff, and Delivery Driver. An employee starts a shift swap request, and the request will remain in "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters "Cancelled" state. If the employee submits the request, the request enters "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters "Cancelled" state. If the second employee accepts, the shift swap request enters "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters "Cancelled" state. If a Manager approves the request, the shift swap request enters "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
+An employee refers to users who are authorized to request shift swaps, which are the user classes Front of House Staff, Kitchen Staff, and Delivery Driver. An employee starts a shift swap request, and the request will remain in the "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters the "Cancelled" state. If the employee submits the request, the request enters the "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters the "Cancelled" state. If the second employee accepts, the shift swap request enters the "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters the "Cancelled" state. If a Manager approves the request, the shift swap request enters the "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
 
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
@@ -563,7 +563,7 @@ COM-3: The system must have role-based access control, providing different acces
 
 COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
 
-COM-5: The system must provide tailored interfaces and features depending on the staff member’s role within the company, ensuring that the Manager have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
+COM-5: The system must provide tailored interfaces and features depending on the staff member’s role within the company, ensuring that a Manager has access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
@@ -618,7 +618,7 @@ As a Manager, I want to be able to view detailed information of any and every an
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
+The system must allow a Manager to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
 
 **User Story 8: Send announcements**
 
@@ -626,7 +626,7 @@ As a Manager, I want to be able to send company-wide announcements to all staff 
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager, to create and send company-wide announcements using text, images, videos, or PDF. 
+The system must allow a Manager to create and send company-wide announcements using text, images, videos, or PDF. 
 
 **User Story 9: Edit announcements** 
 
@@ -634,29 +634,28 @@ As a Manager, I want to be able to edit or update announcements that I have alre
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager to be able to access and edit announcements that have been sent. 
+The system must allow a Manager to be able to access and edit announcements that have been sent. 
 
 ### d. Storyboards <a name="f2-storyboards"></a>
 
-Story Board - Group Chat: 
+**Group Chat** 
 
 ![Story Board - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/ac0bfac0-e3f4-4fcf-ba75-4cf842c61366)
 
 
-
-Story Board - Private Chat: 
+**Private Chat**
 
 ![Story Board - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/8e638547-f82d-4922-9f2b-27c66389d0f4)
 
 
 
-Story Board - New Announcement: 
+**New Announcement** 
 
 ![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/625f3b50-993c-4a34-bb9c-74951af48b20)
 
 
 
-Story Board - Announcement Edit: 
+**Announcement Edit**
 
 ![Story Board - Announcement Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/87ea6f38-d698-45f5-b2ae-a958277a06db)
 
@@ -670,7 +669,7 @@ When an authorized user is interested in sending a message, they begin by naviga
 ## iii. Recipe Management <a name="feature-3"></a>
 
 ### a. Description and Priority <a name="f3-description"></a>
-The Recipe Management feature has a high priority in the application. An authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Manager and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. The Manager is the only one who is able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
+The Recipe Management feature has a high priority in the application. A Manager, Kitchen Staff, or Front of House Staff must be able to view active or inactive recipes. Manager and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. The Manager is the only one who is able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
 
 ### b. Functional Requirements <a name="f3-functional"></a>
 
@@ -692,9 +691,9 @@ RMS-7: The system must be able to display different recipe views based on the ac
 
 &emsp;&emsp;RMS-7.2: The system must have a limited recipe view which only contains the name, and allergens.
 
-RMS-8: The system must be able to archive recipes, removing it from the list of active recipes and adds it to the list of inactive recipes.
+RMS-8: The system must be able to archive recipes, removing it from the list of active recipes and adding it to the list of inactive recipes.
 
-RMS-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adds it to the list of active recipes.
+RMS-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adding it to the list of active recipes.
 
 RMS-10: The system must display a prompt the user to save when they exit editing mode if they didn't already save.
 
@@ -734,22 +733,22 @@ Within the recipe management system there are 3 primary actors, "Managers", "Kit
 | Created By: | Nolan, Justin |
 | Date Created: | 02/14/24 |
 | Primary Actor: | Kitchen Staff, Managers, Front of House Staff |
-| Description | The Actor selects a recipe from the list of all possible recipes. The system displays a view of the recipe based on the actors level of access. |
-| Trigger: | Actor selects recipe to open. |
+| Description | The Actor selects a recipe from the list of all possible recipes. The system displays a view of the recipe based on the actor's level of access. |
+| Trigger: | Actor opens recipe menu section of the system. |
 | Preconditions: | <ul><li>PRE-1: User is logged in.</li><li>PRE-2: User is authenticated.</li></ul> |
 | Postconditions: | <ul><li>POST-1: Recipe is displayed.</li></ul> |
 | Normal Flow: | <ol>**2.0 View Detailed Recipe**<li>Kitchen Staff or Manager selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays the detailed recipe view.</li></ol> |
 | Alternate Flows: | <ol>**2.1 View Limited Recipe**<li>Front of House Staff selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays the limited recipe view.</li></ol> |
 | Exceptions: |  |
 | Priority: | High |
-| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by the Manager, 20 times per day by Front of House Staff. |
+| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by the Manager, 20 times per day by the Front of House Staff. |
 | Business Rules: | Must alert all customers of potential allergens. Only authorized ingredients may be in the ice cream. |
 | Other Information: | RSM-2, RSM-3, RSM-7 |
 | Assumptions: | Recipe already exists in the system. |
 
 **User Story 1: Edit Recipe**
 
-As an authenticated Manager, I want exclusive rights to edit existing recipes, so that I can change recipe details, add or remove ingredients, and update allergen information.
+As a Manager, I want exclusive rights to edit existing recipes, so that I can change recipe details, add or remove ingredients, and update allergen information.
 
 **Acceptance Criteria:**
 
@@ -757,15 +756,15 @@ There is an option to edit available on each recipe in the user interface. Upon 
 
 **User Story 2: Create Recipe**
 
-As an authenticated Manager, I want exclusive rights to create new recipes, so that I can create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+As a Manager, I want exclusive rights to create new recipes, so that I can create new recipes with details such as name, ingredients, preparation instructions and allergen information.
 
 **Acceptance Criteria:**
 
-There is an option to create a new recipe in the user interface. After selceting that feature I should see an empty template for a recipe which contains a section for name, ingrediants, preparation instructions and allergen information. I should be able to enter text in each section. I should be able to save my work. The new recipe should be viewable on the list of recipes. I should be able to exit creation mode. 
+There is an option to create a new recipe in the user interface. After selecting that feature I should see an empty template for a recipe which contains a section for name, ingredients, preparation instructions and allergen information. I should be able to enter text in each section. I should be able to save my work. The new recipe should be viewable on the list of recipes. I should be able to exit creation mode. 
 
 **User Story 3: Archive Recipe**
 
-As an authenticated Manager, I want exclusive rights to archive recipes, so that I can change the status of a recipe from active to inactive and change the status from inactive to active. 
+As a Manager, I want exclusive rights to archive recipes, so that I can change the status of a recipe from active to inactive and change the status from inactive to active. 
 
 **Acceptance Criteria:**
 
@@ -789,23 +788,23 @@ There is an option to archive recipes if the status is active and an option to u
 
 ![Sequence Diagram SB3](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-SequenceDiagram.png)
 
-This sequence diagram shows the process of a Manager interatcing with the system to create, edit and manage recipes. The Manager starts by selecting the recipe menu icon, leading to the list of active recipes. The Manager then selects the create new recipe icon (plus symbol), leading to the display of a blank recipe template. The Manager proceeds to fill in various details such as the name, upload an image, provide a description, set the active status, input ingredients, and provide preparation instructions. After filling in those details, the Manager selects the back arrow, triggering a save verification window. Upon confirmation, the system check the recipe status and adds the newly created recipe to the top of the active recipe list. The Manager then interacts with the system to view the updated active recipe list and selects the new recipe for detailed information. The sequence concludes with the Manager entering edit mode, adding allergens to the recipe in the allergens section, and saving the changes, resulting in an updated active recipe list.  
+This sequence diagram shows the process of a Manager interacting with the system to create, edit and manage recipes. The Manager starts by selecting the recipe menu icon, leading to the list of active recipes. The Manager then selects the create new recipe icon (plus symbol), leading to the display of a blank recipe template. The Manager proceeds to fill in various details such as the name, upload an image, provide a description, set the active status, input ingredients, and provide preparation instructions. After filling in those details, the Manager selects the back arrow, triggering a save verification window. Upon confirmation, the system checks the recipe status and adds the newly created recipe to the top of the active recipe list. The Manager then interacts with the system to view the updated active recipe list and selects the new recipe for detailed information. The sequence concludes with the Manager entering edit mode, adding allergens to the recipe in the allergens section, and saving the changes, resulting in an updated active recipe list.  
 
 ### f. Swimlane Diagram for View Recipe <a name="f3-swimlane"></a>
 
 ![Swimlane UC-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Swimlane.png)
 
-This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Staff interacts with the system when viewing a recipe. This diagram relates to UC-2 and covers the normal and alternate flows. All three lanes start the same way by selecting the recipe menu option. The Manager and Kitchen Staff lanes interact with the system in the same way and represts the normal flow of UC-2. After the Manager/Kitchen Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the incative recipe list. The Manager/Kitchen Staff then selects the desired recipe to view, resulting in the system displaying the detailed recipe. The Front of House Staff lane interacts with the system lane to represent the alternate flow of UC-2. After the Front of House Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the incative recipe list. The Front of House Staff then selects the desired recipe to view, resulting in the system displaying the limited recipe. 
+This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Staff interacts with the system when viewing a recipe. This diagram relates to UC-2 and covers the normal and alternate flows. All three lanes start the same way by selecting the recipe menu option. The Manager and Kitchen Staff lanes interact with the system in the same way and represent the normal flow of UC-2. After the Manager/Kitchen Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the inactive recipe list. The Manager/Kitchen Staff then selects the desired recipe to view, resulting in the system displaying the detailed recipe. The Front of House Staff lane interacts with the system lane to represent the alternate flow of UC-2. After the Front of House Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the inactive recipe list. The Front of House Staff then selects the desired recipe to view, resulting in the system displaying the limited recipe. 
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority <a name="f4-description"></a>
-The Onboarding Materials feature has a low priority in the application. An authenticated employee (except a Delivery Driver) must be able to view the onboarding materials but only the Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
+The Onboarding Materials feature has a low priority in the application. An employee (except a Delivery Driver) must be able to view the onboarding materials but only a Manager has the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
-ONB-1:  An authenticated employee (except a Delivery Driver) must be able to view the onboarding materials at any time.
+ONB-1:  An employee (except a Delivery Driver) must be able to view the onboarding materials at any time.
 
 ONB-2: The Manager must be the only staff to edit the onboarding materials at any time.
 
@@ -820,7 +819,7 @@ Within the framework of the onboarding material use case diagram, there exist tw
 
  **User Story 1: View Onboarding Materials**
  
-As an authenticated employee (excluding Delivery Driver), I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
+As an employee (excluding Delivery Driver), I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
 
 **Acceptance Criteria:**
 
@@ -832,7 +831,7 @@ I can exit the viewing mode when I'm done.
 
 **User Story 2: Edit Onboarding Materials**
 
-As an authenticated Manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
+As a Manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
 
 **Acceptance Criteria:**
 
@@ -844,7 +843,7 @@ I can exit the editing mode when I'm done.
 
 **User Story 3: Create Onboarding Material**
 
-As an authenticated content Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
+As an content Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
 
 **Acceptance Criteria:**
 
@@ -856,7 +855,7 @@ I can exit the creation mode when I'm done.
 
 **User Story 4: Remove Onboarding Material**
 
-As an authenticated Manager, I want the exclusive authority to remove outdated or irrelevant onboarding materials, so that I can maintain the integrity and relevance of the onboarding content.
+As a Manager, I want the exclusive authority to remove outdated or irrelevant onboarding materials, so that I can maintain the integrity and relevance of the onboarding content.
 
 **Acceptance Criteria:**
 
@@ -881,7 +880,7 @@ Delete Onboarding Material
 ## v. Account Management <a name="feature-5"></a>
 
 ### a. Description and Priority <a name="f5-description"></a>
-The Account Management feature has a high priority in the system.  It allows authenticated Manager to manage access to the system by creating and deleting accounts.  An authenticated user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
+The Account Management feature has a high priority in the system.  It allows a Manager to manage access to the system by creating and deleting accounts.  A user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
 
 ### b. Functional Requirements <a name="f5-functional"></a>
 
@@ -928,7 +927,7 @@ There is an option for a Manager to "Create" an account. After selecting this th
 
 **User Story 3: View Account Information**
 
-As a Manager I want to view a users account information so that I can see their role and contact information.
+As a Manager I want to view a user's account information so that I can see their role and contact information.
 
 **Acceptance Criteria:**
 
@@ -936,11 +935,11 @@ There is an option for a Manager to "View Account Informaton" for any selected e
 
 **User Story 4: Manage Account**
 
-As a Manager I want to change a users role or username in order to ensure it stays up to date.
+As a Manager I want to change a user's role or username in order to ensure it stays up to date.
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a users username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a user's username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
 
 **User Story 5: View Account Information**
 
@@ -996,7 +995,7 @@ A user must have the option to "Log Out" of their account.  This will remove the
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 ![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
 
-In this figure, the process of a user modifying their own account information is depicted. In the first step, the user logs into the system and navigates to the account profile page. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once user has completed their changes, changes will be saved. Finally the user can exit the account profile section of application or log out via Exit.
+In this figure, the process of a user modifying their own account information is depicted. In the first step, the user logs into the system and navigates to the account profile page. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once the user has completed their changes, changes will be saved. Finally the user can exit the account profile section of the application or log out via Exit.
 
 
 
