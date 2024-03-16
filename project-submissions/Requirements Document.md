@@ -1239,32 +1239,32 @@ Communication channels must be secure, with safeguards for sensitive information
 - AVL-2: The system is available 99.0% each day outside of business hours.
 
 **Reliability**
-- REL-3: A backup of all system data is saved every night to minimize data loss. 
+- REL-1: A backup of all system data is saved every night to minimize data loss. 
 
 **Scalability**
-- SCA-4: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
-- SCA-5: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
-- SCA-6: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+- SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
+- SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
+- SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
 
 **Useability**
-- USE-7: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
-- USE-8: Shift swapping should be accessible within 3 selections. 
-- USE-9: Viewing schedules should be accessible within 2 selections. 
-- USE-10: Accessing announcements should be accessible within 1 selection. 
-- USE-11: Viewing recipes should be accessible within 2 selections. 
-- USE-12: Viewing messages should be accessible within 3 selections. 
-- USE-13: Standard conventions for all user interface elements
+- USE-1: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
+- USE-2: Shift swapping should be accessible within 3 selections. 
+- USE-3: Viewing schedules should be accessible within 2 selections. 
+- USE-4: Accessing announcements should be accessible within 1 selection. 
+- USE-5: Viewing recipes should be accessible within 2 selections. 
+- USE-6: Viewing messages should be accessible within 3 selections. 
+- USE-7: Standard conventions for all user interface elements
 
 **Performance** 
-- PER-14: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
-- PER-15: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+- PER-1: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
+- PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
 
 **Security**
-- SEC-16: Unauthorized employees are not be able to view another employee’s banking information
-- SEC-17: Industry standard information security procedures must be used when handling user information. 
-- SEC-18: The system shall ensure that no persons outside the organization can access any information stored in the system. 
-- SEC-19: Recipe ingredients and instructions can only be viewed by authorized employees.
-- SEC-20: Recipe ingredient allergens can only be viewed by authorized employees.
+- SEC-1: Unauthorized employees are not be able to view another employee’s banking information
+- SEC-2: Industry standard information security procedures must be used when handling user information. 
+- SEC-3: The system shall ensure that no persons outside the organization can access any information stored in the system. 
+- SEC-4: Recipe ingredients and instructions can only be viewed by authorized employees.
+- SEC-5: Recipe ingredient allergens can only be viewed by authorized employees.
 
 
 # 9 Analysis Models <a name="analysis-models"></a>
