@@ -318,9 +318,9 @@ The following assumptions and dependencies affect the requirements in this docum
 |  Client | Banter Ice Cream |
 |  Business Hours | The hours that Banter Ice Cream is open. Monday-Thursday 1-9pm, Friday 1-10pm, Saturday 12-10pm, and Sunday 12-9pm (inclusive). [1]|
 |  New Employee | An employee of Banter Ice Cream that has worked at Banter for less than two weeks. |
-|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. |
-|  Staff | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. |
-|  User | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. |
+|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. Equivalently, Staff or User.|
+|  Staff | See Employee. |
+|  User | See Employee. |
 |  Manager | Front of House / Kitchen Managers as defined in User Classes and Characteristics. |
 
 ## vi. **References** <a name="references"></a>
