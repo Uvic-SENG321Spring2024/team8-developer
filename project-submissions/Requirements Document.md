@@ -804,7 +804,7 @@ This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Sta
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority <a name="f4-description"></a>
-The Onboarding Materials feature has a low priority in the application. Any user must be able to view the onboarding materials, but only a Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
+The Onboarding Materials feature has a low priority in the application. An authenticated user must be able to view the onboarding materials, but only Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
 ONB-1: A user must be able to view the onboarding materials at any time.
@@ -822,7 +822,7 @@ Within the framework of the onboarding material use case diagram, there exist tw
 
  **User Story 1: View Onboarding Materials**
  
-As a user, I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
+As an authenticated user, I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
 
 **Acceptance Criteria:**
 
@@ -834,7 +834,7 @@ I can exit the viewing mode when I'm done.
 
 **User Story 2: Edit Onboarding Materials**
 
-As a Manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
+As an authenticated Manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
 
 **Acceptance Criteria:**
 
@@ -846,7 +846,7 @@ I can exit the editing mode when I'm done.
 
 **User Story 3: Create Onboarding Material**
 
-As a Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
+As an authenticated content Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
 
 **Acceptance Criteria:**
 
