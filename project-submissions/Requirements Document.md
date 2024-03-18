@@ -426,7 +426,7 @@ Given the schedule is updated, when employees view the schedule, then the update
 
 **User Story 4: Indicate Availability**
 
-As a Front of House Staff, Kitchen Staff, Delivery Driver, Bookkeeper, or Manager when I indicate availability, I want to notify the Manager of the periods that I am available to work so that I am scheduled to work when I am available.
+As an employee when I indicate availability, I want to notify the Manager of the periods that I am available to work so that I am scheduled to work when I am available.
 
 **Acceptance Criteria:**
 
@@ -458,7 +458,7 @@ Given I have clocked out, when my tracked hours are viewed then the hours I have
 
 **User Story 8: Request Swap Shift**
 
-As a Front of House Staff, Kitchen Staff, Delivery Driver, Bookkeeper, or Manager member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
+As an employee I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
 
 **Acceptance Criteria:**
 
