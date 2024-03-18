@@ -842,7 +842,7 @@ I can exit the editing mode when I'm done.
 
 **User Story 3: Create Onboarding Material**
 
-As an content Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
+As a Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
 
 **Acceptance Criteria:**
 
