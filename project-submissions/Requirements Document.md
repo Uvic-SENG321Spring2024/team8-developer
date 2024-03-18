@@ -561,7 +561,7 @@ COM-1: The system must allow embedding capabilities for images, videos, and PDFs
 
 COM-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
 
-COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
+COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to view, create, edit, and remove announcements. Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers must have access to view announcements.
 
 COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
 
@@ -570,17 +570,17 @@ COM-5: The system must provide tailored interfaces and features depending on the
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
-![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
+![CommunicationUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/dffc8c25-f125-48b5-a1e6-d6ac25e31955)
 
-Within the Communication and Announcement feature there are two primary actors, "Manager", and "All Staff". Manager has the ability to create, edit, and send company-wide announcements, while All Staff can view these announcements and react to them. All Staff is any user of the system including the Manager. All Staff can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
+Within the Communication and Announcement feature there are two primary actors, "Manager", and "Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers". Manager has the ability to create, edit, and send company-wide announcements, while Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers can view these announcements and react to them. Front of House Staff, Kitchen Staff, Delivery Drivers, Bookkeepers, and Managers can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
 
 **User Story 1: Send message**
 
-As an employee, I want to be able to send a message to another staff member or a group of coworkers, so that I can communicate information effectively. 
+As an employee, I want to be able to send a message to another employee or a group of employees, so that I can communicate information effectively. 
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to send messages to one or more people from the list of staff members. 
+The system must allow each user to be able to send messages to one or more people from the list of employees. 
 
 **User Story 2: View message**
 
@@ -588,7 +588,7 @@ As an employee, I want to be able to view the messages that are sent to me or th
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to see received messages.
+The system must allow each user to see received messages.
 
 **User Story 3: Edit message**
 
@@ -596,7 +596,7 @@ As an employee, I want to be able to edit a message that I have previously sent,
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to be able to edit messages that the staff member had sent before. 
+The system must allow each user to be able to edit messages that they had sent before. 
 
 **User Story 5: React announcements** 
 
@@ -604,7 +604,7 @@ As an employee, I want to be able to react to company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to react to announcements with emojis. 
+The system must allow each user to be able to react to announcements with emojis. 
 
 **User Story 6: View announcements** 
 
@@ -612,7 +612,7 @@ As an employee, I want to be able to view all company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
+The system must allow each user to be able to view announcements. Must be able to find the most recent announcement within 2 seconds. 
 
 **User Story 7: View announcement information**
 
@@ -624,7 +624,7 @@ The system must allow the Manager, to be able to view all of the announcement's 
 
 **User Story 8: Send announcements**
 
-As a Manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
+As a Manager, I want to be able to send company-wide announcements to all employees, so that I can share important information effectively. 
 
 **Acceptance Criteria:** 
 
