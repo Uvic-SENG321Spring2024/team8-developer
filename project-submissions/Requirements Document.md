@@ -318,8 +318,9 @@ The following assumptions and dependencies affect the requirements in this docum
 |  Client | Banter Ice Cream |
 |  Business Hours | The hours that Banter Ice Cream is open. Monday-Thursday 1-9pm, Friday 1-10pm, Saturday 12-10pm, and Sunday 12-9pm (inclusive). [1]|
 |  New Employee | An employee of Banter Ice Cream that has worked at Banter for less than two weeks. |
-|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section, unless otherwise specified. |
-|  Staff | Unless otherwise specified, refers to an employee. |
+|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. |
+|  Staff | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. |
+|  User | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. |
 |  Manager | Front of House / Kitchen Managers as defined in User Classes and Characteristics. |
 
 ## vi. **References** <a name="references"></a>
@@ -333,7 +334,7 @@ The following assumptions and dependencies affect the requirements in this docum
 Scheduling and Time Tracking
 
 ### a. Description and Priority <a name="f1-description"></a>
-The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all Staff to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to view, create, edit, and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
@@ -377,8 +378,9 @@ SCH-19: The systems view schedule option must display correct information includ
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
-![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
-Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow Manager to create and edit schedules, and allow Bookkeepers to pay employees. All use cases are written assuming the user is logged in.
+![SchedulingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5405bee7-a6ae-44c0-b0bc-51a120291d71)
+
+Within the scheduling system there are 3 primary actors. Front of House Staff, Kitchen Staff, and Delivery Drivers have the same interactions with the Scheduling System so they were combined into one actor. The scheduling system should allow all users (of each User Class) to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to access the tracked hours used to pay employees. All use cases are written assuming the user is logged in.
 
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
@@ -424,13 +426,13 @@ Given the schedule is updated, when employees view the schedule, then the update
 
 **User Story 4: Indicate Availability**
 
-As a Staff member when I Indicate availability, I want to notify the Manager that I cannot work during that period so that I am only working during that time.
+As a Front of House Staff, Kitchen Staff, Delivery Driver, Bookkeeper, or Manager when I indicate availability, I want to notify the Manager of the periods that I am available to work so that I am scheduled to work when I am available.
 
 **Acceptance Criteria:**
 
 Given availability is indicated, when the schedule is posted the availability which was indicated should be the only time with scheduled shifts.
 
-**User Story 5: View tracked hours**
+**User Story 5: View Tracked Hours**
 
 As a Bookkeeper or Manager, I want to view the worked hours for each employee so that I can accurately pay them for their worked hours.
 
@@ -438,7 +440,7 @@ As a Bookkeeper or Manager, I want to view the worked hours for each employee so
 
 When tracked hours for an employee are viewed then a summary of all worked hours including overtime and statutory holidays and vacations should be displayed.
 
-**User Story 6: Clock in**
+**User Story 6: Clock In**
 
 As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
 
@@ -446,7 +448,7 @@ As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in 
 
 Given I have clocked in, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
 
-**User Story 7: Clock out**
+**User Story 7: Clock Out**
 
 As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
 
@@ -454,15 +456,15 @@ As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out
 
 Given I have clocked out, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
 
-**User Story 8: Swap shift request**
+**User Story 8: Request Swap Shift**
 
-As a Staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
+As a Front of House Staff, Kitchen Staff, Delivery Driver, Bookkeeper, or Manager member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
 
 **Acceptance Criteria:**
 
 Given an employee has requested a shift swap with another employee, when another employee has accepted, then a shift swap request should be posted awaiting approval.
 
-**User Story 9: View schedule**
+**User Story 9: View Schedule**
 
 As a Staff member I want to view the posted schedule for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift I am working.
 
@@ -470,9 +472,9 @@ As a Staff member I want to view the posted schedule for the current work weeks 
 
 Given an employee selects to view the schedule they should be shown the up to date schedule with correct information for the current shift period as well as the next. 
 
-**User Story 10: View all schedules**
+**User Story 10: View All Schedules**
 
-As a Staff member I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
+As a Front of House Staff, Kitchen Staff, Delivery Driver, Bookkeeper, or Manager member I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
 
 **Acceptance Criteria:**
 
@@ -509,7 +511,7 @@ Story Board - Clock in/out:
 
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/schedulingsequencediagram.png" width="1000">  
-This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so all staff members can view the schedule.
+This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so any user can view the schedule.
 
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
@@ -542,7 +544,7 @@ This workflow ensures that the manager can efficiently create and publish schedu
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 ![State Diagram Shift Swap 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bc908563-37d7-4d0f-a815-abb005007082)
 
-An employee refers to users who are authorized to request shift swaps, which are the user classes Front of House Staff, Kitchen Staff, and Delivery Driver. An employee starts a shift swap request, and the request will remain in "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters "Cancelled" state. If the employee submits the request, the request enters "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters "Cancelled" state. If the second employee accepts, the shift swap request enters "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters "Cancelled" state. If a Manager approves the request, the shift swap request enters "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
+An employee refers to users who are authorized to request shift swaps, which are all user classes. An employee starts a shift swap request, and the request will remain in "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters "Cancelled" state. If the employee submits the request, the request enters "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters "Cancelled" state. If the second employee accepts, the shift swap request enters "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters "Cancelled" state. If a Manager approves the request, the shift swap request enters "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
 
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
