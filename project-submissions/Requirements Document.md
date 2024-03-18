@@ -474,7 +474,7 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 **User Story 10: View All Schedules**
 
-As a Front of House Staff, Kitchen Staff, Delivery Driver, Bookkeeper, or Manager member I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
+As an employee I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
 
 **Acceptance Criteria:**
 
