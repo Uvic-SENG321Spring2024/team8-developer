@@ -380,7 +380,7 @@ SCH-19: The systems view schedule option must display correct information includ
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 ![SchedulingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5405bee7-a6ae-44c0-b0bc-51a120291d71)
 
-Within the scheduling system there are 3 primary actors. Front of House Staff, Kitchen Staff, and Delivery Drivers have the same interactions with the Scheduling System so they were combined into one actor. The scheduling system should allow all users (of each User Class) to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to access the tracked hours used to pay employees. All use cases are written assuming the user is logged in.
+Within the scheduling system there are 3 primary actors. Front of House Staff, Kitchen Staff, and Delivery Drivers have the same interactions with the Scheduling System so they were combined into one actor. The scheduling system should allow all users (each user class defined in User Classes and Characteristics) to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to access the tracked hours used to pay employees. All use cases are written assuming the user is logged in.
 
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
