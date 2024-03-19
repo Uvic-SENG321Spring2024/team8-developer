@@ -802,16 +802,16 @@ This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Sta
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority <a name="f4-description"></a>
-The Onboarding Materials feature has a low priority in the application. An authenticated employee (except a Delivery Driver) must be able to view the onboarding materials but only the Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
+The Onboarding Materials feature has a low priority in the application. An authenticated employee includes managers and staffs (except a Delivery Driver) must be able to view the onboarding materials but only the Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
 ONB-1:  An authenticated employee (except a Delivery Driver) must be able to view the onboarding materials at any time.
 
-ONB-2: The Manager must be the only staff to edit the onboarding materials at any time.
+ONB-2: A Manager shall edit the onboarding materials at any time.
 
-ONB-3: The Manager must be the only staff to create the onboarding materials at any time.
+ONB-3: A Manager shall create the onboarding materials at any time.
 
-ONB-4: The Manager must be the only staff to remove the onboarding materials at any time.
+ONB-4: A Manager shall remove the onboarding materials at any time.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f4-usecases"></a>
 ![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8cccab7f-7c44-4d1a-94cb-da9e5a177b9d)
@@ -824,9 +824,7 @@ As an authenticated employee (excluding Delivery Driver), I want to be able to v
 
 **Acceptance Criteria:**
 
-There is an option 'View Onboarding Materials' available in the user interface.
-Upon selecting the option, I can choose the specific onboarding materials I wish to view.
-The selected onboarding materials are displayed to me.
+Given that I am an employee, when I view onboarding materials, then I can select the specific onboarding materials I am interested in viewing.
 I can exit the viewing mode when I'm done.
 
 
