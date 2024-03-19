@@ -557,13 +557,11 @@ The Communication and Announcement feature is a high priority feature in the sys
 
 COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication.
 
-COM-2: The system must provide the ability for the manager to send company-wide announcements and all other staff to receive the published company-wide announcements. All staff including the managers must be able to communicate about shift changes.
+COM-2: The system must provide tailored interfaces and features depending on the staff member’s role within the company, ensuring that the Manager have access to announcement creation and management features, while all other staff have access to view and react to announcements. Moreover all staff must have access to communication channels for both group and/or individual messaging.
 
 COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
 
 COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
-
-COM-5: The system must provide tailored interfaces and features depending on the staff member’s role within the company, ensuring that the Manager have access to announcement creation and management features, while all other staff have access to view and react to announcements. Moreover all staff must have access to communication channels for both group and/or individual messaging.
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
