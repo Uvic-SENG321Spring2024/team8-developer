@@ -819,7 +819,7 @@ ACC-7: The system must allow users to log out of their accounts.
 
 ACC-8: The system must allow users to view their account information to ensure its accuracy and completeness.
 
-ACC-9: The system must automatically log out users once they close the application.
+ACC-9: The system must automatically log users out of the application after 1 hour of inactivity.
 
 
 
