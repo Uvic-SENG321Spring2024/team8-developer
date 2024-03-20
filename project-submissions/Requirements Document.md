@@ -95,6 +95,7 @@ These sections are outlined in the following Table of Contents.
    1. [Data Flow Diagram Level 0](#data-flow0)
    2. [Data Flow Diagram Level 1](#data-flow1)
    3. [Data Flow Diagrams Level 2](#data-flow2)
+   4. [Data Flow Diagrams Level 3](#data-flow3)
 10. [Appendix](#appendix)
   
 # 2. Business Requirements <a name="requirements"></a>
@@ -1299,14 +1300,9 @@ The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the 
 ## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
 
 ### Manage Schedule Process
-![DataFlow_Level2_Schedule 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/154b1668-f403-4835-9401-43eada6a00ca)
+![DataFlow_Level2_Schedule-Page-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/88aea67f-536d-4827-adcf-483f8dd5a30a)
 
-Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) can Clock In and Clock Out. A Delivery Driver can Clock In and Clock Out. The Clock In Data and Clock Out Data resulting from the Clock In and Clock Out use cases is stored in the Employee Hours Summary data store. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can Indicate Availability. The Availability of each user is stored in the Availability Store. The stored Availability is used by the Create Schedule and Edit Schedule use cases. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Create Schedule. A Manager can Edit Schedule. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in the Schedule Store and Employee Hours Summary data store. Each user can view the stored Schedule Information using the View Schedule use case. All Users are able to Request Shift Swap. A Manager can Send Swap Response based on that Shift Swap Request. Resulting in the user who submitted the request being able to view the response.
-
-### Swap Shifts Process
-![DataFlow_Level2_SwapShifts 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/a9f7ab41-446d-413b-b662-b86b53e7cfd0)
-
-Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to Request Shift Swap. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Send Swap Response based on that Shift Swap Request. Resulting in the Staff user who submitted the request being able to view the response.
+The user groups Front of House Staff, Kitchen Staff, Delivery Driver, and Bookkeeper are able to access the Clock Hours Subsystem to clock in and out of shifts. The Staff Hours The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can Update Schedule Subsystem with Schedule Assignment and Schedule Updates, and can access Availability. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. All Users can Update Schedule Subsystem with their Availability, and access Schedule Information. A Manager can use Swap Shift Subsystem to access a Swap Shift Request, and send a Swap Shift Response. All Users can use Swap Shift Subsystem to send Swap Shift Request, and access Swap Shift Response. The Schedule Information from Swap Shift Subsystem and Update Schedule Subsystem are stored in the Schedule Store. The Staff Hours Summary resulting from the Clock Hours Subsystem is stored in the Employee Hours Summary data store.
 
 ### View Tracked Hours Process
 ![DataFlow_Level2_ProcessPayroll_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/88d7d7d7-69f4-45cf-a31e-532f25618e13)
@@ -1321,7 +1317,7 @@ The Front of House / Kitchen Manager user class (referred to in diagram as Manag
 ### Manage Recipe Process
 ![DataFlow_Level2_Recipe_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/99b28161-3484-4508-bb8f-6e35bfa1e624)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can create a recipe through Create Recipe use case. A Manager can edit a recipe through the Edit Recipe use case. Recipe Info resulting from the creation and editing use cases is saved in the Recipe Store. The Recipe Info stored in the Recipe Store can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Front of House Staff/Kitchen Staf) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can create a recipe through Create Recipe use case. A Manager can edit a recipe through the Edit Recipe use case. Recipe Info resulting from the creation and editing use cases is saved in the Recipe Store. The Recipe Info stored in the Recipe Store can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Front of House Staff/Kitchen Staff) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
 
 ### Manage Onboarding Process
 ![DataFlow_Level2_Onboarding_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/01660f97-f127-4f4e-846c-21a8134a743d)
@@ -1333,6 +1329,22 @@ The Front of House / Kitchen Manager user class (referred to in diagram as Manag
 
 The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. Account Info is stored in the Account Store. A Manager can view stored Account Info of any user in the system using the View Account Information use case. The Account Info does not include bank information, but otherwise includes all account information defined in the Employee data entity in the Data Dictionary. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete the Edit Personal Account use case for their own account, to add Personal Account Updates. Personal Account Updates includes all account information defined in the Employee data entity in the Data Dictionary, including bank information. Each user of the system can view Account Info about their own account with the View Account Information use case.
 
+## iii. Data Flow Diagrams Level 3 <a name="data-flow3"></a>
+
+### Clock Hours Subsystem
+![DataFlow_Level2_Schedule-Page-3](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/ead4efe7-ecb6-4f01-9bcf-19b4b8f95590)
+
+Front of House Staff and Kitchen Staff (referred to in the diagram as Front of House Staff/Kitchen Staff), Delivery Drivers, and Bookkeepers can Clock In and Clock Out. The Clock In Data and Clock Out Data resulting from the Clock In and Clock Out use cases is stored in the Employee Hours Summary data store.
+
+### Update Schedule Subsystem
+![DataFlow_Level2_Schedule-Page-4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/967164f7-2dfd-4cb6-8064-9561a099e2e8)
+
+All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can Indicate Availability. The Availability of each user is stored in the Availability Store. The stored Availability is used by the Create Schedule and Edit Schedule use cases. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Create Schedule. A Manager can Edit Schedule. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in the Schedule Store and Employee Hours Summary data store. Each user can view the stored Schedule Information using the View Schedule use case.
+
+### Swap Shift Subsystem
+![DataFlow_Level2_Schedule-Page-5](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/86a33920-d99d-4426-9ab6-a9b993fb59e1)
+
+All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. All Users are able to Request Shift Swap. A Manager can Send Swap Response based on that Shift Swap Request. Resulting in the user who submitted the request being able to view the response, and updating the Schedule Store with the modified Schedule Information.
 
 # 10 Appendix <a name="appendix"></a>
 
