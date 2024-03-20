@@ -153,7 +153,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
 
 **Scheduling System:**
    - Create, modify, and manage shifts through a scheduling interface.
-   - Employees can swap shifts, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
+   - Employees can swap shifts, subject to Managerial approval, to accommodate personal needs while ensuring operational requirements are met.
    - Calendar views for employees and Managers to provide a clear overview of work schedules.
      
 **Clock-In and Clock-Out System:**
@@ -492,7 +492,7 @@ Given an employee selects to view the schedule they should be shown the up to da
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenbookkeeper.png" width="400">  
 
 #### Manager Home Screen
-<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenmanager.png" width="400">  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenManager.png" width="400">  
 
 #### Create Schedule 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule1.png" width="600">    
@@ -522,7 +522,7 @@ Given an employee selects to view the schedule they should be shown the up to da
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/schedulingsequencediagram.png" width="1000">  
 
-This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so any user can view the schedule.
+This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The Manager has the option to save and exit the create schedule menu to return to later or save and publish so any user can view the schedule.
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
@@ -531,23 +531,23 @@ Swimlane - Create Schedule:
 ![Swimlane - Create Schedule](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/3c148963-e306-40af-af11-3582a5b247da)
 
 
-The swimlane diagram represents the workflow for a scheduling system, detailing the interactions between a manager and the system when creating and publishing schedules.
+The swimlane diagram represents the workflow for a scheduling system, detailing the interactions between a Manager and the system when creating and publishing schedules.
 
-Manager Selects Employee: The manager initiates the process by selecting an employee to schedule.
+Manager Selects Employee: The Manager initiates the process by selecting an employee to schedule.
 
-More employees need to be scheduled: Checks whether any employees are not scheduled for a shift. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
+More employees need to be scheduled: Checks whether any employees are not scheduled for a shift. If all employees are scheduled, the Manager saves the schedule. If not, the system would display shift availability of the next employee. 
 
 Display Shift Availability: The system displays the available shifts for the selected employee.
 
-Select New Shift: The manager selects a new shift for the employee to schedule them in.
+Select New Shift: The Manager selects a new shift for the employee to schedule them in.
 
-Check for Shift Conflict: The system checks if there are any conflicts with the selected shift for the employee, such as overlapping shifts or exceeding maximum hours. If a conflict exists, the manager is directed back to select a different shift. If no conflict exists, the manager proceeds to the next step.
+Check for Shift Conflict: The system checks if there are any conflicts with the selected shift for the employee, such as overlapping shifts or exceeding maximum hours. If a conflict exists, the Manager is directed back to select a different shift. If no conflict exists, the Manager proceeds to the next step.
 
-Save Schedule: The manager saves the schedule, with the option to save and leave or save and publish.
+Save Schedule: The Manager saves the schedule, with the option to save and leave or save and publish.
 
-Publish Schedule: The manager publishes the schedule, making it available to employees.
+Publish Schedule: The Manager publishes the schedule, making it available to employees.
 
-This workflow ensures that the manager can efficiently create and publish schedules while ensuring that conflicts are identified and resolved before finalizing the schedule. 
+This workflow ensures that the Manager can efficiently create and publish schedules while ensuring that conflicts are identified and resolved before finalizing the schedule. 
 
 
 
@@ -568,17 +568,17 @@ The Communication and Announcement feature is a high priority feature in the sys
 
 ### b. Functional Requirements <a name="f2-functional"></a>
 
-COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication.
+COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication. 
 
-COM-3: The system must provide the ability for the Manager to publish announcements specific to a certain number of employees and/or locations. 
+COM-2: The system must provide the ability for a Manager to publish announcements to all employees. 
 
-COM-2: The system must provide the ability for the Manager to publish announcements. 
+COM-3: The system must provide the ability for a Manager to publish announcements specific to a user class or location. 
 
-COM-4: The system must provide the ability for the Manager to create announcements. 
+COM-4: The system must provide the ability for a Manager to create announcements. 
 
-COM-5: The system must provide the ability for the Manager to edit announcements. 
+COM-5: The system must provide the ability for a Manager to edit announcements. 
 
-COM-6: The system must provide the ability for the Manager to remove announcements. 
+COM-6: The system must provide the ability for a Manager to remove announcements. 
 
 COM-7: The system must provide the ability for all employees to view announcements.
 
@@ -601,7 +601,7 @@ As an employee, I want to be able to send a message to another employee or a gro
 
 **Acceptance Criteria:** 
 
-The system must allow all employees, including manager, to be able to send messages to one or more individuals from the list of employees. 
+The system must allow all employees, including Manager, to be able to send messages to one or more individuals from the list of employees. 
 
 **User Story 2: View message**
 
@@ -609,7 +609,7 @@ As an employee, I want to be able to view the messages that are sent to me or to
 
 **Acceptance Criteria:** 
 
-The system must allow all employees, including manager, to view received messages.
+The system must allow all employees, including Manager, to view received messages.
 
 **User Story 3: Edit message**
 
@@ -621,7 +621,7 @@ The system must allow all employees to be able to edit messages that they had se
 
 **User Story 5: React announcements** 
 
-As an employee, I want to be able to react to each announcements, so that I can share my opinion or acknowledge the content. 
+As an employee, I want to be able to react to each announcement, so that I can share my opinion or acknowledge the content. 
 
 **Acceptance Criteria:** 
 
@@ -641,7 +641,7 @@ As a Manager, I want to be able to view detailed information of each and every a
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement. 
+The system must allow the Manager to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement. 
 
 **User Story 8: Send announcements**
 
