@@ -809,7 +809,7 @@ This feature describes the different levels of access different employees have t
 The Onboarding Materials feature has a low priority in the application. An authenticated user must be able to view the onboarding materials, but only Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
-ONB-1: A user must be able to view the onboarding material.
+ONB-1: A user must be able to view the onboarding materials.
 
 ONB-2: A Manager must be able to edit the onboarding materials.
 
