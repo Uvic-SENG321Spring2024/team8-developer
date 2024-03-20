@@ -522,7 +522,7 @@ Given an employee selects to view the schedule they should be shown the up to da
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/schedulingsequencediagram.png" width="1000">  
 
-This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so any user can view the schedule.
+This sequence diagram shows the process of a Manager interacting with the system to create a schedule. A Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The Manager has the option to save and exit the create schedule menu to return to later or save and publish so any user can view the schedule.
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
@@ -531,23 +531,23 @@ Swimlane - Create Schedule:
 ![Swimlane - Create Schedule](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/3c148963-e306-40af-af11-3582a5b247da)
 
 
-The swimlane diagram represents the workflow for a scheduling system, detailing the interactions between a manager and the system when creating and publishing schedules.
+The swimlane diagram represents the workflow for a scheduling system, detailing the interactions between a Manager and the system when creating and publishing schedules.
 
-Manager Selects Employee: The manager initiates the process by selecting an employee to schedule.
+Manager Selects Employee: The Manager initiates the process by selecting an employee to schedule.
 
-More employees need to be scheduled: Checks whether any employees are not scheduled for a shift. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
+More employees need to be scheduled: Checks whether any employees are not scheduled for a shift. If all employees are scheduled, the Manager saves the schedule. If not, the system would display shift availability of the next employee. 
 
 Display Shift Availability: The system displays the available shifts for the selected employee.
 
-Select New Shift: The manager selects a new shift for the employee to schedule them in.
+Select New Shift: The Manager selects a new shift for the employee to schedule them in.
 
-Check for Shift Conflict: The system checks if there are any conflicts with the selected shift for the employee, such as overlapping shifts or exceeding maximum hours. If a conflict exists, the manager is directed back to select a different shift. If no conflict exists, the manager proceeds to the next step.
+Check for Shift Conflict: The system checks if there are any conflicts with the selected shift for the employee, such as overlapping shifts or exceeding maximum hours. If a conflict exists, the Manager is directed back to select a different shift. If no conflict exists, the Manager proceeds to the next step.
 
-Save Schedule: The manager saves the schedule, with the option to save and leave or save and publish.
+Save Schedule: The Manager saves the schedule, with the option to save and leave or save and publish.
 
-Publish Schedule: The manager publishes the schedule, making it available to employees.
+Publish Schedule: The Manager publishes the schedule, making it available to employees.
 
-This workflow ensures that the manager can efficiently create and publish schedules while ensuring that conflicts are identified and resolved before finalizing the schedule. 
+This workflow ensures that the Manager can efficiently create and publish schedules while ensuring that conflicts are identified and resolved before finalizing the schedule. 
 
 
 
