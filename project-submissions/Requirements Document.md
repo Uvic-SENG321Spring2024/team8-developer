@@ -1020,7 +1020,7 @@ In this figure, the process of a user modifying their own account information is
 
 ![Entity Relationship Diagram - Ben6](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/55803d9e-2210-42c8-a900-ba137dd72789)
 
-![Entity Relationship Diagram - My Diagram (1)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/3ab10739-ed93-4465-b111-2ceca0f27107)
+![Entity Relationship Diagram - My Diagram (3)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/e790f756-8172-44c3-95ff-42bc88e63bb4)
 
 The Entity Relationship Diagram (ERD) and the UML Class Diagram serve as visual tools to represent the data structure and relationships within the Banter Ice Cream System. The purpose of these diagrams is to articulate how various data entities within the system interact and relate to each other, which is essential for understanding the flow of information and the underlying structure of the system’s data.
 
@@ -1286,16 +1286,16 @@ Communication channels must be secure, with safeguards for sensitive information
 
 ## i. Data Flow Diagram Level 0 <a name="data-flow0"></a>
 
-![L0DFDBen drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/5bf48c9e-21e6-4b2a-a399-70acf556f2ee)
+![Ben0levelDFD drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/c5775ae3-5ae4-4974-a89f-519ce4f849e5)
 
 The above Level 0 Data Flow Diagram depicts the Banter Ice Cream System as a centralized system interacting with four external entities: Staff, Manager, Bookkeeper, and Delivery Driver. 
 The "All Users" entity in this Data Flow Diagram represents a collective group that includes every type of user in the system, providing a centralized point for data flows that are common across all user types to reduce redundancy and simplify the diagram's clarity. The system handles a variety of data flows including account updates, shift swap requests, onboarding materials, and clock-in/out data. It represents a high-level view of the system's interactions with its environment, showing how data is exchanged but not the internal workings of the system itself. The arrows indicate the direction of the data flow, meaning the data originates from the entity at the tail of the arrow and moves towards the entity at the head of the arrow. 
 
 ## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
 
-![EditedLevel1DFD drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/f29c4754-bf3a-4ff3-9fee-bc8ac16a8598)
+![BEN1LevelDFD drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/569c1d75-9639-4630-9264-3f5e263fe1ab)
 
-The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, View Tracked Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule Management, and recipe updating. The diagram includes a data store for Staff Hours Summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
+The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, View Tracked Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule management, and recipe updating. The diagram includes a data store for Staff Hours Summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
 
 ## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
 
