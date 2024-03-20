@@ -1249,36 +1249,96 @@ Communication channels must be secure, with safeguards for sensitive information
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
 **Availability**
-- AVL-1: The system is available 99.99% each day during business hours.
-- AVL-2: The system is available 99.0% each day outside of business hours.
+
+AVL-1: The system is available 99.99% each day during business hours.
+- Rationale: The system is used frequently during business hours to track worked hours by clocking in and out, make ice cream flavours by viewing the recipes, and arrange deliveries of ice cream between location using messages.  
+- AVL-1-ACT-1: ?
+
+AVL-2: The system is available 99.0% each day outside of business hours.
+- Rationale: The system is used outside of business hours to check scheduled shifts, view messages, and view announcements. 
+- AVL-2-ACT-1: ?
 
 **Reliability**
-- REL-1: A backup of all system data is saved every night to minimize data loss. 
+
+REL-1: A backup of all system data is saved every night to minimize data loss. 
+- Rationale: 
+- REL-1-ACT-1: ?
 
 **Scalability**
-- SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
-- SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
-- SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+
+SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
+- Rationale: 
+- SCA-1-ACT-1: ?
+
+SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture.
+- Rationale: 
+- SCA-2-ACT-1: ?
+
+SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+- Rationale: 
+- SCA-3-ACT-1: ?
 
 **Useability**
-- USE-1: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
-- USE-2: Shift swapping should be accessible within 3 selections. 
-- USE-3: Viewing schedules should be accessible within 2 selections. 
-- USE-4: Accessing announcements should be accessible within 1 selection. 
-- USE-5: Viewing recipes should be accessible within 2 selections. 
-- USE-6: Viewing messages should be accessible within 3 selections. 
-- USE-7: Standard conventions for all user interface elements
+
+USE-1: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
+- Rationale: 
+- USE-1-ACT-1: ?
+
+USE-2: Shift swapping should be accessible within 3 selections. 
+- Rationale: 
+- USE-2-ACT-1: ?
+
+USE-3: Viewing schedules should be accessible within 2 selections. 
+- Rationale: 
+- USE-3-ACT-1: ?
+
+USE-4: Accessing announcements should be accessible within 1 selection. 
+- Rationale: 
+- USE-4-ACT-1: ?
+
+USE-5: Viewing recipes should be accessible within 2 selections. 
+- Rationale: 
+- USE-5-ACT-1: ?
+
+USE-6: Viewing messages should be accessible within 3 selections. 
+- Rationale: 
+- USE-6-ACT-1: ?
+
+USE-7: Standard conventions for all user interface elements.
+- Rationale: 
+- USE-7-ACT-1: ?
 
 **Performance** 
-- PER-1: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
-- PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+
+PER-1: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
+- Rationale: 
+- PER-1-ACT-1: ?
+
+PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+- Rationale: 
+- PER-2-ACT-1: ?
 
 **Security**
-- SEC-1: Unauthorized employees are not be able to view another employee’s banking information
-- SEC-2: Industry standard information security procedures must be used when handling user information. 
-- SEC-3: The system shall ensure that no persons outside the organization can access any information stored in the system. 
-- SEC-4: Recipe ingredients and instructions can only be viewed by authorized employees.
-- SEC-5: Recipe ingredient allergens can only be viewed by authorized employees.
+
+SEC-1: Unauthorized employees are not be able to view another employee’s banking information.
+- Rationale: 
+- SEC-1-ACT-1: ?
+
+SEC-2: Industry standard information security procedures must be used when handling user information. 
+- Rationale: 
+- SEC-2-ACT-1: ?
+
+SEC-3: The system shall ensure that no persons outside the organization can access any information stored in the system. 
+- Rationale: 
+- SEC-3-ACT-1: ?
+
+SEC-4: Recipe ingredients and instructions can only be viewed by authorized employees.
+- Rationale: 
+- SEC-4-ACT-1: ?
+
+SEC-5: Recipe ingredient allergens can only be viewed by authorized employees.
+- Rationale: 
+- SEC-5-ACT-1: ?
 
 
 # 9 Analysis Models <a name="analysis-models"></a>
