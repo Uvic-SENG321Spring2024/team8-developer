@@ -24,7 +24,7 @@
 
 # 1. **Overview** <a name="overview"></a>
 
-This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. Fourth, will expand on each system feature to include description, priority, functional requirements, and use cases. Fifth, will define data requirements. Sixth, will describe external interface requirements including user interfaces, hardware interfaces, software interfaces, and communication interfaces. Seventh, will discuss software quality attributes that are prioritized in system. Eighth, will include further analysis models. Finally, there is an appendix for additional details.
+This document will explore an opportunity to centralize Banter Ice Cream’s internal management. First, we will discuss Banter’s business requirements and illustrate the goal of the project. Second, the document will discuss the major features, scope, and limitations of the project. Third, more context for the project will be provided such as user classes, operating environment, and constraints. Fourth, will expand on each system feature to include description, priority, functional requirements, and use cases. Fifth, will define data requirements. Sixth, will describe external interface requirements including user interfaces, hardware interfaces, software interfaces, and communication interfaces. Seventh, will discuss software quality attributes that are prioritized in the system. Eighth, will include further analysis models. Finally, there is an appendix for additional details.
 
 These sections are outlined in the following Table of Contents.
 
@@ -104,7 +104,7 @@ The client, Banter Ice Cream, wants an improvement of the software that they are
 
 
 ## ii. **Business Opportunity** <a name="opportunity"></a>
-The new system will be a single platform, that combines the functionality of Homebase and Basecamp. Using one platform will improve employee engagement because they will only need to check one application for updates. Using one platform will also reduce onboarding time as new employees only need to learn one system. The new system will improve on the scheduling functionality of Homebase, including features for shift management, swapping shifts, clocking in and out, and calculating hours worked. The scheduling system will reduce scheduling errors due to incorrectly swapped shifts and will reduce payroll errors by summarizing hours according to the client's requests. The new system will also include the communication functionality of Basecamp. The communication system will improve employee knowledge of company updates and increase instances where employees are prepared for planned ice cream deliveries. The new system will also store information about Banter Ice Cream, including onboarding materials and ice cream recipes, so they are available to each employee with access. Both onboarding materials and recipe management will improve employee knowledge of Banter Ice Cream and improve onboarding experience. Improved employee knowledge, improved communication, improved onboarding, and reduced scheduling errors will result a better customer experience and improved customer satisfaction. Overall, the new system shall result in more engaged employees, more satisfied customers, fewer payroll errors, and easier onboarding for new employees.
+The new system will be a single platform that combines the functionality of Homebase and Basecamp. Using one platform will improve employee engagement because they will only need to check one application for updates. Using one platform will also reduce onboarding time as new employees only need to learn one system. The new system will improve on the scheduling functionality of Homebase, including features for shift management, swapping shifts, clocking in and out, and calculating hours worked. The scheduling system will reduce scheduling errors due to incorrectly swapped shifts and will reduce payroll errors by summarizing hours according to the client's requests. The new system will also include the communication functionality of Basecamp. The communication system will improve employee knowledge of company updates and increase instances where employees are prepared for planned ice cream deliveries. The new system will also store information about Banter Ice Cream, including onboarding materials and ice cream recipes, so they are available to each employee with access. Both onboarding materials and recipe management will improve employee knowledge of Banter Ice Cream and improve onboarding experience. Improved employee knowledge, improved communication, improved onboarding, and reduced scheduling errors will result in a better customer experience and improved customer satisfaction. Overall, the new system shall result in more engaged employees, more satisfied customers, fewer payroll errors, and easier onboarding for new employees.
 
 
 ## iii. **Business Objectives** <a name="objective"></a>
@@ -134,7 +134,7 @@ The following metrics will be used to measure the success of the system.
 
 **Bookkeeping Efficiency**
    
-- In 3 months of system's release, Bookkeepers will spend 25% less time during each payroll period.
+- In 3 months of the system's release, Bookkeepers will spend 25% less time during each payroll period.
 - After 6 months of release, manual errors associated with payroll would reduce by 50%.
 
 **Onboarding New Employees**
@@ -143,7 +143,7 @@ The following metrics will be used to measure the success of the system.
 
 
 ## v. **Product Vision Statement** <a name="vision"></a>
-The new system intends to improve communication between staff at Banter Ice Cream. This will be accomplished by reducing scheduling confusion, minimize time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used, Homebase and Basecamp; with additional features to improve the client's integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finance management, and improve customer satisfaction by providing accurate and up to date information.
+The new system intends to improve communication between staff at Banter Ice Cream. This will be accomplished by reducing scheduling confusion, minimizing time spent manually calculating hours, and ensuring relevant information is passed to employees. This will be done by combining the systems that are currently used, Homebase and Basecamp, with additional features to improve the client's integration with Quickbooks. The goal of this product is to increase employee engagement with the system, streamline the creation of staff schedules, improve finance management, and improve customer satisfaction by providing accurate and up to date information.
 
 # 3. Scope and Limitations <a name="scope"></a>
 
@@ -189,7 +189,7 @@ The software being developed is a comprehensive employee management and communic
 ## iii. **Limitations and Exclusions** <a name="limitations"></a>
 
 **Quickbooks Integration - (Limitation)**
-- Direct integration with Quickbooks was determined to be lower priority. Therefore, we will limit this feature to implementing a summary of hours worked by each employee. The Bookkeeper can manually process this summary.
+- Direct integration with Quickbooks was determined to be a lower priority. Therefore, we will limit this feature to implementing a summary of hours worked by each employee. The Bookkeeper can manually process this summary.
 
 **Desktop View - (Exclusion)**
 - The clients have indicated that they only want a mobile application view for the system and that the desktop view is not desired.
@@ -318,8 +318,9 @@ The following assumptions and dependencies affect the requirements in this docum
 |  Client | Banter Ice Cream |
 |  Business Hours | The hours that Banter Ice Cream is open. Monday-Thursday 1-9pm, Friday 1-10pm, Saturday 12-10pm, and Sunday 12-9pm (inclusive). [1]|
 |  New Employee | An employee of Banter Ice Cream that has worked at Banter for less than two weeks. |
-|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section, unless otherwise specified. |
-|  Staff | Unless otherwise specified, refers to an employee. |
+|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. Equivalently, Staff or User.|
+|  Staff | See Employee. |
+|  User | See Employee. |
 |  Manager | Front of House / Kitchen Managers as defined in User Classes and Characteristics. |
 
 ## vi. **References** <a name="references"></a>
@@ -333,17 +334,18 @@ The following assumptions and dependencies affect the requirements in this docum
 Scheduling and Time Tracking
 
 ### a. Description and Priority <a name="f1-description"></a>
-The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all Staff to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
+
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to view, create, edit, and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
-SCH-1: The scheduler must allow Manager to create shifts for employees.  
+SCH-1: The scheduler must allow a Manager to create shifts for employees.  
 
 SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.  
 
-SCH-3: The scheduler must allow only Manager to delete shifts from the schedule.  
+SCH-3: The scheduler must allow a Manager to delete shifts from the schedule.  
 
-SCH-4: The scheduler must allow only Manager to edit the schedule.  
+SCH-4: The scheduler must allow a Manager to edit the schedule.  
 
 SCH-5: When a schedule is edited all employees with affected schedules must be updated. 
 
@@ -355,7 +357,7 @@ SCH-8: Schedule information must be stored for 6 years due to Canadian laws rega
 
 SCH-9: When a shift swap request is approved the schedule must update for each employee.  
 
-SCH-10: The schedule must not allow employees to be scheduled during the time with indicated availability off. 
+SCH-10: The schedule must not allow an employee to be scheduled during the time with indicated availability off. 
 
 SCH-11: The schedulers option to view tracked hours by Manager and Bookkeeper must be shown correct information.  
 
@@ -365,20 +367,22 @@ SCH-13: The system must have a clocking in option to allow employees to have the
 
 SCH-14: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
 
-SCH-15: The system must allow employees to request shift swaps with other employees.  
+SCH-15: The system must allow an employee to request shift swaps with other employees.  
 
-SCH-16: The system must allow Manager to approve requested shift swaps from employees.  
+SCH-16: The system must allow a Manager to approve requested shift swaps from employees.  
 
-SCH-17: The system must allow Manager to deny requested shift swaps from employees.  
+SCH-17: The system must allow a Manager to deny requested shift swaps from employees.  
 
 SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
 
-SCH-19: The systems view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.  
+SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.  
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
-![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
-Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow Manager to create and edit schedules, and allow Bookkeepers to pay employees. All use cases are written assuming the user is logged in.
+
+![SchedulingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5405bee7-a6ae-44c0-b0bc-51a120291d71)
+
+Within the scheduling system there are 3 primary actors. Front of House Staff, Kitchen Staff, and Delivery Drivers have the same interactions with the Scheduling System so they were combined into one actor. The scheduling system should allow all users (each user class defined in User Classes and Characteristics) to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to access the tracked hours used to pay employees. All use cases are written assuming the user is logged in.
 
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
@@ -389,9 +393,9 @@ Within the scheduling system there are 3 primary actors. Staff is the actor repr
 | Trigger: | Actor opens create schedule functionality of software. |
 | Preconditions: |<ul><li>PRE-1: Actor is logged in to system.</li></ul> <ul><li>PRE-2: There is at least one employee in the system who is available to take shifts.</li></ul>|
 | Postconditions: |<ul><li>POST-1: Each assigned shift is associated with an employee.</li></ul>|
-| Normal Flow: |<ol>**1.0 Create Schedule**<li>Actor selects an employee(see Exception 1.4)</li><li>Actor assigns one or more shifts to the selected employee within employee's listed availability(see Exception 1.1, 1.2, 1.3).</li><li>Actor continues, selecting one employee at a time until all shifts are assigned.</li><li>Actor saves schedule.</li><li> Actor exits schedule creation functionality of app.</li></ol> |
+| Normal Flow: |<ol>**1.0 Create Schedule**<li>Actor selects an employee(see Exception 1.4)</li><li>Actor assigns one or more shifts to the selected employee within the employee's listed availability(see Exception 1.1, 1.2, 1.3).</li><li>Actor continues, selecting one employee at a time until all shifts are assigned.</li><li>Actor saves the schedule.</li><li> Actor exits schedule creation functionality of app.</li></ol> |
 | Alternate Flows: |  |
-| Exceptions: |<ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol>|
+| Exceptions: |<ol>**1.1 Create Schedule Employee Availability Conflict**<li>Actor selects an employee.</li><li> If the employee does not have listed availability, no shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.2 Create Schedule Employee Hour Conflict**<li>Actor selects an employee.</li><li> If the employee is working a maximum number of hours, no additional shifts are assigned to them. </li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.3 Create Schedule No Assigned Shifts For Employee**<li>Actor selects an employee.</li><li> Actor does not assign any shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol><ol>**1.4 Create Schedule Previous Selected Employee**<li>Actor selects an employee that was previously selected.</li><li> Actor assigns an additional one or more shifts to the selected employee.</li><li>Actor moves on to step 3 of primary flow.</li></ol>|
 | Assumptions: | User is logged in |
 | Priority: | High |
 | Frequency of Use: | Every two weeks |
@@ -424,13 +428,13 @@ Given the schedule is updated, when employees view the schedule, then the update
 
 **User Story 4: Indicate Availability**
 
-As a Staff member when I Indicate availability, I want to notify the Manager that I cannot work during that period so that I am only working during that time.
+As an employee when I indicate availability, I want to notify the Manager of the periods that I am available to work so that I am scheduled to work when I am available.
 
 **Acceptance Criteria:**
 
 Given availability is indicated, when the schedule is posted the availability which was indicated should be the only time with scheduled shifts.
 
-**User Story 5: View tracked hours**
+**User Story 5: View Tracked Hours**
 
 As a Bookkeeper or Manager, I want to view the worked hours for each employee so that I can accurately pay them for their worked hours.
 
@@ -438,15 +442,15 @@ As a Bookkeeper or Manager, I want to view the worked hours for each employee so
 
 When tracked hours for an employee are viewed then a summary of all worked hours including overtime and statutory holidays and vacations should be displayed.
 
-**User Story 6: Clock in**
+**User Story 6: Clock In**
 
 As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
-Given I have clocked in, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
+Given I have clocked in, when my tracked hours are viewed then the hours I have worked should be accurately recorded for that day.
 
-**User Story 7: Clock out**
+**User Story 7: Clock Out**
 
 As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
 
@@ -454,15 +458,15 @@ As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out
 
 Given I have clocked out, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
 
-**User Story 8: Swap shift request**
+**User Story 8: Request Swap Shift**
 
-As a Staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
+As an employee I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
 
 **Acceptance Criteria:**
 
 Given an employee has requested a shift swap with another employee, when another employee has accepted, then a shift swap request should be posted awaiting approval.
 
-**User Story 9: View schedule**
+**User Story 9: View Schedule**
 
 As a Staff member I want to view the posted schedule for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift I am working.
 
@@ -470,9 +474,9 @@ As a Staff member I want to view the posted schedule for the current work weeks 
 
 Given an employee selects to view the schedule they should be shown the up to date schedule with correct information for the current shift period as well as the next. 
 
-**User Story 10: View all schedules**
+**User Story 10: View All Schedules**
 
-As a Staff member I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
+As an employee I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
 
 **Acceptance Criteria:**
 
@@ -480,28 +484,36 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 ### d. Storyboards <a name="f1-storyboards"></a>
   
-Story Board - Staff Home Screen  
+#### Staff Home Screen  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen1staff.png" width="1000">  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreen2staff.png" width="600">  
-Story Board - Bookkeeper Home Screen  
+
+#### Bookkeeper Home Screen  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenbookkeeper.png" width="400">  
-Story Board - Manager Home Screen  
+
+#### Manager Home Screen
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenmanager.png" width="400">  
-Story Board - Create Schedule:  
+
+#### Create Schedule 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule2.png" width="600">  
-Story Board - Edit Schedule:  
+
+#### Edit Schedule 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/editschedule2.png" width="600">  
-Story Board - Shift Swap:  
+
+#### Shift Swap  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap1.png" width="600">    
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/shiftswap2.png" width="600">  
-Story Board - Availability:  
+
+#### Availability  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability1.png" width="600">  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/availability2.png" width="400">  
-Story Board - Clock in/out:  
+
+#### Clock In/Out 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenclockin.png" width="800">  
-**Track Hours:**  
+
+#### Track Hours  
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreentrackedhours.png" width="600">  
 
 
@@ -509,8 +521,8 @@ Story Board - Clock in/out:
 
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/schedulingsequencediagram.png" width="1000">  
-This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so all staff members can view the schedule.
 
+This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so any user can view the schedule.
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
@@ -523,7 +535,7 @@ The swimlane diagram represents the workflow for a scheduling system, detailing 
 
 Manager Selects Employee: The manager initiates the process by selecting an employee to schedule.
 
-More employees need to be scheduled: Checks whether if any employees have not been scheduled. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
+More employees need to be scheduled: Checks whether any employees are not scheduled for a shift. If all employees are scheduled, the manager saves the schedule. If not, the system would display shift availability of the next employee. 
 
 Display Shift Availability: The system displays the available shifts for the selected employee.
 
@@ -542,7 +554,8 @@ This workflow ensures that the manager can efficiently create and publish schedu
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 ![State Diagram Shift Swap 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bc908563-37d7-4d0f-a815-abb005007082)
 
-An employee refers to users who are authorized to request shift swaps, which are the user classes Front of House Staff, Kitchen Staff, and Delivery Driver. An employee starts a shift swap request, and the request will remain in "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters "Cancelled" state. If the employee submits the request, the request enters "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters "Cancelled" state. If the second employee accepts, the shift swap request enters "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters "Cancelled" state. If a Manager approves the request, the shift swap request enters "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
+
+An employee refers to users who are authorized to request shift swaps, which are all user classes. An employee starts a shift swap request, and the request will remain in "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters "Cancelled" state. If the employee submits the request, the request enters "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters "Cancelled" state. If the second employee accepts, the shift swap request enters "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters "Cancelled" state. If a Manager approves the request, the shift swap request enters "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
 
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
@@ -559,26 +572,26 @@ COM-1: The system must allow embedding capabilities for images, videos, and PDFs
 
 COM-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
 
-COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
+COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to view, create, edit, and remove announcements. Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers must have access to view announcements.
 
 COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
 
-COM-5: The system must provide tailored interfaces and features depending on the staff member’s role within the company, ensuring that the Manager have access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
+COM-5: The system must provide tailored interfaces and features depending on the staff member’s role within the company, ensuring that a Manager has access to announcement creation and management features, while all other staff have access to communication channels for group or individual messaging.
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
-![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
+![CommunicationUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/dffc8c25-f125-48b5-a1e6-d6ac25e31955)
 
-Within the Communication and Announcement feature there are two primary actors, "Manager", and "All Staff". Manager has the ability to create, edit, and send company-wide announcements, while All Staff can view these announcements and react to them. All Staff is any user of the system including the Manager. All Staff can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
+Within the Communication and Announcement feature there are two primary actors, "Manager", and "Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers". Manager has the ability to create, edit, and send company-wide announcements, while Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers can view these announcements and react to them. Front of House Staff, Kitchen Staff, Delivery Drivers, Bookkeepers, and Managers can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
 
 **User Story 1: Send message**
 
-As an employee, I want to be able to send a message to another staff member or a group of coworkers, so that I can communicate information effectively. 
+As an employee, I want to be able to send a message to another employee or a group of employees, so that I can communicate information effectively. 
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to send messages to one or more people from the list of staff members. 
+The system must allow each user to be able to send messages to one or more people from the list of employees. 
 
 **User Story 2: View message**
 
@@ -586,7 +599,7 @@ As an employee, I want to be able to view the messages that are sent to me or th
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to see received messages.
+The system must allow each user to see received messages.
 
 **User Story 3: Edit message**
 
@@ -594,7 +607,7 @@ As an employee, I want to be able to edit a message that I have previously sent,
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to be able to edit messages that the staff member had sent before. 
+The system must allow each user to be able to edit messages that they had sent before. 
 
 **User Story 5: React announcements** 
 
@@ -602,7 +615,7 @@ As an employee, I want to be able to react to company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to react to announcements with emojis. 
+The system must allow each user to be able to react to announcements with emojis. 
 
 **User Story 6: View announcements** 
 
@@ -610,7 +623,7 @@ As an employee, I want to be able to view all company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
+The system must allow each user to be able to view announcements. Must be able to find the most recent announcement within 2 seconds. 
 
 **User Story 7: View announcement information**
 
@@ -618,15 +631,15 @@ As a Manager, I want to be able to view detailed information of any and every an
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
+The system must allow a Manager to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
 
 **User Story 8: Send announcements**
 
-As a Manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
+As a Manager, I want to be able to send company-wide announcements to all employees, so that I can share important information effectively. 
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager, to create and send company-wide announcements using text, images, videos, or PDF. 
+The system must allow a Manager to create and send company-wide announcements using text, images, videos, or PDF. 
 
 **User Story 9: Edit announcements** 
 
@@ -634,30 +647,20 @@ As a Manager, I want to be able to edit or update announcements that I have alre
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager to be able to access and edit announcements that have been sent. 
+The system must allow a Manager to be able to access and edit announcements that have been sent. 
 
 ### d. Storyboards <a name="f2-storyboards"></a>
 
-Story Board - Group Chat: 
-
+#### Group Chat 
 ![Story Board - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/ac0bfac0-e3f4-4fcf-ba75-4cf842c61366)
 
-
-
-Story Board - Private Chat: 
-
+#### Private Chat
 ![Story Board - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/8e638547-f82d-4922-9f2b-27c66389d0f4)
 
-
-
-Story Board - New Announcement: 
-
+#### New Announcement
 ![Story Board - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/625f3b50-993c-4a34-bb9c-74951af48b20)
 
-
-
-Story Board - Announcement Edit: 
-
+#### Edit Announcement
 ![Story Board - Announcement Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/87ea6f38-d698-45f5-b2ae-a958277a06db)
 
 
@@ -670,7 +673,7 @@ When an authorized user is interested in sending a message, they begin by naviga
 ## iii. Recipe Management <a name="feature-3"></a>
 
 ### a. Description and Priority <a name="f3-description"></a>
-The Recipe Management feature has a high priority in the application. An authenticated Manager, Kitchen Staff, or Front of House Staff must be able to view active or unactive recipes. Manager and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. The Manager is the only one who is able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
+The Recipe Management feature has a high priority in the application. A Manager, Kitchen Staff, or Front of House Staff must be able to view active or inactive recipes. Manager and Kitchen Staff must be able to view the full recipe including the ingredient list, preparation instructions, and allergens. Front of House Staff must only be able to view the allergens in a recipe. The Manager is the only one who is able to create, edit, archive and unarchive recipes. Expect a high frequency of use, Kitchen Staff and Front of House Staff will use this feature daily when making the ice cream and serving customers as the Front of House Staff are required to inform customers of any allergens in the ice cream. 
 
 ### b. Functional Requirements <a name="f3-functional"></a>
 
@@ -692,9 +695,9 @@ RMS-7: The system must be able to display different recipe views based on the ac
 
 &emsp;&emsp;RMS-7.2: The system must have a limited recipe view which only contains the name, and allergens.
 
-RMS-8: The system must be able to archive recipes, removing it from the list of active recipes and adds it to the list of inactive recipes.
+RMS-8: The system must be able to archive recipes, removing it from the list of active recipes and adding it to the list of inactive recipes.
 
-RMS-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adds it to the list of active recipes.
+RMS-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adding it to the list of active recipes.
 
 RMS-10: The system must display a prompt the user to save when they exit editing mode if they didn't already save.
 
@@ -734,22 +737,22 @@ Within the recipe management system there are 3 primary actors, "Managers", "Kit
 | Created By: | Nolan, Justin |
 | Date Created: | 02/14/24 |
 | Primary Actor: | Kitchen Staff, Managers, Front of House Staff |
-| Description | The Actor selects a recipe from the list of all possible recipes. The system displays a view of the recipe based on the actors level of access. |
-| Trigger: | Actor selects recipe to open. |
+| Description | The Actor selects a recipe from the list of all possible recipes. The system displays a view of the recipe based on the actor's level of access. |
+| Trigger: | Actor opens recipe menu section of the system. |
 | Preconditions: | <ul><li>PRE-1: User is logged in.</li><li>PRE-2: User is authenticated.</li></ul> |
 | Postconditions: | <ul><li>POST-1: Recipe is displayed.</li></ul> |
 | Normal Flow: | <ol>**2.0 View Detailed Recipe**<li>Kitchen Staff or Manager selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays the detailed recipe view.</li></ol> |
 | Alternate Flows: | <ol>**2.1 View Limited Recipe**<li>Front of House Staff selects the recipe menu option.</li><li>Select active or inactive recipes to view.</li><li>Select desired recipe from list.</li><li>System displays the limited recipe view.</li></ol> |
 | Exceptions: |  |
 | Priority: | High |
-| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by the Manager, 20 times per day by Front of House Staff. |
+| Frequency of Use: | 10 times per day by the Kitchen Staff, 1 time per day by the Manager, 20 times per day by the Front of House Staff. |
 | Business Rules: | Must alert all customers of potential allergens. Only authorized ingredients may be in the ice cream. |
 | Other Information: | RSM-2, RSM-3, RSM-7 |
 | Assumptions: | Recipe already exists in the system. |
 
 **User Story 1: Edit Recipe**
 
-As an authenticated Manager, I want exclusive rights to edit existing recipes, so that I can change recipe details, add or remove ingredients, and update allergen information.
+As a Manager, I want exclusive rights to edit existing recipes, so that I can change recipe details, add or remove ingredients, and update allergen information.
 
 **Acceptance Criteria:**
 
@@ -757,15 +760,15 @@ There is an option to edit available on each recipe in the user interface. Upon 
 
 **User Story 2: Create Recipe**
 
-As an authenticated Manager, I want exclusive rights to create new recipes, so that I can create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+As a Manager, I want exclusive rights to create new recipes, so that I can create new recipes with details such as name, ingredients, preparation instructions and allergen information.
 
 **Acceptance Criteria:**
 
-There is an option to create a new recipe in the user interface. After selceting that feature I should see an empty template for a recipe which contains a section for name, ingrediants, preparation instructions and allergen information. I should be able to enter text in each section. I should be able to save my work. The new recipe should be viewable on the list of recipes. I should be able to exit creation mode. 
+There is an option to create a new recipe in the user interface. After selecting that feature I should see an empty template for a recipe which contains a section for name, ingredients, preparation instructions and allergen information. I should be able to enter text in each section. I should be able to save my work. The new recipe should be viewable on the list of recipes. I should be able to exit creation mode. 
 
 **User Story 3: Archive Recipe**
 
-As an authenticated Manager, I want exclusive rights to archive recipes, so that I can change the status of a recipe from active to inactive and change the status from inactive to active. 
+As a Manager, I want exclusive rights to archive recipes, so that I can change the status of a recipe from active to inactive and change the status from inactive to active. 
 
 **Acceptance Criteria:**
 
@@ -773,11 +776,11 @@ There is an option to archive recipes if the status is active and an option to u
 
 ### d. Storyboards <a name="f3-storyboards"></a>
 
-#### Storyboard 1: UC-2 Normal Flow
+#### Storyboard 1: UC-2 View Recipe Normal Flow
 
 ![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard2.png)
 
-#### Storyboard 2: UC-2 Alternate Flow
+#### Storyboard 2: UC-2 View Recipe Alternate Flow
 
 ![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard1.png)
 
@@ -789,48 +792,48 @@ There is an option to archive recipes if the status is active and an option to u
 
 ![Sequence Diagram SB3](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/RMS-Create%3AEdit-SequenceDiagram.png)
 
-This sequence diagram shows the process of a Manager interatcing with the system to create, edit and manage recipes. The Manager starts by selecting the recipe menu icon, leading to the list of active recipes. The Manager then selects the create new recipe icon (plus symbol), leading to the display of a blank recipe template. The Manager proceeds to fill in various details such as the name, upload an image, provide a description, set the active status, input ingredients, and provide preparation instructions. After filling in those details, the Manager selects the back arrow, triggering a save verification window. Upon confirmation, the system check the recipe status and adds the newly created recipe to the top of the active recipe list. The Manager then interacts with the system to view the updated active recipe list and selects the new recipe for detailed information. The sequence concludes with the Manager entering edit mode, adding allergens to the recipe in the allergens section, and saving the changes, resulting in an updated active recipe list.  
+This sequence diagram shows the process of a Manager interacting with the system to create, edit and manage recipes. The Manager starts by selecting the recipe menu icon, leading to the list of active recipes. The Manager then selects the create new recipe icon (plus symbol), leading to the display of a blank recipe template. The Manager proceeds to fill in various details such as the name, upload an image, provide a description, set the active status, input ingredients, and provide preparation instructions. After filling in those details, the Manager selects the back arrow, triggering a save verification window. Upon confirmation, the system checks the recipe status and adds the newly created recipe to the top of the active recipe list. The Manager then interacts with the system to view the updated active recipe list and selects the new recipe for detailed information. The sequence concludes with the Manager entering edit mode, adding allergens to the recipe in the allergens section, and saving the changes, resulting in an updated active recipe list.  
 
 ### f. Swimlane Diagram for View Recipe <a name="f3-swimlane"></a>
 
 ![Swimlane UC-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Swimlane.png)
 
-This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Staff interacts with the system when viewing a recipe. This diagram relates to UC-2 and covers the normal and alternate flows. All three lanes start the same way by selecting the recipe menu option. The Manager and Kitchen Staff lanes interact with the system in the same way and represts the normal flow of UC-2. After the Manager/Kitchen Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the incative recipe list. The Manager/Kitchen Staff then selects the desired recipe to view, resulting in the system displaying the detailed recipe. The Front of House Staff lane interacts with the system lane to represent the alternate flow of UC-2. After the Front of House Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the incative recipe list. The Front of House Staff then selects the desired recipe to view, resulting in the system displaying the limited recipe. 
+This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Staff interacts with the system when viewing a recipe. This diagram relates to UC-2 and covers the normal and alternate flows. All three lanes start the same way by selecting the recipe menu option. The Manager and Kitchen Staff lanes interact with the system in the same way and represent the normal flow of UC-2. After the Manager/Kitchen Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the inactive recipe list. The Manager/Kitchen Staff then selects the desired recipe to view, resulting in the system displaying the detailed recipe. The Front of House Staff lane interacts with the system lane to represent the alternate flow of UC-2. After the Front of House Staff selects the recipe menu option they then select whether they want to view active or inactive recipes. If active is selected the system displays the active recipe list, otherwise the system displays the inactive recipe list. The Front of House Staff then selects the desired recipe to view, resulting in the system displaying the limited recipe. 
 
 ## iv. Onboarding Materials <a name="feature-4"></a>
 
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority <a name="f4-description"></a>
-The Onboarding Materials feature has a low priority in the application. An authenticated employee includes managers and staffs (except a Delivery Driver) must be able to view the onboarding materials but only the Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
+
+The Onboarding Materials feature has a low priority in the application. An authenticated user must be able to view the onboarding materials, but only Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
-ONB-1:  An authenticated employee (except a Delivery Driver) must be able to view the onboarding materials at any time.
+ONB-1: A user must be able to view the onboarding materials at any time.
 
-ONB-2: A Manager shall edit the onboarding materials at any time.
+ONB-2: A Manager must be able to edit the onboarding materials at any time.
 
-ONB-3: A Manager shall create the onboarding materials at any time.
+ONB-3: A Manager must be able to create the onboarding materials at any time.
 
-ONB-4: A Manager shall remove the onboarding materials at any time.
+ONB-4: A Manager must be able to remove the onboarding materials at any time.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f4-usecases"></a>
-![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8cccab7f-7c44-4d1a-94cb-da9e5a177b9d)
+![OnboardingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f38b872d-77f0-47f8-962f-7f9665926a49)
 
-Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor, designated as the "Staff," is subdivided into specific roles, namely the Bookkeeper, Front of House Staff, and Kitchen Staff, with their access limited solely to viewing onboarding materials.
+Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor is Front of House Staff, Kitchen Staff, Delivery Driver, and Bookkeepers with their access limited solely to viewing onboarding materials.
 
  **User Story 1: View Onboarding Materials**
  
-As an authenticated employee (excluding Delivery Driver), I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
+As an authenticated user, I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
 
 **Acceptance Criteria:**
 
-Given that I am an employee, when I view onboarding materials, then I can select the specific onboarding materials I am interested in viewing.
-I can exit the viewing mode when I'm done.
+Given that I am an employee, when I view onboarding materials, then I can select the specific onboarding materials I am interested in viewing. I can exit the viewing mode when I'm done.
 
 
 **User Story 2: Edit Onboarding Materials**
 
-As an authenticated Manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
+As a Manager, I want to have exclusive rights to edit the onboarding materials, so that I can ensure the content is up-to-date and relevant for the employees.
 
 **Acceptance Criteria:**
 
@@ -842,7 +845,7 @@ I can exit the editing mode when I'm done.
 
 **User Story 3: Create Onboarding Material**
 
-As an authenticated content Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
+As a Manager, I want the capability to create new onboarding materials, so that I can provide updated and relevant content for employee onboarding.
 
 **Acceptance Criteria:**
 
@@ -854,7 +857,7 @@ I can exit the creation mode when I'm done.
 
 **User Story 4: Remove Onboarding Material**
 
-As an authenticated Manager, I want the exclusive authority to remove outdated or irrelevant onboarding materials, so that I can maintain the integrity and relevance of the onboarding content.
+As a Manager, I want the exclusive authority to remove outdated or irrelevant onboarding materials, so that I can maintain the integrity and relevance of the onboarding content.
 
 **Acceptance Criteria:**
 
@@ -866,20 +869,20 @@ The removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
 
 ### d. Storyboards <a name="f4-storyboards"></a>
-View Onboarding Material
+#### View Onboarding Material
 ![View Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/0ebf2c74-fb27-45ad-8778-b7a07afd7868)
 
-Create New Onboarding Material
+#### Create New Onboarding Material
 ![Onboarding Materials Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/b0b382e8-2ca5-4787-b162-b13f77016867)
 
-Delete Onboarding Material
+#### Delete Onboarding Material
 ![Delete Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/5d1002d7-8bd8-4381-b746-709e915f2129)
 
 
 ## v. Account Management <a name="feature-5"></a>
 
 ### a. Description and Priority <a name="f5-description"></a>
-The Account Management feature has a high priority in the system.  It allows authenticated Manager to manage access to the system by creating and deleting accounts.  An authenticated user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
+The Account Management feature has a high priority in the system.  It allows a Manager to manage access to the system by creating and deleting accounts.  A user must be able to edit their important information to ensure it is correct, and must be able to log in and log out of their account.  This feature is expected to be used 100+ times per day due to the high frequency of logging in and logging out.
 
 ### b. Functional Requirements <a name="f5-functional"></a>
 
@@ -926,7 +929,7 @@ There is an option for a Manager to "Create" an account. After selecting this th
 
 **User Story 3: View Account Information**
 
-As a Manager I want to view a users account information so that I can see their role and contact information.
+As a Manager I want to view a user's account information so that I can see their role and contact information.
 
 **Acceptance Criteria:**
 
@@ -934,11 +937,11 @@ There is an option for a Manager to "View Account Informaton" for any selected e
 
 **User Story 4: Manage Account**
 
-As a Manager I want to change a users role or username in order to ensure it stays up to date.
+As a Manager I want to change a user's role or username in order to ensure it stays up to date.
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a users username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a user's username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
 
 **User Story 5: View Account Information**
 
@@ -973,28 +976,37 @@ As a user I want to log out of my account so I can ensure no one else can use my
 A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
 
 ### d. Storyboards <a name="f5-storyboards"></a>
+#### Create Account
 ![Account Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountCreation.png)
 
+#### Delete Account
 ![Account Deletion](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountDeletion.png)
 
+#### View Account Information
 ![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ViewInformation.png)
 
+#### Edit Cell Phone
 ![Edit Cell Phone](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditCell.png)
 
+#### Edit Email
 ![Edit Email](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditEmail.png)
 
+#### Edit Role
 ![Edit Role](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditRole.png)
 
+#### Edit Username
 ![Edit Username](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditUsername.png)
 
+#### Login
 ![Login](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Login.png)
 
+#### Logout
 ![Logout](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Logout.png)
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 ![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
 
-In this figure, the process of a user modifying their own account information is depicted. In the first step, the user logs into the system and navigates to the account profile page. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once user has completed their changes, changes will be saved. Finally the user can exit the account profile section of application or log out via Exit.
+In this figure, the process of a user modifying their own account information is depicted. In the first step, the user logs into the system and navigates to the account profile page. Users can then choose what they want to modify, including password configuration, updating contact information, and specifying payment details. Once the user has completed their changes, changes will be saved. Finally the user can exit the account profile section of the application or log out via Exit.
 
 
 
@@ -1135,7 +1147,7 @@ The system shall not generate any reports.
 
 **Employee Data and Account**
 - Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
-- The system must retain each employee's banking information until after employee last paycheck is received by employee.
+- The system must retain each employee's banking information until after the employee's last paycheck is received by the employee.
 - A new employee can gain access to the system after a Manager adds an account for the employee.
 - An employee loses access to the system when their account is deleted. 
 
@@ -1146,13 +1158,13 @@ The system shall not generate any reports.
 
 **Communication and Announcements**
 - The system must retain messages for one year after the message is sent.
-- The system must retain each announcement until the announcement is removed by Manager.
+- The system must retain each announcement until the announcement is removed by a Manager.
 
 **Recipe Management**
-- The system must retain each recipe for lifetime of system.
+- The system must retain each recipe for the lifetime of the system.
 
 **Onboarding Materials**
-- The system must retain each onboarding material until removed by the Manager.
+- The system must retain each onboarding material until removed by a Manager.
 
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
@@ -1162,14 +1174,14 @@ The system shall not generate any reports.
 A medium fidelity prototype of the system can be found here: https://www.figma.com/file/Uc9R5x3QO1j0RJcTtubefa/Prototype?type=design&node-id=0-1&mode=design&t=8ogwlELfk2Qu3Zly-0
 
 The prototype is designed to fit the screen of an iPhone 14, so the screen layout has the dimensions 390 x 844. Upon opening the app the user is prompted to enter a username and password. <br/>
-The prototype has been designed for a user with a management role. The GUI standards to be followed were based on the Banter Ice Cream website, this includes the green and orange color scheme, font and the header banner. There are 2 versions of the homepage a management version and a non-management verion. Both versions of the homepage have a header at the top of the screen and an icon bar at the bottom. The management version of the homepage includes 3 buttons on the main screen "Announcements", "Onboarding Materials", and "Account Management" (See Image 1). 
+The prototype has been designed for a user with a management role. The GUI standards to be followed were based on the Banter Ice Cream website, this includes the green and orange color scheme, font and the header banner. There are 2 versions of the homepage: a management version and a non-management version. Both versions of the homepage have a header at the top of the screen and an icon bar at the bottom. The management version of the homepage includes 3 buttons on the main screen "Announcements", "Onboarding Materials", and "Account Management" (See Image 1). 
 
 <figure>
    <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/NewMHS.png" width="390" height="844">
    <figcaption>Image 1: Management Home Screen.</figcaption>
 </figure>
 
-The homepage for the non-management version of the homepage includes 2 buttons on the main screen "Announcements", and "Onboarding Materials" (See Image 2). The icon bar contains the following icons from left to right calendar, communication, home, recipe menu, and personal account info. This icon bar is displayed on every screen which allows for quick access to each feature at anytime. Each page after the main page of each feature contains a back arrow in the top left where a user can go back to a previous page.
+The homepage for the non-management version of the homepage includes 2 buttons on the main screen "Announcements", and "Onboarding Materials" (See Image 2). The icon bar contains the following icons from left to right calendar, communication, home, recipe menu, and personal account info. This icon bar is displayed on every screen which allows for quick access to each feature at any time. Each page after the main page of each feature contains a back arrow in the top left where a user can go back to a previous page.
 
 <figure>
    <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/NewGHS.png" width="390" height="844">
@@ -1186,10 +1198,10 @@ The user is prompted with an error message (example in Image 3) to reduce mistak
 ## ii. Hardware Interfaces <a name="hardware-interfaces"></a>
 
 ### Processing
-- **Memory Space:** A minimum of 40 MB of free space will be required to install application.
+- **Memory Space:** A minimum of 40 MB of free space will be required to install the application.
 
 ### Resolution
-- **Adapatable:** The application must be able to adapt to different phone screen resolutions and orientations.
+- **Adaptable:** The application must be able to adapt to different phone screen resolutions and orientations.
 
 ### Hardware Access
 - **Internal Storage:** The application will need access to internal storage of files to attach allowed file types to messages, announcements, recipes, and onboarding materials. The internal storage includes any local storage, cloud storage linked to the device, and the device's camera roll. The allowed file types include images, videos, and PDFs. 
@@ -1238,32 +1250,32 @@ Communication channels must be secure, with safeguards for sensitive information
 - AVL-2: The system is available 99.0% each day outside of business hours.
 
 **Reliability**
-- REL-3: A backup of all system data is saved every night to minimize data loss. 
+- REL-1: A backup of all system data is saved every night to minimize data loss. 
 
 **Scalability**
-- SCA-4: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
-- SCA-5: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
-- SCA-6: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+- SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
+- SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
+- SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
 
 **Useability**
-- USE-7: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
-- USE-8: Shift swapping should be accessible within 3 selections. 
-- USE-9: Viewing schedules should be accessible within 2 selections. 
-- USE-10: Accessing announcements should be accessible within 1 selection. 
-- USE-11: Viewing recipes should be accessible within 2 selections. 
-- USE-12: Viewing messages should be accessible within 3 selections. 
-- USE-13: Standard conventions for all user interface elements
+- USE-1: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
+- USE-2: Shift swapping should be accessible within 3 selections. 
+- USE-3: Viewing schedules should be accessible within 2 selections. 
+- USE-4: Accessing announcements should be accessible within 1 selection. 
+- USE-5: Viewing recipes should be accessible within 2 selections. 
+- USE-6: Viewing messages should be accessible within 3 selections. 
+- USE-7: Standard conventions for all user interface elements
 
 **Performance** 
-- PER-14: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
-- PER-15: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+- PER-1: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
+- PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
 
 **Security**
-- SEC-16: Unauthorized employees are not be able to view another employee’s banking information
-- SEC-17: Industry standard information security procedures must be used when handling user information. 
-- SEC-18: The system shall ensure that no persons outside the organization can access any information stored in the system. 
-- SEC-19: Recipe ingredients and instructions can only be viewed by authorized employees.
-- SEC-20: Recipe ingredient allergens can only be viewed by authorized employees.
+- SEC-1: Unauthorized employees are not be able to view another employee’s banking information
+- SEC-2: Industry standard information security procedures must be used when handling user information. 
+- SEC-3: The system shall ensure that no persons outside the organization can access any information stored in the system. 
+- SEC-4: Recipe ingredients and instructions can only be viewed by authorized employees.
+- SEC-5: Recipe ingredient allergens can only be viewed by authorized employees.
 
 
 # 9 Analysis Models <a name="analysis-models"></a>
@@ -1286,7 +1298,7 @@ The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the 
 ### Manage Schedule Process
 ![DataFlow_Level2_Schedule 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/154b1668-f403-4835-9401-43eada6a00ca)
 
-Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) can Clock In and Clock Out. A Delivery Driver can Clock In and Clock Out. The Clock In Data and Clock Out Data resulting from the Clock In and Clock Out use cases is stored in Employee Hours Summary data store. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can Indicate Availability. The Availability of each user is stored in the Availability Store. The stored Availablity is used by the Create Schedule and Edit Schedule use cases. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Create Schedule. A Manager can Edit Schedule. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in the Schedule Store and Employee Hours Summary data store. Each user can view the stored Schedule Information using View Schedule use case. 
+Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) can Clock In and Clock Out. A Delivery Driver can Clock In and Clock Out. The Clock In Data and Clock Out Data resulting from the Clock In and Clock Out use cases is stored in the Employee Hours Summary data store. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can Indicate Availability. The Availability of each user is stored in the Availability Store. The stored Availability is used by the Create Schedule and Edit Schedule use cases. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Create Schedule. A Manager can Edit Schedule. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in the Schedule Store and Employee Hours Summary data store. Each user can view the stored Schedule Information using the View Schedule use case.
 
 ### Swap Shifts Process
 ![DataFlow_Level2_SwapShifts 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/a9f7ab41-446d-413b-b662-b86b53e7cfd0)
@@ -1301,22 +1313,22 @@ A Bookkeeper can view Staff Hours Summary accessed with View Tracked Hours use c
 ### Communicate Process
 ![DataFlow_Level2_Communicate 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/71e4d3cc-cc1d-4554-93c2-68e5227493a6)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can send an Announcement with Send Announcement use case, where Announcement includes all information defined in Data Dictionary. A Manager can Edit Announcement to modify a sent announcement. Announcements are stored in the Announcement Store. A Manager can View Announcement Information to get information about Reactions to a sent announcement. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can View Announcement to see a selected announcement. Each user of the system can complete React Announcements to send a Reaction to an announcement. Reactions are also stored in the Announcement Store. Each user of the system can Send Message, where Message includes all information defined in Data Dictionary. Each user of system can Edit Message their sent messages. Each user of the system can View Message when the recipients of the message include them. Messages are stored in the Message Store. 
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can send an Announcement with Send Announcement use case, where Announcement includes all information defined in the Data Dictionary. A Manager can Edit Announcement to modify a sent announcement. Announcements are stored in the Announcement Store. A Manager can View Announcement Information to get information about Reactions to a sent announcement. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can View Announcement to see a selected announcement. Each user of the system can complete React Announcements to send a Reaction to an announcement. Reactions are also stored in the Announcement Store. Each user of the system can Send Message, where Message includes all information defined in the Data Dictionary. Each user of the system can Edit Message their sent messages. Each user of the system can View Message when the recipients of the message include them. Messages are stored in the Message Store.
 
 ### Manage Recipe Process
 ![DataFlow_Level2_Recipe 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/a8e96a6e-dc84-407a-848b-70b8ee5efb42)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can create a recipe through Create Recipe use case. A Manager can edit a recipe through Edit Recipe use case. Recipe Info resulting from the creation and editing use cases is saved in the Recipe Store. The Recipe Info stored in the Recipe Store can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can create a recipe through Create Recipe use case. A Manager can edit a recipe through the Edit Recipe use case. Recipe Info resulting from the creation and editing use cases is saved in the Recipe Store. The Recipe Info stored in the Recipe Store can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
 
 ### Manage Onboarding Process
 ![DataFlow_Level2_Onboarding 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/43aa5c18-a5f2-4083-8cb1-bd04dee5176d)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can add new onboarding materials through the Create Oboarding Materials use case. A Manager can modify the onboarding materials through the Edit Onboarding Materials and Remove Onboarding Materials use cases. The Onboarding Materials are stored in the Onboarding Materials Store. The stored Onboarding Materials can be viewed using the View Onboarding Materials use case. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to View Onboarding Materials.
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can add new onboarding materials through the Create Oboarding Materials use case. A Manager can modify the onboarding materials through the Edit Onboarding Materials and Remove Onboarding Materials use cases. The Onboarding Materials are stored in the Onboarding Materials Store. The stored Onboarding Materials can be viewed using the View Onboarding Materials use case. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to View Onboarding Materials.
 
 ### Manage User Account Process
 ![DataFlow_Level2_UserAccount 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/c1ba8823-7194-40d9-9b21-42c7e8551caa)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. Account Info is stored in the Account Store. A Manager can view stored Account Info of any user in the system using the View Account Information use case. The Account Info does not include bank information, but otherwise includes all account information defined in the Employee data entity in the Data Dictionary. All Users is any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete Edit personal Account use case for their own account, to add Personal Account Updates. Personal Account Updates includes all  account information defined in the Employee data entity in the Data Dictionary, including bank information. Each user of the system can view Account Info about their own account with the View Account Information use case.
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. Account Info is stored in the Account Store. A Manager can view stored Account Info of any user in the system using the View Account Information use case. The Account Info does not include bank information, but otherwise includes all account information defined in the Employee data entity in the Data Dictionary. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete the Edit Personal Account use case for their own account, to add Personal Account Updates. Personal Account Updates includes all account information defined in the Employee data entity in the Data Dictionary, including bank information. Each user of the system can view Account Info about their own account with the View Account Information use case.
 
 
 # 10 Appendix <a name="appendix"></a>
