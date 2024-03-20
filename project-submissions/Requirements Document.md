@@ -557,73 +557,85 @@ The Communication and Announcement feature is a high priority feature in the sys
 
 COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication.
 
-COM-2: The system must provide the ability for the manager to create and publish announcements company-wide and all other staff can receive and react to the published company-wide announcements. All staff including the managers must be able to communicate about shift changes.
+COM-3: The system must provide the ability for the Manager to publish announcements specific to a certain number of employees and/or locations. 
 
-COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
+COM-2: The system must provide the ability for the Manager to publish announcements. 
 
-COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
+COM-4: The system must provide the ability for the Manager to create announcements. 
+
+COM-5: The system must provide the ability for the Manager to edit announcements. 
+
+COM-6: The system must provide the ability for the Manager to remove announcements. 
+
+COM-7: The system must provide the ability for all employees to view announcements.
+
+COM-8: The system must provide the ability for all employees to receive and react to the published announcements. 
+
+COM-9: The system must provide the ability for all employees to communicate with other employees.
+
+COM-10: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
 ![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
 
-Within the Communication and Announcement feature there are two primary actors, "Manager", and "All Staff". Manager has the ability to create, edit, and send company-wide announcements, while All Staff can view these announcements and react to them. All Staff is any user of the system including the Manager. All Staff can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
+Within the Communication and Announcement feature there are two primary actors, "Manager", and "Staff". Manager has the ability to create, edit, and send company-wide announcements, while Staff can view these announcements and react to them. Staff is any user of the system not including the Manager. Both actors can send messages to individuals or groups, view received messages, and edit messages that they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, based on the actor's role-based access control, to safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
 
 **User Story 1: Send message**
 
-As an employee, I want to be able to send a message to another staff member or a group of coworkers, so that I can communicate information effectively. 
+As an employee, I want to be able to send a message to another employee or a group of employees, so that I can communicate information effectively. 
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to send messages to one or more people from the list of staff members. 
+The system must allow all employees, including manager, to be able to send messages to one or more individuals from the list of employees. 
 
 **User Story 2: View message**
 
-As an employee, I want to be able to view the messages that are sent to me or the message group that I am part of, so that I can stay informed about communication within the company.  
+As an employee, I want to be able to view the messages that are sent to me or to the message group that I am part of, so that I can stay informed about communication among other employees within the company.  
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to see received messages.
+The system must allow all employees, including manager, to view received messages.
 
 **User Story 3: Edit message**
 
-As an employee, I want to be able to edit a message that I have previously sent, so that I can make clarifications or update the message as required. 
+As an employee, I want to be able to edit a message that I have previously sent, so that I can make clarifications or update the message as necessary. 
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to be able to edit messages that the staff member had sent before. 
+The system must allow all employees to be able to edit messages that they had sent before. 
 
 **User Story 5: React announcements** 
 
-As an employee, I want to be able to react to company-wide announcements, so that I can share my opinion or acknowledge the content. 
+As an employee, I want to be able to react to each announcements, so that I can share my opinion or acknowledge the content. 
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to react to announcements with emojis. 
+The system must allow all employees to be able to react to announcements with emojis. 
 
 **User Story 6: View announcements** 
 
-As an employee, I want to be able to view all company-wide announcements, so that I can stay updated on the important changes and news within the company. 
+As an employee, I want to be able to view all announcements, so that I can stay updated on the important changes and news within the company. 
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
+The system must allow all employees to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
 
 **User Story 7: View announcement information**
 
-As a Manager, I want to be able to view detailed information of any and every announcement, so that I can see information such as the information about how many people have viewed the announcements and who have viewed the announcements. 
+As a Manager, I want to be able to view detailed information of each and every announcement, so that I can see information such as the information about how many people have viewed the announcements and who have viewed the announcements. 
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement, and who has reacted. 
+The system must allow the Manager, to be able to view all of the announcement's related information such as the creation date, information about who has viewed the announcement. 
 
 **User Story 8: Send announcements**
 
-As a Manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
+As a Manager, I want to be able to send announcements to all employees, so that I can share important information effectively to all employees in the company. 
 
 **Acceptance Criteria:** 
 
-The system must allow the Manager, to create and send company-wide announcements using text, images, videos, or PDF. 
+The system must allow the Manager, to create and send announcements using text, images, videos, or PDF. 
 
 **User Story 9: Edit announcements** 
 
