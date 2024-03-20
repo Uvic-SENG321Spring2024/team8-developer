@@ -318,8 +318,9 @@ The following assumptions and dependencies affect the requirements in this docum
 |  Client | Banter Ice Cream |
 |  Business Hours | The hours that Banter Ice Cream is open. Monday-Thursday 1-9pm, Friday 1-10pm, Saturday 12-10pm, and Sunday 12-9pm (inclusive). [1]|
 |  New Employee | An employee of Banter Ice Cream that has worked at Banter for less than two weeks. |
-|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section, unless otherwise specified. |
-|  Staff | Unless otherwise specified, refers to an employee. |
+|  Employee | An employee of Banter Ice Cream with any role listed in User Classes and Characteristics section. Equivalently, Staff or User.|
+|  Staff | See Employee. |
+|  User | See Employee. |
 |  Manager | Front of House / Kitchen Managers as defined in User Classes and Characteristics. |
 
 ## vi. **References** <a name="references"></a>
@@ -333,7 +334,8 @@ The following assumptions and dependencies affect the requirements in this docum
 Scheduling and Time Tracking
 
 ### a. Description and Priority <a name="f1-description"></a>
-The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows all Staff to view the posted schedule, request shift swaps, and indicate availability. Managers must be able to create, edit and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
+
+The scheduling feature has a high priority. This is a system employees will use multiple times during their shift as well as outside of work hours to check their schedule and clock in and out. The feature allows Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers to the view posted schedule, request shift swaps, and indicate availability. Managers must be able to view, create, edit, and delete schedule information. Managers and Bookkeepers should be able to see a summarized list of worked hours for each employee. 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
@@ -377,8 +379,10 @@ SCH-19: The system's view schedule option must display correct information inclu
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
-![image](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulediagram.png)
-Within the scheduling system there are 3 primary actors. Staff is the actor representing Front of House Staff, Kitchen Staff, and Delivery Drivers. The scheduling system should allow all employees to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to pay employees. All use cases are written assuming the user is logged in.
+
+![SchedulingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5405bee7-a6ae-44c0-b0bc-51a120291d71)
+
+Within the scheduling system there are 3 primary actors. Front of House Staff, Kitchen Staff, and Delivery Drivers have the same interactions with the Scheduling System so they were combined into one actor. The scheduling system should allow all users (each user class defined in User Classes and Characteristics) to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to access the tracked hours used to pay employees. All use cases are written assuming the user is logged in.
 
 | ID and Name | UC-1: Create Schedule |
 | ----------- | ----------- |
@@ -424,13 +428,13 @@ Given the schedule is updated, when employees view the schedule, then the update
 
 **User Story 4: Indicate Availability**
 
-As a Staff member when I Indicate availability, I want to notify the Manager that I cannot work during that period so that I am only working during that time.
+As an employee when I indicate availability, I want to notify the Manager of the periods that I am available to work so that I am scheduled to work when I am available.
 
 **Acceptance Criteria:**
 
 Given availability is indicated, when the schedule is posted the availability which was indicated should be the only time with scheduled shifts.
 
-**User Story 5: View tracked hours**
+**User Story 5: View Tracked Hours**
 
 As a Bookkeeper or Manager, I want to view the worked hours for each employee so that I can accurately pay them for their worked hours.
 
@@ -438,7 +442,7 @@ As a Bookkeeper or Manager, I want to view the worked hours for each employee so
 
 When tracked hours for an employee are viewed then a summary of all worked hours including overtime and statutory holidays and vacations should be displayed.
 
-**User Story 6: Clock in**
+**User Story 6: Clock In**
 
 As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
 
@@ -446,7 +450,7 @@ As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in 
 
 Given I have clocked in, when my tracked hours are viewed then the hours I have worked should be accurately recorded for that day.
 
-**User Story 7: Clock out**
+**User Story 7: Clock Out**
 
 As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
 
@@ -454,15 +458,15 @@ As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out
 
 Given I have clocked out, when my tracked hours are viewed then the hours I have worked should accurately be accurately recorded for that day.
 
-**User Story 8: Swap shift request**
+**User Story 8: Request Swap Shift**
 
-As a Staff member I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
+As an employee I want to request a shift swap with another employee with the same role and upon acceptance create a shift swap request which needs to be approved.
 
 **Acceptance Criteria:**
 
 Given an employee has requested a shift swap with another employee, when another employee has accepted, then a shift swap request should be posted awaiting approval.
 
-**User Story 9: View schedule**
+**User Story 9: View Schedule**
 
 As a Staff member I want to view the posted schedule for the current work weeks as well as the next 2 weeks so that I can view the correct information of what shift I am working.
 
@@ -470,9 +474,9 @@ As a Staff member I want to view the posted schedule for the current work weeks 
 
 Given an employee selects to view the schedule they should be shown the up to date schedule with correct information for the current shift period as well as the next. 
 
-**User Story 10: View all schedules**
+**User Story 10: View All Schedules**
 
-As a Staff member I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
+As an employee I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
 
 **Acceptance Criteria:**
 
@@ -517,8 +521,8 @@ Given an employee selects to view the schedule they should be shown the up to da
 
 ### e. Sequence Diagram for Create Schedule <a name="f1-sequence"></a>
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/schedulingsequencediagram.png" width="1000">  
-This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so all staff members can view the schedule.
 
+This sequence diagram shows the process of a Manager interacting with the system to create a schedule. The Manager starts by selecting the schedule menu icon which leads to the scheduling page. The Manager then selects the create schedule button and is shown a list of all employees which they can select. Upon selecting the employee they would like to book shifts for, they are shown the employees availability and select an available time period for that employee. This process is repeated of selecting employees and selecting shifts is repeated until the schedule is made. The manager has the option to save and exit the create schedule menu to return to later or save and publish so any user can view the schedule.
 
 ### f. Swimlane Diagram for Create Schedule <a name="f1-swimlane"></a>
 
@@ -550,7 +554,8 @@ This workflow ensures that the manager can efficiently create and publish schedu
 ### g. State Diagram for Swap Shifts <a name="f1-state"></a>
 ![State Diagram Shift Swap 2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/bc908563-37d7-4d0f-a815-abb005007082)
 
-An employee refers to users who are authorized to request shift swaps, which are the user classes Front of House Staff, Kitchen Staff, and Delivery Driver. An employee starts a shift swap request, and the request will remain in the "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters the "Cancelled" state. If the employee submits the request, the request enters the "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters the "Cancelled" state. If the second employee accepts, the shift swap request enters the "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters the "Cancelled" state. If a Manager approves the request, the shift swap request enters the "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
+
+An employee refers to users who are authorized to request shift swaps, which are all user classes. An employee starts a shift swap request, and the request will remain in "In Preparation" state until the employee submits or cancels the request. The request contains information about which two shifts are requested to be swapped, and information about the employee they wish to swap the shift with. If the employee cancels the request without submitting, the request enters "Cancelled" state. If the employee submits the request, the request enters "Initiated" state. In the "Initiated" state a second employee, that was requested to swap shifts in the shift swap request, can choose to either accept or deny the request. If the second employee denies, the request enters "Cancelled" state. If the second employee accepts, the shift swap request enters "Submitted" state. In the "Submitted" state, a Manager (Front of House/Kitchen Manager user class) can either approve or deny the shift swap request. If a Manager denies the request, the request enters "Cancelled" state. If a Manager approves the request, the shift swap request enters "Confirmed" state. While transitioning to the "Confirmed" state, the system will swap the employees assigned to the shifts identified in the approved request.
 
 
 ## ii. Communication and Announcement <a name="feature-2"></a>
@@ -567,7 +572,7 @@ COM-1: The system must allow embedding capabilities for images, videos, and PDFs
 
 COM-2: The system must provide the ability to send and receive company-wide announcements and communicate about shift changes.
 
-COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to create, edit, and remove announcements, while all other staff must have access to view announcements.
+COM-3: The system must have role-based access control, providing different access levels for different user roles. The Manager must have access to view, create, edit, and remove announcements. Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers must have access to view announcements.
 
 COM-4: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security across the system.
 
@@ -576,17 +581,17 @@ COM-5: The system must provide tailored interfaces and features depending on the
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
-![Communication   Announcement UseCase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/da994ce0-76ad-406c-a44e-7def4ecdd0d9)
+![CommunicationUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/dffc8c25-f125-48b5-a1e6-d6ac25e31955)
 
-Within the Communication and Announcement feature there are two primary actors, "Manager", and "All Staff". Manager has the ability to create, edit, and send company-wide announcements, while All Staff can view these announcements and react to them. All Staff is any user of the system including the Manager. All Staff can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
+Within the Communication and Announcement feature there are two primary actors, "Manager", and "Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers". Manager has the ability to create, edit, and send company-wide announcements, while Front of House Staff, Kitchen Staff, Delivery Drivers, and Bookkeepers can view these announcements and react to them. Front of House Staff, Kitchen Staff, Delivery Drivers, Bookkeepers, and Managers can send messages to individuals or groups, view received messages, and edit messages they have sent. The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages, provide role-based access control, safeguard sensitive information, and tailor interfaces and features based on user roles, ensuring effective communication and announcement management within the company. 
 
 **User Story 1: Send message**
 
-As an employee, I want to be able to send a message to another staff member or a group of coworkers, so that I can communicate information effectively. 
+As an employee, I want to be able to send a message to another employee or a group of employees, so that I can communicate information effectively. 
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to send messages to one or more people from the list of staff members. 
+The system must allow each user to be able to send messages to one or more people from the list of employees. 
 
 **User Story 2: View message**
 
@@ -594,7 +599,7 @@ As an employee, I want to be able to view the messages that are sent to me or th
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to see received messages.
+The system must allow each user to see received messages.
 
 **User Story 3: Edit message**
 
@@ -602,7 +607,7 @@ As an employee, I want to be able to edit a message that I have previously sent,
 
 **Acceptance Criteria:** 
 
-The system must allow each staff member to be able to edit messages that the staff member had sent before. 
+The system must allow each user to be able to edit messages that they had sent before. 
 
 **User Story 5: React announcements** 
 
@@ -610,7 +615,7 @@ As an employee, I want to be able to react to company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to react to announcements with emojis. 
+The system must allow each user to be able to react to announcements with emojis. 
 
 **User Story 6: View announcements** 
 
@@ -618,7 +623,7 @@ As an employee, I want to be able to view all company-wide announcements, so tha
 
 **Acceptance Criteria:** 
 
-The system must allow all staff to be able to view all announcements. Must be able to find the most recent announcement within 2 seconds. 
+The system must allow each user to be able to view announcements. Must be able to find the most recent announcement within 2 seconds. 
 
 **User Story 7: View announcement information**
 
@@ -630,7 +635,7 @@ The system must allow a Manager to be able to view all of the announcement's rel
 
 **User Story 8: Send announcements**
 
-As a Manager, I want to be able to send company-wide announcements to all staff members, so that I can share important information effectively. 
+As a Manager, I want to be able to send company-wide announcements to all employees, so that I can share important information effectively. 
 
 **Acceptance Criteria:** 
 
@@ -800,25 +805,26 @@ This swimlane diagram shows how a Manager, Front of House Staff, and Kitchen Sta
 This feature describes the different levels of access different employees have to onboarding materials such as instructional videos.
 
 ### a. Description and Priority <a name="f4-description"></a>
-The Onboarding Materials feature has a low priority in the application. An employee (except a Delivery Driver) must be able to view the onboarding materials but only a Manager has the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
+
+The Onboarding Materials feature has a low priority in the application. An authenticated user must be able to view the onboarding materials, but only Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
-ONB-1:  An employee (except a Delivery Driver) must be able to view the onboarding materials at any time.
+ONB-1: A user must be able to view the onboarding materials at any time.
 
-ONB-2: The Manager must be the only staff to edit the onboarding materials at any time.
+ONB-2: The Manager must be able to edit the onboarding materials at any time.
 
-ONB-3: The Manager must be the only staff to create the onboarding materials at any time.
+ONB-3: The Manager must be able to create the onboarding materials at any time.
 
-ONB-4: The Manager must be the only staff to remove the onboarding materials at any time.
+ONB-4: The Manager must be able to remove the onboarding materials at any time.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f4-usecases"></a>
-![Onboarding Material](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8cccab7f-7c44-4d1a-94cb-da9e5a177b9d)
+![OnboardingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f38b872d-77f0-47f8-962f-7f9665926a49)
 
-Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor, designated as the "Staff," is subdivided into specific roles, namely the Bookkeeper, Front of House Staff, and Kitchen Staff, with their access limited solely to viewing onboarding materials.
+Within the framework of the onboarding material use case diagram, there exist two distinct actors. The primary actor, referred to as the "Manager," possesses comprehensive permissions, encompassing the ability to view, edit, create, and remove onboarding materials. The secondary actor is Front of House Staff, Kitchen Staff, Delivery Driver, and Bookkeepers with their access limited solely to viewing onboarding materials.
 
  **User Story 1: View Onboarding Materials**
  
-As an employee (excluding Delivery Driver), I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
+As an authenticated user, I want to be able to view the onboarding materials at any time, so that I can access the necessary information for onboarding purposes.
 
 **Acceptance Criteria:**
 
