@@ -1019,7 +1019,7 @@ In this figure, the process of a user modifying their own account information is
 
 ![Entity Relationship Diagram - Ben6](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/55803d9e-2210-42c8-a900-ba137dd72789)
 
-![UML Diagram - My Diagram (1)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/f0cb66f4-f0bb-48d3-8bf2-adab13170f3f)
+![Entity Relationship Diagram - My Diagram (1)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/3ab10739-ed93-4465-b111-2ceca0f27107)
 
 The Entity Relationship Diagram (ERD) and the UML Class Diagram serve as visual tools to represent the data structure and relationships within the Banter Ice Cream System. The purpose of these diagrams is to articulate how various data entities within the system interact and relate to each other, which is essential for understanding the flow of information and the underlying structure of the system’s data.
 
@@ -1292,7 +1292,7 @@ The "All Users" entity in this Data Flow Diagram represents a collective group t
 
 ## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
 
-![DFDL1B drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/702c90b2-718b-4702-89a2-59a750469ab6)
+![EditedLevel1DFD drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/f29c4754-bf3a-4ff3-9fee-bc8ac16a8598)
 
 The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, View Tracked Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule Management, and recipe updating. The diagram includes a data store for Staff Hours Summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
 
