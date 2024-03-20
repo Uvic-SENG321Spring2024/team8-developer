@@ -661,6 +661,8 @@ The system must allow a Manager to be able to access and edit announcements that
 
 ### d. Storyboards <a name="f2-storyboards"></a>
 
+// See Figma for the updated storyboards. ----------------------------------------------------------------------------------------------------------------------------
+
 #### Group Chat 
 ![Story Board - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/ac0bfac0-e3f4-4fcf-ba75-4cf842c61366)
 
