@@ -911,7 +911,7 @@ ACC-9: The system must automatically log out users once they close the applicati
 
 ### c. Use cases associated with the feature or functional requirement <a name="f5-usecases"></a>
 
-![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/rd-5.V-account/diagrams/accounts.png)
+![accounts](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5c1e9194-dff4-404a-ab8d-0dbca1d80947)
 
 
 **User Story 1: Delete Account**
