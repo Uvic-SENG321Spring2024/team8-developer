@@ -809,13 +809,15 @@ This feature describes the different levels of access different employees have t
 The Onboarding Materials feature has a low priority in the application. An authenticated user must be able to view the onboarding materials, but only Manager have the right to edit the materials such as add or remove materials. Overall we expect a low frequency of use. New employees will need to become familiar with onboarding material and may access material multiple times a day for the first two weeks of employment. However, we expect established employees will only access a material to reference it once each month.
 
 ### b. Functional Requirements <a name="f4-functional"></a>
-ONB-1: A user must be able to view the onboarding materials.
+ONB-1: A user must be able to view the onboarding materials assigned to their user class.
 
-ONB-2: A Manager must be able to edit the onboarding materials.
+ONB-2: A Manager must be able to edit the onboarding materials and modify the asssigned user classses.
 
-ONB-3: A Manager must be able to create the onboarding materials.
+ONB-3: A Manager must be able to create the onboarding materials and assign it to one or more user classes.
 
 ONB-4: A Manager must be able to remove the onboarding materials.
+
+ONB-5: A Manager must be able to view all onboarding materials, including material not assigned to their user class.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f4-usecases"></a>
 ![OnboardingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f38b872d-77f0-47f8-962f-7f9665926a49)
@@ -837,11 +839,10 @@ As a Manager, I want to have exclusive rights to edit the onboarding materials, 
 
 **Acceptance Criteria:**
 
-There is an option 'Edit Onboarding Materials' available in the user interface.
-Upon selecting the option, I can choose the specific onboarding materials I want to edit.
-I have the ability to make changes to the selected onboarding materials.
+Given that I am a manager, when I edit onboarding materials, I can select the specific onboarding materials I want to edit. 
 After editing, I can save the changes, and the system confirms that the changes have been successfully saved.
 I can exit the editing mode when I'm done.
+
 
 **User Story 3: Create Onboarding Material**
 
@@ -849,10 +850,8 @@ As a Manager, I want the capability to create new onboarding materials, so that 
 
 **Acceptance Criteria:**
 
-There is an option 'Create Onboarding Material' available in the user interface.
-Upon selecting the option, I am prompted to input the necessary details for the new onboarding material, such as title, content, and any relevant metadata.
+Given that I am a manager, when I create onboarding materials, I can input the necessary details for the new onboarding material, such as title, content, and any relevant metadata.
 After entering the information, I can save the new onboarding material, and the system confirms its successful creation.
-The newly created onboarding material is accessible in the system for other authorized users to view.
 I can exit the creation mode when I'm done.
 
 **User Story 4: Remove Onboarding Material**
@@ -861,11 +860,9 @@ As a Manager, I want the exclusive authority to remove outdated or irrelevant on
 
 **Acceptance Criteria:**
 
-There is an option 'Remove Onboarding Material' available in the user interface.
-Upon selecting the option, I can choose the specific onboarding material I wish to remove.
+Given that I am a manager, when I remove onboarding materials, I can remove the specific onboarding material I wish to remove.
 The system prompts for confirmation before proceeding with the removal to prevent accidental deletions.
-Upon confirmation, the selected onboarding material is removed from the system, and the system confirms the successful removal.
-The removed onboarding material is no longer accessible to users in the system.
+Upon confirmation, the removed onboarding material is no longer accessible to users in the system.
 I can exit the removal mode when I'm done.
 
 ### d. Storyboards <a name="f4-storyboards"></a>
