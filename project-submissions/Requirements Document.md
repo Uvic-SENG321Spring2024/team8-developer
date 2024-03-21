@@ -663,19 +663,19 @@ The system must allow a Manager to be able to access and edit announcements that
 
 
 #### Group Chat 
-![Storyboard - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/c2119595-46a3-4a3e-a7f8-ae85dfe36d5c)
+![Storyboard - Group Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/cc2b29d7-a664-429e-a48e-9650f3e4f874)
 
 
 #### Private Chat
-![Storyboard - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/0c4835a3-6bac-4917-8bad-3f924c32cfe4)
+![Storyboard - Private Chat](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/c9e41a44-390e-42e6-9deb-9df4644fe2a7)
 
 
 #### New Announcement
-![Storyboard - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/481e51a9-4d6c-491b-ba23-047f07a8fe98)
+![Storyboard - New Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/50fa2928-0f37-4edc-807a-73352bd89786)
 
 
 #### Edit Announcement
-![Storyboard - Edit Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/17864932-4d3c-4842-9c93-3bf5d042d266)
+![Storyboard - Edit Announcement](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/145606952/8fc4be8f-c146-4ef2-9ebb-3b7190531c3d)
 
 
 
