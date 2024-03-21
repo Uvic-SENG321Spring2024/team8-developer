@@ -1251,38 +1251,40 @@ Communication channels must be secure, with safeguards for sensitive information
 **Availability**
 
 AVL-1: The system is available 99.99% each day during business hours.
-- Rationale: The system is used frequently during business hours to track worked hours by clocking in and out, make ice cream flavours by viewing the recipes, and arrange deliveries of ice cream between location using messages.  
-- AVL-1-ACT-1: ?
+- Rationale: The system is used frequently during business hours to track worked hours by clocking in and out, make ice cream flavours by viewing the recipes, and arrange deliveries of ice cream between location using messages. Customer satifaction relies on fast and accurate usage of the system. 99.99% availability during business hours would result in a maximum downtime of 3.6 seconds of a 10 hour shift, which allows near real-time communication to continue.    
+- AVL-1-ACT-1: Review metrics from hosting application monitoring tool to verify that downtime is less than 0.01% each day.
 
 AVL-2: The system is available 99.0% each day outside of business hours.
-- Rationale: The system is used outside of business hours to check scheduled shifts, view messages, and view announcements. 
-- AVL-2-ACT-1: ?
+- Rationale: The system is used outside of business hours to check scheduled shifts, view messages, and view announcements. Customers of Banter Ice Cream are not waiting on the usage of the system. Banter Ice Cream employees are more likely to use the system if is often accessible, increasing visibility according to business goals. On a day with a 10 hour shift (business hours), 99.0% availability outside business hours would result in a maximum downtime of 8.4 minutes.
+- AVL-2-ACT-1: Review metrics from hosting application monitoring tool to verify that downtime is less than 1% each day.
 
 **Reliability**
 
 REL-1: A backup of all system data is saved every night to minimize data loss. 
-- Rationale: 
-- REL-1-ACT-1: ?
+- Rationale: Minimizing data loss is beneficial because the system is more useful if it can be relied on to store updated and accurate information. Data loss would result in extra time spent adding the data back into the system, which takes employee time away from customers and may result in decreased customer satisfaction due to inaccurate information. 
+- REL-1-ACT-1: Review metrics of stored to data to confirm that most recent copy of data is updated every 24 hours.
 
 **Scalability**
 
 SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
-- Rationale: 
-- SCA-1-ACT-1: ?
+- Rationale: Banter Ice Cream expects 70 employees during the summer season, so over 2 years that could result in 140 employees being hired. There is a margin of error of 60 employees, to ensure that the system can accomodate more than the expected number of new employees. 
+- SCA-1-ACT-1: Verify that the database has space to store 200 users.
+- SCA-1-ACT-2: Setup a test system with similar configuration to live system. Load test to confirm 200 employees can be added to the system.
 
 SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture.
-- Rationale: 
-- SCA-2-ACT-1: ?
+- Rationale: There were additional functionalities labelled out of scope in the first release of the system that are desired and contribute to Banter's business goals. Changes to include that functionality are expected to continue helping Banter meet their business goals.
+- SCA-2-ACT-1: Generate an architecture model and confirm there is loose or no coupling.
+- SCA-2-ACT-2: Presence of unit and integration tests with a minimum of 75% coverage to ensure new functionality does not break existing functionality. 
 
 SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
-- Rationale: 
-- SCA-3-ACT-1: ?
+- Rationale: Recipes be stored indefinitely as a record of past menus. As no delete functionality exists for recipes, it must be possible to continue adding recipes without removing previous recipes.
+- SCA-3-ACT-1: Confirm with data storage provider that additional storage can be added. 
 
 **Useability**
 
 USE-1: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
-- Rationale: 
-- USE-1-ACT-1: ?
+- Rationale: A business objective is to reduce onboarding time for a new employee. Learning the system is an important aspect of onboarding an employee. 
+- USE-1-ACT-1: Have a person unfamiliar with Banter's system learn how to use the system. Verify that the time it took to learn is less than the equivalent of three shifts.
 
 USE-2: Shift swapping should be accessible within 3 selections. 
 - Rationale: 
@@ -1312,7 +1314,7 @@ USE-7: Standard conventions for all user interface elements.
 
 PER-1: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
 - Rationale: 
-- PER-1-ACT-1: ?
+- PER-1-ACT-1: Load test the system to confirm that 30 users can use the system. 
 
 PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
 - Rationale: 
