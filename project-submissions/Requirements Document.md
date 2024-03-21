@@ -834,7 +834,7 @@ As a Manager I want to delete an account so that I can remove any users that no 
 
 **Acceptance Criteria:**
 
-There is an option for Managers to "Delete" an account.  This feature must remove a users access to the system, yet still retain information about their employment for legal and tax purposes.
+There is an option for Managers to delete an account.  This feature must remove a users access to the system, yet still retain information about their employment for legal and tax purposes.
 
 **User Story 2: Create Account**
 
@@ -842,7 +842,7 @@ As a Manager I want to create an account so that my newly hired employees have a
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Create" an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
+There is an option for a Manager to create an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
 
 **User Story 3: View Account Information**
 
@@ -850,7 +850,7 @@ As a Manager I want to view a users account information so that I can see their 
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "View Account Informaton" for any selected employee. It will show their username, role, and contact information.
+There is an option for a Manager to view account information for any selected employee. It will show their username, role, and contact information.
 
 **User Story 4: Manage Account**
 
@@ -858,7 +858,7 @@ As a Manager I want to change a users role or username in order to ensure it sta
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a users username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+There is an option for a Manager to manage account for any employee. It will allow them to edit a users username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
 
 **User Story 5: View Account Information**
 
@@ -866,15 +866,15 @@ As a user I want to view my account information so I can ensure it is all correc
 
 **Acceptance Criteria:**
 
-There is an option for a user to "View Account Informaton" for themselves. It will show their username, role, contact information, and payment information.
+There is an option for a user to view account informaton for themselves. It will show their username, role, contact information, and payment information.
 
 **User Story 6: Edit Account Information**
 
-As a user I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+As a user I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the view account information use case, and the log in use case.
 
 **Acceptance Criteria:**
 
-A user must have an option to "Edit Account Information" for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+A user must have an option to edit account information for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the view account information use case, and the log in use case.
 
 **User Story 7: Log In**
 
@@ -882,7 +882,7 @@ As a user I want to log in to my account so I can use the system.
 
 **Acceptance Criteria:**
 
-When a user opens the app they will have an option to "Log In" to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
+When a user opens the app they will have an option to log in to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
 
 **User Story 8: Log Out**
 
@@ -890,7 +890,7 @@ As a user I want to log out of my account so I can ensure no one else can use my
 
 **Acceptance Criteria:**
 
-A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
+A user must have the option to log out of their account.  This will remove their access to the system until they log in again. The system must automatically log out a user once they have closed the application.
 
 ### d. Storyboards <a name="f5-storyboards"></a>
 ![Account Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountCreation.png)
