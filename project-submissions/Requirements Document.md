@@ -1288,27 +1288,27 @@ USE-1: The system should be user-friendly and allow a new employee to learn to u
 
 USE-2: Shift swapping should be accessible within 3 selections. 
 - **Rationale:** Shift swapping is an important aspect of schedule management and 3 selections allows for the employee to find it quickly. 
-- **AT-USE-2-1:** Login as an employee and request a shift swap. Verify that it took 3 selections or less to access the shift swap functionality after loggin in.
+- **AT-USE-2-1:** Login as an employee and request a shift swap. Verify that it took 3 selections or less to access the shift swap functionality after logging in.
 
 USE-3: Viewing schedules should be accessible within 2 selections. 
-- **Rationale:** Viewing schedules is a critical aspect schedule management and 2 selections allows for the employee to find it quickly. 
-- **AT-USE-3-1:** Login as an employee and view schedule. Verify that it took 2 selections or less to access the view schedule functionality after loggin in.
+- **Rationale:** Viewing schedules allows employees to learn when they are scheduled to work and 2 selections allows for the employee to find it quickly. 
+- **AT-USE-3-1:** Login as an employee and view schedule. Verify that it took 2 selections or less to access the view schedule functionality after logging in.
 
 USE-4: Accessing announcements should be accessible within 1 selection. 
-- **Rationale:** 
-- **AT-USE-4-1:** ?
+- **Rationale:** Easily viewing announcements allows for increased employee engagament and increased employee knowledge. 
+- **AT-USE-4-1:** Login as an employee and view announcement. Verify that it took 1 selection or less to access the view schedule functionality after logging in.
 
 USE-5: Viewing recipes should be accessible within 2 selections. 
-- **Rationale:**
-- **AT-USE-5-1:** ?
+- **Rationale:** Recipes are necessary for kitchen staff to make planned ice creams, and easy access to the recipe allows the process for making ice cream to be completed quickly. 
+- **AT-USE-5-1:** Login as an employee and view a recipe. Verify that it took 2 selections or less to access the view recipe functionality after logging in.
 
 USE-6: Viewing messages should be accessible within 3 selections. 
-- **Rationale:** 
-- **AT-USE-6-1:** ?
+- **Rationale:** Messages are necessary for organizing operational needs like a planned ice cream delivery between locations, swapping shifts, and discussing anything that occurred on shift. Easy access to the message facilites better employee connection and engagment.
+- **AT-USE-6-1:** Login as an employee and view messages. Verify that it took 3 selections or less to access the view message functionality after logging in.
 
 USE-7: Standard conventions for all user interface elements.
-- **Rationale:** Easier to learn and improves user experience (consistency)
-- **AT-USE-7-1:** ?
+- **Rationale:** Enforcing standard conventions will result in a system that is easier to learn and improves user experience, therefore improving employee engagement.
+- **AT-USE-7-1:** Check documentation for agreed standard conventions. Login to system and verify that each main feature of the system uses the agreed conventions.
 
 **Performance** 
 
