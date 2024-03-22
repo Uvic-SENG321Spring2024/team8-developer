@@ -492,7 +492,7 @@ Given an employee selects to view the schedule they should be shown the up to da
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenbookkeeper.png" width="400">  
 
 #### Manager Home Screen
-<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenManager.png" width="400">  
+<img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/homescreenmanager.png" width="400">  
 
 #### Create Schedule 
 <img src="https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/diagrams/Schedulingiteration3diagrams/createschedule1.png" width="600">    
