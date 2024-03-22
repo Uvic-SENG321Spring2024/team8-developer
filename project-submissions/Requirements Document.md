@@ -1149,25 +1149,53 @@ The system shall not generate any reports.
 ## iv. Data Integrity <a name="data-integrity"></a>
 
 **Employee Data and Account**
-- Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
-- The system must retain each employee's banking information until after the employee's last paycheck is received by the employee.
-- A new employee can gain access to the system after a Manager adds an account for the employee.
-- An employee loses access to the system when their account is deleted. 
+DAT-1: Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
+- **Rationale:**
+- **AT-DAT-1-1:**
+
+DAT-2: The system must retain each employee's banking information until after the employee's last paycheck is received by the employee.
+- **Rationale:**
+- **AT-DAT-2-1:**
+
+DAT-3: A new employee can gain access to the system after a Manager adds an account for the employee.
+- **Rationale:**
+- **AT-DAT-3-1:**
+
+DAT-4: An employee loses access to the system when their account is deleted. 
+- **Rationale:**
+- **AT-DAT-4-1:**
 
 **Scheduling and Tracked Hours**
-- The system must retain each shift in employee schedule for one year after the scheduled shift date.
-- The system must retain employee availability for one week after the date of the identified availability.
-- The system must retain clocked hours for each employee for 6 years, counted from the end of the year the clocked hours occurred in. This requirement is necessary due to Canadian laws regarding business tax documents.
+DAT-5: The system must retain each shift in employee schedule for one year after the scheduled shift date.
+- **Rationale:**
+- **AT-DAT-5-1:**
+
+DAT-6: The system must retain employee availability for one week after the date of the identified availability.
+- **Rationale:**
+- **AT-DAT-6-1:**
+
+DAT-7: The system must retain clocked hours for each employee for 6 years, counted from the end of the year the clocked hours occurred in. This requirement is necessary due to Canadian laws regarding business tax documents.
+- **Rationale:**
+- **AT-DAT-7-1:**
 
 **Communication and Announcements**
-- The system must retain messages for one year after the message is sent.
-- The system must retain each announcement until the announcement is removed by a Manager.
+DAT-8: The system must retain messages for one year after the message is sent.
+- **Rationale:**
+- **AT-DAT-8-1:**
+
+DAT-9: The system must retain each announcement until the announcement is removed by a Manager.
+- **Rationale:**
+- **AT-DAT-9-1:**
 
 **Recipe Management**
-- The system must retain each recipe for the lifetime of the system.
+DAT-10: The system must retain each recipe for the lifetime of the system.
+- **Rationale:**
+- **AT-DAT-10-1:**
 
 **Onboarding Materials**
-- The system must retain each onboarding material until removed by a Manager.
+DAT-11: The system must retain each onboarding material until removed by a Manager.
+- **Rationale:**
+- **AT-DAT-11-1:**
 
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
