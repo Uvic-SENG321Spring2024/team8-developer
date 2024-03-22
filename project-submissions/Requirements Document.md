@@ -830,7 +830,8 @@ As an authenticated user, I want to be able to view the onboarding materials at 
 
 **Acceptance Criteria:**
 
-Given that I am an employee, when I view onboarding materials, then I can select the specific onboarding materials I am interested in viewing. I can exit the viewing mode when I'm done.
+Given that I am an employee, when I view onboarding materials, then I can select the specific onboarding materials I am interested in viewing. The selected onboarding materials are displayed to me.
+I can exit the viewing mode when I'm done.
 
 
 **User Story 2: Edit Onboarding Materials**
@@ -840,7 +841,7 @@ As a Manager, I want to have exclusive rights to edit the onboarding materials, 
 **Acceptance Criteria:**
 
 Given that I am a manager, when I edit onboarding materials, I can select the specific onboarding materials I want to edit. 
-After editing, I can save the changes, and the system confirms that the changes have been successfully saved.
+After editing, I can save the changes, and the system confirms that the changes have been successfully saved. The saved changes are consistent with the edits I made.
 I can exit the editing mode when I'm done.
 
 
@@ -851,7 +852,7 @@ As a Manager, I want the capability to create new onboarding materials, so that 
 **Acceptance Criteria:**
 
 Given that I am a manager, when I create onboarding materials, I can input the necessary details for the new onboarding material, such as title, content, and any relevant metadata.
-After entering the information, I can save the new onboarding material, and the system confirms its successful creation.
+After entering the information, I can save the new onboarding material, and the system confirms its successful creation. The saved changes are consistent with the onboarding material I created.
 I can exit the creation mode when I'm done.
 
 **User Story 4: Remove Onboarding Material**
