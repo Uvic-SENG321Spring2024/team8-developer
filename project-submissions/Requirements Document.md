@@ -1279,34 +1279,34 @@ Communication channels must be secure, with safeguards for sensitive information
 **Availability**
 
 AVL-1: The system is available 99.99% each day during business hours.
-- **Rationale:** The system is used frequently during business hours to track worked hours by clocking in and out, make ice cream flavours by viewing the recipes, and arrange deliveries of ice cream between location using messages. Customer satifaction relies on fast and accurate usage of the system. 99.99% availability during business hours would result in a maximum downtime of 3.6 seconds of a 10 hour shift, which allows near real-time communication to continue.    
-- **AT-AVL-1-1:** Review metrics from hosting application monitoring tool to verify that downtime is less than 0.01% each day.
+- **Rationale:** The system is used frequently during business hours to track work hours by clocking in and out, make ice cream flavours by viewing the recipes, and arrange deliveries of ice cream between locations using messages. Customer satisfaction relies on fast and accurate usage of the system. 99.99% availability during business hours would result in a maximum downtime of 3.6 seconds of a 10 hour shift, which allows near real-time communication to continue.    
+- **AT-AVL-1-1:** Review metrics from hosting application monitoring tools to verify that downtime is less than 0.01% each day.
 
 AVL-2: The system is available 99.0% each day outside of business hours.
-- **Rationale:** The system is used outside of business hours to check scheduled shifts, view messages, and view announcements. Customers of Banter Ice Cream are not waiting on the usage of the system. Banter Ice Cream employees are more likely to use the system if is often accessible, increasing visibility according to business goals. On a day with a 10 hour shift (business hours), 99.0% availability outside business hours would result in a maximum downtime of 8.4 minutes.
-- **AT-AVL-2-1:** Review metrics from hosting application monitoring tool to verify that downtime is less than 1% each day.
+- **Rationale:** The system is used outside of business hours to check scheduled shifts, view messages, and view announcements. Customers of Banter Ice Cream are not waiting on the usage of the system. Banter Ice Cream employees are more likely to use the system if it is often accessible, increasing visibility according to business goals. On a day with a 10 hour shift (business hours), 99.0% availability outside business hours would result in a maximum downtime of 8.4 minutes.
+- **AT-AVL-2-1:** Review metrics from hosting application monitoring tools to verify that downtime is less than 1% each day.
 
 **Reliability**
 
 REL-1: A backup of all system data is saved every night to minimize data loss. 
 - **Rationale:** Minimizing data loss is beneficial because the system is more useful if it can be relied on to store updated and accurate information. Data loss would result in extra time spent adding the data back into the system, which takes employee time away from customers and may result in decreased customer satisfaction due to inaccurate information. 
-- **AT-REL-1-1:** Review metrics of stored to data to confirm that most recent copy of data is updated every 24 hours.
+- **AT-REL-1-1:** Review metrics of stored data to confirm that the most recent copy of data is updated every 24 hours.
 
 **Scalability**
 
 SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
-- **Rationale:** Banter Ice Cream expects 70 employees during the summer season, so over 2 years that could result in 140 employees being hired. There is a margin of error of 60 employees, to ensure that the system can accomodate more than the expected number of new employees. 
+- **Rationale:** Banter Ice Cream expects 70 employees during the summer season, so over 2 years that could result in 140 employees being hired. There is a margin of error of 60 employees, to ensure that the system can accommodate more than the expected number of new employees. 
 - **AT-SCA-1-1:** Verify that the database has space to store 200 users.
-- **AT-SCA-1-2:** Setup a test system with similar configuration to live system. Load test to confirm 200 employees can be added to the system.
+- **AT-SCA-1-2:** Setup a test system with a similar configuration to the live system. Load test to confirm 200 employees can be added to the system.
 
 SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture.
-- **Rationale:** There were additional functionalities labelled out of scope in the first release of the system that are desired and contribute to Banter's business goals. Changes to include that functionality are expected to continue helping Banter meet their business goals.
+- **Rationale:** There were additional functionalities labeled out of scope in the first release of the system that are desired and contribute to Banter's business goals. Changes to include that functionality are expected to continue helping Banter meet their business goals.
 - **AT-SCA-2-1:** Generate an architecture model and confirm there is loose or no coupling.
 - **AT-SCA-2-2:** Presence of unit and integration tests with a minimum of 75% coverage to ensure new functionality does not break existing functionality. 
 
 SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
-- **Rationale:** Recipes be stored indefinitely as a record of past menus. As no delete functionality exists for recipes, it must be possible to continue adding recipes without removing previous recipes.
-- **AT-SCA-3-1:** Confirm with data storage provider that additional storage can be added. 
+- **Rationale:** Recipes are stored indefinitely as a record of past menus. As no delete functionality exists for recipes, it must be possible to continue adding recipes without removing previous recipes.
+- **AT-SCA-3-1:** Confirm with the data storage provider that additional storage can be added. 
 
 **Useability**
 
@@ -1323,20 +1323,20 @@ USE-3: Viewing schedules should be accessible within 2 selections.
 - **AT-USE-3-1:** Login as an employee and view schedule. Verify that it took 2 selections or less to access the view schedule functionality after logging in.
 
 USE-4: Accessing announcements should be accessible within 1 selection. 
-- **Rationale:** Easily viewing announcements allows for increased employee engagament and increased employee knowledge. 
-- **AT-USE-4-1:** Login as an employee and view announcement. Verify that it took 1 selection or less to access the view schedule functionality after logging in.
+- **Rationale:** Easily viewing announcements allows for increased employee engagement and increased employee knowledge. 
+- **AT-USE-4-1:** Login as an employee and view announcements. Verify that it took 1 selection or less to access the view schedule functionality after logging in.
 
 USE-5: Viewing recipes should be accessible within 2 selections. 
 - **Rationale:** Recipes are necessary for kitchen staff to make planned ice creams, and easy access to the recipe allows the process for making ice cream to be completed quickly. 
 - **AT-USE-5-1:** Login as an employee and view a recipe. Verify that it took 2 selections or less to access the view recipe functionality after logging in.
 
 USE-6: Viewing messages should be accessible within 3 selections. 
-- **Rationale:** Messages are necessary for organizing operational needs like a planned ice cream delivery between locations, swapping shifts, and discussing anything that occurred on shift. Easy access to the message facilites better employee connection and engagment.
+- **Rationale:** Messages are necessary for organizing operational needs like a planned ice cream delivery between locations, swapping shifts, and discussing anything that occurred on shift. Easy access to the message facilitates better employee connection and engagement.
 - **AT-USE-6-1:** Login as an employee and view messages. Verify that it took 3 selections or less to access the view message functionality after logging in.
 
 USE-7: Standard conventions for all user interface elements.
 - **Rationale:** Enforcing standard conventions will result in a system that is easier to learn and improves user experience, therefore improving employee engagement.
-- **AT-USE-7-1:** Check documentation for agreed standard conventions. Login to system and verify that each main feature of the system uses the agreed conventions.
+- **AT-USE-7-1:** Check documentation for agreed standard conventions. Login to the system and verify that each main feature of the system uses the agreed conventions.
 
 **Performance** 
 
@@ -1345,14 +1345,14 @@ PER-1: The system must be able to handle 30 users simultaneously accessing it wi
 - **AT-PER-1-1:** Load test the system to confirm that 30 users can use the system simultaneously. 
 
 PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
-- **Rationale:** Reducing load times improves the experience of employees accessing the system, and customers who are waiting on an employee accesssing the system.
+- **Rationale:** Reducing load times improves the experience of employees accessing the system, and customers who are waiting on an employee accessing the system.
 - **AT-PER-2-1:** Login to the system and access each page. Track how long it takes each page to load and verify it takes less than 2 seconds.
 - **AT-PER-2-2:** Load test system to determine how many users result in load times greater than 2 seconds. Verify that the resulting number of users aligns with expected normal operational conditions.
 
 **Security**
 
-SEC-1: Unauthorized employees are not be able to view another employee’s banking information.
-- **Rationale:** Reduce potential fraud or stealing by only allowing employee's with Bookkeeper access to view banking information. Bookkeepers must have access to pay the employees. 
+SEC-1: Unauthorized employees are not able to view another employee’s banking information.
+- **Rationale:** Reduce potential fraud or stealing by only allowing employees with Bookkeeper access to view banking information. Bookkeepers must have access to pay the employees. 
 - **AT-SEC-1-1:** As a Manager, access an employee's account and attempt to view banking information. Verify that banking information is not visible.
 - **AT-SEC-1-2:** As a Bookkeeper, access an employee's account and attempt to view banking information. Verify that banking information is visible.
 - **AT-SEC-1-3:** As an employee without a Manager or Bookkeeper role, access an employee's account and attempt to view banking information. Verify that banking information is not visible.
@@ -1362,7 +1362,7 @@ SEC-2: Industry standard information security procedures must be used when handl
 - **AT-SEC-2-1:** Conduct a security test to ensure that user information is handled using industry standard practices.
 
 SEC-3: The system shall ensure that no persons outside the organization can access any information stored in the system. 
-- **Rationale:**  Information stored in system is private and could be used maliciously. Preventing anyone outside the organization from accessing the data ensures that information is protected and only people who Banter Ice Cream believe to be trustworthy can access the system.
+- **Rationale:**  Information stored in the system is private and could be used maliciously. Preventing anyone outside the organization from accessing the data ensures that information is protected and only people who Banter Ice Cream believe to be trustworthy can access the system.
 - **AT-SEC-3-1:** Without logging in to the system, attempt to gain access using security testing procedures. Verify you cannot access the system.
 
 SEC-4: Recipe ingredients and instructions can only be viewed by authorized employees.
