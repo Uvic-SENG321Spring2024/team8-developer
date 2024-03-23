@@ -903,23 +903,41 @@ The Account Management feature has a high priority in the system.  It allows a M
 ### b. Functional Requirements <a name="f5-functional"></a>
 
 ACC-1: The system must provide the Manager with the capability to delete user accounts that are no longer active within the company.
+- **Rationale:** Deleting inactive user accounts ensures that the system remains organized and only contains relevant user information, enhancing security and reducing clutter.
+- **AT-ACC-1-1:** Log in as Manager. Navigate to the user management section. Select an inactive user account and choose the delete option. Verify that the user account is permanently removed from the system.
 
 ACC-2: The system must allow the Manager to create new user accounts by entering their username and role, granting them access to the system.
+- **Rationale:** This enables Managers to control access to the system by adding new user accounts as needed, facilitating user management and system security.
+- **AT-ACC-2-1:** Log in as Manager. Navigate to the user creation section. Enter the required information (username, role) and save. Verify that the new user account is created and granted access to the system.
 
 ACC-3: The system must allow the Managers to view a user’s role, contact information, and username.
+- **Rationale:** Providing Managers with access to user details facilitates effective management of user accounts and roles within the system.
+- **AT-ACC-3-1:** Log in as Manager. Navigate to the user management section. Select a user account and verify that their role, contact information, and username are displayed.
 
 ACC-4: The system must allow the Manager to edit a user’s role, and username
+- **Rationale:** Allowing Managers to edit user roles and usernames enables flexible user management, accommodating changes in user responsibilities or information.
+- **AT-ACC-4-1:** Log in as Manager. Navigate to the user management section. Select a user account and choose the edit option. Modify the user's role and/or username and save changes. Verify that the changes are applied to the user account.
 
 ACC-5: The system must allow users to edit their payment information, contact information, and password.
+- **Rationale:** Allowing users to manage their own account information promotes user autonomy and ensures data accuracy.
+- **AT-ACC-5-1:** Log in as a user. Navigate to the account settings section. Edit payment information, contact information, and password. Save changes. Verify that the modifications are successfully applied to the user's account.
 
 ACC-6: The system must allow users to log in to their accounts with their username and password.
+- **Rationale:** Enabling users to log in with their credentials ensures secure access to the system and personalized user experiences.
+- **AT-ACC-6-1:** Navigate to the login page. Enter valid username and password. Click on the login button. Verify that the user is successfully logged in and directed to the system's dashboard.
 
 ACC-7: The system must allow users to log out of their accounts.
+- **Rationale:** Providing users with a logout option ensures security by allowing them to end their active sessions securely.
+- **AT-ACC-7-1:** While logged in as a user, navigate to the logout option. Click on the logout button. Verify that the user is successfully logged out and redirected to the login page.
 
 ACC-8: The system must allow users to view their account information to ensure its accuracy and completeness.
+- **Rationale:** Allowing users to review their account information promotes transparency and empowers them to verify and update their details as needed.
+- **AT-ACC-8-1:** Log in as a user. Navigate to the account settings section. Verify that the user's account information, including payment details, contact information, and password, is displayed accurately.
 
 ACC-9: The system must automatically log out users once they close the application.
-
+**ACC-9:** The system must automatically log out users once they close the application.
+- **Rationale:** Automatic logout upon application closure enhances security by preventing unauthorized access to user accounts if the device is left unattended.
+- **AT-ACC-9-1:** Log in as a user. Close the application or browser window. Reopen the application or access the system again. Verify that the user is required to log in again, indicating that they were automatically logged out.
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f5-usecases"></a>
