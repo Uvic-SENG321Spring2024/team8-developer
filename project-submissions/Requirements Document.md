@@ -570,23 +570,23 @@ The Communication and Announcement feature is a high priority feature in the sys
 
 COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication. 
 
-COM-2: The system must provide the ability for a Manager to publish announcements to all employees. 
+COM-2: The system must provide the ability for a Manager to create & publish announcements to all employees. 
 
 COM-3: The system must provide the ability for a Manager to publish announcements specific to a user class or location. 
 
-COM-4: The system must provide the ability for a Manager to create announcements. 
+COM-4: The system must provide the ability for a Manager to edit announcements. 
 
-COM-5: The system must provide the ability for a Manager to edit announcements. 
+COM-5: The system must provide the ability for a Manager to remove announcements. 
 
-COM-6: The system must provide the ability for a Manager to remove announcements. 
+COM-6: The system must provide the ability for all employees to view announcements.
 
-COM-7: The system must provide the ability for all employees to view announcements.
+COM-7: The system must provide the ability for a Manager to view announcements in a more detailed way(i.e., number of viewers, who has viewed the announcements, and the reaction of viewers). 
 
 COM-8: The system must provide the ability for all employees to receive and react to the published announcements. 
 
 COM-9: The system must provide the ability for all employees to communicate with other employees.
 
-COM-10: The system must safeguard sensitive information such as chat logs and announcement management, through controlled access, ensuring privacy and security.
+COM-10: The system must safeguard sensitive information such as chat logs and announcement management, so that not all employee have access to everything except for the Manager.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
