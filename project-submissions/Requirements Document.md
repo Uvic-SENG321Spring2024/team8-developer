@@ -95,6 +95,7 @@ These sections are outlined in the following Table of Contents.
    1. [Data Flow Diagram Level 0](#data-flow0)
    2. [Data Flow Diagram Level 1](#data-flow1)
    3. [Data Flow Diagrams Level 2](#data-flow2)
+   4. [Data Flow Diagrams Level 3](#data-flow3)
 10. [Appendix](#appendix)
   
 # 2. Business Requirements <a name="requirements"></a>
@@ -375,7 +376,7 @@ SCH-17: The system must allow a Manager to deny requested shift swaps from emplo
 
 SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
 
-SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.  
+SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
@@ -1014,7 +1015,7 @@ In this figure, the process of a user modifying their own account information is
 
 ![Entity Relationship Diagram - Ben6](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/55803d9e-2210-42c8-a900-ba137dd72789)
 
-![UML Diagram - My Diagram (1)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/f0cb66f4-f0bb-48d3-8bf2-adab13170f3f)
+![Entity Relationship Diagram - My Diagram (3)](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/e790f756-8172-44c3-95ff-42bc88e63bb4)
 
 The Entity Relationship Diagram (ERD) and the UML Class Diagram serve as visual tools to represent the data structure and relationships within the Banter Ice Cream System. The purpose of these diagrams is to articulate how various data entities within the system interact and relate to each other, which is essential for understanding the flow of information and the underlying structure of the system’s data.
 
@@ -1280,54 +1281,65 @@ Communication channels must be secure, with safeguards for sensitive information
 
 ## i. Data Flow Diagram Level 0 <a name="data-flow0"></a>
 
-![L0DFDBen drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/5bf48c9e-21e6-4b2a-a399-70acf556f2ee)
+![Ben0levelDFD drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/c5775ae3-5ae4-4974-a89f-519ce4f849e5)
 
 The above Level 0 Data Flow Diagram depicts the Banter Ice Cream System as a centralized system interacting with four external entities: Staff, Manager, Bookkeeper, and Delivery Driver. 
 The "All Users" entity in this Data Flow Diagram represents a collective group that includes every type of user in the system, providing a centralized point for data flows that are common across all user types to reduce redundancy and simplify the diagram's clarity. The system handles a variety of data flows including account updates, shift swap requests, onboarding materials, and clock-in/out data. It represents a high-level view of the system's interactions with its environment, showing how data is exchanged but not the internal workings of the system itself. The arrows indicate the direction of the data flow, meaning the data originates from the entity at the tail of the arrow and moves towards the entity at the head of the arrow. 
 
 ## ii. Data Flow Diagram Level 1 <a name="data-flow1"></a>
 
-![DFDL1B drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/702c90b2-718b-4702-89a2-59a750469ab6)
+![BEN1LevelDFD drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/76890860/569c1d75-9639-4630-9264-3f5e263fe1ab)
 
-The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, Swap Shift, View Tracked Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule Management, and recipe updating. The diagram includes a data store for Staff Hours Summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
+The above Level 1 Data Flow Diagram expands on the Level 0 by breaking down the system into more detailed processes: Manage User Account, Communicate, Facilitate Onboarding, Manage Schedule, View Tracked Hours, and Manage Recipe. Each of these processes is a part of the Banter Ice Cream System, representing different functionalities. It shows specific interactions between the system and users, such as account creation, schedule management, and recipe updating. The diagram includes a data store for Staff Hours Summary indicating where data is stored within the system. This Data Flow Diagram provides a more detailed understanding of the system's internal processes and their data interactions.
 
 ## iii. Data Flow Diagrams Level 2 <a name="data-flow2"></a>
 
 ### Manage Schedule Process
-![DataFlow_Level2_Schedule 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/154b1668-f403-4835-9401-43eada6a00ca)
+![DataFlow_Level2_Schedule-Page-2](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/88aea67f-536d-4827-adcf-483f8dd5a30a)
 
-Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) can Clock In and Clock Out. A Delivery Driver can Clock In and Clock Out. The Clock In Data and Clock Out Data resulting from the Clock In and Clock Out use cases is stored in the Employee Hours Summary data store. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can Indicate Availability. The Availability of each user is stored in the Availability Store. The stored Availability is used by the Create Schedule and Edit Schedule use cases. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Create Schedule. A Manager can Edit Schedule. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in the Schedule Store and Employee Hours Summary data store. Each user can view the stored Schedule Information using the View Schedule use case.
-
-### Swap Shifts Process
-![DataFlow_Level2_SwapShifts 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/a9f7ab41-446d-413b-b662-b86b53e7cfd0)
-
-Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to Request Shift Swap. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Send Swap Response based on that Shift Swap Request. Resulting in the Staff user who submitted the request being able to view the response.
+The user groups Front of House Staff, Kitchen Staff, Delivery Driver, and Bookkeeper are able to access the Clock Hours Subsystem to clock in and out of shifts. The Staff Hours The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can Update Schedule Subsystem with Schedule Assignment and Schedule Updates, and can access Availability. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. All Users can Update Schedule Subsystem with their Availability, and access Schedule Information. A Manager can use Swap Shift Subsystem to access a Swap Shift Request, and send a Swap Shift Response. All Users can use Swap Shift Subsystem to send Swap Shift Request, and access Swap Shift Response. The Schedule Information from Swap Shift Subsystem and Update Schedule Subsystem are stored in the Schedule Store. The Staff Hours Summary resulting from the Clock Hours Subsystem is stored in the Employee Hours Summary data store.
 
 ### View Tracked Hours Process
-![DataFlow_Level2_ViewTrackedHours](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/a0296fda-45fb-4ef3-8a71-d8027014304e)
+![DataFlow_Level2_ProcessPayroll_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/88d7d7d7-69f4-45cf-a31e-532f25618e13)
 
-A Bookkeeper can view Staff Hours Summary accessed with View Tracked Hours use case. A Front of House / Kitchen Manager (referred to in diagram as Manager) can view Staff Hours Summary accessed with View Tracked Hours use case. The information needed for the Staff Hours Summary is saved in a Employee Hours Summary data store.
+A Bookkeeper can view Staff Hours Summary accessed with View Tracked Hours use case. A Front of House / Kitchen Manager (referred to in diagram as Manager) can view Staff Hours Summary accessed with View Tracked Hours use case. The information needed for the Staff Hours Summary is saved in an Employee Hours Summary data store.
 
 ### Communicate Process
-![DataFlow_Level2_Communicate 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/71e4d3cc-cc1d-4554-93c2-68e5227493a6)
+![DataFlow_Level2_Communicate_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/4801165b-9674-4925-b228-5cd9cb25a3d3)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can send an Announcement with Send Announcement use case, where Announcement includes all information defined in the Data Dictionary. A Manager can Edit Announcement to modify a sent announcement. Announcements are stored in the Announcement Store. A Manager can View Announcement Information to get information about Reactions to a sent announcement. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system can View Announcement to see a selected announcement. Each user of the system can complete React Announcements to send a Reaction to an announcement. Reactions are also stored in the Announcement Store. Each user of the system can Send Message, where Message includes all information defined in the Data Dictionary. Each user of the system can Edit Message their sent messages. Each user of the system can View Message when the recipients of the message include them. Messages are stored in the Message Store.
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can send an announcement with Send Announcement use case, where Announcement includes all information defined in the Data Dictionary. A Manager can use Edit Announcement use case to modify a sent announcement. Announcements are stored in the Announcement Store. A Manager can View Announcement Information to get information about Reactions to a sent announcement. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) can View Announcement to see a selected announcement. Each user of the system can complete React Announcement use case to send a Reaction to an announcement. Reactions are also stored in the Announcement Store. Each user of the system can Send Message, where Message includes all information defined in the Data Dictionary. Each user of the system can Edit Message to modify their sent messages. Each user of the system can View Message when the recipients of the message include them. Messages are stored in the Message Store.
 
 ### Manage Recipe Process
-![DataFlow_Level2_Recipe 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/a8e96a6e-dc84-407a-848b-70b8ee5efb42)
+![DataFlow_Level2_Recipe_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/99b28161-3484-4508-bb8f-6e35bfa1e624)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can create a recipe through Create Recipe use case. A Manager can edit a recipe through the Edit Recipe use case. Recipe Info resulting from the creation and editing use cases is saved in the Recipe Store. The Recipe Info stored in the Recipe Store can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Staff) are able to View Recipe and see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can create a recipe through Create Recipe use case. A Manager can edit a recipe through the Edit Recipe use case. Recipe Info resulting from the creation and editing use cases is saved in the Recipe Store. The Recipe Info stored in the Recipe Store can be viewed using the View Recipe use case. Both Front of House Staff and Kitchen Staff (referred to in the diagram as Front of House Staff/Kitchen Staff) are able to View Recipe to see the Recipe Info. A Manager can also View Recipe to see the Recipe Info.
 
 ### Manage Onboarding Process
-![DataFlow_Level2_Onboarding 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/43aa5c18-a5f2-4083-8cb1-bd04dee5176d)
+![DataFlow_Level2_Onboarding_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/01660f97-f127-4f4e-846c-21a8134a743d)
 
-The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can add new onboarding materials through the Create Oboarding Materials use case. A Manager can modify the onboarding materials through the Edit Onboarding Materials and Remove Onboarding Materials use cases. The Onboarding Materials are stored in the Onboarding Materials Store. The stored Onboarding Materials can be viewed using the View Onboarding Materials use case. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to View Onboarding Materials.
+The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can add new onboarding materials through the Create Onboarding Materials use case. A Manager can modify the onboarding materials through the Edit Onboarding Materials and Remove Onboarding Materials use cases. The Onboarding Materials are stored in the Onboarding Materials Store. The stored Onboarding Materials can be viewed using the View Onboarding Materials use case. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to View Onboarding Materials.
 
 ### Manage User Account Process
-![DataFlow_Level2_UserAccount 4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/c1ba8823-7194-40d9-9b21-42c7e8551caa)
+![DataFlow_Level2_UserAccount_Numbered](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f3ded1cc-bd7a-4d01-932f-af20898741f5)
 
 The Front of House / Kitchen Manager user class (referred to in diagram as Manager) can Create Account for a new user account. A Manager can also Edit Account or Delete Account, resulting in an Account Update. Account Info is stored in the Account Store. A Manager can view stored Account Info of any user in the system using the View Account Information use case. The Account Info does not include bank information, but otherwise includes all account information defined in the Employee data entity in the Data Dictionary. All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. Each user of the system (referred to in diagram as All Users) are able to complete the Edit Personal Account use case for their own account, to add Personal Account Updates. Personal Account Updates includes all account information defined in the Employee data entity in the Data Dictionary, including bank information. Each user of the system can view Account Info about their own account with the View Account Information use case.
 
+## iv. Data Flow Diagrams Level 3 <a name="data-flow3"></a>
+
+### Clock Hours Subsystem
+![DataFlow_Level2_Schedule-Page-3](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/ead4efe7-ecb6-4f01-9bcf-19b4b8f95590)
+
+Front of House Staff and Kitchen Staff (referred to in the diagram as Front of House Staff/Kitchen Staff), Delivery Drivers, and Bookkeepers can Clock In and Clock Out. The Clock-In Data and Clock-Out Data resulting from the Clock In and Clock Out use cases is stored in the Employee Hours Summary data store.
+
+### Update Schedule Subsystem
+![DataFlow_Level2_Schedule-Page-4](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/967164f7-2dfd-4cb6-8064-9561a099e2e8)
+
+All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. All Users can Indicate Availability. The Availability of each user is stored in the Availability Store. The stored Availability is used by the Create Schedule and Edit Schedule use cases. A Front of House / Kitchen Manager (referred to in diagram as Manager) can Create Schedule. A Manager can Edit Schedule. The Schedule Information resulting from the Create Schedule and Edit Schedule use cases is stored in the Schedule Store and Employee Hours Summary data store. Each user (referred to in diagram as All Users) can view the stored Schedule Information using the View Schedule use case.
+
+### Swap Shift Subsystem
+![DataFlow_Level2_Schedule-Page-5](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/86a33920-d99d-4426-9ab6-a9b993fb59e1)
+
+All Users represent any user of the system and can be any user classes defined in User Class and Characteristics. All Users are able to Request Shift Swap. A Manager can Send Swap Response based on that Shift Swap Request. Resulting in the user who submitted the request being able to view the response, and updating the Schedule Store with the modified Schedule Information.
 
 # 10 Appendix <a name="appendix"></a>
 
