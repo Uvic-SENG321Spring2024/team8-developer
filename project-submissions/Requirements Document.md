@@ -564,7 +564,7 @@ Communication and Announcement feature allows sending and receiving messages and
 
 ### a. Description and Priority <a name="f2-description"></a>
 
-The Communication and Announcement feature is a high priority feature in the system. This is because all employees must receive notifications of new announcements, and be able to view the announcements and be aware of any and all major changes in the company. It is also important that all employees can send and receive messages to any employee member or employee messaging group. 
+The Communication and Announcement feature is a high priority feature in the system for the following reasons. All employees must receive notifications of new announcements, and be able to view the announcements and be aware of any and all major changes in the company. It is also important that all employees can send and receive messages to any employee member or employee messaging group. 
 
 ### b. Functional Requirements <a name="f2-functional"></a>
 
