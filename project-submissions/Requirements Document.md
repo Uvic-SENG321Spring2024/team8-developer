@@ -779,15 +779,15 @@ There is an option to archive recipes if the status is active and an option to u
 
 #### Storyboard 1: UC-2 View Recipe Normal Flow
 
-![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard2.png)
+![UC-2 Normal flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/ViewRecipe1SB.png)
 
 #### Storyboard 2: UC-2 View Recipe Alternate Flow
 
-![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard1.png)
+![UC-2 Alternate flow](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/ViewRecipe2SB.png)
 
 #### Storyboard 3: Edit, Create, and Archive Recipe
 
-![Create and Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/Storyboard3.png)
+![Create and Edit](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/main/Prototype%20Images/CreateEditSB.png)
 
 ### e. Sequence Diagram for Storyboard 3 <a name="f3-sequence"></a>
 
