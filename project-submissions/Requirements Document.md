@@ -153,7 +153,7 @@ To ensure Banter Ice Cream's system effectively meets the operational needs and 
 
 **Scheduling System:**
    - Create, modify, and manage shifts through a scheduling interface.
-   - Employees can swap shifts, subject to Managerial approval, to accommodate personal needs while ensuring operational requirements are met.
+   - Employees can swap shifts, subject to managerial approval, to accommodate personal needs while ensuring operational requirements are met.
    - Calendar views for employees and Managers to provide a clear overview of work schedules.
      
 **Clock-In and Clock-Out System:**
@@ -572,7 +572,7 @@ COM-1: The system must allow embedding capabilities for images, videos, and PDFs
 
 COM-2: The system must provide the ability for a Manager to create and publish announcements to all employees. 
 
-COM-3: The system must provide the ability for a Manager to publish announcements specific to a user class or location. 
+COM-3: The system must provide the ability for a Manager to create and publish announcements specific to a user class or location. 
 
 COM-4: The system must provide the ability for a Manager to edit announcements. 
 
