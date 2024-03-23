@@ -1149,53 +1149,62 @@ The system shall not generate any reports.
 ## iv. Data Integrity <a name="data-integrity"></a>
 
 **Employee Data and Account**
+
 DAT-1: Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
-- **Rationale:**
-- **AT-DAT-1-1:**
+- **Rationale:** Complies with legal requirements for record-keeping, ensuring Banter Ice Cream adheres to applicable laws.
+- **AT-DAT-1-1:** Confirm with the system's data management policies that the identified employee information is retained for the required duration.
+- **AT-DAT-1-2:** Confirm manually editing past schedule data is not possible. Login as a Manager and try to edit a shift scheduled in the past. Verify this is not possible.
+- **AT-DAT-1-3:** Delete an employee's account. Confirm that schedule data for that employee is still saved.
 
 DAT-2: The system must retain each employee's banking information until after the employee's last paycheck is received by the employee.
-- **Rationale:**
-- **AT-DAT-2-1:**
+- **Rationale:** Ensures the employee is able to be paid, but does not keep sensitive data after the employee no longer works for Banter Ice Cream.
+- **AT-DAT-2-1:** Delete an employee's account. Confirm that banking data continues to be stored until after their last scheduled shift.
 
 DAT-3: A new employee can gain access to the system after a Manager adds an account for the employee.
-- **Rationale:**
-- **AT-DAT-3-1:**
+- **Rationale:** As new employees are hired the system must be able to accommodate that change. New employees need to be able to gain access to the system to use the system and complete their jobs.
+- **AT-DAT-3-1:** Login as a Manager and create a new employee's account. Login as the employee and verify that login succeeds and grants access to the system.
 
 DAT-4: An employee loses access to the system when their account is deleted. 
-- **Rationale:**
-- **AT-DAT-4-1:**
+- **Rationale:** As employees stop working for Banter Ice Cream they no longer need access to the system. 
+- **AT-DAT-4-1:** Login as a Manager and delete an employee's account. Try to login as the employee and verify that login fails.
 
 **Scheduling and Tracked Hours**
+
 DAT-5: The system must retain each shift in employee schedule for one year after the scheduled shift date.
-- **Rationale:**
-- **AT-DAT-5-1:**
+- **Rationale:** Past schedules may be used to complete tax forms, so the schedule data will need to be saved until the next tax deadline.
+- **AT-DAT-5-1:** Confirm with the system's data management policies that schedule information is retained for the required duration.
 
 DAT-6: The system must retain employee availability for one week after the date of the identified availability.
-- **Rationale:**
-- **AT-DAT-6-1:**
+- **Rationale:** Past availability does not provide help towards scheduling future shifts. Reduce costs for data storage and infrastructure by removing past availability data.
+- **AT-DAT-6-1:** Add availability to the system for the current day. Confirm that availability cannot be deleted. Wait one week. Confirm that availability can be deleted.
 
 DAT-7: The system must retain clocked hours for each employee for 6 years, counted from the end of the year the clocked hours occurred in. This requirement is necessary due to Canadian laws regarding business tax documents.
-- **Rationale:**
-- **AT-DAT-7-1:**
+- **Rationale:** Complies with legal requirements for record-keeping, ensuring Banter Ice Cream adheres to applicable laws and has details necessary to answer a detailed audit.
+- **AT-DAT-7-1:** Confirm with the system's data management policies that clocked hours are retained for the required duration.
 
 **Communication and Announcements**
+
 DAT-8: The system must retain messages for one year after the message is sent.
-- **Rationale:**
-- **AT-DAT-8-1:**
+- **Rationale:** Employees may want to refer to past messages to confirm information. After one year the past information is unlikely to be useful, and requires extra infrastructure to store.
+- **AT-DAT-8-1:** Confirm with the system's data management policies that messages are retained for the required duration.
 
 DAT-9: The system must retain each announcement until the announcement is removed by a Manager.
-- **Rationale:**
-- **AT-DAT-9-1:**
+- **Rationale:** Employees may want to refer to past announcements to confirm information. A Manager may want to delete an announcement if the information is out of date or otherwise inaccurate.
+- **AT-DAT-9-1:** Confirm with the system's data management policies that announcements are retained for the required duration.
+- **AT-DAT-9-2:** Login as a Manager and delete an announcement. Verify that announcement is deleted.
 
 **Recipe Management**
+
 DAT-10: The system must retain each recipe for the lifetime of the system.
-- **Rationale:**
-- **AT-DAT-10-1:**
+- **Rationale:** Recipes are retained as a record of past recipes. Recipes may be reused in the future or customers may request an ice cream similar to a past recipe.
+- **AT-DAT-10-1:** Confirm with the system's data management policies that recipes are retained for the required duration.
 
 **Onboarding Materials**
+
 DAT-11: The system must retain each onboarding material until removed by a Manager.
-- **Rationale:**
-- **AT-DAT-11-1:**
+- **Rationale:** Onboarding material takes effort to create and remains useful for at least several months. A Manager can identify when the onboarding material is no longer useful and remove it.
+- **AT-DAT-11-1:** Confirm with the system's data management policies that onboarding materials are retained for the required duration.
+- **AT-DAT-11-2:** Login as a Manager and delete one onboarding material. Verify that onboarding material is deleted.
 
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
