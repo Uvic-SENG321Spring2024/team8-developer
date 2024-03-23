@@ -1145,25 +1145,62 @@ The system shall not generate any reports.
 ## iv. Data Integrity <a name="data-integrity"></a>
 
 **Employee Data and Account**
-- Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
-- The system must retain each employee's banking information until after the employee's last paycheck is received by the employee.
-- A new employee can gain access to the system after a Manager adds an account for the employee.
-- An employee loses access to the system when their account is deleted. 
+
+DAT-1: Adhere to Canadian laws regarding business tax documents. As a result the system must retain supporting documentation for payroll for 6 years, counted from the end of the tax year that the payroll occurred in. The supporting documentation required is employee name, contact information, and wage.
+- **Rationale:** Complies with legal requirements for record-keeping, ensuring Banter Ice Cream adheres to applicable laws.
+- **AT-DAT-1-1:** Confirm with the system's data management policies that the identified employee information is retained for the required duration.
+- **AT-DAT-1-2:** Confirm manually editing past schedule data is not possible. Login as a Manager and try to edit a shift scheduled in the past. Verify this is not possible.
+- **AT-DAT-1-3:** Delete an employee's account. Confirm that schedule data for that employee is still saved.
+
+DAT-2: The system must retain each employee's banking information until after the employee's last paycheck is received by the employee.
+- **Rationale:** Ensures the employee is able to be paid, but does not keep sensitive data after the employee no longer works for Banter Ice Cream.
+- **AT-DAT-2-1:** Delete an employee's account. Confirm that banking data continues to be stored until after their last scheduled shift.
+
+DAT-3: A new employee can gain access to the system after a Manager adds an account for the employee.
+- **Rationale:** As new employees are hired the system must be able to accommodate that change. New employees need to be able to gain access to the system to use the system and complete their jobs.
+- **AT-DAT-3-1:** Login as a Manager and create a new employee's account. Login as the employee and verify that login succeeds and grants access to the system.
+
+DAT-4: An employee loses access to the system when their account is deleted. 
+- **Rationale:** As employees stop working for Banter Ice Cream they no longer need access to the system. 
+- **AT-DAT-4-1:** Login as a Manager and delete an employee's account. Try to login as the employee and verify that login fails.
 
 **Scheduling and Tracked Hours**
-- The system must retain each shift in employee schedule for one year after the scheduled shift date.
-- The system must retain employee availability for one week after the date of the identified availability.
-- The system must retain clocked hours for each employee for 6 years, counted from the end of the year the clocked hours occurred in. This requirement is necessary due to Canadian laws regarding business tax documents.
+
+DAT-5: The system must retain each shift in employee schedule for one year after the scheduled shift date.
+- **Rationale:** Past schedules may be used to complete tax forms, so the schedule data will need to be saved until the next tax deadline.
+- **AT-DAT-5-1:** Confirm with the system's data management policies that schedule information is retained for the required duration.
+
+DAT-6: The system must retain employee availability for one week after the date of the identified availability.
+- **Rationale:** Past availability does not provide help towards scheduling future shifts. Reduce costs for data storage and infrastructure by removing past availability data.
+- **AT-DAT-6-1:** Add availability to the system for the current day. Confirm that availability cannot be deleted. Wait one week. Confirm that availability can be deleted.
+
+DAT-7: The system must retain clocked hours for each employee for 6 years, counted from the end of the year the clocked hours occurred in. This requirement is necessary due to Canadian laws regarding business tax documents.
+- **Rationale:** Complies with legal requirements for record-keeping, ensuring Banter Ice Cream adheres to applicable laws and has details necessary to answer a detailed audit.
+- **AT-DAT-7-1:** Confirm with the system's data management policies that clocked hours are retained for the required duration.
 
 **Communication and Announcements**
-- The system must retain messages for one year after the message is sent.
-- The system must retain each announcement until the announcement is removed by a Manager.
+
+DAT-8: The system must retain messages for one year after the message is sent.
+- **Rationale:** Employees may want to refer to past messages to confirm information. After one year the past information is unlikely to be useful, and requires extra infrastructure to store.
+- **AT-DAT-8-1:** Confirm with the system's data management policies that messages are retained for the required duration.
+
+DAT-9: The system must retain each announcement until the announcement is removed by a Manager.
+- **Rationale:** Employees may want to refer to past announcements to confirm information. A Manager may want to delete an announcement if the information is out of date or otherwise inaccurate.
+- **AT-DAT-9-1:** Confirm with the system's data management policies that announcements are retained for the required duration.
+- **AT-DAT-9-2:** Login as a Manager and delete an announcement. Verify that announcement is deleted.
 
 **Recipe Management**
-- The system must retain each recipe for the lifetime of the system.
+
+DAT-10: The system must retain each recipe for the lifetime of the system.
+- **Rationale:** Recipes are retained as a record of past recipes. Recipes may be reused in the future or customers may request an ice cream similar to a past recipe.
+- **AT-DAT-10-1:** Confirm with the system's data management policies that recipes are retained for the required duration.
 
 **Onboarding Materials**
-- The system must retain each onboarding material until removed by a Manager.
+
+DAT-11: The system must retain each onboarding material until removed by a Manager.
+- **Rationale:** Onboarding material takes effort to create and remains useful for at least several months. A Manager can identify when the onboarding material is no longer useful and remove it.
+- **AT-DAT-11-1:** Confirm with the system's data management policies that onboarding materials are retained for the required duration.
+- **AT-DAT-11-2:** Login as a Manager and delete one onboarding material. Verify that onboarding material is deleted.
 
 
 # 7 External Interface Requirements <a name="external-interfaces"></a>
@@ -1245,36 +1282,104 @@ Communication channels must be secure, with safeguards for sensitive information
 # 8 Software Quality Attributes <a name="quality-attributes"></a>
 
 **Availability**
-- AVL-1: The system is available 99.99% each day during business hours.
-- AVL-2: The system is available 99.0% each day outside of business hours.
+
+AVL-1: The system is available 99.99% each day during business hours.
+- **Rationale:** The system is used frequently during business hours to track work hours by clocking in and out, make ice cream flavours by viewing the recipes, and arrange deliveries of ice cream between locations using messages. Customer satisfaction relies on fast and accurate usage of the system. 99.99% availability during business hours would result in a maximum downtime of 3.6 seconds of a 10 hour shift, which allows near real-time communication to continue.    
+- **AT-AVL-1-1:** Review metrics from hosting application monitoring tools to verify that downtime is less than 0.01% each day.
+
+AVL-2: The system is available 99.0% each day outside of business hours.
+- **Rationale:** The system is used outside of business hours to check scheduled shifts, view messages, and view announcements. Customers of Banter Ice Cream are not waiting on the usage of the system. Banter Ice Cream employees are more likely to use the system if it is often accessible, increasing visibility according to business goals. On a day with a 10 hour shift (business hours), 99.0% availability outside business hours would result in a maximum downtime of 8.4 minutes.
+- **AT-AVL-2-1:** Review metrics from hosting application monitoring tools to verify that downtime is less than 1% each day.
 
 **Reliability**
-- REL-1: A backup of all system data is saved every night to minimize data loss. 
+
+REL-1: A backup of all system data is saved every night to minimize data loss. 
+- **Rationale:** Minimizing data loss is beneficial because the system is more useful if it can be relied on to store updated and accurate information. Data loss would result in extra time spent adding the data back into the system, which takes employee time away from customers and may result in decreased customer satisfaction due to inaccurate information. 
+- **AT-REL-1-1:** Review metrics of stored data to confirm that the most recent copy of data is updated every 24 hours.
 
 **Scalability**
-- SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
-- SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture
-- SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+
+SCA-1: The system should be designed to easily accommodate future growth of employees with up to 200 users within the next 2 years.
+- **Rationale:** Banter Ice Cream expects 70 employees during the summer season, so over 2 years that could result in 140 employees being hired. There is a margin of error of 60 employees, to ensure that the system can accommodate more than the expected number of new employees. 
+- **AT-SCA-1-1:** Verify that the database has space to store 200 users.
+- **AT-SCA-1-2:** Setup a test system with a similar configuration to the live system. Load test to confirm 200 employees can be added to the system.
+
+SCA-2: The system should be designed to easily accommodate new functionalities without significant changes to the system architecture.
+- **Rationale:** There were additional functionalities labeled out of scope in the first release of the system that are desired and contribute to Banter's business goals. Changes to include that functionality are expected to continue helping Banter meet their business goals.
+- **AT-SCA-2-1:** Generate an architecture model and confirm there is loose or no coupling.
+- **AT-SCA-2-2:** Presence of unit and integration tests with a minimum of 75% coverage to ensure new functionality does not break existing functionality. 
+
+SCA-3: The system can accommodate the addition of extra archive storage of recipes over the system lifetime. 
+- **Rationale:** Recipes are stored indefinitely as a record of past menus. As no delete functionality exists for recipes, it must be possible to continue adding recipes without removing previous recipes.
+- **AT-SCA-3-1:** Confirm with the data storage provider that additional storage can be added. 
 
 **Useability**
-- USE-1: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
-- USE-2: Shift swapping should be accessible within 3 selections. 
-- USE-3: Viewing schedules should be accessible within 2 selections. 
-- USE-4: Accessing announcements should be accessible within 1 selection. 
-- USE-5: Viewing recipes should be accessible within 2 selections. 
-- USE-6: Viewing messages should be accessible within 3 selections. 
-- USE-7: Standard conventions for all user interface elements
+
+USE-1: The system should be user-friendly and allow a new employee to learn to use system features that are relevant to their role within three shifts.
+- **Rationale:** A business objective is to reduce onboarding time for a new employee. Learning the system is an important aspect of onboarding an employee. 
+- **AT-USE-1-1:** Have a person unfamiliar with Banter's system learn how to use the system. Verify that the time it took to learn is less than the equivalent of three shifts.
+
+USE-2: Shift swapping should be accessible within 3 selections. 
+- **Rationale:** Shift swapping is an important aspect of schedule management and 3 selections allows for the employee to find it quickly. 
+- **AT-USE-2-1:** Login as an employee and request a shift swap. Verify that it took 3 selections or less to access the shift swap functionality after logging in.
+
+USE-3: Viewing schedules should be accessible within 2 selections. 
+- **Rationale:** Viewing schedules allows employees to learn when they are scheduled to work and 2 selections allows for the employee to find it quickly. 
+- **AT-USE-3-1:** Login as an employee and view schedule. Verify that it took 2 selections or less to access the view schedule functionality after logging in.
+
+USE-4: Accessing announcements should be accessible within 1 selection. 
+- **Rationale:** Easily viewing announcements allows for increased employee engagement and increased employee knowledge. 
+- **AT-USE-4-1:** Login as an employee and view announcements. Verify that it took 1 selection or less to access the view schedule functionality after logging in.
+
+USE-5: Viewing recipes should be accessible within 2 selections. 
+- **Rationale:** Recipes are necessary for kitchen staff to make planned ice creams, and easy access to the recipe allows the process for making ice cream to be completed quickly. 
+- **AT-USE-5-1:** Login as an employee and view a recipe. Verify that it took 2 selections or less to access the view recipe functionality after logging in.
+
+USE-6: Viewing messages should be accessible within 3 selections. 
+- **Rationale:** Messages are necessary for organizing operational needs like a planned ice cream delivery between locations, swapping shifts, and discussing anything that occurred on shift. Easy access to the message facilitates better employee connection and engagement.
+- **AT-USE-6-1:** Login as an employee and view messages. Verify that it took 3 selections or less to access the view message functionality after logging in.
+
+USE-7: Standard conventions for all user interface elements.
+- **Rationale:** Enforcing standard conventions will result in a system that is easier to learn and improves user experience, therefore improving employee engagement.
+- **AT-USE-7-1:** Check documentation for agreed standard conventions. Login to the system and verify that each main feature of the system uses the agreed conventions.
 
 **Performance** 
-- PER-1: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
-- PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+
+PER-1: The system must be able to handle 30 users simultaneously accessing it without degradation in performance. 
+- **Rationale:** During peak times, such as when Banter Ice Cream opens during summer season, the system must be usable by multiple employees who would be using the system simultaneously to clock in, message each other, and begin making recipes. 30 employees is the maximum expected during peak time because Banter Ice Cream has 70 employees in the summer, but do not expect half the employees to access the system simultaneously.
+- **AT-PER-1-1:** Load test the system to confirm that 30 users can use the system simultaneously. 
+
+PER-2: Response times for loading pages and executing commands should not exceed 2 seconds under normal operational conditions.
+- **Rationale:** Reducing load times improves the experience of employees accessing the system, and customers who are waiting on an employee accessing the system.
+- **AT-PER-2-1:** Login to the system and access each page. Track how long it takes each page to load and verify it takes less than 2 seconds.
+- **AT-PER-2-2:** Load test system to determine how many users result in load times greater than 2 seconds. Verify that the resulting number of users aligns with expected normal operational conditions.
 
 **Security**
-- SEC-1: Unauthorized employees are not be able to view another employee’s banking information
-- SEC-2: Industry standard information security procedures must be used when handling user information. 
-- SEC-3: The system shall ensure that no persons outside the organization can access any information stored in the system. 
-- SEC-4: Recipe ingredients and instructions can only be viewed by authorized employees.
-- SEC-5: Recipe ingredient allergens can only be viewed by authorized employees.
+
+SEC-1: Unauthorized employees are not able to view another employee’s banking information.
+- **Rationale:** Reduce potential fraud or stealing by only allowing employees with Bookkeeper access to view banking information. Bookkeepers must have access to pay the employees. 
+- **AT-SEC-1-1:** As a Manager, access an employee's account and attempt to view banking information. Verify that banking information is not visible.
+- **AT-SEC-1-2:** As a Bookkeeper, access an employee's account and attempt to view banking information. Verify that banking information is visible.
+- **AT-SEC-1-3:** As an employee without a Manager or Bookkeeper role, access an employee's account and attempt to view banking information. Verify that banking information is not visible.
+
+SEC-2: Industry standard information security procedures must be used when handling user information. 
+- **Rationale:** User information is private and could be used maliciously. Industry standard security procedures will limit access to user information and prevent anyone without a user account from accessing any user information.
+- **AT-SEC-2-1:** Conduct a security test to ensure that user information is handled using industry standard practices.
+
+SEC-3: The system shall ensure that no persons outside the organization can access any information stored in the system. 
+- **Rationale:**  Information stored in the system is private and could be used maliciously. Preventing anyone outside the organization from accessing the data ensures that information is protected and only people who Banter Ice Cream believe to be trustworthy can access the system.
+- **AT-SEC-3-1:** Without logging in to the system, attempt to gain access using security testing procedures. Verify you cannot access the system.
+
+SEC-4: Recipe ingredients and instructions can only be viewed by authorized employees.
+- **Rationale:** Banter Ice Cream's recipes are essential to their business, and only employees that need access to ingredients and instructions to complete their job should be able to view them. Employees that have access to ingredients and instructions are Managers and Kitchen Staff.
+- **AT-SEC-4-1:** Login as Kitchen Staff and verify that you can view ingredients and instructions of a recipe.
+- **AT-SEC-4-2:** Login as Front of House Staff and verify that you cannot view ingredients and instructions of a recipe.
+
+SEC-5: Recipe ingredient allergens can only be viewed by authorized employees.
+- **Rationale:** Banter Ice Cream's recipes are essential to their business, and only employees that need access to allergens to complete their job should be able to view them. Allergen information does not provide enough data to replicate a recipe but is needed to provide accurate information to customers and prevent medical emergencies. Employees that have access to allergens are Managers, Kitchen Staff, and Front of House Staff.
+- **AT-SEC-4-1:** Login as Kitchen Staff and verify that you can view allergens of a recipe.
+- **AT-SEC-4-2:** Login as Front of House Staff and verify that you can view allergens of a recipe.
+- **AT-SEC-4-3:** Login as Delivery Driver and verify that you cannot view allergens of a recipe.
 
 
 # 9 Analysis Models <a name="analysis-models"></a>
