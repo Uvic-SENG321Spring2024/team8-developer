@@ -886,13 +886,17 @@ I can exit the removal mode when I'm done.
 
 ### d. Storyboards <a name="f4-storyboards"></a>
 #### View Onboarding Material
-![View Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/0ebf2c74-fb27-45ad-8778-b7a07afd7868)
+![View Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/fc636634-6d67-4c86-bf60-4034debbf21c)
 
 #### Create New Onboarding Material
-![Onboarding Materials Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/b0b382e8-2ca5-4787-b162-b13f77016867)
+![Create Onboarding Materials New](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/87c33aba-f222-4496-984e-0dddf16ec837)
+
+#### Edit Onboarding Material
+![Edit Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/cc4d3b74-85d0-4661-b1fd-f23b31042a97)
 
 #### Delete Onboarding Material
-![Delete Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/5d1002d7-8bd8-4381-b746-709e915f2129)
+![Delete Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8bf8c19c-76f0-4d67-bdf1-f5e0d1343879)
+
 
 
 ## v. Account Management <a name="feature-5"></a>
