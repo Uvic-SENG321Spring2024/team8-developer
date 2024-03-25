@@ -340,44 +340,66 @@ The scheduling feature has a high priority. This is a system employees will use 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
-SCH-1: The scheduler must allow a Manager to create shifts for employees.  
+SCH-1: The system must allow a Manager to create shifts for employees.
+- **Rationale**: Ensures that Managers can effectively plan and allocate human resources to meet the operational needs of Banter Ice Cream.
+- **AT-SCH-1-1**: As a Manager, create a shift in the scheduler. Verify the shift appears in the system and is visible to assigned employees.
 
-SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.  
+SCH-2: The system must allow shifts to be made 2-4 weeks in advance.
+- **Rationale**: Provides adequate planning horizon for both management and staff, allowing for personal and professional scheduling needs to be met.
+- **AT-SCH-2-1**: As a Manager, attempt to create a shift more than 4 weeks in advance. Verify the system does not allow this.
+- **AT-SCH-2-2**: Create a shift 2-4 weeks in advance and verify it is successfully added.
 
-SCH-3: The scheduler must allow a Manager to delete shifts from the schedule.  
+SCH-3: The system must allow a Manager to delete shifts from the schedule.
+- **Rationale**: Facilitates operational flexibility by allowing Managers to adjust staffing needs as they change.
+- **AT-SCH-3-1**: As a Manager, delete an existing shift. Verify the shift is removed from the schedule.
 
-SCH-4: The scheduler must allow a Manager to edit the schedule.  
+SCH-4: The system must allow a Manager to edit the schedule.
+- **Rationale**: Ensures the ability to make necessary adjustments to the schedule for reasons such as employee availability changes or operational demand changes.
+- **AT-SCH-4-1**: As a Manager, edit an existing shift's time. Verify the change is reflected in the schedule.
 
-SCH-5: When a schedule is edited all employees with affected schedules must be updated. 
+SCH-5: The system must ensure shift details become read-only once the shift is over.
+- **Rationale**: Preserves the integrity of historical scheduling data, which can be important for payroll and performance evaluation purposes.
+- **AT-SCH-5-1**: Attempt to edit a shift that has already occurred. Verify the system does not allow the modification.
 
-SCH-6: The scheduler must not allow the modification of any details of a shift after the shift is over. 
+SCH-6: The system must schedule employees only during their indicated available times.
+- **Rationale**: Respects employee availability preferences, contributing to job satisfaction and work-life balance.
+- **AT-SCH-6-1**: Attempt to schedule an employee during their unavailable time. Verify the system prevents this action.
 
-SCH-7: Each shift must have a unique identifier to identify specific shifts.  
+SCH-7: The system must allow a Manager and a Bookkeeper to view correct information about the summary of employees' tracked hours.
+- **Rationale**: Provides necessary visibility into worked hours for payroll processing and management oversight.
+- **AT-SCH-7-1**: As a Manager or Bookkeeper, view tracked hours for an employee. Verify the information displayed is accurate and up-to-date.
 
-SCH-8: Schedule information must be stored for 6 years due to Canadian laws regarding business tax documents.  
+SCH-8: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.
+- **Rationale**: Simplifies the process of tracking work hours, ensuring accuracy and reducing the administrative burden on employees.
+- **AT-SCH-8-1**: As an employee, clock in at the start of a shift. Verify that the system records the clock-in time under the employee's account.
 
-SCH-9: When a shift swap request is approved the schedule must update for each employee.  
+SCH-9: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.
+- **Rationale**: Allows for precise tracking of work hours and ensures employees are compensated for the actual time worked.
+- **AT-SCH-9-1**: As an employee, clock out at the end of a shift. Verify that the system records the clock-out time and accurately reflects the hours worked for that shift.
 
-SCH-10: The schedule must not allow an employee to be scheduled during the time with indicated availability off. 
+SCH-10: When a shift swap request is approved the schedule must update for each employee.
+- **Rationale**: Ensures the schedule accurately reflects current staffing after shift swaps, maintaining operational integrity.
+- **AT-SCH-10-1**: Initiate and approve a shift swap request. Verify that the schedule updates to reflect the new shift assignments for both involved employees.
 
-SCH-11: The schedulers option to view tracked hours by Manager and Bookkeeper must be shown correct information.  
+SCH-11: The system must allow an employee to request shift swaps with other employees.
+- **Rationale**: Provides flexibility for employees to manage their schedules while still meeting operational needs.
+- **AT-SCH-11-1**: As an employee, request a shift swap with another employee. Verify that the request can be submitted through the system.
 
-SCH-12: The system must automatically summarize employees tracked hours.  
+SCH-12: The system must allow a Manager to approve requested shift swaps from employees.
+- **Rationale**: Gives Managers control over shift assignments to ensure operational needs are met.
+- **AT-SCH-12-1**: As a Manager, receive a shift swap request and approve it. Verify that the system updates the schedule accordingly.
 
-SCH-13: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.  
+SCH-13: The system must allow a Manager to deny requested shift swaps from employees.
+- **Rationale**: Ensures that Managers can maintain staffing levels that meet operational requirements.
+- **AT-SCH-13-1**: As a Manager, receive a shift swap request and deny it. Verify that the system notifies the requesting employees and does not change the schedule.
 
-SCH-14: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
+SCH-14: The system must ensure all shift swaps maintain single shift assignments for employees without overlapping schedules.
+- **Rationale**: Prevents scheduling conflicts that could leave shifts understaffed or employees overburdened.
+- **AT-SCH-14-1**: Attempt to approve a shift swap that would result in double booking an employee. Verify the system prevents the swap.
 
-SCH-15: The system must allow an employee to request shift swaps with other employees.  
-
-SCH-16: The system must allow a Manager to approve requested shift swaps from employees.  
-
-SCH-17: The system must allow a Manager to deny requested shift swaps from employees.  
-
-SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
-
-SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.
-
+SCH-15: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts, and holidays.
+- **Rationale**: Ensures that employees and Managers have accurate and up-to-date information for planning and operational purposes.
+- **AT-SCH-15-1**: After several scheduling changes, including swaps, deletions, and edits, view the schedule. Verify that all changes are accurately reflected.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 
@@ -569,25 +591,47 @@ The Communication and Announcement feature is a high priority feature in the sys
 
 ### b. Functional Requirements <a name="f2-functional"></a>
 
-COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication. 
+COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication.
+- **Rationale:** Visual aids and documents can significantly enhance the clarity and effectiveness of communication, making information more engaging and easier to understand.
+- **AT-COM-1-1:** Test embedding an image, a video, and a PDF in a message. Verify they display correctly in the message.
+- **AT-COM-1-2:** View the message on different device types to ensure media compatibility.
 
-COM-2: The system must provide the ability for a Manager to create and publish announcements to all employees. 
+COM-2: The system must provide the ability for a Manager to create and publish announcements to all employees.
+- **Rationale:** Centralized dissemination of information ensures that all employees are timely informed of important organizational news.
+- **AT-COM-2-1:** As a Manager, create and publish an announcement. Verify it is accessible to all employees immediately after publishing.
 
-COM-3: The system must provide the ability for a Manager to create and publish announcements specific to a user class or location. 
+COM-3: The system must provide the ability for a Manager to create and publish announcements specific to a user class or location.
+- **Rationale:** Allows for targeted communication, ensuring that only relevant employees are notified, which can reduce information overload and increase relevancy.
+- **AT-COM-3-1:** Publish an announcement targeted at a specific user class. Confirm only that class can view the announcement.
 
-COM-4: The system must provide the ability for a Manager to edit announcements. 
+COM-4: The system must provide the ability for a Manager to edit announcements.
+- **Rationale:** Ensures that any inaccuracies or updates can be corrected or added, keeping information current and accurate.
+- **AT-COM-4-1:** As a Manager, select an existing announcement, make changes, and save. Verify the changes are reflected in the announcement.
 
-COM-5: The system must provide the ability for a Manager to remove announcements. 
+COM-5: The system must provide the ability for a Manager to remove announcements.
+- **Rationale:** Ability to remove outdated or incorrect information helps maintain the integrity of organizational communications.
+- **AT-COM-5-1:** As a Manager, delete an announcement. Confirm it is no longer accessible or visible to employees.
 
 COM-6: The system must provide the ability for all employees to view announcements.
+- **Rationale:** Ensures equitable access to information for all employees, fostering an informed and cohesive workforce.
+- **AT-COM-6-1:** Log in as different employees and verify that announcements are accessible and viewable.
 
-COM-7: The system must provide the ability for a Manager to view announcements with more details, including number of viewers, who has viewed the announcements, and the reaction of viewers. 
+COM-7: The system must provide the ability for a Manager to view announcements with more details, such as the number of viewers, the viewers information, and the reactions of viewers.
+- **Rationale:** Gives Managers insights into the engagement and reach of their communications, allowing for more informed communication strategies.
+- **AT-COM-7-1:** As a Manager, view detailed analytics of an announcement. Verify the accuracy of viewer and reaction data.
 
-COM-8: The system must provide the ability for all employees to receive and react to the published announcements. 
+COM-8: The system must provide the ability for all employees to react to the published announcements.
+- **Rationale:** Interaction with announcements can increase engagement and provide feedback to Managers about the workforce's concerns and interests.
+- **AT-COM-8-1:** As an employee, view an announcement and use a reaction feature (like, thumbs up, etc.). Verify the reaction is recorded and visible.
 
 COM-9: The system must provide the ability for all employees to communicate with other employees.
+- **Rationale:** Facilitates direct communication among employees, promoting collaboration and team cohesion.
+- **AT-COM-9-1:** Send a message to another employee and confirm it is received and can be responded to.
 
-COM-10: The system must safeguard sensitive information such as chat logs and announcement management, so that only Manager has permission to manage announcements, and each employee, including the Manager only has access to messages involving them.
+COM-10: The system must safeguard sensitive information such as chat logs and announcement management, so that only Manager has permission to manage announcements, and each employee, including the Manager, only has access to messages involving them.
+- **Rationale:** Ensures privacy and security of communications, complying with data protection laws and internal policies.
+- **AT-COM-10-1:** Attempt to access another employee's messages or manage announcements as a non-Manager. Verify access is denied.
+- **AT-COM-10-2:** Conduct a permissions audit to confirm that access controls are correctly implemented.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
