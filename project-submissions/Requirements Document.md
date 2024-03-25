@@ -749,7 +749,7 @@ RMS-15: The system must display an empty template with sections for name, ingred
 - **Rationale:** Providing an organized template simplifies the recipe creation process, ensuring that all necessary information is captured.
 - **AT-RMS-15-1:** Log in as Manager. Navigate to the recipe creation page. Verify that an empty template with sections for name, ingredients, preparation instructions, and allergen information is displayed.
 
-RMS-16: The system must allow the Manager to enter text in each section.
+RMS-16: The system must allow the Manager to enter text in each section of the recipe during creation mode.
 - **Rationale:** Enabling text input ensures that Managers can provide detailed information for each aspect of the recipe.
 - **AT-RMS-16-1:** Log in as Manager. Navigate to the recipe creation page. Enter text in each section (name, ingredients, preparation instructions, and allergen information). Verify that text input is allowed in each section.
 
