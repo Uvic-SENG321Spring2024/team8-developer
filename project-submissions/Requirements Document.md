@@ -866,7 +866,7 @@ As a user I want to view my account information so I can ensure it is all correc
 
 **Acceptance Criteria:**
 
-There is an option for a user to view account informaton for themselves. It will show their username, role, contact information, and payment information.
+There is an option for a user to view account informaton for themselves. It will show their username, role, and contact information.
 
 **User Story 6: Edit Account Information**
 
