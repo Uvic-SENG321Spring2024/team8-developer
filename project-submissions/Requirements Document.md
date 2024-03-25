@@ -340,44 +340,66 @@ The scheduling feature has a high priority. This is a system employees will use 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
-SCH-1: The scheduler must allow a Manager to create shifts for employees.  
+SCH-1: The system must allow a Manager to create shifts for employees.
+- **Rationale**: Ensures that Managers can effectively plan and allocate human resources to meet the operational needs of Banter Ice Cream.
+- **AT-SCH-1-1**: As a Manager, create a shift in the scheduler. Verify the shift appears in the system and is visible to assigned employees.
 
-SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.  
+SCH-2: The system must allow shifts to be made 2-4 weeks in advance.
+- **Rationale**: Provides adequate planning horizon for both management and staff, allowing for personal and professional scheduling needs to be met.
+- **AT-SCH-2-1**: As a Manager, attempt to create a shift more than 4 weeks in advance. Verify the system does not allow this.
+- **AT-SCH-2-2**: Create a shift 2-4 weeks in advance and verify it is successfully added.
 
-SCH-3: The scheduler must allow a Manager to delete shifts from the schedule.  
+SCH-3: The system must allow a Manager to delete shifts from the schedule.
+- **Rationale**: Facilitates operational flexibility by allowing Managers to adjust staffing needs as they change.
+- **AT-SCH-3-1**: As a Manager, delete an existing shift. Verify the shift is removed from the schedule.
 
-SCH-4: The scheduler must allow a Manager to edit the schedule.  
+SCH-4: The system must allow a Manager to edit the schedule.
+- **Rationale**: Ensures the ability to make necessary adjustments to the schedule for reasons such as employee availability changes or operational demand changes.
+- **AT-SCH-4-1**: As a Manager, edit an existing shift's time. Verify the change is reflected in the schedule.
 
-SCH-5: When a schedule is edited all employees with affected schedules must be updated. 
+SCH-5: The system must ensure shift details become read-only once the shift is over.
+- **Rationale**: Preserves the integrity of historical scheduling data, which can be important for payroll and performance evaluation purposes.
+- **AT-SCH-5-1**: Attempt to edit a shift that has already occurred. Verify the system does not allow the modification.
 
-SCH-6: The scheduler must not allow the modification of any details of a shift after the shift is over. 
+SCH-6: The system must schedule employees only during their indicated available times.
+- **Rationale**: Respects employee availability preferences, contributing to job satisfaction and work-life balance.
+- **AT-SCH-6-1**: Attempt to schedule an employee during their unavailable time. Verify the system prevents this action.
 
-SCH-7: Each shift must have a unique identifier to identify specific shifts.  
+SCH-7: The system must allow a Manager and a Bookkeeper to view correct information about the summary of employees' tracked hours.
+- **Rationale**: Provides necessary visibility into worked hours for payroll processing and management oversight.
+- **AT-SCH-7-1**: As a Manager or Bookkeeper, view tracked hours for an employee. Verify the information displayed is accurate and up-to-date.
 
-SCH-8: Schedule information must be stored for 6 years due to Canadian laws regarding business tax documents.  
+SCH-8: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.
+- **Rationale**: Simplifies the process of tracking work hours, ensuring accuracy and reducing the administrative burden on employees.
+- **AT-SCH-8-1**: As an employee, clock in at the start of a shift. Verify that the system records the clock-in time under the employee's account.
 
-SCH-9: When a shift swap request is approved the schedule must update for each employee.  
+SCH-9: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.
+- **Rationale**: Allows for precise tracking of work hours and ensures employees are compensated for the actual time worked.
+- **AT-SCH-9-1**: As an employee, clock out at the end of a shift. Verify that the system records the clock-out time and accurately reflects the hours worked for that shift.
 
-SCH-10: The schedule must not allow an employee to be scheduled during the time with indicated availability off. 
+SCH-10: When a shift swap request is approved the schedule must update for each employee.
+- **Rationale**: Ensures the schedule accurately reflects current staffing after shift swaps, maintaining operational integrity.
+- **AT-SCH-10-1**: Initiate and approve a shift swap request. Verify that the schedule updates to reflect the new shift assignments for both involved employees.
 
-SCH-11: The schedulers option to view tracked hours by Manager and Bookkeeper must be shown correct information.  
+SCH-11: The system must allow an employee to request shift swaps with other employees.
+- **Rationale**: Provides flexibility for employees to manage their schedules while still meeting operational needs.
+- **AT-SCH-11-1**: As an employee, request a shift swap with another employee. Verify that the request can be submitted through the system.
 
-SCH-12: The system must automatically summarize employees tracked hours.  
+SCH-12: The system must allow a Manager to approve requested shift swaps from employees.
+- **Rationale**: Gives Managers control over shift assignments to ensure operational needs are met.
+- **AT-SCH-12-1**: As a Manager, receive a shift swap request and approve it. Verify that the system updates the schedule accordingly.
 
-SCH-13: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.  
+SCH-13: The system must allow a Manager to deny requested shift swaps from employees.
+- **Rationale**: Ensures that Managers can maintain staffing levels that meet operational requirements.
+- **AT-SCH-13-1**: As a Manager, receive a shift swap request and deny it. Verify that the system notifies the requesting employees and does not change the schedule.
 
-SCH-14: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.  
+SCH-14: The system must ensure all shift swaps maintain single shift assignments for employees without overlapping schedules.
+- **Rationale**: Prevents scheduling conflicts that could leave shifts understaffed or employees overburdened.
+- **AT-SCH-14-1**: Attempt to approve a shift swap that would result in double booking an employee. Verify the system prevents the swap.
 
-SCH-15: The system must allow an employee to request shift swaps with other employees.  
-
-SCH-16: The system must allow a Manager to approve requested shift swaps from employees.  
-
-SCH-17: The system must allow a Manager to deny requested shift swaps from employees.  
-
-SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
-
-SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.
-
+SCH-15: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts, and holidays.
+- **Rationale**: Ensures that employees and Managers have accurate and up-to-date information for planning and operational purposes.
+- **AT-SCH-15-1**: After several scheduling changes, including swaps, deletions, and edits, view the schedule. Verify that all changes are accurately reflected.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 
@@ -569,25 +591,47 @@ The Communication and Announcement feature is a high priority feature in the sys
 
 ### b. Functional Requirements <a name="f2-functional"></a>
 
-COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication. 
+COM-1: The system must allow embedding capabilities for images, videos, and PDFs in announcements and messages to enhance communication.
+- **Rationale:** Visual aids and documents can significantly enhance the clarity and effectiveness of communication, making information more engaging and easier to understand.
+- **AT-COM-1-1:** Test embedding an image, a video, and a PDF in a message. Verify they display correctly in the message.
+- **AT-COM-1-2:** View the message on different device types to ensure media compatibility.
 
-COM-2: The system must provide the ability for a Manager to create and publish announcements to all employees. 
+COM-2: The system must provide the ability for a Manager to create and publish announcements to all employees.
+- **Rationale:** Centralized dissemination of information ensures that all employees are timely informed of important organizational news.
+- **AT-COM-2-1:** As a Manager, create and publish an announcement. Verify it is accessible to all employees immediately after publishing.
 
-COM-3: The system must provide the ability for a Manager to create and publish announcements specific to a user class or location. 
+COM-3: The system must provide the ability for a Manager to create and publish announcements specific to a user class or location.
+- **Rationale:** Allows for targeted communication, ensuring that only relevant employees are notified, which can reduce information overload and increase relevancy.
+- **AT-COM-3-1:** Publish an announcement targeted at a specific user class. Confirm only that class can view the announcement.
 
-COM-4: The system must provide the ability for a Manager to edit announcements. 
+COM-4: The system must provide the ability for a Manager to edit announcements.
+- **Rationale:** Ensures that any inaccuracies or updates can be corrected or added, keeping information current and accurate.
+- **AT-COM-4-1:** As a Manager, select an existing announcement, make changes, and save. Verify the changes are reflected in the announcement.
 
-COM-5: The system must provide the ability for a Manager to remove announcements. 
+COM-5: The system must provide the ability for a Manager to remove announcements.
+- **Rationale:** Ability to remove outdated or incorrect information helps maintain the integrity of organizational communications.
+- **AT-COM-5-1:** As a Manager, delete an announcement. Confirm it is no longer accessible or visible to employees.
 
 COM-6: The system must provide the ability for all employees to view announcements.
+- **Rationale:** Ensures equitable access to information for all employees, fostering an informed and cohesive workforce.
+- **AT-COM-6-1:** Log in as different employees and verify that announcements are accessible and viewable.
 
-COM-7: The system must provide the ability for a Manager to view announcements with more details, including number of viewers, who has viewed the announcements, and the reaction of viewers. 
+COM-7: The system must provide the ability for a Manager to view announcements with more details, such as the number of viewers, the viewers information, and the reactions of viewers.
+- **Rationale:** Gives Managers insights into the engagement and reach of their communications, allowing for more informed communication strategies.
+- **AT-COM-7-1:** As a Manager, view detailed analytics of an announcement. Verify the accuracy of viewer and reaction data.
 
-COM-8: The system must provide the ability for all employees to receive and react to the published announcements. 
+COM-8: The system must provide the ability for all employees to react to the published announcements.
+- **Rationale:** Interaction with announcements can increase engagement and provide feedback to Managers about the workforce's concerns and interests.
+- **AT-COM-8-1:** As an employee, view an announcement and use a reaction feature (like, thumbs up, etc.). Verify the reaction is recorded and visible.
 
 COM-9: The system must provide the ability for all employees to communicate with other employees.
+- **Rationale:** Facilitates direct communication among employees, promoting collaboration and team cohesion.
+- **AT-COM-9-1:** Send a message to another employee and confirm it is received and can be responded to.
 
-COM-10: The system must safeguard sensitive information such as chat logs and announcement management, so that only Manager has permission to manage announcements, and each employee, including the Manager only has access to messages involving them.
+COM-10: The system must safeguard sensitive information such as chat logs and announcement management, so that only Manager has permission to manage announcements, and each employee, including the Manager, only has access to messages involving them.
+- **Rationale:** Ensures privacy and security of communications, complying with data protection laws and internal policies.
+- **AT-COM-10-1:** Attempt to access another employee's messages or manage announcements as a non-Manager. Verify access is denied.
+- **AT-COM-10-2:** Conduct a permissions audit to confirm that access controls are correctly implemented.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f2-usecases"></a>
 
@@ -695,54 +739,107 @@ The Recipe Management feature has a high priority in the application. A Manager,
 
 ### b. Functional Requirements <a name="f3-functional"></a>
 
-RMS-1: Kitchen Staff, Front of House Staff and Manager must be able to view active and inactive recipes. 
+RMS-1: Kitchen Staff, Front of House Staff and Managers must be able to view active and inactive recipes. 
+- **Rationale:** This ensures that all employees involved in food preparation and service (Kitchen Staff, Front of House Staff, and Managers) can access recipe information, regardless of the recipe's status (active or inactive), ensuring operational continuity and transparency.
+- **AT-RMS-1-1:** Log in as Kitchen Staff. Verify access to view both active and inactive recipes.
+- **AT-RMS-1-2:** Log in as Front of House Staff. Verify access to view both active and inactive recipes.
+- **AT-RMS-1-3:** Log in as Manager. Verify access to view both active and inactive recipes.
 
-RMS-2: Manager and Kitchen Staff must be able to view the full recipe including ingredients list, preparation instructions, and allergens.
+RMS-2: Managers and Kitchen Staff must be able to view the full recipe including ingredients list, preparation instructions, and allergens.
+- **Rationale:** This ensures that those directly involved in food preparation (Managers and Kitchen Staff) have access to all necessary information to carry out their tasks safely and efficiently.
+- **AT-RMS-2-1:** Log in as Manager. Open a recipe and verify that it displays the full recipe details, including ingredients, preparation instructions, and allergens.
+- **AT-RMS-2-2:** Log in as Kitchen Staff. Open a recipe and verify that it displays the full recipe details, including ingredients, preparation instructions, and allergens.
 
 RMS-3: Front of House Staff must be only able to view the allergens of a recipe.
+- **Rationale:** This ensures that Front of House Staff, who interact directly with customers, have access to crucial allergen information to address customer inquiries and ensure their safety.
+- **AT-RMS-3-1:** Log in as Front of House Staff. Open a recipe and verify that it displays only the allergen information while hiding the rest of the recipe details.
 
 RMS-4: Manager must be able to create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+- **Rationale:** Allows Managers to contribute to the recipe database, facilitating menu updates and new ice cream flavor introductions.
+- **AT-RMS-4-1:** Log in as Manager. Navigate to the recipe creation page. Enter all required details (name, ingredients, preparation instructions, and allergen information) and save. Verify that the new recipe appears in the recipe list.
 
 RMS-5: Manager must be able to edit existing recipes, including changing details, adding or removing ingredients, and updating allergen information.
+- **Rationale:** This allows Managers to maintain the accuracy and relevance of recipes as ingredients change or preparation methods are updated.
+- **AT-RMS-5-1:** Log in as Manager. Open an existing recipe. Edit any detail (name, ingredients, preparation instructions, or allergen information) and save changes. Verify that the changes are reflected in the recipe details.
 
 RMS-6: Manager must be able to archive a recipe, changing its status to inactive, and be able to unarchive a recipe, changing its status to active.
+- **Rationale:** This feature enables Managers to manage the recipe database effectively, archiving recipes that are no longer in use while retaining them for reference if needed.
+- **AT-RMS-6-1:** Log in as Manager. Archive a recipe and verify that it is moved to the inactive recipes list.
+- **AT-RMS-6-2:** Log in as Manager. Unarchive a previously archived recipe and verify that it is moved back to the active recipes list.
 
 RMS-7: The system must be able to display different recipe views based on the access of the user's role.
+- **Rationale:** This ensures that each user sees only the relevant information based on their role, enhancing usability and security.
 
 &emsp;&emsp;RMS-7.1: The system must have a detailed recipe view which contains name, list of ingredients, preparation instructions, and allergens.
 
 &emsp;&emsp;RMS-7.2: The system must have a limited recipe view which only contains the name, and allergens.
 
+- **AT-RMS-7-1:** Log in as Manager. Open a recipe and verify that it displays the detailed view containing name, ingredients, preparation instructions, and allergens.
+- **AT-RMS-7-2:** Log in as Kitchen Staff. Open a recipe and verify that it displays the limited view containing only the name and allergens.
+- **AT-RMS-7-3:** Log in as Front of House Staff. Open a recipe and verify that it displays the limited view containing only the name and allergens.
+
 RMS-8: The system must be able to archive recipes, removing it from the list of active recipes and adding it to the list of inactive recipes.
+- **Rationale:** This enables efficient management of recipe inventory, ensuring that only relevant and current recipes are readily accessible.
+- **AT-RMS-8-1:** Log in as Manager. Archive a recipe and verify that it is removed from the list of active recipes.
 
 RMS-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adding it to the list of active recipes.
+- **Rationale:** This allows Managers to restore previously archived recipes if they become relevant again.
+- **AT-RMS-9-1:** Log in as Manager. Unarchive a previously archived recipe and verify that it is added back to the list of active recipes.
 
 RMS-10: The system must display a prompt the user to save when they exit editing mode if they didn't already save.
+- **Rationale:** This prevents accidental loss of data by reminding users to save their changes before exiting editing mode.
+- **AT-RMS-10-1:** Make changes to a recipe. Attempt to exit editing mode without saving. Verify that a prompt appears, reminding the user to save changes.
 
 RMS-11: The system must display a prompt to the user to save when they exit creation mode if they didn't already save.
+- **Rationale:** Similar to RMS-10, this ensures data integrity by reminding users to save new recipes before exiting creation mode.
+- **AT-RMS-11-1:** Create a new recipe. Attempt to exit creation mode without saving. Verify that a prompt appears, reminding the user to save the new recipe.
 
 RMS-12: The system must provide an edit option for each recipe.
+- **Rationale:** This offers users the flexibility to update recipe details as needed, contributing to the overall usability of the system.
+- **AT-RMS-12-1:** Log in as Manager. Open a recipe and verify that an edit option is available.
 
 RMS-13: The system must implement a save option to confirm changes. 
+- **Rationale:** Providing a save option ensures that users have control over when changes are finalized, enhancing usability and preventing accidental data loss.
+- **AT-RMS-13-1:** Make changes to a recipe. Click the save option. Verify that changes are saved and reflected in the recipe details.
 
 RMS-14: The system must allow the Manager to exit editing mode.
+- **Rationale:** This allows Managers to complete their editing tasks efficiently, improving user experience.
+- **AT-RMS-14-1:** Log in as Manager. Edit a recipe. Click the exit option. Verify that editing mode is exited without saving changes if no changes were made, or changes are saved if modifications were made.
 
 RMS-15: The system must display an empty template with sections for name, ingredients, preparation instructions, and allergen information when creating a recipe.
+- **Rationale:** Providing an organized template simplifies the recipe creation process, ensuring that all necessary information is captured.
+- **AT-RMS-15-1:** Log in as Manager. Navigate to the recipe creation page. Verify that an empty template with sections for name, ingredients, preparation instructions, and allergen information is displayed.
 
-RMS-16: The system must allow the Manager to enter text in each section.
+RMS-16: The system must allow the Manager to enter text in each section of the recipe during creation mode.
+- **Rationale:** Enabling text input ensures that Managers can provide detailed information for each aspect of the recipe.
+- **AT-RMS-16-1:** Log in as Manager. Navigate to the recipe creation page. Enter text in each section (name, ingredients, preparation instructions, and allergen information). Verify that text input is allowed in each section.
 
 RMS-17: The system must provide a save option for new recipes.
+- **Rationale:** This allows Managers to finalize and save new recipes once all necessary details have been entered.
+- **AT-RMS-17-1:** Log in as Manager. Create a new recipe and enter all required details. Click the save option. Verify that the new recipe is saved and appears in the recipe list.
 
 RMS-18: The system must ensure newly created recipes are visible in the list of recipes.
+- **Rationale:** Confirming visibility ensures that newly created recipes are readily accessible to users.
+- **AT-RMS-18-1:** Log in as Manager. Create a new recipe. Verify that the new recipe appears in the recipe list.
 
 RMS-19: The system must allow a Manager to exit creation mode.
+- **Rationale:** This enables Managers to complete recipe creation tasks efficiently, improving user experience.
+- **AT-RMS-19-1:** Log in as Manager. Create a new recipe. Click the exit option. Verify that creation mode is exited without saving the new recipe.
 
 RMS-20: The system must allow a Manager to select specific recipes for archiving or unarchiving.
+- **Rationale:** Empowers Managers to manage recipe status which enhances system flexibility and usability.
+- **AT-RMS-20-1:** Log in as Manager. Select specific recipes and archive them. Verify that selected recipes are moved to the inactive recipes list.
+- **AT-RMS-20-2:** Log in as Manager. Select previously archived recipes and unarchive them. Verify that selected recipes are moved back to the active recipes list.
 
 RMS-21: The system must have different access levels for Manager, Kitchen Staff, and Front of House Staff.
+- **Rationale:** This ensures that each user role has appropriate access permissions, maintaining data security and integrity.
+- **AT-RMS-21-1:** Log in as Manager. Verify access to all features and functionalities.
+- **AT-RMS-21-2:** Log in as Kitchen Staff. Verify restricted access to certain features and functionalities.
+- **AT-RMS-21-3:** Log in as Front of House Staff. Verify restricted access to certain features and functionalities.
 
 RMS-22: The system must display meaningful error messages to users in case of unsuccessful operations or system errors.
-
+- **Rationale:** Providing informative error messages helps users understand issues and take appropriate actions, improving user experience.
+- **AT-RMS-22-1:** Simulate an unsuccessful operation or system error. Verify that a meaningful error message is displayed to the user, explaining the issue and providing guidance on potential resolutions.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f3-usecases"></a>
 
@@ -934,6 +1031,7 @@ ACC-8: The system must allow users to view their account information to ensure i
 - **Rationale:** Allowing users to review their account information promotes transparency and empowers them to verify and update their details as needed.
 - **AT-ACC-8-1:** Log in as a user. Navigate to the account settings section. Verify that the user's account information, including payment details, contact information, and password, is displayed accurately.
 
+
 ACC-9: The system must automatically log out users once they close the application.
 **ACC-9:** The system must automatically log out users once they close the application.
 - **Rationale:** Automatic logout upon application closure enhances security by preventing unauthorized access to user accounts if the device is left unattended.
@@ -959,7 +1057,7 @@ As a Manager I want to create an account so that my newly hired employees have a
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Create" an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
+There is an option for a Manager to create an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
 
 **User Story 3: View Account Information**
 
@@ -967,7 +1065,7 @@ As a Manager I want to view a user's account information so that I can see their
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "View Account Informaton" for any selected employee. It will show their username, role, and contact information.
+There is an option for a Manager to view account information for any selected employee. It will show their username, role, and contact information.
 
 **User Story 4: Manage Account**
 
@@ -975,7 +1073,7 @@ As a Manager I want to change a user's role or username in order to ensure it st
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a user's username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+There is an option for a Manager to manage account for any employee. It will allow them to edit a users username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
 
 **User Story 5: View Account Information**
 
@@ -983,15 +1081,15 @@ As a user I want to view my account information so I can ensure it is all correc
 
 **Acceptance Criteria:**
 
-There is an option for a user to "View Account Informaton" for themselves. It will show their username, role, contact information, and payment information.
+There is an option for a user to view account informaton for themselves. It will show their username, role, and contact information.
 
 **User Story 6: Edit Account Information**
 
-As a user I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+As a user I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the view account information use case, and the log in use case.
 
 **Acceptance Criteria:**
 
-A user must have an option to "Edit Account Information" for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+A user must have an option to edit account information for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the view account information use case, and the log in use case.
 
 **User Story 7: Log In**
 
@@ -999,7 +1097,7 @@ As a user I want to log in to my account so I can use the system.
 
 **Acceptance Criteria:**
 
-When a user opens the app they will have an option to "Log In" to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
+When a user opens the app they will have an option to log in to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
 
 **User Story 8: Log Out**
 
@@ -1007,35 +1105,50 @@ As a user I want to log out of my account so I can ensure no one else can use my
 
 **Acceptance Criteria:**
 
-A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
+A user must have the option to log out of their account.  This will remove their access to the system until they log in again. The system must automatically log out a user after 1 hour of inactivity.
+
+**User Story 9: View Payment Information**
+
+As a Bookkeeper I want to view a selected employee's payment information.
+
+**Acceptance Criteria:**
+
+The Bookeeper must have the option to view any employee's payment information. This feature will allow the Bookeeper to view the selected employee's transit number, institution number, account number, and void cheque.
+
 
 ### d. Storyboards <a name="f5-storyboards"></a>
-#### Create Account
+
+### Create Account
 ![Account Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountCreation.png)
 
-#### Delete Account
+### Delete Account
 ![Account Deletion](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountDeletion.png)
 
-#### View Account Information
+### View Account Information
 ![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ViewInformation.png)
 
-#### Edit Cell Phone
+### Edit Cell Phone Number
 ![Edit Cell Phone](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditCell.png)
 
-#### Edit Email
+### Edit Email
 ![Edit Email](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditEmail.png)
 
-#### Edit Role
+### Edit Role
 ![Edit Role](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditRole.png)
 
-#### Edit Username
+### Manage Payment Information
+![Manage Pay](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ManagePay.png)
+
+### Edit Username
 ![Edit Username](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditUsername.png)
 
-#### Login
+### Login
 ![Login](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Login.png)
 
-#### Logout
+### Logout
+
 ![Logout](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Logout.png)
+
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 ![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
