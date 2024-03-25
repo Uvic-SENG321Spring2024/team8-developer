@@ -425,7 +425,7 @@ As a Manager I want to edit an already made schedule to update, remove or add sh
 
 **Acceptance Criteria:**
 
-Given the schedule is updated, when employees view the schedule, then the updated schedule should be shown with all alterations.
+Given the schedule is updated, when employees view the schedule, then the updated schedule should be shown with all alterations. The changes made to the schedule must also be consistent with changes made by the Manager.
 
 **User Story 4: Indicate Availability**
 
@@ -445,7 +445,7 @@ When tracked hours for an employee are viewed then a summary of all worked hours
 
 **User Story 6: Clock In**
 
-As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
+As a Front of House Staff, Kitchen Staff, Bookkeeper, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
@@ -453,7 +453,7 @@ Given I have clocked in, when my tracked hours are viewed then the hours I have 
 
 **User Story 7: Clock Out**
 
-As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
+As a Front of House Staff, Kitchen Staff, Bookkeeper, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
@@ -475,13 +475,53 @@ As a Staff member I want to view the posted schedule for the current work weeks 
 
 Given an employee selects to view the schedule they should be shown the up to date schedule with correct information for the current shift period as well as the next. 
 
-**User Story 10: View All Schedules**
+**User Story 10: View Personal Weekly Schedules**
 
-As an employee I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
+As an employee I want to be able to view my personal schedule. I want to be able to view the schedule in a weekly format so I can view the correct information in an easy to read format so that I know what shift I am working to help me make shift swap decisions.
 
 **Acceptance Criteria:**
 
-Given an employee selects to view the schedule they should be shown the up to date schedule in their chosen format with correct information of all employees for the shift period.
+Given an employee selects to view the schedule they should be shown the up to date schedule in a weekly format with correct personal information for their shift period.
+
+**User Story 11: View Personal Monthly Schedules**
+
+As an employee I want to be able to view my personal schedule. I want to be able to view the schedule in a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule they should be shown the up to date schedule in a monthly format with correct personal information for their shift period.
+
+**User Story 12: View Personal Daily Schedules**
+
+As an employee I want to be able to view my personal schedule. I want to be able to view the schedule in a daily format so I can view the correct information in an easy to read format so that I know what shift I am working to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule they should be shown the up to date schedule in a daily format with correct personal information for their shift period.
+
+**User Story 13: View All Employees' Weekly Schedules**
+
+As an employee I want to be able to view the schedule of all employees. I want to be able to view the schedule in a weekly format so I can view the correct information in an easy to read format so that I know what shifts everyone is working to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule they should be shown the up to date schedule in a weekly format with correct information of all employees for all shift periods.
+
+**User Story 14: View All Employees' Monthly Schedules**
+
+As an employee I want to be able to view the schedule of all employees. I want to be able to view the schedule in a monthly format so I can view the correct information in an easy to read format so that I know what shifts everyone is working to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule they should be shown the up to date schedule in a monthly format with correct information of all employees for all shift periods.
+
+**User Story 15: View All Employees' Daily Schedules**
+
+As an employee I want to be able to view the schedule of all employees. I want to be able to view the schedule in a daily format so I can view the correct information in an easy to read format so that I know what shifts everyone is working to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule they should be shown the up to date schedule in a daily format with correct information of all employees for all shift periods.
 
 ### d. Storyboards <a name="f1-storyboards"></a>
   
