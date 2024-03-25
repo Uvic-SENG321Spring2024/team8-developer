@@ -739,54 +739,107 @@ The Recipe Management feature has a high priority in the application. A Manager,
 
 ### b. Functional Requirements <a name="f3-functional"></a>
 
-RMS-1: Kitchen Staff, Front of House Staff and Manager must be able to view active and inactive recipes. 
+RMS-1: Kitchen Staff, Front of House Staff and Managers must be able to view active and inactive recipes. 
+- **Rationale:** This ensures that all employees involved in food preparation and service (Kitchen Staff, Front of House Staff, and Managers) can access recipe information, regardless of the recipe's status (active or inactive), ensuring operational continuity and transparency.
+- **AT-RMS-1-1:** Log in as Kitchen Staff. Verify access to view both active and inactive recipes.
+- **AT-RMS-1-2:** Log in as Front of House Staff. Verify access to view both active and inactive recipes.
+- **AT-RMS-1-3:** Log in as Manager. Verify access to view both active and inactive recipes.
 
-RMS-2: Manager and Kitchen Staff must be able to view the full recipe including ingredients list, preparation instructions, and allergens.
+RMS-2: Managers and Kitchen Staff must be able to view the full recipe including ingredients list, preparation instructions, and allergens.
+- **Rationale:** This ensures that those directly involved in food preparation (Managers and Kitchen Staff) have access to all necessary information to carry out their tasks safely and efficiently.
+- **AT-RMS-2-1:** Log in as Manager. Open a recipe and verify that it displays the full recipe details, including ingredients, preparation instructions, and allergens.
+- **AT-RMS-2-2:** Log in as Kitchen Staff. Open a recipe and verify that it displays the full recipe details, including ingredients, preparation instructions, and allergens.
 
 RMS-3: Front of House Staff must be only able to view the allergens of a recipe.
+- **Rationale:** This ensures that Front of House Staff, who interact directly with customers, have access to crucial allergen information to address customer inquiries and ensure their safety.
+- **AT-RMS-3-1:** Log in as Front of House Staff. Open a recipe and verify that it displays only the allergen information while hiding the rest of the recipe details.
 
 RMS-4: Manager must be able to create new recipes with details such as name, ingredients, preparation instructions and allergen information.
+- **Rationale:** Allows Managers to contribute to the recipe database, facilitating menu updates and new ice cream flavor introductions.
+- **AT-RMS-4-1:** Log in as Manager. Navigate to the recipe creation page. Enter all required details (name, ingredients, preparation instructions, and allergen information) and save. Verify that the new recipe appears in the recipe list.
 
 RMS-5: Manager must be able to edit existing recipes, including changing details, adding or removing ingredients, and updating allergen information.
+- **Rationale:** This allows Managers to maintain the accuracy and relevance of recipes as ingredients change or preparation methods are updated.
+- **AT-RMS-5-1:** Log in as Manager. Open an existing recipe. Edit any detail (name, ingredients, preparation instructions, or allergen information) and save changes. Verify that the changes are reflected in the recipe details.
 
 RMS-6: Manager must be able to archive a recipe, changing its status to inactive, and be able to unarchive a recipe, changing its status to active.
+- **Rationale:** This feature enables Managers to manage the recipe database effectively, archiving recipes that are no longer in use while retaining them for reference if needed.
+- **AT-RMS-6-1:** Log in as Manager. Archive a recipe and verify that it is moved to the inactive recipes list.
+- **AT-RMS-6-2:** Log in as Manager. Unarchive a previously archived recipe and verify that it is moved back to the active recipes list.
 
 RMS-7: The system must be able to display different recipe views based on the access of the user's role.
+- **Rationale:** This ensures that each user sees only the relevant information based on their role, enhancing usability and security.
 
 &emsp;&emsp;RMS-7.1: The system must have a detailed recipe view which contains name, list of ingredients, preparation instructions, and allergens.
 
 &emsp;&emsp;RMS-7.2: The system must have a limited recipe view which only contains the name, and allergens.
 
+- **AT-RMS-7-1:** Log in as Manager. Open a recipe and verify that it displays the detailed view containing name, ingredients, preparation instructions, and allergens.
+- **AT-RMS-7-2:** Log in as Kitchen Staff. Open a recipe and verify that it displays the limited view containing only the name and allergens.
+- **AT-RMS-7-3:** Log in as Front of House Staff. Open a recipe and verify that it displays the limited view containing only the name and allergens.
+
 RMS-8: The system must be able to archive recipes, removing it from the list of active recipes and adding it to the list of inactive recipes.
+- **Rationale:** This enables efficient management of recipe inventory, ensuring that only relevant and current recipes are readily accessible.
+- **AT-RMS-8-1:** Log in as Manager. Archive a recipe and verify that it is removed from the list of active recipes.
 
 RMS-9: The system must be able to unarchive recipes, removing it from the list of inactive recipes and adding it to the list of active recipes.
+- **Rationale:** This allows Managers to restore previously archived recipes if they become relevant again.
+- **AT-RMS-9-1:** Log in as Manager. Unarchive a previously archived recipe and verify that it is added back to the list of active recipes.
 
 RMS-10: The system must display a prompt the user to save when they exit editing mode if they didn't already save.
+- **Rationale:** This prevents accidental loss of data by reminding users to save their changes before exiting editing mode.
+- **AT-RMS-10-1:** Make changes to a recipe. Attempt to exit editing mode without saving. Verify that a prompt appears, reminding the user to save changes.
 
 RMS-11: The system must display a prompt to the user to save when they exit creation mode if they didn't already save.
+- **Rationale:** Similar to RMS-10, this ensures data integrity by reminding users to save new recipes before exiting creation mode.
+- **AT-RMS-11-1:** Create a new recipe. Attempt to exit creation mode without saving. Verify that a prompt appears, reminding the user to save the new recipe.
 
 RMS-12: The system must provide an edit option for each recipe.
+- **Rationale:** This offers users the flexibility to update recipe details as needed, contributing to the overall usability of the system.
+- **AT-RMS-12-1:** Log in as Manager. Open a recipe and verify that an edit option is available.
 
 RMS-13: The system must implement a save option to confirm changes. 
+- **Rationale:** Providing a save option ensures that users have control over when changes are finalized, enhancing usability and preventing accidental data loss.
+- **AT-RMS-13-1:** Make changes to a recipe. Click the save option. Verify that changes are saved and reflected in the recipe details.
 
 RMS-14: The system must allow the Manager to exit editing mode.
+- **Rationale:** This allows Managers to complete their editing tasks efficiently, improving user experience.
+- **AT-RMS-14-1:** Log in as Manager. Edit a recipe. Click the exit option. Verify that editing mode is exited without saving changes if no changes were made, or changes are saved if modifications were made.
 
 RMS-15: The system must display an empty template with sections for name, ingredients, preparation instructions, and allergen information when creating a recipe.
+- **Rationale:** Providing an organized template simplifies the recipe creation process, ensuring that all necessary information is captured.
+- **AT-RMS-15-1:** Log in as Manager. Navigate to the recipe creation page. Verify that an empty template with sections for name, ingredients, preparation instructions, and allergen information is displayed.
 
-RMS-16: The system must allow the Manager to enter text in each section.
+RMS-16: The system must allow the Manager to enter text in each section of the recipe during creation mode.
+- **Rationale:** Enabling text input ensures that Managers can provide detailed information for each aspect of the recipe.
+- **AT-RMS-16-1:** Log in as Manager. Navigate to the recipe creation page. Enter text in each section (name, ingredients, preparation instructions, and allergen information). Verify that text input is allowed in each section.
 
 RMS-17: The system must provide a save option for new recipes.
+- **Rationale:** This allows Managers to finalize and save new recipes once all necessary details have been entered.
+- **AT-RMS-17-1:** Log in as Manager. Create a new recipe and enter all required details. Click the save option. Verify that the new recipe is saved and appears in the recipe list.
 
 RMS-18: The system must ensure newly created recipes are visible in the list of recipes.
+- **Rationale:** Confirming visibility ensures that newly created recipes are readily accessible to users.
+- **AT-RMS-18-1:** Log in as Manager. Create a new recipe. Verify that the new recipe appears in the recipe list.
 
 RMS-19: The system must allow a Manager to exit creation mode.
+- **Rationale:** This enables Managers to complete recipe creation tasks efficiently, improving user experience.
+- **AT-RMS-19-1:** Log in as Manager. Create a new recipe. Click the exit option. Verify that creation mode is exited without saving the new recipe.
 
 RMS-20: The system must allow a Manager to select specific recipes for archiving or unarchiving.
+- **Rationale:** Empowers Managers to manage recipe status which enhances system flexibility and usability.
+- **AT-RMS-20-1:** Log in as Manager. Select specific recipes and archive them. Verify that selected recipes are moved to the inactive recipes list.
+- **AT-RMS-20-2:** Log in as Manager. Select previously archived recipes and unarchive them. Verify that selected recipes are moved back to the active recipes list.
 
 RMS-21: The system must have different access levels for Manager, Kitchen Staff, and Front of House Staff.
+- **Rationale:** This ensures that each user role has appropriate access permissions, maintaining data security and integrity.
+- **AT-RMS-21-1:** Log in as Manager. Verify access to all features and functionalities.
+- **AT-RMS-21-2:** Log in as Kitchen Staff. Verify restricted access to certain features and functionalities.
+- **AT-RMS-21-3:** Log in as Front of House Staff. Verify restricted access to certain features and functionalities.
 
 RMS-22: The system must display meaningful error messages to users in case of unsuccessful operations or system errors.
-
+- **Rationale:** Providing informative error messages helps users understand issues and take appropriate actions, improving user experience.
+- **AT-RMS-22-1:** Simulate an unsuccessful operation or system error. Verify that a meaningful error message is displayed to the user, explaining the issue and providing guidance on potential resolutions.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f3-usecases"></a>
 
