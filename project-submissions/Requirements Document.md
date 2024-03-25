@@ -365,7 +365,7 @@ SCH-6: The system must schedule employees only during their indicated available 
 - **Rationale**: Respects employee availability preferences, contributing to job satisfaction and work-life balance.
 - **AT-SCH-6-1**: Attempt to schedule an employee during their unavailable time. Verify the system prevents this action.
 
-SCH-7: The system must display correct information about the summary of employees' tracked hours.
+SCH-7: The system must allow a Manager and a Bookkeeper to view correct information about the summary of employees' tracked hours.
 - **Rationale**: Provides necessary visibility into worked hours for payroll processing and management oversight.
 - **AT-SCH-7-1**: As a Manager or Bookkeeper, view tracked hours for an employee. Verify the information displayed is accurate and up-to-date.
 
@@ -391,19 +391,15 @@ SCH-12: The system must allow a Manager to approve requested shift swaps from em
 
 SCH-13: The system must allow a Manager to deny requested shift swaps from employees.
 - **Rationale**: Ensures that Managers can maintain staffing levels that meet operational requirements.
-- **AT-SCH-13-1**: As a Manager, receive a shift swap request and deny it.
+- **AT-SCH-13-1**: As a Manager, receive a shift swap request and deny it. Verify that the system notifies the requesting employees and does not change the schedule.
 
-SCH-14: The system must allow a Manager to deny requested shift swaps from employees.
-- **Rationale**: Ensures that Managers can maintain staffing levels that meet operational requirements.
-- **AT-SCH-14-1**: As a Manager, receive a shift swap request and deny it. Verify that the system notifies the requesting employees and does not change the schedule.
-
-SCH-15: The system must ensure all shift swaps maintain single shift assignments for employees without overlapping schedules.
+SCH-14: The system must ensure all shift swaps maintain single shift assignments for employees without overlapping schedules.
 - **Rationale**: Prevents scheduling conflicts that could leave shifts understaffed or employees overburdened.
-- **AT-SCH-15-1**: Attempt to approve a shift swap that would result in double booking an employee. Verify the system prevents the swap.
+- **AT-SCH-14-1**: Attempt to approve a shift swap that would result in double booking an employee. Verify the system prevents the swap.
 
-SCH-16: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts, and holidays.
+SCH-15: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts, and holidays.
 - **Rationale**: Ensures that employees and Managers have accurate and up-to-date information for planning and operational purposes.
-- **AT-SCH-16-1**: After several scheduling changes, including swaps, deletions, and edits, view the schedule. Verify that all changes are accurately reflected.
+- **AT-SCH-15-1**: After several scheduling changes, including swaps, deletions, and edits, view the schedule. Verify that all changes are accurately reflected.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 
