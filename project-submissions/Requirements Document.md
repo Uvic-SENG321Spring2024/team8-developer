@@ -821,6 +821,8 @@ ACC-8: The system must allow users to view their account information to ensure i
 
 ACC-9: The system must automatically log users out of the application after 1 hour of inactivity.
 
+ACC-10: The system must allow the Bookeeper to access an Employee's payment information.
+
 
 
 ### c. Use cases associated with the feature or functional requirement <a name="f5-usecases"></a>
@@ -891,6 +893,15 @@ As a user I want to log out of my account so I can ensure no one else can use my
 **Acceptance Criteria:**
 
 A user must have the option to log out of their account.  This will remove their access to the system until they log in again. The system must automatically log out a user once they have closed the application.
+
+**User Story 9: View Payment Information**
+
+As a Bookkeeper I want to view a selected Employee's payment information.
+
+**Acceptance Criteria:**
+
+The Bookeeper must have the option to view any Employee's payment information. This feature will allow the Bookeeper to view the selected Employee's transit number, institution number, account number, and void cheque.
+
 
 ### d. Storyboards <a name="f5-storyboards"></a>
 
