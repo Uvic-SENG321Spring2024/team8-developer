@@ -892,7 +892,7 @@ I can exit the removal mode when I'm done.
 ![Create Onboarding Materials New](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/87c33aba-f222-4496-984e-0dddf16ec837)
 
 #### Edit Onboarding Material
-![Edit Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/cc4d3b74-85d0-4661-b1fd-f23b31042a97)
+![Edit Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/0cac1dec-c942-4d47-956a-2b6bd0cf4124)
 
 #### Delete Onboarding Material
 ![Delete Onboarding Materials](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/8bf8c19c-76f0-4d67-bdf1-f5e0d1343879)
