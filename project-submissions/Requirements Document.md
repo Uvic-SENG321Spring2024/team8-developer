@@ -340,17 +340,17 @@ The scheduling feature has a high priority. This is a system employees will use 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
-SCH-1: The scheduler must allow a Manager to create shifts for employees.  
+SCH-1: The system must allow a Manager to create shifts for employees.  
 
-SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.  
+SCH-2: The system must allow shifts to be made 2-4 weeks in advance.  
 
-SCH-3: The scheduler must allow a Manager to delete shifts from the schedule.  
+SCH-3: The system must allow a Manager to delete shifts from the schedule.  
 
-SCH-4: The scheduler must allow a Manager to edit the schedule.  
+SCH-4: The system must allow a Manager to edit the schedule.  
 
 SCH-5: When a schedule is edited all employees with affected schedules must be updated. 
 
-SCH-6: The scheduler must not allow the modification of any details of a shift after the shift is over. 
+SCH-6: The system must only allow the modification of any details of a shift if the shift is not over. 
 
 SCH-7: Each shift must have a unique identifier to identify specific shifts.  
 
@@ -358,9 +358,9 @@ SCH-8: Schedule information must be stored for 6 years due to Canadian laws rega
 
 SCH-9: When a shift swap request is approved the schedule must update for each employee.  
 
-SCH-10: The schedule must not allow an employee to be scheduled during the time with indicated availability off. 
+SCH-10: The schedule must only allow an employee to be scheduled during the time with indicated availability on. 
 
-SCH-11: The schedulers option to view tracked hours by Manager and Bookkeeper must be shown correct information.  
+SCH-11: The system's option to view tracked hours by Manager and Bookkeeper must be shown up-to-date information.  
 
 SCH-12: The system must automatically summarize employees tracked hours.  
 
@@ -374,7 +374,7 @@ SCH-16: The system must allow a Manager to approve requested shift swaps from em
 
 SCH-17: The system must allow a Manager to deny requested shift swaps from employees.  
 
-SCH-18: The system must not allow shift swaps which cause an employee to be double booked.  
+SCH-18: The system must only allow shift swaps when an employee is free during the swapped shift's designated time.  
 
 SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts and holidays.
 
