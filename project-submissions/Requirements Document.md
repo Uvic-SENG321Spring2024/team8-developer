@@ -340,101 +340,70 @@ The scheduling feature has a high priority. This is a system employees will use 
 
 ### b. Functional Requirements <a name="f1-functional"></a>
 
-SCH-1: The scheduler must allow a Manager to create shifts for employees.
+SCH-1: The system must allow a Manager to create shifts for employees.
+- **Rationale**: Ensures that Managers can effectively plan and allocate human resources to meet the operational needs of Banter Ice Cream.
+- **AT-SCH-1-1**: As a Manager, create a shift in the scheduler. Verify the shift appears in the system and is visible to assigned employees.
 
-- **Rationale:** Ensures that Managers can effectively plan and allocate human resources to meet the operational needs of Banter Ice Cream.
-- **AT-SCH-1-1:** As a Manager, create a shift in the scheduler. Verify the shift appears in the system and is visible to assigned employees.
+SCH-2: The system must allow shifts to be made 2-4 weeks in advance.
+- **Rationale**: Provides adequate planning horizon for both management and staff, allowing for personal and professional scheduling needs to be met.
+- **AT-SCH-2-1**: As a Manager, attempt to create a shift more than 4 weeks in advance. Verify the system does not allow this.
+- **AT-SCH-2-2**: Create a shift 2-4 weeks in advance and verify it is successfully added.
 
-SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.
+SCH-3: The system must allow a Manager to delete shifts from the schedule.
+- **Rationale**: Facilitates operational flexibility by allowing Managers to adjust staffing needs as they change.
+- **AT-SCH-3-1**: As a Manager, delete an existing shift. Verify the shift is removed from the schedule.
 
-- **Rationale:** Provides adequate planning horizon for both management and staff, allowing for personal and professional scheduling needs to be met.
-- **AT-SCH-2-1:** As a Manager, attempt to create a shift more than 4 weeks in advance. Verify the system does not allow this. 
-- **AT-SCH-2-2:** Create a shift 2-4 weeks in advance and verify it is successfully added.
+SCH-4: The system must allow a Manager to edit the schedule.
+- **Rationale**: Ensures the ability to make necessary adjustments to the schedule for reasons such as employee availability changes or operational demand changes.
+- **AT-SCH-4-1**: As a Manager, edit an existing shift's time. Verify the change is reflected in the schedule.
 
-SCH-3: The scheduler must allow a Manager to delete shifts from the schedule.
+SCH-5: The system must ensure shift details become read-only once the shift is over.
+- **Rationale**: Preserves the integrity of historical scheduling data, which can be important for payroll and performance evaluation purposes.
+- **AT-SCH-5-1**: Attempt to edit a shift that has already occurred. Verify the system does not allow the modification.
 
-- **Rationale:** Facilitates operational flexibility by allowing Managers to adjust staffing needs as they change.
-- **AT-SCH-3-1:** As a Manager, delete an existing shift. Verify the shift is removed from the schedule.
+SCH-6: The system must schedule employees only during their indicated available times.
+- **Rationale**: Respects employee availability preferences, contributing to job satisfaction and work-life balance.
+- **AT-SCH-6-1**: Attempt to schedule an employee during their unavailable time. Verify the system prevents this action.
 
-SCH-4: The scheduler must allow a Manager to edit the schedule.
+SCH-7: The system must display correct information about the summary of employees' tracked hours.
+- **Rationale**: Provides necessary visibility into worked hours for payroll processing and management oversight.
+- **AT-SCH-7-1**: As a Manager or Bookkeeper, view tracked hours for an employee. Verify the information displayed is accurate and up-to-date.
 
-- **Rationale:** Ensures the ability to make necessary adjustments to the schedule for reasons such as employee availability changes or operational demand changes.
-- **AT-SCH-4-1:** As a Manager, edit an existing shift's time. Verify the change is reflected in the schedule.
+SCH-8: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.
+- **Rationale**: Simplifies the process of tracking work hours, ensuring accuracy and reducing the administrative burden on employees.
+- **AT-SCH-8-1**: As an employee, clock in at the start of a shift. Verify that the system records the clock-in time under the employee's account.
 
-SCH-5: When a schedule is edited all employees with affected schedules must be updated.
+SCH-9: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.
+- **Rationale**: Allows for precise tracking of work hours and ensures employees are compensated for the actual time worked.
+- **AT-SCH-9-1**: As an employee, clock out at the end of a shift. Verify that the system records the clock-out time and accurately reflects the hours worked for that shift.
 
-- **Rationale:** Keeps all staff informed of their current work schedules, ensuring they are aware of any changes that may affect them.
-- **AT-SCH-5-1:** As a Manager, make a change to the schedule. Verify all affected employees receive a notification of the change.
+SCH-10: When a shift swap request is approved the schedule must update for each employee.
+- **Rationale**: Ensures the schedule accurately reflects current staffing after shift swaps, maintaining operational integrity.
+- **AT-SCH-10-1**: Initiate and approve a shift swap request. Verify that the schedule updates to reflect the new shift assignments for both involved employees.
 
-SCH-6: The scheduler must not allow the modification of any details of a shift after the shift is over.
+SCH-11: The system must allow an employee to request shift swaps with other employees.
+- **Rationale**: Provides flexibility for employees to manage their schedules while still meeting operational needs.
+- **AT-SCH-11-1**: As an employee, request a shift swap with another employee. Verify that the request can be submitted through the system.
 
-- **Rationale:** Preserves the integrity of historical scheduling data, which can be important for payroll and performance evaluation purposes.
-- **AT-SCH-6-1:** Attempt to edit a shift that has already occurred. Verify the system does not allow the modification.
+SCH-12: The system must allow a Manager to approve requested shift swaps from employees.
+- **Rationale**: Gives Managers control over shift assignments to ensure operational needs are met.
+- **AT-SCH-12-1**: As a Manager, receive a shift swap request and approve it. Verify that the system updates the schedule accordingly.
 
-SCH-7: Each shift must have a unique identifier to identify specific shifts.
+SCH-13: The system must allow a Manager to deny requested shift swaps from employees.
+- **Rationale**: Ensures that Managers can maintain staffing levels that meet operational requirements.
+- **AT-SCH-13-1**: As a Manager, receive a shift swap request and deny it.
 
-- **Rationale:** Facilitates precise communication and record-keeping regarding individual shifts.
-- **AT-SCH-7-1:** Create multiple shifts and verify each one is assigned a unique identifier by the system.
+SCH-14: The system must allow a Manager to deny requested shift swaps from employees.
+- **Rationale**: Ensures that Managers can maintain staffing levels that meet operational requirements.
+- **AT-SCH-14-1**: As a Manager, receive a shift swap request and deny it. Verify that the system notifies the requesting employees and does not change the schedule.
 
-SCH-8: Schedule information must be stored for 6 years due to Canadian laws regarding business tax documents.
+SCH-15: The system must ensure all shift swaps maintain single shift assignments for employees without overlapping schedules.
+- **Rationale**: Prevents scheduling conflicts that could leave shifts understaffed or employees overburdened.
+- **AT-SCH-15-1**: Attempt to approve a shift swap that would result in double booking an employee. Verify the system prevents the swap.
 
-- **Rationale:** Complies with legal requirements for record-keeping, ensuring Banter Ice Cream adheres to applicable laws.
-- **AT-SCH-8-1:** Confirm with the system's data management policies that schedule information is retained for the required duration.
-
-SCH-9: When a shift swap request is approved the schedule must update for each employee.
-
-- **Rationale:** Ensures the schedule accurately reflects current staffing after shift swaps, maintaining operational integrity.
-- **AT-SCH-9-1:** Initiate and approve a shift swap request. Verify that the schedule updates to reflect the new shift assignments for both involved employees.
-
-SCH-10: The schedule must not allow an employee to be scheduled during a time with indicated availability off.
-
-- **Rationale:** Respects employee availability preferences, contributing to job satisfaction and work-life balance.
-- **AT-SCH-10-1:** Attempt to schedule an employee during their unavailable time. Verify the system prevents this action.
-
-SCH-11: The scheduler's option to view tracked hours by Manager and Bookkeeper must show correct information.
-
-- **Rationale:** Provides necessary visibility into worked hours for payroll processing and management oversight.
-- **AT-SCH-11-1:** As a Manager or Bookkeeper, view tracked hours for an employee. Verify the information displayed is accurate and up-to-date.
-
-SCH-12: The system must automatically summarize employees' tracked hours.
-
-- **Rationale:** Streamlines payroll processing by automatically calculating total hours worked, including overtime, if applicable.
-- **AT-SCH-12-1:** After an employee completes a pay period, verify the system provides a summary of their hours that matches manual calculations.
-
-SCH-13: The system must have a clocking in option to allow employees to have their hours automatically recorded using their account details.
-
-- **Rationale:** Simplifies the process of tracking work hours, ensuring accuracy and reducing the administrative burden on employees.
-- **AT-SCH-13-1:** As an employee, clock in at the start of a shift. Verify that the system records the clock-in time under the employee's account.
-
-SCH-14: The system must have a clocking out option to allow employees to stop their hours from being recorded using their account details.
-
-- **Rationale:** Allows for precise tracking of work hours and ensures employees are compensated for the actual time worked.
-- **AT-SCH-14-1:** As an employee, clock out at the end of a shift. Verify that the system records the clock-out time and accurately reflects the hours worked for that shift.
-
-SCH-15: The system must allow an employee to request shift swaps with other employees.
-
-- **Rationale:** Provides flexibility for employees to manage their schedules while still meeting operational needs.
-- **AT-SCH-15-1:** As an employee, request a shift swap with another employee. Verify that the request can be submitted through the system.
-
-SCH-16: The system must allow a Manager to approve requested shift swaps from employees.
-
-- **Rationale:** Gives Managers control over shift assignments to ensure operational needs are met.
-- **AT-SCH-16-1:** As a Manager, receive a shift swap request and approve it. Verify that the system updates the schedule accordingly.
-
-SCH-17: The system must allow a Manager to deny requested shift swaps from employees.
-
-- **Rationale:** Ensures that Managers can maintain staffing levels that meet operational requirements.
-- **AT-SCH-17-1:** As a Manager, receive a shift swap request and deny it. Verify that the system notifies the requesting employees and does not change the schedule.
-
-SCH-18: The system must not allow shift swaps which cause an employee to be double booked.
-
-- **Rationale:** Prevents scheduling conflicts that could leave shifts understaffed or employees overburdened.
-- **AT-SCH-18-1:** Attempt to approve a shift swap that would result in double booking an employee. Verify the system prevents the swap.
-
-SCH-19: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts, and holidays.
-
-- **Rationale:** Ensures that employees and Managers have accurate and up-to-date information for planning and operational purposes.
-- **AT-SCH-19-1:** After several scheduling changes, including swaps, deletions, and edits, view the schedule. Verify that all changes are accurately reflected.
+SCH-16: The system's view schedule option must display correct information including all shift swaps, deleted shifts, edited shifts, and holidays.
+- **Rationale**: Ensures that employees and Managers have accurate and up-to-date information for planning and operational purposes.
+- **AT-SCH-16-1**: After several scheduling changes, including swaps, deletions, and edits, view the schedule. Verify that all changes are accurately reflected.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 
