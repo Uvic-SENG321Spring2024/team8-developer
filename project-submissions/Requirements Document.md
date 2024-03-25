@@ -679,7 +679,7 @@ The Recipe Management feature has a high priority in the application. A Manager,
 ### b. Functional Requirements <a name="f3-functional"></a>
 
 RMS-1: Kitchen Staff, Front of House Staff and Managers must be able to view active and inactive recipes. 
-- **Rationale:** This ensures that all employees invoved in food preparation and service (Kitchen Staff, Front of House Staff, and Managers) can access recipe information, regardless of the recipe's status (active or inactive), ensuring operational continuity and transparency.
+- **Rationale:** This ensures that all employees involved in food preparation and service (Kitchen Staff, Front of House Staff, and Managers) can access recipe information, regardless of the recipe's status (active or inactive), ensuring operational continuity and transparency.
 - **AT-RMS-1-1:** Log in as Kitchen Staff. Verify access to view both active and inactive recipes.
 - **AT-RMS-1-2:** Log in as Front of House Staff. Verify access to view both active and inactive recipes.
 - **AT-RMS-1-3:** Log in as Manager. Verify access to view both active and inactive recipes.
