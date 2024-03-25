@@ -836,7 +836,7 @@ As a Manager I want to delete an account so that I can remove any users that no 
 
 **Acceptance Criteria:**
 
-There is an option for Managers to delete an account.  This feature must remove a users access to the system, yet still retain information about their employment for legal and tax purposes.
+There is an option for a Manager to delete an account. This feature must remove a users access to the system, yet still retain information about their employment for legal and tax purposes.
 
 **User Story 2: Create Account**
 
