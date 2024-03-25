@@ -348,17 +348,18 @@ SCH-1: The scheduler must allow a Manager to create shifts for employees.
 SCH-2: The scheduler must allow shifts to be made 2-4 weeks in advance.
 
 - **Rationale:** Provides adequate planning horizon for both management and staff, allowing for personal and professional scheduling needs to be met.
-- **AT-SCH-2-1:** As a Manager, attempt to create a shift more than 4 weeks in advance. Verify the system does not allow this. Create a shift 2-4 weeks in advance and verify it is successfully added.
+- **AT-SCH-2-1:** As a Manager, attempt to create a shift more than 4 weeks in advance. Verify the system does not allow this. 
+- **AT-SCH-2-2:** Create a shift 2-4 weeks in advance and verify it is successfully added.
 
 SCH-3: The scheduler must allow a Manager to delete shifts from the schedule.
 
 - **Rationale:** Facilitates operational flexibility by allowing Managers to adjust staffing needs as they change.
-- **AT-SCH-3-1:** As a Manager, delete an existing shift. Verify the shift is removed from the schedule and affected employees are notified.
+- **AT-SCH-3-1:** As a Manager, delete an existing shift. Verify the shift is removed from the schedule.
 
 SCH-4: The scheduler must allow a Manager to edit the schedule.
 
 - **Rationale:** Ensures the ability to make necessary adjustments to the schedule for reasons such as employee availability changes or operational demand changes.
-- **AT-SCH-4-1:** As a Manager, edit an existing shift's time. Verify the change is reflected in the schedule and affected employees are notified.
+- **AT-SCH-4-1:** As a Manager, edit an existing shift's time. Verify the change is reflected in the schedule.
 
 SCH-5: When a schedule is edited all employees with affected schedules must be updated.
 
@@ -657,7 +658,6 @@ COM-7: The system must provide the ability for a Manager to view announcements w
 COM-8: The system must provide the ability for all employees to react to the published announcements.
 - **Rationale:** Interaction with announcements can increase engagement and provide feedback to Managers about the workforce's concerns and interests.
 - **AT-COM-8-1:** As an employee, view an announcement and use a reaction feature (like, thumbs up, etc.). Verify the reaction is recorded and visible.
-- **AT-COM-8-2:** Ensure reactions are visible to all employees to foster a sense of community and encourage further engagement.
 
 COM-9: The system must provide the ability for all employees to communicate with other employees.
 - **Rationale:** Facilitates direct communication among employees, promoting collaboration and team cohesion.
