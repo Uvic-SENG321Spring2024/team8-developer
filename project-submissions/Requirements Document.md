@@ -962,7 +962,9 @@ ACC-7: The system must allow users to log out of their accounts.
 
 ACC-8: The system must allow users to view their account information to ensure its accuracy and completeness.
 
-ACC-9: The system must automatically log out users once they close the application.
+ACC-9: The system must automatically log users out of the application after 1 hour of inactivity.
+
+ACC-10: The system must allow the Bookeeper to access an employee's payment information.
 
 
 
@@ -985,7 +987,7 @@ As a Manager I want to create an account so that my newly hired employees have a
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Create" an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
+There is an option for a Manager to create an account. After selecting this the Manager will be prompted to set the employee's role and username. This will then allow the employee to log in and set their password and payment information. 
 
 **User Story 3: View Account Information**
 
@@ -993,7 +995,7 @@ As a Manager I want to view a user's account information so that I can see their
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "View Account Informaton" for any selected employee. It will show their username, role, and contact information.
+There is an option for a Manager to view account information for any selected employee. It will show their username, role, and contact information.
 
 **User Story 4: Manage Account**
 
@@ -1001,7 +1003,7 @@ As a Manager I want to change a user's role or username in order to ensure it st
 
 **Acceptance Criteria:**
 
-There is an option for a Manager to "Manage Account" for any employee. It will allow them to edit a user's username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+There is an option for a Manager to manage account for any employee. It will allow them to edit a users username and role.  These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
 
 **User Story 5: View Account Information**
 
@@ -1009,15 +1011,15 @@ As a user I want to view my account information so I can ensure it is all correc
 
 **Acceptance Criteria:**
 
-There is an option for a user to "View Account Informaton" for themselves. It will show their username, role, contact information, and payment information.
+There is an option for a user to view account informaton for themselves. It will show their username, role, and contact information.
 
 **User Story 6: Edit Account Information**
 
-As a user I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+As a user I want to edit my account information so I can keep my payment information, contact information, and password up to date. These changes must be reflected in the view account information use case, and the log in use case.
 
 **Acceptance Criteria:**
 
-A user must have an option to "Edit Account Information" for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the "View Account Information" use case, and the "Log In" use case.
+A user must have an option to edit account information for themselves.  This will allow them to change their password, contact information, and payment information. These changes must be reflected in the view account information use case, and the log in use case.
 
 **User Story 7: Log In**
 
@@ -1025,7 +1027,7 @@ As a user I want to log in to my account so I can use the system.
 
 **Acceptance Criteria:**
 
-When a user opens the app they will have an option to "Log In" to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
+When a user opens the app they will have an option to log in to their account.  They will be prompted to enter their account username and password.  If username and password are valid then they will be granted access to the system.
 
 **User Story 8: Log Out**
 
@@ -1033,35 +1035,50 @@ As a user I want to log out of my account so I can ensure no one else can use my
 
 **Acceptance Criteria:**
 
-A user must have the option to "Log Out" of their account.  This will remove their access to the system until they "Log In" again. The system must automatically "Log Out" a user once they have closed the application.
+A user must have the option to log out of their account.  This will remove their access to the system until they log in again. The system must automatically log out a user after 1 hour of inactivity.
+
+**User Story 9: View Payment Information**
+
+As a Bookkeeper I want to view a selected employee's payment information.
+
+**Acceptance Criteria:**
+
+The Bookeeper must have the option to view any employee's payment information. This feature will allow the Bookeeper to view the selected employee's transit number, institution number, account number, and void cheque.
+
 
 ### d. Storyboards <a name="f5-storyboards"></a>
-#### Create Account
+
+### Create Account
 ![Account Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountCreation.png)
 
-#### Delete Account
+### Delete Account
 ![Account Deletion](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountDeletion.png)
 
-#### View Account Information
+### View Account Information
 ![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ViewInformation.png)
 
-#### Edit Cell Phone
+### Edit Cell Phone Number
 ![Edit Cell Phone](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditCell.png)
 
-#### Edit Email
+### Edit Email
 ![Edit Email](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditEmail.png)
 
-#### Edit Role
+### Edit Role
 ![Edit Role](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditRole.png)
 
-#### Edit Username
+### Manage Payment Information
+![Manage Pay](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ManagePay.png)
+
+### Edit Username
 ![Edit Username](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditUsername.png)
 
-#### Login
+### Login
 ![Login](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Login.png)
 
-#### Logout
+### Logout
+
 ![Logout](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Logout.png)
+
 
 ### e. Dialog Map for Edit Account <a name="f5-dialogmap"></a>
 ![Edit Account drawio](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/105994651/95879fab-28eb-4887-81e4-af17ba0b1683)
