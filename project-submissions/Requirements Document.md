@@ -825,7 +825,7 @@ ACC-9: The system must automatically log users out of the application after 1 ho
 
 ### c. Use cases associated with the feature or functional requirement <a name="f5-usecases"></a>
 
-![RMS Usecase Diagram](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/rd-5.V-account/diagrams/accounts.png)
+![accounts](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5c1e9194-dff4-404a-ab8d-0dbca1d80947)
 
 
 **User Story 1: Delete Account**
@@ -893,29 +893,35 @@ As a user I want to log out of my account so I can ensure no one else can use my
 A user must have the option to log out of their account.  This will remove their access to the system until they log in again. The system must automatically log out a user once they have closed the application.
 
 ### d. Storyboards <a name="f5-storyboards"></a>
+
+### Create Account
 ![Account Creation](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountCreation.png)
 
+### Delete Account
 ![Account Deletion](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-AccountDeletion.png)
 
+### View Account Information
 ![View Account Information](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ViewInformation.png)
 
+### Edit Cell Phone Number
 ![Edit Cell Phone](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditCell.png)
 
+### Edit Email
 ![Edit Email](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditEmail.png)
 
-
+### Edit Role
 ![Edit Role](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditRole.png)
 
-
+### Manage Payment Information
 ![Manage Pay](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-ManagePay.png)
 
-
+### Edit Username
 ![Edit Username](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-EditUsername.png)
 
-
+### Login
 ![Login](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Login.png)
 
-
+### Logout
 ![Logout](https://github.com/Uvic-SENG321Spring2024/team8-developer/blob/Account-Management/diagrams/ACC-Logout.png)
 
 
