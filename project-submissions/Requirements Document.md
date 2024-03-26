@@ -403,7 +403,7 @@ SCH-15: The system's view schedule option must display correct information inclu
 
 ### c. Use cases associated with the feature or functional requirement <a name="f1-usecases"></a>
 
-![SchedulingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/5405bee7-a6ae-44c0-b0bc-51a120291d71)
+![SchedulingUseCase_WithDailyCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/3a008778-7cc8-4360-a8ce-fcb7a24862f4)
 
 Within the scheduling system there are 3 primary actors. Front of House Staff, Kitchen Staff, and Delivery Drivers have the same interactions with the Scheduling System so they were combined into one actor. The scheduling system should allow all users (each user class defined in User Classes and Characteristics) to know when they are working, allow a Manager to create and edit schedules, and allow a Bookkeeper to access the tracked hours used to pay employees. All use cases are written assuming the user is logged in.
 
@@ -447,7 +447,7 @@ As a Manager I want to edit an already made schedule to update, remove or add sh
 
 **Acceptance Criteria:**
 
-Given the schedule is updated, when employees view the schedule, then the updated schedule should be shown with all alterations.
+Given the schedule is updated, when employees view the schedule, then the updated schedule should be shown with all alterations. The changes made to the schedule must also be consistent with changes made by the Manager.
 
 **User Story 4: Indicate Availability**
 
@@ -467,7 +467,7 @@ When tracked hours for an employee are viewed then a summary of all worked hours
 
 **User Story 6: Clock In**
 
-As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
+As a Front of House Staff, Kitchen Staff, Bookkeeper, or Delivery Driver I want to clock in at work so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
@@ -475,7 +475,7 @@ Given I have clocked in, when my tracked hours are viewed then the hours I have 
 
 **User Story 7: Clock Out**
 
-As a Front of House Staff, Kitchen Staff, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
+As a Front of House Staff, Kitchen Staff, Bookkeeper, or Delivery Driver I want to clock out so that the hours I work are accurately recorded in the system.
 
 **Acceptance Criteria:**
 
@@ -497,13 +497,53 @@ As a Staff member I want to view the posted schedule for the current work weeks 
 
 Given an employee selects to view the schedule they should be shown the up to date schedule with correct information for the current shift period as well as the next. 
 
-**User Story 10: View All Schedules**
+**User Story 10: View Personal Weekly Schedules**
 
-As an employee I want to be able to view my personal schedule and the schedule of all employees. I want to be able to view the schedule in a weekly format and a monthly format so I can view the correct information in an easy to read format so that I know what shift I am working and what shifts everyone is working to allow for shift swap requests.
+As an employee I want to be able to view my personal schedule in a weekly format so that I can view schedule information for the selected week to learn what shifts I am working and to help me make shift swap decisions.
 
 **Acceptance Criteria:**
 
-Given an employee selects to view the schedule they should be shown the up to date schedule in their chosen format with correct information of all employees for the shift period.
+Given an employee selects to view the schedule and the weekly personal view, they should be shown the up to date schedule in a weekly format with correct personal information for their shift period.
+
+**User Story 11: View Personal Monthly Schedules**
+
+As an employee I want to be able to view my personal schedule in a monthly format so that I can view schedule information for the selected month to learn what shifts I am working and to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule and the monthly personal view, they should be shown the up to date schedule in a monthly format with correct personal information for their shift period.
+
+**User Story 12: View Personal Daily Schedules**
+
+As an employee I want to be able to view my personal schedule in a daily format so that I can view schedule information for the selected day to learn what shifts I am working and to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule and the daily personal view, they should be shown the up to date schedule in a daily format with correct personal information for their shift period.
+
+**User Story 13: View All Employees' Weekly Schedules**
+
+As an employee I want to be able to view the schedule of all employees. I want to be able to view the schedule in a weekly format so that I can view schedule information for the upcoming week to learn what shifts my co-workers are working and to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule and the weekly all employee view, they should be shown the up to date schedule in a weekly format with correct information of all employees for all shift periods.
+
+**User Story 14: View All Employees' Monthly Schedules**
+
+As an employee I want to be able to view the schedule of all employees. I want to be able to view the schedule in a monthly format so that I can view schedule information for the upcoming month to learn what shifts my co-workers are working and to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule and the monthly all employee view, they should be shown the up to date schedule in a monthly format with correct information of all employees for all shift periods.
+
+**User Story 15: View All Employees' Daily Schedules**
+
+As an employee I want to be able to view the schedule of all employees. I want to be able to view the schedule in a daily format so that I can view schedule information for the upcoming day to learn what shifts my co-workers are working and to help me make shift swap decisions.
+
+**Acceptance Criteria:**
+
+Given an employee selects to view the schedule and the daily all employee view, they should be shown the up to date schedule in a daily format with correct information of all employees for all shift periods.
 
 ### d. Storyboards <a name="f1-storyboards"></a>
   
