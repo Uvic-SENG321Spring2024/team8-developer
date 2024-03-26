@@ -1004,26 +1004,44 @@ The Account Management feature has a high priority in the system.  It allows a M
 ### b. Functional Requirements <a name="f5-functional"></a>
 
 ACC-1: The system must provide the Manager with the capability to delete user accounts that are no longer active within the company.
+- **Rationale:** Deleting inactive user accounts ensures that the system remains organized and only contains relevant user information, enhancing security and reducing clutter.
+- **AT-ACC-1-1:** Log in as Manager. Navigate to the user management section. Select an inactive user account and choose the delete option. Verify that the user account is permanently removed from the system.
 
 ACC-2: The system must allow the Manager to create new user accounts by entering their username and role, granting them access to the system.
+- **Rationale:** This enables Managers to control access to the system by adding new user accounts as needed, facilitating user management and system security.
+- **AT-ACC-2-1:** Log in as Manager. Navigate to the user creation section. Enter the required information (username, role) and save. Verify that the new user account is created and granted access to the system.
 
 ACC-3: The system must allow the Managers to view a user’s role, contact information, and username.
+- **Rationale:** Providing Managers with access to user details facilitates effective management of user accounts and roles within the system.
+- **AT-ACC-3-1:** Log in as Manager. Navigate to the user management section. Select a user account and verify that their role, contact information, and username are displayed.
 
 ACC-4: The system must allow the Manager to edit a user’s role, and username
+- **Rationale:** Allowing Managers to edit user roles and usernames enables flexible user management, accommodating changes in user responsibilities or information.
+- **AT-ACC-4-1:** Log in as Manager. Navigate to the user management section. Select a user account and choose the edit option. Modify the user's role and/or username and save changes. Verify that the changes are applied to the user account.
 
 ACC-5: The system must allow users to edit their payment information, contact information, and password.
+- **Rationale:** Allowing users to manage their own account information promotes user autonomy and ensures data accuracy.
+- **AT-ACC-5-1:** Log in as a user. Navigate to the account settings section. Edit payment information, contact information, and password. Save changes. Verify that the modifications are successfully applied to the user's account.
 
 ACC-6: The system must allow users to log in to their accounts with their username and password.
+- **Rationale:** Enabling users to log in with their credentials ensures secure access to the system and personalized user experiences.
+- **AT-ACC-6-1:** Navigate to the login page. Enter valid username and password. Click on the login button. Verify that the user is successfully logged in and directed to the system's dashboard.
 
 ACC-7: The system must allow users to log out of their accounts.
+- **Rationale:** Providing users with a logout option ensures security by allowing them to end their active sessions securely.
+- **AT-ACC-7-1:** While logged in as a user, navigate to the logout option. Click on the logout button. Verify that the user is successfully logged out and redirected to the login page.
 
 ACC-8: The system must allow users to view their account information to ensure its accuracy and completeness.
+- **Rationale:** Allowing users to review their account information promotes transparency and empowers them to verify and update their details as needed.
+- **AT-ACC-8-1:** Log in as a user. Navigate to the account settings section. Verify that the user's account information, including payment details, contact information, and password, is displayed accurately.
 
 ACC-9: The system must automatically log users out of the application after 1 hour of inactivity.
+- **Rationale:** Automatic logout after 1 hour of inactivity enhances security by preventing unauthorized access to user accounts if the device is left unattended.
+- **AT-ACC-9-1:** Log in as a user and navigate to a page within the application. Wait for 1 hour without interacting with the application. After 1 hour, attempt to perform an action within the application. Verify that the system has automatically logged the user out, requiring them to log in again to continue using the application.
 
-ACC-10: The system must allow the Bookeeper to access an employee's payment information.
-
-
+ACC-10: The system must allow the Bookkeeper to access an employee's payment information.
+- **Rationale:** The Bookkeeper plays a critical role in managing payroll and financial records. Granting them access to employee payment information ensures they can perform their duties effectively, ensuring accurate and timely payment processing.
+- **AT-ACC-10-1:** Log in as the Bookkeeper. Navigate to the employee management section. Select an employee's profile. Verify that the payment information, including salary, payment method, and any other relevant details, is displayed.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f5-usecases"></a>
 
