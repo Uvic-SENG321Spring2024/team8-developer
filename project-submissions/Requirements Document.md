@@ -1031,12 +1031,13 @@ ACC-8: The system must allow users to view their account information to ensure i
 - **Rationale:** Allowing users to review their account information promotes transparency and empowers them to verify and update their details as needed.
 - **AT-ACC-8-1:** Log in as a user. Navigate to the account settings section. Verify that the user's account information, including payment details, contact information, and password, is displayed accurately.
 
+ACC-9: The system must automatically log users out of the application after 1 hour of inactivity.
+- **Rationale:** Automatic logout after 1 hour of inactivity enhances security by preventing unauthorized access to user accounts if the device is left unattended.
+- **AT-ACC-9-1:** Log in as a user and navigate to a page within the application. Wait for 1 hour without interacting with the application. After 1 hour, attempt to perform an action within the application. Verify that the system has automatically logged the user out, requiring them to log in again to continue using the application.
 
-ACC-9: The system must automatically log out users once they close the application.
-**ACC-9:** The system must automatically log out users once they close the application.
-- **Rationale:** Automatic logout upon application closure enhances security by preventing unauthorized access to user accounts if the device is left unattended.
-- **AT-ACC-9-1:** Log in as a user. Close the application or browser window. Reopen the application or access the system again. Verify that the user is required to log in again, indicating that they were automatically logged out.
-
+ACC-10: The system must allow the Bookeeper to access an employee's payment information.
+- **Rationale:** The Bookkeeper plays a critical role in managing payroll and financial records. Granting them access to employee payment information ensures they can perform their duties effectively, ensuring accurate and timely payment processing.
+- **AT-ACC-10-1:** Log in as the Bookkeeper. Navigate to the employee management section. Select an employee's profile. Verify that the payment information, including salary, payment method, and any other relevant details, is displayed.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f5-usecases"></a>
 
