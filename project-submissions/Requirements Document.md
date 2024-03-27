@@ -965,14 +965,30 @@ The Onboarding Materials feature has a low priority in the application. An authe
 
 ### b. Functional Requirements <a name="f4-functional"></a>
 ONB-1: A user must be able to view the onboarding materials assigned to their user class.
+- **Rationale:** This ensures all employees have access to the onboarding materials that they need to become familiar with their work, at all times.
+- **AT-ONB-1-1:** Log in as Manager, verify access to onboarding materials assigned to Manager.
+- **AT-ONB-1-2:** Log in as Front of House Staff, verify access to onboarding materials assigned to Front of House Staff.
+- **AT-ONB-1-3:** Log in as Kitchen Staff, verify access to onboarding materials assigned to Kitchen Staff.
+- **AT-ONB-1-4:** Log in as Bookkeeper, verify access to onboarding materials assigned to Bookkeeper.
+- **AT-ONB-1-5:** Log in as Delivery Driver, verify access to onboarding materials assigned to Delivery Driver.
 
 ONB-2: A Manager must be able to edit the onboarding materials and modify the asssigned user classses.
+- **Rationale:** This allows onboarding materials to be easily changed in any way when it needs to be by the Manager.
+- **AT-ONB-2-1:** Log in as Manager, verify the ability to edit onboarding materials. Ensure the edits are reflected accurately.
+- **AT-ONB-2-2:** Log in as Manager, verify the ability to modify the user classes assigned to onboarding materials. Verify that the access permissions of the onboarding material accurately reflect the changes.
 
 ONB-3: A Manager must be able to create the onboarding materials and assign it to one or more user classes.
+- **Rationale:** This allows new onboarding materials to be easily created and assigned within the system by the Manager.
+- **AT-ONB-3-1:** Log in as Manager, verify access to create onboarding materials and assign it to one of the user classes including Front of House Staff, Kitchen Staff, Bookkeeper, Delivery Driver, and Manager.
+- **AT-ONB-3-2:** Log in as Manager, verify access to create onboarding materials and assign it to a combination of the user classes including Front of House Staff, Kitchen Staff, Bookkeeper, Delivery Driver, and Manager.
 
 ONB-4: A Manager must be able to remove the onboarding materials.
+- **Rationale:** This allows easy removal of obsolete onboarding materials by the Manager.
+- **AT-ONB-4-1:** Log in as Manager, verify the ability to remove onboarding materials.
 
 ONB-5: A Manager must be able to view all onboarding materials, including material not assigned to their user class.
+- **Rationale:** This allows the Manager to have access to all onboarding materials at all time, in case they need to check if the onboarding materials are correct, or need to refer to them.
+- **AT-ONB-5-1:** Log in as Manager, verify access to onboarding materials of all user classes, including Front of House Staff, Kitchen Staff, Bookkeeper, Delivery Driver, and Manager.
 
 ### c. Use cases associated with the feature or functional requirement <a name="f4-usecases"></a>
 ![OnboardingUseCase](https://github.com/Uvic-SENG321Spring2024/team8-developer/assets/75967325/f38b872d-77f0-47f8-962f-7f9665926a49)
