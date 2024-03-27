@@ -921,7 +921,8 @@ ONB-1: A user must be able to view the onboarding materials assigned to their us
 
 ONB-2: A Manager must be able to edit the onboarding materials and modify the asssigned user classses.
 - **Rationale:** This allows onboarding materials to be easily changed in any way when it needs to be by the Manager.
-- **AT-ONB-2-1:** Log in as Manager, verify access to edit onboarding materials and modify their assgined user classes including Front of House Staff, Kitchen Staff, Bookkeeper, Delivery Driver, and Manager.
+- **AT-ONB-2-1:** Log in as Manager, verify the ability to edit onboarding materials. Ensure the edits are reflected accurately.
+- **AT-ONB-2-2:** Log in as Manager, verify the ability to modify the user classes assigned to onboarding materials. Verify that the access permissions of the onboarding material accurately reflect the changes.
 
 ONB-3: A Manager must be able to create the onboarding materials and assign it to one or more user classes.
 - **Rationale:** This allows new onboarding materials to be easily created and assigned within the system by the Manager.
