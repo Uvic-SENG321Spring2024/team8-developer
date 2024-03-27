@@ -912,7 +912,7 @@ The Onboarding Materials feature has a low priority in the application. An authe
 
 ### b. Functional Requirements <a name="f4-functional"></a>
 ONB-1: A user must be able to view the onboarding materials assigned to their user class.
-- **Rationale:** This ensures all employees have access to the onboarding materials that they need to be come familiar with their work, at all times.
+- **Rationale:** This ensures all employees have access to the onboarding materials that they need to become familiar with their work, at all times.
 - **AT-ONB-1-1:** Log in as Manager, verify access to onboarding materials assigned to Manager.
 - **AT-ONB-1-2:** Log in as Front of House Staff, verify access to onboarding materials assigned to Front of House Staff.
 - **AT-ONB-1-3:** Log in as Kitchen Staff, verify access to onboarding materials assigned to Kitchen Staff.
