@@ -931,7 +931,7 @@ ONB-3: A Manager must be able to create the onboarding materials and assign it t
 
 ONB-4: A Manager must be able to remove the onboarding materials.
 - **Rationale:** This allows easy removal of obsolete onboarding materials by the Manager.
-- **AT-ONB-4-1:** Log in as Manager, verify access to remove onboarding materials.
+- **AT-ONB-4-1:** Log in as Manager, verify the ability to remove onboarding materials.
 
 ONB-5: A Manager must be able to view all onboarding materials, including material not assigned to their user class.
 - **Rationale:** This allows the Manager to have access to all onboarding materials at all time, in case they need to check if the onboarding materials are correct, or need to refer to them.
