@@ -4,22 +4,22 @@
 
 | Name | Date | Reason for Changes | Version |
 | ----------- | ----------- | ------------- | ---------- | 
-| Amanda Anderson | January 29, 2024 | Create document from template and draft section 1 | 1.0 |
-| Dhuruvan Anavaratha Krishnan | January 29, 2024 | Created draft for sections 2.4 and 2.5 | 1.1 |
-| Yu Tang | January 29, 2024 | Created draft for sections 4.2 - 4.5 | 1.2 |
-| Benjamin Osalira | January 30, 2024 | Created draft for section 3: 3.1, 3.2 and 3.3 | 1.3 |
-| Justin Drastil | January 30, 2024 | Created draft for section 4.1 | 1.4 |
-| Luca Bolzonello | January 30, 2024 | Edit of section 3.3 | 1.5 |
-| Nolan Curtis | January 30, 2024 | Created draft for 2.1 | 1.6 |
-| Tim Xu | January 30, 2024 | Created draft for 2.2 and 2.3 | 1.7 |
+| REDACTED NAME | January 29, 2024 | Create document from template and draft section 1 | 1.0 |
+| REDACTED NAME | January 29, 2024 | Created draft for sections 2.4 and 2.5 | 1.1 |
+| REDACTED NAME | January 29, 2024 | Created draft for sections 4.2 - 4.5 | 1.2 |
+| REDACTED NAME | January 30, 2024 | Created draft for section 3: 3.1, 3.2 and 3.3 | 1.3 |
+| REDACTED NAME | January 30, 2024 | Created draft for section 4.1 | 1.4 |
+| REDACTED NAME | January 30, 2024 | Edit of section 3.3 | 1.5 |
+| REDACTED NAME | January 30, 2024 | Created draft for 2.1 | 1.6 |
+| REDACTED NAME | January 30, 2024 | Created draft for 2.2 and 2.3 | 1.7 |
 | Team | January 30, 2024 | Review and edit sections | 1.8 |
 | Team | January 31, 2024 | Further review and change formatting | 1.9 |
 | Team | February 2, 2024 | Final Review | 2.0 |
-| Amanda Anderson | February 8, 2024 | Add template for sections 5-10 | 3.0 |
+| REDACTED NAME | February 8, 2024 | Add template for sections 5-10 | 3.0 |
 | Team | February 10-13, 2024 | Update document according to feedback | 3.1 |
-| Amanda Anderson | February 13, 2024 | Update template for sections 5, 6 | 4.0 |
+| REDACTED NAME | February 13, 2024 | Update template for sections 5, 6 | 4.0 |
 | Team | February 18, 2024 | Add content to sections 5, 6, and 8 | 4.1 |
-| Amanda Anderson | March 5, 2024 | Format sections 5, 9 | 5.0 |
+| REDACTED NAME | March 5, 2024 | Format sections 5, 9 | 5.0 |
 | Team | March 10, 2024 | Add content to sections 5, 7, 9 | 5.1 |
 
 # 1. **Overview** <a name="overview"></a>
